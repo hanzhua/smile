@@ -1,0 +1,117 @@
+<include file="Public/style"/>
+<style type="text/css">
+    #carousel_box{height: 300px;}
+    .lunbotu{top: 15px; position: relative;}
+    /*取消包含框overflow的限制*/
+    /*.carousel-inner{overflow: visible;}*/
+    .carousel-caption h2, .carousel-caption p{line-height: 20px; color: #bfbfbf;}
+    .carousel-inner .item>a>img{width: 880px;height: 300px;}
+    .carousel-indicators li{background-color: #d4d5d6;}
+    .carousel-indicators .active{background-color: #209e85;}
+    /*文字背景*/
+    /*.carousel-caption{background-color: #e4e4e4;}*/ 
+</style>
+<!--nav start-->
+<nav class="navbar navbar-fixed-top navbar-inverse " role="navigation">
+    <!--container start-->
+    <div class="container">
+	<div class="navbar-header">
+	    <a class="navbar-brand" href="#">SmileEx</a>
+	</div>
+	<div>
+	    <ul class="nav navbar-nav">
+		<li class="active"><a class="" href="{:U('Index/index')}">首页</a></li>
+		<foreach name="cate" item="v"><!-- {:U('Cate/cate')}&id={$v.id} -->
+		    <li <if condition="$v.name eq 'HTML5' ">class="active"<else/></if> >
+		    <a class="" href="__APP__/{$v.url}">{$v.name}</a></li>
+		</foreach>
+	    </ul>
+	    <ul class="nav navbar-nav">
+		<form action="{:U('Index/Search')}" method="post" class="navbar-form" role="search">
+		    <div class="form-group">
+			<input type="text" class="form-control" name="search" placeholder="Search...">
+		    </div>
+		    <button type="submit" class="btn btn-default">搜一下</button>
+		</form>
+	    </ul>
+	    <ul class="nav navbar-nav navbar-static-top pull-right">
+		<if condition="$Think.session.user.id neq ''"><!-- gt >,egt >=,lt < ,eq =,neq <> -->
+		    <li class="dropdown">
+			<a class="dropdown-toggle count-info" data-toggle="dropdown" href="javascript:void(0);">欢迎，
+			    <font color="red">{$Think.session.user.contact}</font> 回来!</a>
+			<ul class="dropdown-menu dropdown-messages">
+			    <li>
+				<a href="{:U('Index/uservip')}"><strong style="color: blueviolet;">进入会员中心</strong></a>
+			    </li>
+			    <li class="divider"></li>
+			    <li>
+				<a href="{:U('Index/logout')}"><strong style="color: blueviolet;">退出登陆</strong></a>
+			    </li>
+			    <li class="divider"></li>
+			    <li>
+				<a><i class="fa fa-envelope"></i> <strong style="color: gray;">Smile[微笑]将和你同行...</strong></a>
+			    </li>
+			</ul>
+		    </li>
+		    <else/>
+		    <li class=""><a data-toggle="modal" href="#myModal6">注册</a></li>
+		    <li class=""><a data-toggle="modal" href="#modal-form">登陆</a></li>
+		</if>
+	    </ul>
+	</div>
+
+    </div>
+    <!--container end-->
+</nav>
+<!--nav end-->
+<!--container-fluid start-->
+<div class="container-fluid">
+    <div class="row-fluid">
+	<div class="container">
+	    <!--col-lg-9 start-->
+	    <div class="col-lg-8">
+		<div class="row">
+		    <div class="page-header"><h3>分类：<b>{$type}</b></h3></div>
+		    <foreach name="list" item="v">
+			<if condition="$v.id eq ''"><!-- gt >,egt >=,lt < ,eq =,neq <> -->
+			    <else/>
+			    <div class="row" style="margin:10px 5px; padding:5px 10px;background-color:#FFF">
+				<div class="col-md-3">
+				    <div class=""><img src="__PUBLIC__/bs/images/blog/11.jpg" title="{$v.title}" width="160" height="120"/></div>
+				</div>
+				<div class="col-md-9">
+				    <div class="header">
+					<!--javascript:void(0); onclick="ArtiContent({$v.id});" -->
+					<h4><a class="badge badge-success">{$v.cname}</a>
+					    <a  href="javascript:void(0);" onclick="ArtiContent({$v.id});">{$v.id}. {$v.title}</a></h4>
+					{$v.desc|msubstr=0,100}
+					<div class="page"style="color:#999;position: absolute;margin-left:200px; ">发布时间：{$v.createtime} 热度：<if condition="$v.viewnum EGT 100"><!-- gt替换> ,lt替换< ,eq替换= neq替换<> -->
+						<liu style='color:red;'>{$v.viewnum}</liu>
+						<else/>{$v.viewnum}</if> ℃
+					</div>
+				    </div>
+				</div>
+			    </div>
+			</if>
+		    </foreach>
+		</div>
+	    </div>
+	    <!--col-lg-9 end-->
+	    <div class="col-lg-1"></div>
+	    <!--col-lg-3 start-->
+	    <div class="col-lg-3">
+		<div class="row" style="height:160px;margin-bottom: 13px;">
+		    <include file="Public/clock"/>
+		</div>
+		<include file="Index:left"/>
+	    </div>
+	    <!--col-lg-3 end-->
+	</div>
+    </div>
+</div>
+<!--container-fluid end-->
+
+<!--footer start-->
+<include file="Public/doter"/>
+<!--footer end-->
+<include file="Public/script"/>

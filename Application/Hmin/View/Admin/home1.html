@@ -1,0 +1,45 @@
+<table class="table text-center">
+    <tr><td colspan="3"><strong>欢迎SMILE-Ex后台模板！</strong></td></tr>
+    <tr>
+        <td>前台浏览次数：4444</td>
+        <td>上次登录IP：{$Think.session.SML_TODAY.ip}</td>
+        <td>上次登录时间：{$Think.session.SML_TODAY.time}</td>
+    </tr>
+</table>
+<table class="table table-bordered table-condensed text-center">
+    <tr>
+        <td colspan="2" align="left"><strong>服务器信息：</strong></td>
+    </tr>
+    <tr>
+        <td align="right">服务器系统：</td>
+        <td align="left"><?php echo SMLGetOS(); ?></td>
+    </tr>
+    <tr>
+        <td align="right" width="300px;">服务器地址：</td>
+        <td align="left"><?php echo SMLMain(); ?></td>
+    </tr>
+    <tr>
+        <td align="right" width="300px;">服务器端口：</td>
+        <td align="left">{$Think.server.SERVER_PORT}</td>
+    </tr>
+    <tr>
+        <td align="right" width="300px;">服务器语言：</td>
+        <td align="left">{$Think.SERVER.HTTP_ACCEPT_LANGUAGE}</td>
+    </tr>
+    <tr>
+        <td align="right" width="300px;">WEB 服务器：</td>
+        <td align="left">{$Think.server.SERVER_SOFTWARE}</td>
+    </tr>
+    <tr>
+        <td align="right" width="300px;">PHP 版本号：</td>
+        <td align="left">{$Think.PHP_VERSION}</td>
+    </tr>
+    <tr>
+        <td align="right"><a title="官方网站" href="http://www.thinkphp.cn">ThinkPHP版本：</a></td>
+        <td align="left">ThinkPHP<sup><?php echo THINK_VERSION ?></sup></td>
+    </tr>
+    <tr>
+        <td align="right" width="300px;">数据库信息：</td>
+        <td align="left">{$Think.session.SML_MySQL.MySQL_NAME}<sup>{$Think.session.SML_MySQL.MySQL_VERSION}</sup> [<font color="red"><?php echo(strtoupper(C('DB_NAME')));?></font>]内存占用: <font color="#4b0082">{$Think.session.SML_MySQL.MySQL_SIZE}</font></td>
+    </tr>
+</table>

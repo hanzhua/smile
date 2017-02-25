@@ -1,0 +1,77 @@
+<include file="Public/style" />
+<include file="Public/_de"/>
+<div class="panel panel-info">
+  <div class="panel-heading" id="add"><strong>
+        <span class="glyphicon glyphicon-plus-sign"></span> 增加管理员</strong>
+  </div>
+    <form method="post" class="form-actions text-center" action="" onsubmit="return UserAddOK();"  enctype="multipart/form-data"  >  
+        <div class="form-group form-group-sm ">
+            <input type="hidden" name="id"  id='id' value="{$data['id']}">
+        </div>
+        <div class="form-group form-group-sm">
+            <div class="input-group input-group-sm">
+                <span class="input-group-addon">用户名</span><input  type="text" class="form-control" value="{$data['contact']}" id='contact' name="contact" data-validate="required:请输入用户名" />
+            </div>
+        </div>
+        <div class="form-group form-group-sm">
+            <div class="input-group input-group-sm">
+                <if condition='$data'>
+                    <span class="input-group-addon ">密&nbsp;&nbsp;&nbsp;&nbsp;码</span><input  type="password" class="form-control" value="" id='password' name="password" data-validate="required:请输入密码" />
+                    <span class="help-block"><b>注：</b>不修改密码留空即可。.</<span class=""></span>>
+                <else/>
+                    <span class="input-group-addon">密&nbsp;&nbsp;&nbsp;&nbsp;码</span><input  type="password" class="form-control" value="{$data['password']}" id='password' name="password" data-validate="required:请输入密码" />
+                </if>
+            </div>
+        </div>
+        <div class="form-group form-group-sm">
+            <div class="input-group input-group-sm"><span class="input-group-addon">用户组</span>
+                <select name="group" id='group' class="form-control">
+                    <foreach name="grouplist" item='v'>
+                        <option  value="{$v.id}" <if condition="$data['group'] eq $v['id']"> selected </if> >{$v['title']}</option>
+                    </foreach>
+                </select>
+            </div>
+         </div>
+        <div class="form-group form-group-sm">
+            
+        </div>
+        <div class="form-group form-group-sm">
+            <button class="btn btn-info btn-sm" id='submit' type="submit"><span class="glyphicon glyphicon-ok-sign"></span>提交</button>
+            <button class="btn btn-info btn-sm" id='reset' type="reset"><span class="glyphicon glyphicon-remove-sign"></span>重置</button>
+        </div>
+    </form>
+  </div>
+<include file="Public/script"/>
+<script type="text/javascript">
+
+    //实例化编辑器
+    //建议使用工厂方法getEditor创建和引用编辑器实例，如果在某个闭包下引用该编辑器，直接调用UE.getEditor('editor')就能拿到相关的实例
+    var ue = UE.getEditor('editor');
+    
+    //管理员设置
+    function UserAddOK(){
+        var id = $("#id").val();
+        var contact  = $("#contact").val();
+        if ($('#contact').val() == ''){
+           layer.msg("请输入用户名");  return false;
+        }
+        var password  = $("#password").val();
+//         if ($('#password').val() == ''){
+//            layer.msg("密码不能为空");  return false;
+//         }
+      
+        var group     = $("#group").find("option:selected").val();
+//        submit('submit', '正在提交..'); 
+        $.post('{:U("Rule/userde")}',{contact:contact,password:password,group:group,id:id},function(rs){
+	    if(rs==1){
+		layer.msg('操作成功！');
+		setTimeout(function(){
+		    parent.layer.msg(rs.msg);
+		    parent.window.location.reload();
+    //                        parent.layer.close(index);
+		},1500);
+	    }
+        },'json');
+        return false;
+    }
+</script>

@@ -1,0 +1,99 @@
+<div class="row icon-xtweq">
+    <div class="span3">
+	<div class="panel-body">
+		<style>
+			.span3{position: relative;margin-top: 10px}
+			.panel-body>a>img{width: 40px;height: 40px}
+		</style>
+	    <a class="icon-img js-tooltip" href="http://weibo.com/smilelcf1320" rel="external nofollow" title="新浪微博" target="_blank">
+			<img src="__PUBLIC__/bs/images/icon-href/xl.png">
+		</a>
+	    <a class="icon-img js-tooltip" href="http://t.qq.com/hzh973244962?preview" rel="external nofollow" title="腾讯微博" target="_blank">
+			<img src="__PUBLIC__/bs/images/icon-href/tx.png">
+		</a>
+	    <a class="icon-img js-tooltip" title="关注微信" href="javascript:wxin();"><!--  data-toggle="modal" data-target="#wexin" -->
+			<img src="__PUBLIC__/bs/images/icon-href/wx.png">
+	    </a>
+	    <a class="icon-img js-tooltip" href="http://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=h7axtL_yt7e2tLHH9vap5Ojq" rel="external nofollow" title="Email" target="_blank">
+		<img src="__PUBLIC__/bs/images/icon-href/em.png"></a>
+	    <!--			<a class="icon-img js-tooltip" href="http://yusi123.com/go/add_qq" rel="external nofollow" title="联系QQ" target="_blank">
+					<img src="__PUBLIC__/bs/images/icon-href/qq.png"></a>-->
+	    <a class="icon-img js-tooltip" href="http://user.qzone.qq.com/2505855078" rel="external nofollow" title="QQ空间" target="_blank">
+		<img src="__PUBLIC__/bs/images/icon-href/kj.png"></a>
+	</div>
+    </div>
+</div>
+<div class="row">
+    <div class="page-header"><h3>邮件订阅</h3></div>
+    <form class="form-group" action="" method="post" onsubmit="">
+	<hua style="color: #999">请填写你的邮件地址，订阅更多精彩内容：</hua>
+	<div class="input-group">
+	    <input type="hidden" class="" name="" placeholder="">
+	    <input type="hidden" class="" name="" placeholder="">
+	    <input type="email" name="to" class="form-control" placeholder="your@email.com" value="" required />
+	    <span class="input-group-addon btn-warning">订阅</span></div>
+    </form>
+</div>
+<div class="row">
+    <div class="page-header"><h3>标签云</h3></div>
+	<foreach name="cate" item="v" key="i">
+		<a class="js-tooltip" href="__APP__/{$v.url}" title="({$v.artnum})个话题" target="_blank">
+		<div class="col-md-5 pull-left"
+			<if condition="$i eq 0">style="margin: 2px 4px;background-color:#15a287;"</if>
+			<if condition="$i eq 1">style="margin: 2px 4px;background-color:#5cb85c;"</if>
+			<if condition="$i eq 2">style="margin: 2px 4px;background-color:#d9534f;"</if>
+			<if condition="$i eq 3">style="margin: 2px 4px;background-color:#567e95;"</if>
+			<if condition="$i eq 4">style="margin: 2px 4px;background-color:#b433ff;"</if>
+			<if condition="$i eq 5">style="margin: 2px 4px;background-color:#00a67c;"</if>
+		>
+			{$v.name}({$v.artnum})
+		</div>
+		</a>
+	</foreach>
+</div>
+<div class="row">
+    <div class="page-header"><h3>猜你喜欢</h3></div>
+    <foreach name="Cnxh" item="v">
+	<div class="row" style="margin:5px 5px; padding: 7px 0px;background-color:#FFF">
+	    <div class="col-md-3">
+			<div class="">
+				<a class="" href="javascript:void(0)" onclick="ArtiContent({$v['id']});" >
+				<img src="{$v['picurl'][0]['src']}" title="{$v.title}" style="max-width: 80px;min-height: 60px"/></a>
+			</div>
+	    </div>
+	    <div class="col-md-8" style="position: relative;margin-left: 18px">
+		<a class="" href="javascript:void(0)" onclick="ArtiContent({$v['id']});" >{$v.title}</a>
+		<p class="pull-right pageon">{$v.createtime}</p>
+	    </div>
+	</div>
+    </foreach>
+</div>
+
+<div class="row">
+	<div class="page-header"><h3>最新发表</h3></div>
+	<foreach name="News" item="v">
+		<div class="row" style="margin:5px 5px; padding: 7px 0px;background-color:#FFF">
+			<div class="col-md-3">
+				<div class="">
+					<a class="" href="javascript:void(0)" onclick="ArtiContent({$v['id']});" >
+						<img src="{$v['picurl'][0]['src']}" title="{$v.title}" style="max-width: 80px;min-height: 60px"/></a>
+				</div>
+			</div>
+			<div class="col-md-8" style="position: relative;margin-left: 18px">
+				<a class="" href="javascript:void(0)" onclick="ArtiContent({$v['id']});" >{$v.title}</a>
+				<p class="pull-right pageoff">{$v.createtime}</p>
+			</div>
+		</div>
+	</foreach>
+</div>
+
+<div class="row">
+    <div class="page-header"><h3>友情链接</h3></div>
+    <foreach name="link" item="v">
+		<a class="" href="{$v.url}" target="_blank">
+			<div class="col-md-5 pull-left" style="margin: 2px 4px;background-color:pink;">
+	    		{$v.title}
+			</div>
+		</a>
+    </foreach>
+</div>

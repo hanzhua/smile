@@ -1,0 +1,44 @@
+[ 2017-02-17T22:41:54+08:00 ] 127.0.0.1 /smile/indin.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001385s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002292s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002455s ]
+SQL: SHOW COLUMNS FROM `sml_action` [ RunTime:0.0439s ]
+SQL: SELECT `name` FROM `sml_action` WHERE ( public='log' ) LIMIT 1   [ RunTime:0.0074s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000134s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000262s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.063606s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.063794s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001486s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001602s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001960s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002078s ]
+
+[ 2017-02-17T22:41:55+08:00 ] 127.0.0.1 /smile/indin.php?m=Hmin&c=Index&a=getVerify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001415s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002177s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002333s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.014597s ]
+INFO: [ app_end ] --END-- [ RunTime:0.015729s ]
+
+[ 2017-02-17T22:41:55+08:00 ] 127.0.0.1 /smile/indin.php?m=Hmin&c=Index&a=getVerify&random=0.04861441711239617
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001102s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002979s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003170s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002259s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002410s ]
+

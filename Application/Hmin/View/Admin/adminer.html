@@ -1,0 +1,120 @@
+<include file="Public:style"/>
+<body style="background-color: #ffffff">
+    <div class="panel">
+	<div class="panel-heading">网站信息</div>
+	<div class="panel-body">
+	    <form id="form" method="post" class="form-group" action="{:U('Admin/adminset')}" onsubmit="return AdminCheck();">
+			<input type="hidden" name="id" value="{$SETUP['id']}">
+		<div class="row">
+		    <div class="col-xs-1"></div>
+		    <div class="col-xs-2"><label class="control-label"> 网站标题:<font color="red">*</font></label></div>
+		    <div class="col-xs-8">
+			<input type="text" class="form-control" id='title' name="title" value="{$SETUP['title']}" />
+			<div class="tips"></div></div>
+		</div>
+		<div class="row">
+			<div class="col-xs-1"></div>
+			<div class="col-xs-2"><label class="control-label"> 网站地址:<font color="red">*</font></label></div>
+			<div class="col-xs-8">
+				<input type="text" class="form-control" id='url' name="url" value="{$SETUP['url']}" />
+				<div class="tips"></div></div>
+		</div>
+		<div class="row">
+		    <div class="col-xs-1"></div>
+		    <!-- <div class="input-group">
+		    <span class="input-group-addon">网站关键字：</span> -->
+		    <div class="col-xs-2"><label class="control-label"> 网站关键字:<font color="red">*</font></label>
+		    </div>
+		    <div class="col-xs-8">
+			<textarea rows="3" class="form-control" id='keyword' name="keyword" >{$SETUP['keyword']}</textarea>
+			<div class="tips"></div>
+		    </div>
+		</div>
+		<div class="row">
+		    <div class="col-xs-1"></div>
+		    <div class="col-xs-2"><label class="control-label">网站描述:<font color="red">*</font></label>
+		    </div>
+		    <div class="col-xs-8">
+			<textarea rows="3" class="form-control" id='descript' name="descript">{$SETUP['descript']}</textarea>
+			<div class="tips"></div>
+		    </div>
+		</div>
+		<div class="row">
+		    <div class="col-xs-1"></div>
+		    <div class="col-xs-2"><label class="control-label">网站联系人:<font color="red">*</font></label>
+		    </div>
+		    <div class="col-xs-8">
+			<input class="form-control" id='name' name="name" value="{$SETUP['name']}">
+			<div class="tips"></div>
+		    </div>
+		</div>
+		<div class="row">
+		    <div class="col-xs-1"></div>
+		    <div class="col-xs-2"><label class="control-label">联系方式:</label>
+		    </div>
+		    <div class="col-xs-8">
+			<input class="form-control" id='tel' name="tel" value="{$SETUP['tel']}">
+			<div class="tips"></div>
+		    </div>
+		</div>
+		<div class="row">
+		    <div class="col-xs-1"></div>
+		    <div class="col-xs-2"><label class="control-label">Q Q号码:</label>
+		    </div>
+		    <div class="col-xs-8">
+			<input class="form-control" id='qq' name="qq" value="{$SETUP['qq']}">
+			<div class="tips"></div>
+		    </div>
+		</div>
+		<div class="row">
+		    <div class="col-xs-1"></div>
+		    <div class="col-xs-2"><label class="control-label">底部信息:<font color="red">*</font></label>
+		    </div>
+		    <div class="col-xs-8">
+			<textarea rows="3" class="form-control" id='foot' name="foot">{$SETUP['foot']}</textarea>
+			<div class="tips"></div>
+		    </div>
+		</div>
+		<div class="row">
+		    <div class="col-xs-12">
+			<input  class="btn btn-success form-control" type="submit" value="提交">
+		    </div>
+		</div>
+	    </form>
+        </div>
+    </div>
+	<include file="Public:script"/>
+	</body>
+</html>
+<script type="text/javascript">
+    function AdminCheck() {
+		if ($('#title').val() == '') {
+			layer.msg("请输入标题");
+			$('#title').focus();
+			return false;
+		}
+		if ($('#keyword').val() == '') {
+			layer.msg("请输入网站关键字");
+			$('#keyword').focus();
+			return false;
+		}
+		if ($('#descript').val() == '') {
+			layer.msg("请输入网站描述");
+			$('#descript').focus();
+			return false;
+		}
+		if ($('#name').val() == '') {
+			$('#name').focus();
+			layer.msg("请输入网站联系人");
+			return false;
+		}
+		if ($('#foot').val() == '') {
+			$('#foot').focus();
+			layer.msg("请输入底部信息");
+			return false;
+		}
+		return true;
+    }
+
+
+</script>

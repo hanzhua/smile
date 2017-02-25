@@ -1,0 +1,96 @@
+<include file="Public/style"/>
+<include file="Public/_de"/>
+<style type="text/css">
+    .col-xs-8 .panel-body input{
+	width: 120px;
+    }
+</style>
+
+
+
+<div class="container">
+    <div class="page-header">
+	<strong><span class="fa fa-plus-square"></span> 添加类型</strong>
+    </div>
+    <div class="row text-center">
+	<form class="form-horizontal" action="" method="post" onsubmit="return CateMake();" >
+	    <input type="hidden" name="id"  id='id' value="{$pid}">
+	    <!--修改三级目录-->
+	    <if condition="$edit || $pid eq 0"><!-- gt >,egt >=,lt < ,eq =,neq <> -->
+		<else/>
+		<div class="row">
+		    <div class="col-xs-2"></div>
+		    <div class="col-xs-8">
+			<section class="panel invoice">
+			    <div class="panel-body">
+				上级名称：<input type="text" id="id"placeholder="" value="{$name}" disabled>
+			    </div>
+			</section>
+		    </div>
+		    <div class="col-xs-2"></div>
+		</div>
+	    </if>
+	    <if condition="$edit && $mark eq 2">
+		<else/>
+		<div class="row">
+		    <div class="col-xs-2"></div>
+		    <div class="col-xs-8">
+			<section class="panel invoice">
+			    <div class="panel-body">
+				类型名称：<input type="text" id="name"placeholder="" value="{$data.name}" required>
+			    </div>
+			</section>
+		    </div>
+		    <div class="col-xs-2"></div>
+		</div>
+	    </if>
+	    <if condition="$pid eq 0"><!-- gt >,egt >=,lt < ,eq =,neq <> -->
+		<div class="row">
+		    <div class="col-xs-2"></div>
+		    <div class="col-xs-8">
+			<section class="panel invoice">
+			    <div class="panel-body">
+				类型名称：<input type="text" id="name"placeholder="" value="{$name}" required>
+			    </div>
+			</section>
+		    </div>
+		    <div class="col-xs-2"></div>
+		</div>
+		<else/>
+	    </if>
+	    <div class="row">
+		<div class="col-xs-2"></div>
+		<div class="col-xs-8">
+		    <section class="panel invoice">
+			<div class="panel-body">
+			    <input  type="submit" class="btn btn-info " value="确定" />
+			    <input  type="reset" class="btn btn-warning " value="重置" />
+			</div>
+		    </section>
+		</div>
+		<div class="col-xs-2"></div>
+	    </div>
+	</form>
+    </div>
+</div>
+<include file="Public/script"/>
+<script type="text/javascript">
+    var ue = UE.getEditor('editor');
+    //菜单栏管理
+    function CateMake(){
+        var name = $("#name").val();
+//        submit('submit', '正在提交..'); 
+        $.post("{:U('Cate/catede')}",{name:name},function(rs){
+	    alert(rs);
+	    if(rs==1){
+		layer.msg('操作成功！');
+		setTimeout(function(){
+		    parent.layer.msg(rs.msg);
+		    parent.window.location.reload();
+//	            parent.layer.close(index);
+		},1500);
+	    }
+        },'json');
+        return false;
+    }
+</script>

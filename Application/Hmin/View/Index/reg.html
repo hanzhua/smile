@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+	<meta name="description" content="">
+	<meta name="author" content="ThemeBucket">
+	<link rel="shortcut icon" href="#" type="image/png">
+
+	<title>{$title}</title>
+
+	<link href="__PUBLIC__/bs/css/index_style.css" rel="stylesheet">
+	<link href="__PUBLIC__/bs/css/index_style-responsive.css" rel="stylesheet">
+    <include file="Public/link"/>
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="__PUBLIC__/bs/js/html5shiv.js"></script>
+    <script src="__PUBLIC__/bs/js/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body class="login-body">
+
+    <div class="container">
+
+	<form class="form-signin" method="post" action="{:U('Index/regdo')}" onsubmit="return checkReg();">
+	    <div class="form-signin-heading text-center">
+		<h1 class="sign-title">{$title}</h1>
+		<img src="__PUBLIC__/bs/images/login-logo.png" alt=""/>
+	    </div>
+	    <div class="login-wrap">
+		<!--<p>Enter your personal details below</p>-->
+		<input style="height: 34px;font-size: 18px;background-color: #eee;margin-bottom: 15px"
+			   type="number" id="user" name="username"
+			   placeholder="Email/Tel/QQ" autofocus class="form-control">
+		<input style="font-size:18px;padding: 5px;"
+			   type="password" id="pass" name="password" placeholder="Password" class="form-control">
+		<input style="font-size:18px;padding: 5px;"
+			   type="password" id="pass2" placeholder="Again Password" class="form-control">
+		<input style="font-size:18px;padding: 5px;"
+			   type="text" id="city" name="city" placeholder="所在城市" class="form-control">
+		<div class="radios">
+		    <label for="radio-01" class="label_radio col-lg-6 col-sm-6">
+			<input type="radio" checked value="1" id="radio-01" name="sex"> 男
+		    </label>
+		    <label for="radio-02" class="label_radio col-lg-6 col-sm-6">
+			<input type="radio" value="0" id="radio-02" name="sex"> 女
+		    </label>
+		</div>
+		<button type="submit" class="btn btn-lg btn-login btn-block">
+		    <i class="fa fa-check"></i>注 册
+		</button>
+
+		<div class="registration">
+		    Already Registered.
+		    <a href="{:U('Index/index')}" class="">
+			Login
+		    </a>
+		</div>
+		<label class="checkbox">
+		    <input type="checkbox" value="agree this condition">
+		    I agree to the Terms of Service and Privacy Policy
+		</label>
+	    </div>
+	</form>
+    </div>
+</body>
+</html>
+<include file="Public/script"/>
+<script type="text/javascript">
+var checkReg = function(){
+	var user = $('#user').val();
+//	var regexp=/^[a-zA-Z0-9_\.]+$/;
+	var pass = $('#pass').val();
+	var pass2 = $('#pass2').val();
+	var city = $('#city').val();
+	var checkbox=$('.checkbox').val();
+	if(user == ""){
+        $('#user').focus();
+        layer.msg('<font color="red">账号</font>不能为空');return false;
+	}else{
+		alert(SML.checkMobil(user));exit();
+	}
+	if(pass == ""){
+        $('#pass').focus();
+        layer.msg("请输入<font color='red'>密码</font>保护");return false;}
+	if(pass.length < 6){
+        $('#pass').focus();
+        layer.msg("<font color='red'>密码强度</font>不够");return false;}
+	if(pass2 !== pass ){
+        $('#pass1').focus();
+        layer.msg("<font color='red'>两次密码</font>不一致");return false;}
+	if(city.length < 2){
+        $('#city').focus();
+        layer.msg("<font color='red'>城市</font>输入有误");return false;}
+	if(checkbox){
+		layer.msg('请同意协议');
+		return false;
+	}
+	return false;
+};
+</script>

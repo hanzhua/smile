@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!--如果使用bootstrap架构 这3个meta必须放在最前边-->
+	<title>会员中心 - 画中浅笑博客</title>
+    <include file="Public/link"/>
+	<style>.red{color: red;}</style>
+</head>
+<body>
+	<!--container START-->
+    <div class="container">
+		<!--START 会员中心-->
+		<div class="row">
+			<div class="text-center"style="color: #65cea7;">
+				<h3>画中浅笑 个人博客VIP中心</h3>
+			</div>
+			<div id="vip">
+				<!--<div class="modal-dialog">-->
+				<div class="modal-content">
+					<div class="modal-header">
+					<i class="fa fa-info-circle"></i> 会员中心
+					<button type="button" class="close" data-dismiss="modal">
+					<!--<span aria-hidden="true">×</span><span class="sr-only">Close</span>-->
+						<a class="" href="javascript:void(0)" onclick="ToHome()"style="text-decoration: none">返回主页</a>
+					</button>
+				</div>
+					<div class="modal-body">
+					<table class="table text-center">
+					<form action="{:U('Index/Uploads')}" method="post" enctype="multipart/form-data">
+						<tr>
+						<th width="140px"><label for="account" class="" title="">用户账户：</label></th>
+						<td align="left"><input type="text"style="width:160px;height:24px;" id="account" name="account" value="{$Think.session.user.qq}" disabled required></td>
+						<th width="140px"><label for="ip" class="" title="">上次登录IP：</label></th>
+						<td align="left"><input type="text" style="width:160px;height:24px;" id="ip" name="ip" value="{$Think.session.user.ip}" disabled required></td>
+						<th><span class="pull-left">修改头像：</span><input type="submit" class="uploads btn btn-sm btn-success pull-right" value="上传头像" style="width: 150px"></th>
+						</tr>
+						<tr>
+						<th width="140px"><label for="createtime" class="" title="">注册时间：</label></th>
+						<td align="left"><input type="text" style="width:160px;height:24px;" id="createtime" name="createtime" value="{$Think.session.user.createdate}" disabled required></td>
+						<th width="140px"><label for="lasttime" class="" title="">上次登录时间：</label></th>
+						<td align="left"><input type="text" style="width:160px;height:24px;" id="lasttime" name="lasttime" value="{$Think.session.user.lastdate}" disabled required></td>
+						<td rowspan="4">
+							<input type="file" class="" id="pic" name="pic" onchange="vipPic(this.id)">
+							<div style="height: 120px">
+								<img src="{$Think.session.user.pic}" width="220px" height="180">
+							</div>
+						</td>
+						</tr>
+					</form>
+					<form action="{:U('Index/vipEdit')}" method="post">
+						<tr>
+						<th width="140px"><label for="isdel" class="" title="">账户状态：</label></th>
+						<td align="left"><input type="text" style="color: darkblue;width:160px;height:24px;" id="isdel" name="isdel"
+						<if condition="$Think.session.user.flag eq 0">
+							value="正常"
+							<else/>
+							value="禁用"
+						</if> required disabled></td>
+						<th width="140px"><label for="contact" class="" title="">我的昵称：</label></th>
+						<td align="left">
+							<input type="text"style="width:160px;height:24px;" id="contact" name="contact" value="{$Think.session.user.contact}" required onblur="SML.checkVal(this.id)">
+							<span class="contact"></span>
+						</td>
+						</tr>
+						<tr>
+						<th width="140px" ><label for="password" class="" title="">修改密码：</label></th>
+						<td align="left"><input type="password"style="width:160px;height:24px;" id="password" name="password" placeholder="不修改密码为空" required onblur="SML.checkVal(this.id)"></td>
+
+						<th width="140px" ><label for="password1" class="" title="">再次确认密码：</label></th>
+						<td align="left">
+							<input type="password"style="width:160px;height:24px;" id="password1" name="password1" onblur="SML.checkVal(this.id)">
+							<span class="password1"></span>
+						</td>
+						</tr>
+						<tr>
+						<td align="" colspan="4">
+							<input type="button" class="btn btn-sm btn-success" onclick="vipEdit();" value="提交" style="width: 300px;">
+						</td>
+						</tr>
+					</form>
+					</table>
+				</div>
+				</div>
+				<!--</div>-->
+			</div>
+		</div><!--END 会员中心-->
+
+		<div class="row text-center">
+			<div class="col-md-3 pull-left" style="background-color: red">
+				<a href=""><h4>车辆租赁</h4></a>
+			</div>
+			<div class="col-md-3 pull-left" style="background-color: orangered">
+				<a href=""><h4>车辆租赁</h4></a>
+			</div>
+			<div class="col-md-3 pull-left" style="background-color: yellow">
+				<a href=""><h4>车辆租赁</h4></a>
+			</div>
+			<div class="col-md-3 pull-left" style="background-color: lime">
+				<a href=""><h4>车辆租赁</h4></a>
+			</div>
+		</div>
+
+		<!--FOOTER START-->
+		<div class="row" style="color:#fff;background-color:#999;">
+			<div class="col-md-12 text-center">
+					<?php echo htmlspecialchars_decode($SETUP['foot']); ?>
+			</div>
+		</div>
+		<!--FOOTER END-->
+    </div><!--container END-->
+<include file="Public:vip"/>
+<!--<script src="__ROOT__/Application/Home/view/Index/uservip.js"></script>-->
+</body>
+</html>
+<script>
+	$(function () {
+		$('.uploads').hide();
+	})
+	var ToHome = function () {
+		window.location.href="{:U('Index/index')}";
+	}
+	function vipPicUpload(){
+		window.location.href="{:U('Index/Uploads')}";
+	}
+	function vipPic(id){
+		if($('#'+id).val() !== ''){
+			$('.uploads').show();
+		}else{
+			$('.uploads').hide();
+		}
+	}
+	function vipEdit(){
+		var params = {};
+		params.contact      = $('#contact').val();
+		params.password     = $('#password').val();
+		if(params.contact == ''){
+			$('.contact').html('用户昵称不能为空').show().addClass('red');
+			$('.contact').val('').focus();
+			return false;
+		}
+		if(params.contact.length > 15){
+			$('.contact').html('昵称过长，请重新填写').show().addClass('red');
+			$('#contact').val('').focus();
+			return false;
+		}
+		if($('#password1').val() !== params.password){
+			$('.password1').html('两次输入的密码不一致').show().addClass('red');
+			$('#password1').val('').focus();
+			return false;
+		}
+		$.post("{:U('Index/vipEdit')}",params, function (rs) {
+			alert(rs);
+			if(rs==1){
+				layer.msg('修改成功!',{icon:1,time:2000}, function () {
+					window.location.reload();
+				})
+			}else{
+				layer.msg('修改失败!!!',{icon:2,time:2000})
+			}
+		})
+	}
+</script>

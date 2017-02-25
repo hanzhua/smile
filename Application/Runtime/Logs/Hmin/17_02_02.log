@@ -1,0 +1,215 @@
+[ 2017-02-02T20:57:02+08:00 ] 127.0.0.1 /smile/indin.php?m=Hmin&c=Admin&a=homeSee&id=31
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.317430s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.041763s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.041972s ]
+SQL: SHOW COLUMNS FROM `sml_users_sign` [ RunTime:0.5522s ]
+SQL: SELECT `sign_day` FROM `sml_users_sign` WHERE ( sign_uid=1001 AND sign_mon=201702 ) LIMIT 1   [ RunTime:0.1488s ]
+SQL: SHOW COLUMNS FROM `sml_action` [ RunTime:0.0130s ]
+SQL: SELECT `id` FROM `sml_action` WHERE ( url='Admin/homeSee' ) LIMIT 1   [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `sml_group` [ RunTime:0.0129s ]
+SQL: SELECT `rules` FROM `sml_group` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `sml_areas` [ RunTime:0.0131s ]
+SQL: SELECT * FROM `sml_areas` WHERE ( pid=0 )  [ RunTime:0.0115s ]
+SQL: SHOW COLUMNS FROM `sml_setup` [ RunTime:0.0150s ]
+SQL: SELECT * FROM `sml_setup` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sml_cate` [ RunTime:0.0384s ]
+SQL: SELECT * FROM `sml_cate` WHERE ( isdel=0 )  [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `sml_news` [ RunTime:0.0404s ]
+SQL: SELECT * FROM `sml_news` WHERE ( isread = 0 )  [ RunTime:0.0019s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sml_news` WHERE ( isread = 0 ) LIMIT 1   [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `sml_assets` [ RunTime:0.0128s ]
+SQL: SHOW COLUMNS FROM `sml_assets` [ RunTime:0.0132s ]
+SQL: SELECT * FROM `sml_assets` WHERE ( id=31 )  [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `sml_users` [ RunTime:0.0136s ]
+SQL: SELECT `contact` FROM `sml_users` WHERE ( id=1007 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sml_article` [ RunTime:0.0121s ]
+SQL: SELECT `title` FROM `sml_article` WHERE ( pic=31 ) LIMIT 1   [ RunTime:0.0021s ]
+NOTIC: [2048] Only variables should be passed by reference E:\xampp\htdocs\smile\Application\Hmin\Controller\AdminController.class.php 第 111 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000106s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000350s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.244029s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.244514s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.012204s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.012363s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002560s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002783s ]
+
+[ 2017-02-02T20:57:03+08:00 ] 127.0.0.1 /smile/indin.php?m=Hmin&c=Admin&a=homeSee&id=30
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000986s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002995s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003294s ]
+SQL: SHOW COLUMNS FROM `sml_users_sign` [ RunTime:0.0100s ]
+SQL: SELECT `sign_day` FROM `sml_users_sign` WHERE ( sign_uid=1001 AND sign_mon=201702 ) LIMIT 1   [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `sml_action` [ RunTime:0.0254s ]
+SQL: SELECT `id` FROM `sml_action` WHERE ( url='Admin/homeSee' ) LIMIT 1   [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `sml_group` [ RunTime:0.0153s ]
+SQL: SELECT `rules` FROM `sml_group` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0018s ]
+SQL: SHOW COLUMNS FROM `sml_areas` [ RunTime:0.0126s ]
+SQL: SELECT * FROM `sml_areas` WHERE ( pid=0 )  [ RunTime:0.0109s ]
+SQL: SHOW COLUMNS FROM `sml_setup` [ RunTime:0.0178s ]
+SQL: SELECT * FROM `sml_setup` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sml_cate` [ RunTime:0.0341s ]
+SQL: SELECT * FROM `sml_cate` WHERE ( isdel=0 )  [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `sml_news` [ RunTime:0.0119s ]
+SQL: SELECT * FROM `sml_news` WHERE ( isread = 0 )  [ RunTime:0.0008s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sml_news` WHERE ( isread = 0 ) LIMIT 1   [ RunTime:0.0019s ]
+SQL: SHOW COLUMNS FROM `sml_assets` [ RunTime:0.0143s ]
+SQL: SHOW COLUMNS FROM `sml_assets` [ RunTime:0.0110s ]
+SQL: SELECT * FROM `sml_assets` WHERE ( id=30 )  [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `sml_users` [ RunTime:0.0144s ]
+SQL: SELECT `contact` FROM `sml_users` WHERE ( id=1007 ) LIMIT 1   [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `sml_article` [ RunTime:0.0156s ]
+SQL: SELECT `title` FROM `sml_article` WHERE ( pic=30 ) LIMIT 1   [ RunTime:0.0008s ]
+NOTIC: [2048] Only variables should be passed by reference E:\xampp\htdocs\smile\Application\Hmin\Controller\AdminController.class.php 第 111 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000089s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000289s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.040048s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.040263s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000820s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000942s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001412s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001579s ]
+
+[ 2017-02-02T20:57:12+08:00 ] 127.0.0.1 /smile/indin.php?m=Hmin&c=Admin&a=homeSee&id=31
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000092s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002800s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001506s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001715s ]
+SQL: SHOW COLUMNS FROM `sml_users_sign` [ RunTime:0.0150s ]
+SQL: SELECT `sign_day` FROM `sml_users_sign` WHERE ( sign_uid=1001 AND sign_mon=201702 ) LIMIT 1   [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `sml_action` [ RunTime:0.0135s ]
+SQL: SELECT `id` FROM `sml_action` WHERE ( url='Admin/homeSee' ) LIMIT 1   [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `sml_group` [ RunTime:0.0173s ]
+SQL: SELECT `rules` FROM `sml_group` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0026s ]
+SQL: SHOW COLUMNS FROM `sml_areas` [ RunTime:0.0111s ]
+SQL: SELECT * FROM `sml_areas` WHERE ( pid=0 )  [ RunTime:0.0099s ]
+SQL: SHOW COLUMNS FROM `sml_setup` [ RunTime:0.0151s ]
+SQL: SELECT * FROM `sml_setup` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `sml_cate` [ RunTime:0.0137s ]
+SQL: SELECT * FROM `sml_cate` WHERE ( isdel=0 )  [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `sml_news` [ RunTime:0.0173s ]
+SQL: SELECT * FROM `sml_news` WHERE ( isread = 0 )  [ RunTime:0.0045s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sml_news` WHERE ( isread = 0 ) LIMIT 1   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `sml_assets` [ RunTime:0.0178s ]
+SQL: SHOW COLUMNS FROM `sml_assets` [ RunTime:0.0129s ]
+SQL: SELECT * FROM `sml_assets` WHERE ( id=31 )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sml_users` [ RunTime:0.0178s ]
+SQL: SELECT `contact` FROM `sml_users` WHERE ( id=1007 ) LIMIT 1   [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `sml_article` [ RunTime:0.0130s ]
+SQL: SELECT `title` FROM `sml_article` WHERE ( pic=31 ) LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [2048] Only variables should be passed by reference E:\xampp\htdocs\smile\Application\Hmin\Controller\AdminController.class.php 第 111 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000203s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000685s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.053831s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.054064s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001096s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001265s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002134s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002306s ]
+
+[ 2017-02-02T20:57:15+08:00 ] 127.0.0.1 /smile/indin.php?m=Hmin&c=Admin&a=homeSee&id=28
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001314s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002041s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002274s ]
+SQL: SHOW COLUMNS FROM `sml_users_sign` [ RunTime:0.0149s ]
+SQL: SELECT `sign_day` FROM `sml_users_sign` WHERE ( sign_uid=1001 AND sign_mon=201702 ) LIMIT 1   [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `sml_action` [ RunTime:0.0135s ]
+SQL: SELECT `id` FROM `sml_action` WHERE ( url='Admin/homeSee' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sml_group` [ RunTime:0.0187s ]
+SQL: SELECT `rules` FROM `sml_group` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0017s ]
+SQL: SHOW COLUMNS FROM `sml_areas` [ RunTime:0.0226s ]
+SQL: SELECT * FROM `sml_areas` WHERE ( pid=0 )  [ RunTime:0.0081s ]
+SQL: SHOW COLUMNS FROM `sml_setup` [ RunTime:0.0150s ]
+SQL: SELECT * FROM `sml_setup` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `sml_cate` [ RunTime:0.0129s ]
+SQL: SELECT * FROM `sml_cate` WHERE ( isdel=0 )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sml_news` [ RunTime:0.0207s ]
+SQL: SELECT * FROM `sml_news` WHERE ( isread = 0 )  [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sml_news` WHERE ( isread = 0 ) LIMIT 1   [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `sml_assets` [ RunTime:0.0133s ]
+SQL: SHOW COLUMNS FROM `sml_assets` [ RunTime:0.0127s ]
+SQL: SELECT * FROM `sml_assets` WHERE ( id=28 )  [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `sml_users` [ RunTime:0.0166s ]
+SQL: SELECT `contact` FROM `sml_users` WHERE ( id=1007 ) LIMIT 1   [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `sml_article` [ RunTime:0.0132s ]
+SQL: SELECT `title` FROM `sml_article` WHERE ( pic=28 ) LIMIT 1   [ RunTime:0.0012s ]
+NOTIC: [2048] Only variables should be passed by reference E:\xampp\htdocs\smile\Application\Hmin\Controller\AdminController.class.php 第 111 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000104s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000624s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025390s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025609s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000920s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001056s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001494s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001657s ]
+
+[ 2017-02-02T20:57:25+08:00 ] 127.0.0.1 /smile/indin.php?m=Hmin&c=Admin&a=homeSee&id=27
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001138s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001355s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001547s ]
+SQL: SHOW COLUMNS FROM `sml_users_sign` [ RunTime:0.6598s ]
+SQL: SELECT `sign_day` FROM `sml_users_sign` WHERE ( sign_uid=1001 AND sign_mon=201702 ) LIMIT 1   [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `sml_action` [ RunTime:0.1226s ]
+SQL: SELECT `id` FROM `sml_action` WHERE ( url='Admin/homeSee' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sml_group` [ RunTime:0.0943s ]
+SQL: SELECT `rules` FROM `sml_group` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sml_areas` [ RunTime:0.1310s ]
+SQL: SELECT * FROM `sml_areas` WHERE ( pid=0 )  [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `sml_setup` [ RunTime:0.0139s ]
+SQL: SELECT * FROM `sml_setup` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `sml_cate` [ RunTime:0.0151s ]
+SQL: SELECT * FROM `sml_cate` WHERE ( isdel=0 )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sml_news` [ RunTime:0.0142s ]
+SQL: SELECT * FROM `sml_news` WHERE ( isread = 0 )  [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sml_news` WHERE ( isread = 0 ) LIMIT 1   [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `sml_assets` [ RunTime:0.0105s ]
+SQL: SHOW COLUMNS FROM `sml_assets` [ RunTime:0.0139s ]
+SQL: SELECT * FROM `sml_assets` WHERE ( id=27 )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sml_users` [ RunTime:0.0122s ]
+SQL: SELECT `contact` FROM `sml_users` WHERE ( id=1007 ) LIMIT 1   [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `sml_article` [ RunTime:0.0138s ]
+SQL: SELECT `title` FROM `sml_article` WHERE ( pic=27 ) LIMIT 1   [ RunTime:0.0009s ]
+NOTIC: [2048] Only variables should be passed by reference E:\xampp\htdocs\smile\Application\Hmin\Controller\AdminController.class.php 第 111 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000105s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000442s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022582s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022789s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000853s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001017s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001476s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001635s ]
+

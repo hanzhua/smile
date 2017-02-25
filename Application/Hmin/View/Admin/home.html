@@ -1,0 +1,62 @@
+<include file="Public:style"/>
+<body style="background-color: #ffffff">
+    <div class="wrapper ">
+		<div class="row">
+		<div class="col-md-12">
+			<section class="panel">
+				<header class="panel-heading custom-tab ">
+				<ul class="nav nav-tabs">
+					<li class="active"><a href="#home1" data-toggle="tab"><i class="fa fa-home"></i> 我的桌面</a></li>
+					<li class=""><a href="#home2" data-toggle="tab">网站配置</a></li>
+					<li class=""><a href="#home3" data-toggle="tab">Picker浏览</a></li>
+					<li class=""><a href="#home4" data-toggle="tab">图片上传</a></li>
+				</ul>
+				</header>
+				<div class="panel-body text-center">
+					<div class="tab-content">
+					<div class="tab-pane active" id="home1">
+						<include file="Admin:home1"/>
+					</div>
+					<div class="tab-pane" id="home2">
+						<include file="Admin:adminer"/>
+					</div>
+					<div class="tab-pane" id="home3">
+						<include file="Admin:home3"/>
+					</div>
+					<div class="tab-pane" id="home4">
+						<form id="formPic" action="{:U('Admin/picker')}" onsubmit="return checkPic();" method="post" enctype="multipart/form-data">
+							<input type="file" id="picker" name="picker">
+							<!--<input type="submit" value="上传">-->
+						</form>
+					</div>
+				</div>
+				</div>
+			</section>
+		</div>
+		</div>
+    </div>
+	<include file="Public:script"/>
+</body>
+</html>
+<script>
+	var checkPic = function(){
+		$($('#picker').val()).change(function (){
+			return true;
+			alert(123);
+			exit;
+		});
+		return false;
+	}
+	var See = function (id) {
+		layer.open({
+			type: 2,
+			title: "图片详情",
+			area: ['610px', '458px'],
+			anim:6,
+			shade: 0.8, //透明度
+			shadeClose: true,
+			maxmin:true,
+			content: '{:U("Admin/homeSee")}&id='+id,
+		});
+	}
+</script>

@@ -1,0 +1,282 @@
+<include file="Public:style"/>
+
+<form class="navbar-form" action="{:U('Admin/linkSort')}" method="post"  id="listform">
+    <div class="panel panel-default">
+        <div class="panel-heading"><b>友情链接列表</b>
+            <a class="btn btn-success btn-sm pull-right" href="javascript:FriAdd();">
+                <i class="fa fa-plus-square"></i> 添加链接</a>
+        </div>
+        <table class="table table-hover table-condensed text-center">
+            <tr>
+                <td width="50px"><input class="btn btn-info btn-sm " type="submit" value="更新排序" /></td>
+		        <td>ID</td>
+                <td>链接地址</td>
+                <td width="350">链接介绍</td>
+                <td>状态</td>
+		        <td>添加时间</td>
+                <td>操  作</td>
+            </tr>
+            <foreach name="Friend" item="v">
+                <tr>
+                    <td><input style="width: 50px;" name="{$v.id}" value="{$v.sort}" type="text"></td>
+                    <td>{$v['id']}</td>
+                    <td><a href="{$v['url']}" class="" target="_blank">{$v['title']}</a></td>
+                    <td>{$v.content}</td>
+                    <td><div class="dropdown">
+                            <if condition="$v['isdel'] neq 0">
+                                <button class="btn btn-sm btn-danger dropdown-toggle" data-toggle="dropdown">
+                                    停用 <i class="caret"></i>
+                                </button>
+                            <else/>
+                                <button class="btn btn-sm btn-success dropdown-toggle" data-toggle="dropdown">
+                                    启用 <i class="caret"></i>
+                                </button>
+                            </if>
+                        <ul class="dropdown-menu" role="menu" style="width: 70px">
+                            <li role="presentation">
+                                <a tabindex="-1" role="menuitem" href="javascript:toIsdel({$v['id']},0);">显示</a></li>
+                            <li role="presentation">
+                                <a tabindex="-1" role="menuitem" href="javascript:toIsdel({$v['id']},1);">隐藏</a></li>
+                        </ul>
+                        </div>
+                    </td>
+		            <td width="110px">{$v['ctime']}</td>
+                    <td>
+                      <div class="btn-group"> 
+                        <a class="btn btn-primary btn-sm" href="javascript:void(0);" onclick="FriEdit({$v['id']});"><span class="fa fa-share-square-o"></span> 修改</a>
+                        <a class="btn btn-danger btn-sm" href="javascript:FriDel({$v['id']})"><span class="fa fa-trash-o"></span> 删除</a>
+                      </div></td>
+                </tr>
+            </foreach>
+            <tr>
+                <td class="pagelist " colspan="7">{$page}</td>
+            </tr>
+        </table>
+    </div>
+</form>
+<include file="Public:script"/>
+<script type="text/javascript">
+//    $(document).ready(function(){
+//        $('#listform').attr('method','POST');
+//        document.getElementById('#listform').setAttribute('method','POST');
+//    });
+function toIsdel(i,status){
+    location.href="{:U('Admin/linkIsdel')}&id="+i+"&isdel="+status;
+//    $.post("{:U('Hmin/linkIsdel')}",{id:i,isdel:status},function(rs){
+//        if(rs==1){
+//            layer.msg('操作成功',1000);
+//            location.reload();
+//        }else{
+//            layer.msg('操作失败！',1000);
+//        }
+//    },'json');
+}
+//  友情
+function FriAdd(){
+    layer.open({
+          type: 2,
+          title: '添加友情链接',
+          area: ['40%', '360px'],
+          shade: 0.8,
+          shadeClose: true,
+          content: '{:U("Admin/linkde")}'
+        });
+}
+
+function FriEdit(id){
+    layer.open({
+          type: 2,
+          title: '修改友情链接',
+          area: ['40%', '360px'],
+          shade: 0.8,
+          shadeClose: true,
+          content: '{:U("Admin/linkde")}&id='+id
+        });
+
+}
+
+function FriDel(id){
+    layer.confirm('确认要删除吗？', {icon: 3, title:'删除操作'}, function(index){
+           
+        $.post('{:U("Admin/linkdel")}',{id:id},function(rs){
+            if (rs ==1){
+                layer.msg("删除成功");
+                setTimeout(function(){
+                    window.location.reload();
+                    layer.close(index);
+                },1000);
+            }else{
+                layer.msg("删除失败");
+            }
+        },'json');
+    });
+}
+
+
+
+
+
+//搜索
+function changesearch(){  
+    
+}
+
+//全选
+$("#checkall").click(function(){ 
+  $("input[name='id[]']").each(function(){
+    if (this.checked) {
+      this.checked = false;
+    }
+    else {
+      this.checked = true;
+    }
+  });
+})
+
+//批量删除
+function DelSelect(){
+  var Checkbox=false;
+   $("input[name='id[]']").each(function(){
+    if (this.checked==true) {   
+    Checkbox=true;  
+    }
+  });
+  if (Checkbox){
+    var t=confirm("您确认要删除选中的内容吗？");
+    if (t==false) return false;   
+    $("#listform").submit();    
+  }
+  else{
+    alert("请选择您要删除的内容!");
+    return false;
+  }
+}
+
+//批量排序
+function sorts(){
+  var Checkbox=false;
+   $("input[name='id[]']").each(function(){
+    if (this.checked==true) {   
+    Checkbox=true;  
+    }
+  });
+  if (Checkbox){  
+    
+    $("#listform").submit();    
+  }
+  else{
+    alert("请选择要操作的内容!");
+    return false;
+  }
+}
+
+
+//批量首页显示
+function changeishome(o){
+  var Checkbox=false;
+   $("input[name='id[]']").each(function(){
+    if (this.checked==true) {   
+    Checkbox=true;  
+    }
+  });
+  if (Checkbox){
+    
+    $("#listform").submit();  
+  }
+  else{
+    alert("请选择要操作的内容!");    
+  
+    return false;
+  }
+}
+
+//批量推荐
+function changeisvouch(o){
+  var Checkbox=false;
+   $("input[name='id[]']").each(function(){
+    if (this.checked==true) {   
+    Checkbox=true;  
+    }
+  });
+  if (Checkbox){
+    
+    
+    $("#listform").submit();  
+  }
+  else{
+    alert("请选择要操作的内容!");  
+    
+    return false;
+  }
+}
+
+//批量置顶
+function changeistop(o){
+  var Checkbox=false;
+   $("input[name='id[]']").each(function(){
+    if (this.checked==true) {   
+    Checkbox=true;  
+    }
+  });
+  if (Checkbox){    
+    
+    $("#listform").submit();  
+  }
+  else{
+    alert("请选择要操作的内容!");    
+  
+    return false;
+  }
+}
+
+
+//批量移动
+function changecate(o){
+  var Checkbox=false;
+   $("input[name='id[]']").each(function(){
+    if (this.checked==true) {   
+    Checkbox=true;  
+    }
+  });
+  if (Checkbox){    
+    
+    $("#listform").submit();    
+  }
+  else{
+    alert("请选择要操作的内容!");
+    
+    return false;
+  }
+}
+
+//批量复制
+function changecopy(o){
+  var Checkbox=false;
+   $("input[name='id[]']").each(function(){
+    if (this.checked==true) {   
+    Checkbox=true;  
+    }
+  });
+  if (Checkbox){  
+    var i = 0;
+      $("input[name='id[]']").each(function(){
+        if (this.checked==true) {
+        i++;
+      }   
+      });
+    if(i>1){ 
+        alert("只能选择一条信息!");
+      $(o).find("option:first").prop("selected","selected");
+    }else{
+    
+      $("#listform").submit();    
+    } 
+  }
+  else{
+    alert("请选择要复制的内容!");
+    $(o).find("option:first").prop("selected","selected");
+    return false;
+  }
+}
+
+</script>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--如果使用bootstrap架构 这3个meta必须放在最前边-->
+    <title></title>
+    <include file="Public/link"/>
+    <style>.val{color: darkblue;}</style>
+</head>
+<body style="background-color: #F8F8F8;">
+<table class="table">
+    <tr>
+        <td rowspan="5">
+            <img src="{$Think.session.SML_USER.pic}" width="340" height="240" alt="用户头像">
+        </td>
+        <td>I D:</td>
+        <td class="val">{$Think.session.SML_USER.id}</td>
+    </tr>
+    <tr>
+        <td >用户：</td>
+        <td class="val">{$Think.session.SML_USER.gname}</td>
+    </tr>
+    <tr>
+        <td>昵称：</td>
+        <td class="val">{$Think.session.SML_USER.contact}</td>
+    </tr>
+    <tr>
+        <td>账号：</td>
+        <td class="val">{$Think.session.SML_TODAY.user}</td>
+    </tr>
+    <tr>
+        <td>积分：</td>
+        <td class="val">{$Think.session.SML_USER.score}</td>
+    </tr>
+</table>
+
+</body>
+</html>

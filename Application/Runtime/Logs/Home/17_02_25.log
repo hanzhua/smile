@@ -1,0 +1,123 @@
+[ 2017-02-25T20:03:59+08:00 ] 127.0.0.1 /smile/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.075373s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005960s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006724s ]
+SQL: SHOW COLUMNS FROM `sml_setup` [ RunTime:0.2808s ]
+SQL: SHOW COLUMNS FROM `sml_article` [ RunTime:0.0230s ]
+SQL: SHOW COLUMNS FROM `sml_article` [ RunTime:0.0588s ]
+SQL: SELECT `id`,`title`,`pic`,`indeximg` FROM `sml_article` WHERE ( isdel = 0 and indeximg = 1 ) ORDER BY sort asc  [ RunTime:0.4343s ]
+SQL: SHOW COLUMNS FROM `sml_assets` [ RunTime:0.0352s ]
+SQL: SHOW COLUMNS FROM `sml_assets` [ RunTime:0.0525s ]
+SQL: SELECT `id`,`domain`,`savepath`,`savename` FROM `sml_assets` WHERE (  id in (3) and IsDel = 0  )  [ RunTime:0.0094s ]
+SQL: SHOW COLUMNS FROM `sml_cate` [ RunTime:0.0735s ]
+NOTIC: [8] Undefined index: cid E:\xampp\htdocs\smile\Application\Home\Model\ArticleModel.class.php 第 19 行.
+SQL: SELECT `name` FROM `sml_cate` WHERE ( id = ''  ) LIMIT 1   [ RunTime:0.0054s ]
+SQL: SHOW COLUMNS FROM `sml_users` [ RunTime:0.0754s ]
+NOTIC: [8] Undefined index: uid E:\xampp\htdocs\smile\Application\Home\Model\ArticleModel.class.php 第 20 行.
+SQL: SELECT `contact` FROM `sml_users` WHERE ( id='' ) LIMIT 1   [ RunTime:0.0026s ]
+SQL: SELECT `id`,`domain`,`savepath`,`savename` FROM `sml_assets` WHERE (  id in (23) and IsDel = 0  )  [ RunTime:0.0015s ]
+NOTIC: [8] Undefined index: cid E:\xampp\htdocs\smile\Application\Home\Model\ArticleModel.class.php 第 19 行.
+SQL: SELECT `name` FROM `sml_cate` WHERE ( id = ''  ) LIMIT 1   [ RunTime:0.0170s ]
+NOTIC: [8] Undefined index: uid E:\xampp\htdocs\smile\Application\Home\Model\ArticleModel.class.php 第 20 行.
+SQL: SELECT `contact` FROM `sml_users` WHERE ( id='' ) LIMIT 1   [ RunTime:0.0023s ]
+SQL: SELECT `id`,`domain`,`savepath`,`savename` FROM `sml_assets` WHERE (  id in (7) and IsDel = 0  )  [ RunTime:0.0017s ]
+NOTIC: [8] Undefined index: cid E:\xampp\htdocs\smile\Application\Home\Model\ArticleModel.class.php 第 19 行.
+SQL: SELECT `name` FROM `sml_cate` WHERE ( id = ''  ) LIMIT 1   [ RunTime:0.0052s ]
+NOTIC: [8] Undefined index: uid E:\xampp\htdocs\smile\Application\Home\Model\ArticleModel.class.php 第 20 行.
+SQL: SELECT `contact` FROM `sml_users` WHERE ( id='' ) LIMIT 1   [ RunTime:0.0011s ]
+SQL: SELECT * FROM `sml_cate` WHERE ( isdel = 0 )  [ RunTime:0.0016s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sml_article` WHERE ( cid = '1'  ) LIMIT 1   [ RunTime:0.0264s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sml_article` WHERE ( cid = '2'  ) LIMIT 1   [ RunTime:0.0021s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sml_article` WHERE ( cid = '3'  ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sml_article` WHERE ( cid = '4'  ) LIMIT 1   [ RunTime:0.0263s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sml_article` WHERE ( cid = '5'  ) LIMIT 1   [ RunTime:0.0035s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sml_article` WHERE ( cid = '6'  ) LIMIT 1   [ RunTime:0.0029s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sml_article` WHERE ( cid = '7'  ) LIMIT 1   [ RunTime:0.0044s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sml_article` WHERE ( cid = '8'  ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sml_article` WHERE ( cid = '9'  ) LIMIT 1   [ RunTime:0.0011s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sml_article` WHERE ( cid = '10'  ) LIMIT 1   [ RunTime:0.0034s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sml_article` WHERE ( cid = '11'  ) LIMIT 1   [ RunTime:0.0098s ]
+SQL: SELECT `id`,`title`,`pic`,`viewnum`,`createtime` FROM `sml_article` WHERE ( isdel=0 ) ORDER BY createtime desc LIMIT 3   [ RunTime:0.0022s ]
+SQL: SELECT `id`,`domain`,`savepath`,`savename` FROM `sml_assets` WHERE (  id in (13) and IsDel = 0  )  [ RunTime:0.0012s ]
+NOTIC: [8] Undefined index: cid E:\xampp\htdocs\smile\Application\Home\Model\ArticleModel.class.php 第 19 行.
+SQL: SELECT `name` FROM `sml_cate` WHERE ( id = ''  ) LIMIT 1   [ RunTime:0.0038s ]
+NOTIC: [8] Undefined index: uid E:\xampp\htdocs\smile\Application\Home\Model\ArticleModel.class.php 第 20 行.
+SQL: SELECT `contact` FROM `sml_users` WHERE ( id='' ) LIMIT 1   [ RunTime:0.0029s ]
+SQL: SELECT `id`,`domain`,`savepath`,`savename` FROM `sml_assets` WHERE (  id in (15) and IsDel = 0  )  [ RunTime:0.0067s ]
+NOTIC: [8] Undefined index: cid E:\xampp\htdocs\smile\Application\Home\Model\ArticleModel.class.php 第 19 行.
+SQL: SELECT `name` FROM `sml_cate` WHERE ( id = ''  ) LIMIT 1   [ RunTime:0.0218s ]
+NOTIC: [8] Undefined index: uid E:\xampp\htdocs\smile\Application\Home\Model\ArticleModel.class.php 第 20 行.
+SQL: SELECT `contact` FROM `sml_users` WHERE ( id='' ) LIMIT 1   [ RunTime:0.0014s ]
+SQL: SELECT `id`,`domain`,`savepath`,`savename` FROM `sml_assets` WHERE (  id in (12) and IsDel = 0  )  [ RunTime:0.0019s ]
+NOTIC: [8] Undefined index: cid E:\xampp\htdocs\smile\Application\Home\Model\ArticleModel.class.php 第 19 行.
+SQL: SELECT `name` FROM `sml_cate` WHERE ( id = ''  ) LIMIT 1   [ RunTime:0.0014s ]
+NOTIC: [8] Undefined index: uid E:\xampp\htdocs\smile\Application\Home\Model\ArticleModel.class.php 第 20 行.
+SQL: SELECT `contact` FROM `sml_users` WHERE ( id='' ) LIMIT 1   [ RunTime:0.0025s ]
+SQL: SELECT * FROM `sml_article` WHERE ( isdel = 0 AND viewnum > 100  ) ORDER BY rand() LIMIT 4   [ RunTime:0.0883s ]
+SQL: SELECT `id`,`domain`,`savepath`,`savename` FROM `sml_assets` WHERE (  id in (3) and IsDel = 0  )  [ RunTime:0.0044s ]
+SQL: SELECT `name` FROM `sml_cate` WHERE ( id = '5'  ) LIMIT 1   [ RunTime:0.0011s ]
+SQL: SELECT `contact` FROM `sml_users` WHERE ( id='1002' ) LIMIT 1   [ RunTime:0.0035s ]
+SQL: SELECT `id`,`domain`,`savepath`,`savename` FROM `sml_assets` WHERE (  id in (10) and IsDel = 0  )  [ RunTime:0.0016s ]
+SQL: SELECT `name` FROM `sml_cate` WHERE ( id = '2'  ) LIMIT 1   [ RunTime:0.0129s ]
+SQL: SELECT `contact` FROM `sml_users` WHERE ( id='1002' ) LIMIT 1   [ RunTime:0.0024s ]
+SQL: SELECT `id`,`domain`,`savepath`,`savename` FROM `sml_assets` WHERE (  id in (4) and IsDel = 0  )  [ RunTime:0.0013s ]
+SQL: SELECT `name` FROM `sml_cate` WHERE ( id = '2'  ) LIMIT 1   [ RunTime:0.0210s ]
+SQL: SELECT `contact` FROM `sml_users` WHERE ( id='1002' ) LIMIT 1   [ RunTime:0.0159s ]
+SQL: SELECT `id`,`domain`,`savepath`,`savename` FROM `sml_assets` WHERE (  id in (7) and IsDel = 0  )  [ RunTime:0.0009s ]
+SQL: SELECT `name` FROM `sml_cate` WHERE ( id = '11'  ) LIMIT 1   [ RunTime:0.0011s ]
+SQL: SELECT `contact` FROM `sml_users` WHERE ( id='1002' ) LIMIT 1   [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `sml_frilink` [ RunTime:0.0159s ]
+SQL: SHOW COLUMNS FROM `sml_cate` [ RunTime:0.0348s ]
+SQL: SELECT `name` FROM `sml_cate` WHERE ( url like '%Index%'  ) LIMIT 1   [ RunTime:0.0031s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sml_article` WHERE ( isdel=0 ) LIMIT 1   [ RunTime:0.0015s ]
+SQL: SELECT * FROM `sml_article` WHERE ( isdel=0 ) ORDER BY istop desc LIMIT 0,8   [ RunTime:0.0264s ]
+SQL: SELECT `id`,`domain`,`savepath`,`savename` FROM `sml_assets` WHERE (  id in (3) and IsDel = 0  )  [ RunTime:0.0118s ]
+SQL: SELECT `name` FROM `sml_cate` WHERE ( id = '5'  ) LIMIT 1   [ RunTime:0.0060s ]
+SQL: SELECT `contact` FROM `sml_users` WHERE ( id='1002' ) LIMIT 1   [ RunTime:0.0013s ]
+SQL: SELECT `id`,`domain`,`savepath`,`savename` FROM `sml_assets` WHERE (  id in (25) and IsDel = 0  )  [ RunTime:0.0036s ]
+SQL: SELECT `name` FROM `sml_cate` WHERE ( id = '6'  ) LIMIT 1   [ RunTime:0.1032s ]
+SQL: SELECT `contact` FROM `sml_users` WHERE ( id='1001' ) LIMIT 1   [ RunTime:0.0014s ]
+SQL: SELECT `id`,`domain`,`savepath`,`savename` FROM `sml_assets` WHERE (  id in (10) and IsDel = 0  )  [ RunTime:0.0054s ]
+SQL: SELECT `name` FROM `sml_cate` WHERE ( id = '2'  ) LIMIT 1   [ RunTime:0.0028s ]
+SQL: SELECT `contact` FROM `sml_users` WHERE ( id='1002' ) LIMIT 1   [ RunTime:0.0023s ]
+SQL: SELECT `id`,`domain`,`savepath`,`savename` FROM `sml_assets` WHERE (  id in (23) and IsDel = 0  )  [ RunTime:0.0027s ]
+SQL: SELECT `name` FROM `sml_cate` WHERE ( id = '8'  ) LIMIT 1   [ RunTime:0.0014s ]
+SQL: SELECT `contact` FROM `sml_users` WHERE ( id='1001' ) LIMIT 1   [ RunTime:0.0026s ]
+SQL: SELECT `id`,`domain`,`savepath`,`savename` FROM `sml_assets` WHERE (  id in (6) and IsDel = 0  )  [ RunTime:0.0044s ]
+SQL: SELECT `name` FROM `sml_cate` WHERE ( id = '1'  ) LIMIT 1   [ RunTime:0.0203s ]
+SQL: SELECT `contact` FROM `sml_users` WHERE ( id='1002' ) LIMIT 1   [ RunTime:0.0018s ]
+SQL: SELECT `id`,`domain`,`savepath`,`savename` FROM `sml_assets` WHERE (  id in (4) and IsDel = 0  )  [ RunTime:0.0025s ]
+SQL: SELECT `name` FROM `sml_cate` WHERE ( id = '2'  ) LIMIT 1   [ RunTime:0.0021s ]
+SQL: SELECT `contact` FROM `sml_users` WHERE ( id='1002' ) LIMIT 1   [ RunTime:0.0013s ]
+SQL: SELECT `id`,`domain`,`savepath`,`savename` FROM `sml_assets` WHERE (  id in (9) and IsDel = 0  )  [ RunTime:0.0011s ]
+SQL: SELECT `name` FROM `sml_cate` WHERE ( id = '10'  ) LIMIT 1   [ RunTime:0.0013s ]
+SQL: SELECT `contact` FROM `sml_users` WHERE ( id='1002' ) LIMIT 1   [ RunTime:0.0017s ]
+SQL: SELECT `id`,`domain`,`savepath`,`savename` FROM `sml_assets` WHERE (  id in (7) and IsDel = 0  )  [ RunTime:0.0009s ]
+SQL: SELECT `name` FROM `sml_cate` WHERE ( id = '11'  ) LIMIT 1   [ RunTime:0.0017s ]
+SQL: SELECT `contact` FROM `sml_users` WHERE ( id='1002' ) LIMIT 1   [ RunTime:0.0013s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.002271s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002500s ]
+NOTIC: [8] Undefined index: child E:\xampp\htdocs\smile\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 69 行.
+NOTIC: [8] Undefined index: child E:\xampp\htdocs\smile\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 70 行.
+NOTIC: [8] Undefined index: child E:\xampp\htdocs\smile\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 72 行.
+NOTIC: [8] Undefined index: child E:\xampp\htdocs\smile\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 69 行.
+NOTIC: [8] Undefined index: child E:\xampp\htdocs\smile\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 70 行.
+NOTIC: [8] Undefined index: child E:\xampp\htdocs\smile\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 72 行.
+NOTIC: [8] Undefined index: child E:\xampp\htdocs\smile\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 69 行.
+NOTIC: [8] Undefined index: child E:\xampp\htdocs\smile\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 70 行.
+NOTIC: [8] Undefined index: child E:\xampp\htdocs\smile\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 72 行.
+NOTIC: [8] Undefined index: user E:\xampp\htdocs\smile\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 86 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.769610s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.770208s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.052241s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.052689s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.007408s ]
+INFO: [ app_end ] --END-- [ RunTime:0.007902s ]
+

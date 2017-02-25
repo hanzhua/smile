@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <include file="Public:style"></include>
+    <style>
+        table{color: #65cea7;}
+        .url{width: 575px}
+        .left{padding-left:10px;position: relative}
+        input{height: 28px;font-size:16px;}
+    </style>
+</head>
+<body>
+<section>
+    <foreach name="img" item="v">
+    <table>
+        <tr>
+            <td rowspan="10">
+                <img src="{$v.savepath}{$v.savename}" alt="" width="380" height="300">
+            </td>
+            <td class="left">IMAGE NAME:</td>
+        </tr>
+        <tr>
+            <td class="left"><input readonly type="text" value="{$v.name}"></td>
+        </tr>
+        <tr>
+            <td class="left">CREATE TIME:</td>
+        </tr>
+        <tr>
+            <td class="left"><input readonly type="text" value="{$v.createtime}"></td>
+        </tr>
+        <tr>
+            <td class="left">IMAGE TYPE:</td>
+        </tr>
+        <tr>
+            <td class="left"><input readonly type="text" value="{$v.type}"></td>
+        </tr>
+        <tr>
+            <td class="left">FILE AUTHOR:</td>
+        </tr>
+        <tr>
+            <td class="left"><input readonly type="text" value="{$v.author}"></td>
+        </tr>
+        <tr>
+            <td class="left">ABOUT ARTICLE:</td>
+        </tr>
+        <tr>
+            <td class="left"><input readonly type="text" value="{$v.title}"></td>
+        </tr>
+        <tr>
+            <td class="left"><b color="#000">图片的绝对路径:</b></td>
+        </tr>
+        <tr>
+            <td class="left" colspan="3"><input readonly class="url" type="text" value="{$v.domain}{$v.savepath}{$v.savename}"></td>
+        </tr>
+    </table>
+    </foreach>
+</section>
+</body>
+</html>

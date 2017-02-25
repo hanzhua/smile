@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!--如果使用bootstrap架构 这3个meta必须放在最前边-->
+	<title>搜索 - 画中浅笑博客</title>
+	<!--<include file="Public/link"/>-->
+	<style type="text/css">
+	    .container-fluid{margin-top: 30px;color:#ccc;}
+	</style>
+    </head>
+    <body>
+    <include file="Public/dotop"/>
+    <div class="container-fluid">
+	<div class="container">
+	    <!-- left 左边文章栏 -->
+	    <div class="col-md-9" >
+		<foreach name="content" item="v">
+			<div class="panel">
+				<div class="panel-heading">
+				<span style="font-size: 22px;"><a href="javascript:void(0);" onclick="ArtiContent({$v.id});">{$v.title}</a></span>
+				<span class="span" style="color:#c0c0c0;margin-right: 10px;">
+					<p class=" pull-right">作者：{$v.uname} 发文时间：{$v.createtime}</p>
+				</span>
+				</div>
+		    <div class="page-heading" style="background-color:;position: relative;margin-top:2px;padding-top: 2px;">
+			<div class="row">
+			    <div class="col-sm-3">
+					<a title="{$v.title}" href="javascript:void(0);" onclick="ArtiContent({$v.id});">
+					<img src="{$v['picurl'][0]['src']}" width="180" height="100"/></a>
+				</div>
+			    <div class="col-sm-9">
+				<font style="color:#c0cfdd;"><h4>{$v.desc|msubstr=0,140}</h4></font>
+			    </div>
+			</div>
+		    </div>
+			</div>
+		</foreach>
+		<hr>
+		<div class="row"style="heigth:25px;margin: 0px 3px 5px;padding: 5px 3px;">
+		    <div class="pull-left" style="color:#ccc;">
+			<b>注：</b>本文章来自 <a href="http://localhost/smile"><b>画中浅笑博客</b></a> 希望对大家有所帮助。
+		    </div>
+		</div>
+	    </div>
+	    <!-- right 侧边栏目 -->
+	    <div class="col-md-3" id="">
+		<div class="row" id="">
+		    <div class="page-header" id="">
+			<h3>最新文章</h3>
+		    </div>
+		    <div class=" " id="">
+			<foreach name="zuixin" item="v">
+			    
+			</foreach>
+		    </div>
+		</div>
+	    </div>
+	</div>
+    </div>
+    <!--评论结束-->
+    <include file="Public/doter"/>
+    <include file="Public/script"/>

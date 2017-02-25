@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <include file="Public/link"/>
+</head>
+<body style="background-color: #fff;">
+<section>
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <span class="fa fa-list"></span><strong> 权限栏列表</strong>
+            <a class="btn btn-success btn-xs pull-right" href="javascript:ActionAdd(0,'add');">
+                <i class="fa fa-plus-circle"></i>
+                添加主菜单
+            </a> &nbsp;
+            <a class="btn btn-success btn-xs pull-right" href="{:U('Rule/group')}">
+                <i class="fa fa-plus-circle"></i>
+                分配权限
+            </a>
+        </div>
+    </div>
+    <table class="table table-hover table-bordered table-condensed text-center">
+        <tr style="background-color: #F5F5F5">
+            <td width="70"></td>
+            <td width="80">序号</td>
+            <td>功能名称</td>
+            <td>控制器/方法</td>
+            <td width="256">操作</td>
+        </tr>
+        <volist name="actionList" id="vo" key="i">
+            <tr id="tr_0_{$i}" class="tr_0" style="background-color: #FFE69F">
+                <td align="left">
+                    <span class="fa fa-minus-circle" onclick="javascript:loadChildTree(this,{$vo['id']},'tr_0_{$i}')" style="cursor: pointer"></span>----
+                </td>
+                <td align="left">{$vo.id}</td>
+                <th><b>{$vo.name}</b> </th>
+                <th>{$vo['url']}</th>
+                <td>
+                    <div class="button-group"> 
+                        <a class="btn btn-success btn-xs" href="javascript:ActionAdd({$vo['id']},'add');"><span class="fa fa-plus-circle"></span> 添加子菜单</a>
+                        <a class="btn btn-warning btn-xs" href="javascript:ActionEdit({$vo['id']}, 'edit',0);"><span class="fa fa-edit"></span> 修改</a>
+                        <a class="btn btn-danger btn-xs" href="javascript:ActionDel({$vo['id']});"><span class="fa fa-trash-o"></span> 删除</a>
+                    </div>
+                </td>
+            </tr>
+            <volist name="vo['child']" id="c" key="i2">
+                <tr id="tr_0_{$i}_{$i2}" class="tr_0_{$i}" style="background-color: #fff5d4">
+                    <td align="left">
+                        --<span class="fa fa-minus-circle" onclick="javascript:loadChildTree(this,{$c['id']},'tr_0_{$i}_{$i2}')" style="cursor: pointer"></span>--
+                    </td>
+                    <td align="left">{$c.id} </td>
+                    <th><span style="margin-left:30px;">|— {$c.name}</span> </th>
+                    <th>{$c['url']}</th>
+                    <td><div class="button-group"> 
+                            <a class="btn btn-success btn-xs" href="javascript:ActionAdd({$c['id']},'add');"><span class="fa fa-plus-circle"></span> 添加子菜单</a>
+                            <a class="btn btn-warning btn-xs" href="javascript:ActionEdit({$c['id']}, 'edit', '2');"><span class="fa fa-edit"></span> 修改</a>
+                            <a class="btn btn-danger btn-xs" href="javascript:ActionDel({$c['id']});"><span class="fa fa-trash-o"></span> 删除</a>
+                        </div>
+                    </td>
+                </tr>
+                <volist name="c['child']" id="cc" key="i3">
+                    <tr id="tr_0_{$i}_{$i2}_{$i3}" class="tr_0_{$i}_{$i2}">
+                        <td align="left">
+                            ----<span class="fa fa-minus-circle" onclick="javascript:loadChildTree(this,{$c['id']},'tr_0_{$i}_{$i2}_{$i3}')" style="cursor: pointer"></span>
+                        </td>
+                        <td align="left"> {$cc.id} </td>
+                        <th><span style="margin-left:80px;">|— {$cc.name}</span> </th>
+                        <th>{$cc['url']}</th>
+                        <td><div class="button-group">
+                                <a class="btn btn-default btn-xs disabled " ><span class="fa fa-plus-circle "></span> 添加子菜单</a>
+                                <a class="btn btn-warning btn-xs" href="javascript:ActionEdit({$cc['id']}, 'edit', '2');"><span class="fa fa-edit"></span> 修改</a>
+                                <a class="btn btn-danger btn-xs" href="javascript:ActionDel({$cc['id']});"><span class="fa fa-trash-o"></span> 删除</a>
+                            </div>
+                        </td>
+                    </tr>
+                </volist>
+            </volist>
+        </volist>
+    </table>
+<include file="Public/script"/>
+<script type="text/javascript">
+function ActionAdd(id,type){
+    layer.open({
+        type: 2,
+        title: "添加菜单",
+        area: ['50%', '286px'],
+        shade: 0.8,
+        shadeClose: true,
+        content: '{:U("Rule/actionAdd")}&id='+id+'&add='+type,
+    });
+}
+
+function ActionEdit(id, type, mark){
+    layer.open({
+        type: 2,
+        title: "修改菜单",
+        area: ['50%', '338px'],
+        shade: 0.8, //透明度
+        shadeClose: true,
+        content: '{:U("Rule/actionde")}&id='+id + '&type='+type + '&mark='+mark,
+    });
+}
+    //单个删除
+    function ActionDel(id){
+	layer.confirm("您确定要删除吗?",{icon:3,btn:["删除","取消"],title:'删除菜单'},function(index){
+        var loading = layer.msg("正在退出，请稍后...",{icon:16,time:60000});
+	    $.post("{:U('Rule/actiondel')}",{id:id},function(rs){
+            if(rs==0){
+                layer.close(loading);
+                layer.msg("该菜单下有子菜单，无法删除！");
+            }else if(rs==1){
+                layer.close(loading);
+                setTimeout(function(){
+                    layer.msg("删除成功！");
+                    window.location.reload();
+                },1000);
+            }else{
+                layer.close(loading);
+                layer.msg("删除失败！");
+            }
+	    },'json');
+	});
+    }
+
+//全选
+    $("#checkall").click(function(){
+	$("input[name='id[]']").each(function(){
+	    if (this.checked) {
+		this.checked = false;
+	    }
+	    else {
+		this.checked = true;
+	    }
+	});
+    })
+
+//批量删除
+            function DelSelect(){
+            var Checkbox = false;
+                    $("input[name='id[]']").each(function(){
+            if (this.checked == true) {
+            Checkbox = true;
+            }
+            });
+                    if (Checkbox){
+            var t = confirm("您确认要删除选中的内容吗？");
+                    if (t == false) return false;
+                    $("#listform").submit();
+            }
+            else{
+            alert("请选择您要删除的内容!");
+                    return false;
+            }
+            }
+
+//批量排序
+    function sorts(){
+    var Checkbox = false;
+            $("input[name='id[]']").each(function(){
+    if (this.checked == true) {
+    Checkbox = true;
+    }
+    });
+            if (Checkbox){
+
+    $("#listform").submit();
+    }
+    else{
+    alert("请选择要操作的内容!");
+            return false;
+    }
+    }
+
+
+//批量首页显示
+    function changeishome(o){
+    var Checkbox = false;
+            $("input[name='id[]']").each(function(){
+    if (this.checked == true) {
+    Checkbox = true;
+    }
+    });
+            if (Checkbox){
+
+    $("#listform").submit();
+    }
+    else{
+    alert("请选择要操作的内容!");
+            return false;
+    }
+    }
+
+//批量推荐
+    function changeisvouch(o){
+    var Checkbox = false;
+            $("input[name='id[]']").each(function(){
+    if (this.checked == true) {
+    Checkbox = true;
+    }
+    });
+            if (Checkbox){
+
+
+    $("#listform").submit();
+    }
+    else{
+    alert("请选择要操作的内容!");
+            return false;
+    }
+    }
+
+//批量置顶
+    function changeistop(o){
+    var Checkbox = false;
+            $("input[name='id[]']").each(function(){
+    if (this.checked == true) {
+    Checkbox = true;
+    }
+    });
+            if (Checkbox){
+
+    $("#listform").submit();
+    }
+    else{
+    alert("请选择要操作的内容!");
+            return false;
+    }
+    }
+
+
+//批量移动
+    function changecate(o){
+    var Checkbox = false;
+            $("input[name='id[]']").each(function(){
+    if (this.checked == true) {
+    Checkbox = true;
+    }
+    });
+            if (Checkbox){
+
+    $("#listform").submit();
+    }
+    else{
+    alert("请选择要操作的内容!");
+            return false;
+    }
+    }
+
+//批量复制
+    function changecopy(o){
+    var Checkbox = false;
+            $("input[name='id[]']").each(function(){
+    if (this.checked == true) {
+    Checkbox = true;
+    }
+    });
+            if (Checkbox){
+    var i = 0;
+            $("input[name='id[]']").each(function(){
+    if (this.checked == true) {
+    i++;
+    }
+    });
+            if (i > 1){
+    alert("只能选择一条信息!");
+            $(o).find("option:first").prop("selected", "selected");
+    } else{
+
+    $("#listform").submit();
+    }
+    }
+    else{
+    alert("请选择要复制的内容!");
+            $(o).find("option:first").prop("selected", "selected");
+            return false;
+    }
+    }
+
+</script>

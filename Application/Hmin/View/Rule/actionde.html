@@ -1,0 +1,57 @@
+<include file="Public/style"/>
+
+<form method="post" onsubmit="return ActionMake();" >
+	<table class="table text-center table-responsive bg-white" style="background-color:#fff;color: #0000cc;">
+		<!-- Edit PID!=0 -->
+		<if condition="$edit eq 'edit'">
+			<tr>
+				<td>上级功能：</td>
+				<td align="left"><input  type="text" style="width: 260px" value="{$pname}" id='pname' name="pname"readonly></td>
+			</tr>
+			<tr><input type="hidden" id="id" name="id" value="{$data.id}">
+				<td>本级功能：</td>
+				<td align="left"><input  type="text" style="width: 260px" value="{$data['name']}" id='name' name="name"required/></td>
+			</tr>
+			<tr>
+				<td>功能方法：</td>
+				<td align="left"><input type="text" style="width: 260px" value="{$data['url']}" name="url" id="url"required placeholder="控制器/方法名 例如:Index/index"
+				<if condition="$mark eq 0">readonly</if>
+				></td>
+			</tr>
+			<tr>
+				<td>菜单图标：</td>
+				<td align="left"><input  type="text" style="width: 260px" value="{$data['icon']}" id='icon' name="icon" placeholder="例如：fa-user 输入user即可"/></td>
+			</tr>
+		</if>
+
+		<tr>
+			<td colspan="2">
+				<input id="submit" type="submit" class="btn btn-info" value="提交" />&nbsp;
+				<input  type="reset" class="btn btn-warning" value="重置" />
+			</td>
+		</tr>
+	</table>
+</form>
+<include file="Public/script"/>
+<script type="text/javascript">
+    //菜单栏管理
+    function ActionMake(){
+		var data = {};
+		data.id   = $('#id').val();
+		data.name = $('#name').val();
+		data.url  = $('#url').val();
+		data.icon = $('#icon').val();
+        SML.submit('submit',"正在提交...");
+        $.post("{:U('Rule/actionde')}",{data:data},function(rs){
+			if(rs==1){
+				layer.msg('操作成功!',{icon:1,time:2000}, function () {
+					parent.window.location.reload();
+				});
+			}else{
+				parent.layer.close(index);
+				layer.msg("操作失败!");
+			}
+        });
+		return false;
+    }
+</script>

@@ -1,0 +1,45 @@
+
+<form action="" method="post" onsubmit="return Areasdo();">
+    <table>
+        <tr><input type="text" id="id" name="id" value="{$data.id}">
+            <th>地区名称<font color='red'>*</font>：</th>
+            <td><input type="text" id="areaName" name="areaName" value="{$data.areaname}" required></td>
+        </tr>
+        <tr>
+            <th>是否显示 ：</th>
+            <td>
+                <input type="radio" name="isShow" class="ipt" value="1" <if condition="$data.isshow eq 1">checked</if>>显示
+                <input type="radio" name="isShow" class="ipt" value="0" <if condition="$data.isshow eq 0">checked</if>>隐藏
+            </td>
+        </tr>
+        <tr>
+            <th>排序字母 ：</th>
+            <td><input type="text" id="areaKey" name="areaKey" value="{$data.areakey}"></td>
+        </tr>
+        <tr>
+            <th width='100'>排列序号<font color='red'>*</font>：</th>
+            <td><input type='text' id='areaSort' name='areaSort' style='width:60px;' maxLength='10' value='0'/></td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <input id="submit" class="btn btn-xs" type="submit" value="保存">&nbsp;
+                <a class="btn btn-xs" href="javascript:void(0);" onclick="history.go(-1);">返回</a>&nbsp;
+            </td>
+        </tr>
+    </table>
+</form>
+<script type="text/javascript">
+    var Areasdo = function () {
+        SML.submit(submit);
+        $.post("{:U('Areas/AreasAdd')}",{}, function (rs) {
+            if(rs==1){
+                layer.msg("操作成功!",{icon:1,time:2000}, function () {
+                    parent.window.location.reload();
+                });
+            }else{
+                layer.msg("操作失败!",{icon:2,time:2000})
+            }
+        });
+        return false;
+    }
+</script>

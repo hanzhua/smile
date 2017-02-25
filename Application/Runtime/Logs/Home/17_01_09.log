@@ -1,0 +1,144 @@
+[ 2017-01-09T22:34:02+08:00 ] 127.0.0.1 /smile/Public/layer/skin/layer.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003796s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001956s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002128s ]
+ERR: 无法加载控制器:Http:
+
+[ 2017-01-09T22:34:02+08:00 ] 127.0.0.1 /smile/Public/layer/layer/common.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001366s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001961s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002122s ]
+ERR: 无法加载控制器:Http:
+
+[ 2017-01-09T22:34:02+08:00 ] 127.0.0.1 /smile/Public/layer/jquery-2.1.1.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001266s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002011s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002188s ]
+ERR: 无法加载控制器:Http:
+
+[ 2017-01-09T22:34:02+08:00 ] 127.0.0.1 /smile/Public/layer/layer/select.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001125s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001915s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002080s ]
+ERR: 无法加载控制器:Http:
+
+[ 2017-01-09T22:34:02+08:00 ] 127.0.0.1 /smile/Public/layer/layer/layer.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001370s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003710s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003929s ]
+ERR: 无法加载控制器:Http:
+
+[ 2017-01-09T22:34:02+08:00 ] 127.0.0.1 /smile/Public/layer/layer/common.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001312s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002086s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002258s ]
+ERR: 无法加载控制器:Http:
+
+[ 2017-01-09T22:34:02+08:00 ] 127.0.0.1 /smile/Public/layer/layer/layer.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001669s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003931s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004152s ]
+ERR: 无法加载控制器:Http:
+
+[ 2017-01-09T22:34:02+08:00 ] 127.0.0.1 /smile/Public/layer/layer/select.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000186s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001581s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002185s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002387s ]
+ERR: 无法加载控制器:Http:
+
+[ 2017-01-09T22:34:22+08:00 ] 127.0.0.1 /smile/Public/layer/skin/layer.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001320s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001384s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001563s ]
+ERR: 无法加载控制器:Http:
+
+[ 2017-01-09T22:34:23+08:00 ] 127.0.0.1 /smile/Public/layer/layer/common.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001327s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001519s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001686s ]
+ERR: 无法加载控制器:Http:
+
+[ 2017-01-09T22:34:23+08:00 ] 127.0.0.1 /smile/Public/layer/layer/select.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001227s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003858s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004075s ]
+ERR: 无法加载控制器:Http:
+
+[ 2017-01-09T22:34:23+08:00 ] 127.0.0.1 /smile/Public/layer/layer/layer.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002342s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.020969s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.021139s ]
+ERR: 无法加载控制器:Http:
+
+[ 2017-01-09T22:34:23+08:00 ] 127.0.0.1 /smile/Public/layer/jquery-2.1.1.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001520s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.007794s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008081s ]
+ERR: 无法加载控制器:Http:
+
+[ 2017-01-09T22:34:23+08:00 ] 127.0.0.1 /smile/Public/layer/layer/common.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001365s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002042s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002214s ]
+ERR: 无法加载控制器:Http:
+
+[ 2017-01-09T22:34:23+08:00 ] 127.0.0.1 /smile/Public/layer/layer/layer.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001128s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003316s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003506s ]
+ERR: 无法加载控制器:Http:
+
+[ 2017-01-09T22:34:23+08:00 ] 127.0.0.1 /smile/Public/layer/layer/select.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001227s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002942s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003159s ]
+ERR: 无法加载控制器:Http:
+

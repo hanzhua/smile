@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--如果使用bootstrap架构 这3个meta必须放在最前边-->
+    <title>个人设置 -- 画中浅笑博客</title>
+<include file="Public/link"/>
+<style type="text/css">
+    .cropit-preview {
+	background-color: #f8f8f8;
+	background-size: cover;
+	border: 1px solid #ccc;
+	border-radius: 3px;
+	margin-top: 7px;
+	width: 220px;height: 140px;
+    }
+    .lr{width: 100px;}
+    .image-size-label {margin-top: 10px;}
+</style>
+</head>
+<body style="background-color: #fff;">
+    <!--修改密码 start-->
+    <div class="col-md-4">
+	<div class="page-header"><h3>修改密码</h3></div>
+	<section class="wrapper">
+	    <form class="well" id="formpwd" action="" method="post" onsubmit="return UPwd();">
+		<table class="table text-center">
+		    <tr>
+			<td><label for="pwd">新密码：</label></td>
+			<td><input type="password" class="" name="pwd" id="pwd" placeholder="" ></td>
+		    </tr>
+		    <tr>
+			<td><label for="pwd1">再次确认：</label></td>
+			<td><input type="password" class="" name="pwd1" id="pwd1" placeholder=""></td>
+		    </tr>
+		    <tr>
+			<td colspan="2">
+			    <input type="submit" class="btn" value="提交">&nbsp;&nbsp;
+			    <input type="reset" class="btn" value="重置">
+			</td>
+		    </tr>
+		</table>
+	    </form>
+	</section>
+    </div>
+<!--修改密码 end-->
+<!--头像上传 strat-->
+    <div class="col-md-4">
+	<div class="page-header"><h3>头像上传</h3></div>
+	<section class="wrapper"><!--  onsubmit="return UpFile();" -->
+	    <table class="table">
+		<tr>
+		    <td colspan="2">
+		    <div class="ibox-content">
+			<div class="form-group">
+			    <div class="image-editor">
+				<input type="file" value="./Uploads/assets/{$Think.session.SML_USER.pic}" class="cropit-image-input">
+				<div class="cropit-preview"></div>
+				<div class="image-size-label">放大缩小</div>
+				<input type="range" class="cropit-image-zoom-input">
+				<a class="btn lr rotate-ccw">左侧旋转</a>
+				<a class="btn lr rotate-cw">右侧旋转</a>
+			    </div>
+			</div>
+		    </div>
+		    </td>
+		</tr>
+		<tr>
+		    <td colspan="2" align="center">
+			<input class="btn export" type="submit"value="确定上传">
+		    </td>
+		</tr>
+	    </table>
+	</section>
+    </div>
+<!--头像上传 end-->
+<!--完善个人资料 start-->
+<div class="col-md-4">
+    <div class="page-header">
+	<h3>完善资料 <span id="input-email" class="badge badge-success">new</span></h3>
+    </div>
+    <section class="wrapper" >
+	<form id="form1" class="" action="{:U('Infor/messagedo')}" method="post" onsubmit="">
+	<table class="table text-center">
+		<tr>
+			<th>当前头像：</th><td></td>
+		</tr>
+		<tr>
+			<td colspan="2"><img src="{$Think.session.SML_USER.pic}" width="100%"></td>
+		</tr>
+	    <tr>
+			<th><label for="con" >设置昵称</label></th>
+			<td><input type="text" name="contact" id="con" value="{$Think.session.SML_USER.contact}" required></td>
+	    </tr>
+	    <tr>
+			<th><label for="tel" title="手机号可登陆">绑定电话</label></th>
+			<td><input type="number" name="tel" id="tel" value="{$Think.session.SML_USER.tel}" required></td>
+	    </tr>
+	    <tr>
+			<th><label for="qq" title="QQ可登陆">绑定 Q Q</label></th>
+			<td><input type="number" name="qq" id="qq" value="{$Think.session.SML_USER.qq}" required></td>
+	    </tr>
+	    <tr>
+			<th><label for="email" class="" title="方便找回密码">关联邮箱</label></th>
+			<td><input type="email" class="input-email" name="email" id="email" value="{$Think.session.SML_USER.email}" required></td>
+	    </tr>
+	    <tr>
+			<td colspan="2">
+				<input type="submit" id="submit" class="btn" value="提交">&nbsp;&nbsp;
+				<input type="reset" class="btn" value="重置">
+			</td>
+	    </tr>
+	</table>
+    </form>
+    </section>
+</div>
+<!--完善个人资料 end-->
+
+<include file="Public/script"/>
+<script src="__PUBLIC__/bs/js/pic_cut/jquery.cropit.js"></script>
+<script type="text/javascript">
+    $(function(){
+		//========================================
+		var email = $('.input-email').val();
+		if(email!==""){
+			$('#input-email').hide();
+		}
+		//========================================
+    });
+    $(function() {
+	$('.image-editor').cropit();
+	$('.rotate-cw').click(function(){$('.image-editor').cropit('rotateCW');});
+	$('.rotate-ccw').click(function(){$('.image-editor').cropit('rotateCCW');});
+	$('.export').click(function() {
+	    var imageData = $('.image-editor').cropit('export');
+	    $.ajax({
+			type: "POST",
+			url: "{:U('Infor/upimg')}",
+			data:{data:imageData},
+			success: function(rs){
+				if(rs==1){
+				   layer.msg('图片上传成功');
+				   setTimeout(function(){parent.window.location.reload();},1000);
+				}else if(rs==2){
+				   layer.msg('图片上传失败');
+				}else if(rs==3){
+				   layer.msg('上传图片的类型不符');
+				}else if(rs==4){
+				   layer.msg('上传图片的大小不符');
+				}else{
+					layer.msg("文件写入失败");
+				}
+			}
+	    });
+	});
+    });
+    function UPwd(){
+	var pwd = $('#pwd').val();
+	var pwd1= $('#pwd1').val();
+	if(pwd.length<5){layer.msg('密码强度不够');return false;}
+	if(pwd1!=pwd){layer.msg('两次输入的密码不相同');return false;}
+	$.post("{:U('Infor/upwd')}",{password:pwd},function(rs){
+	    if(rs==1){ layer.msg('密码修改成功！');
+		setTimeout(function(){parent.window.location.reload();},1000);
+	    }else{ layer.msg('密码修改失败！');}
+	});
+	return false;
+    }
+    $(function(){
+		$('#form1').click(function(){
+			var contact = $('#con').val();
+			var tel = $('#tel').val();
+		//	var treg = '/^[0-9]+$/';
+			var qq  = $('#qq').val();
+			var email=$('#email').val();
+
+			if(contact.length >18){layer.msg('昵称长度过长，请设置简短好记的');return false;}
+			if(tel.length !==11 && !reg.test(tel)){
+				layer.msg("输入的<font color='red'>电话</font>有误！请重新输入"); return false;
+			}
+			if(qq.length>10||qq.length<3){layer.msg("输入的<font color='red'>QQ</font>有误！请重新输入"); return false;}
+			if(email.length===0){layer.msg("输入的<font color='red'>邮箱</font>有误！请重新输入");return false;}
+		});
+    });
+</script>

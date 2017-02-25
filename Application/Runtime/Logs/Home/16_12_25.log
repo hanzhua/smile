@@ -1,0 +1,1386 @@
+[ 2016-12-25T17:30:27+08:00 ] 127.0.0.1 /smile/Public/bs/fonts/glyphicons-halflings-regular.woff
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001159s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004433s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004626s ]
+ERR: 无法加载控制器:Public
+
+[ 2016-12-25T17:30:27+08:00 ] 127.0.0.1 /smile/Public/bs/fonts/glyphicons-halflings-regular.ttf
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001104s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001546s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001718s ]
+ERR: 无法加载控制器:Public
+
+[ 2016-12-25T17:31:25+08:00 ] 127.0.0.1 /smile/Public/bs/fonts/glyphicons-halflings-regular.woff
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001582s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002225s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002442s ]
+ERR: 无法加载控制器:Public
+
+[ 2016-12-25T17:31:25+08:00 ] 127.0.0.1 /smile/Public/bs/fonts/glyphicons-halflings-regular.ttf
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001163s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001337s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001509s ]
+ERR: 无法加载控制器:Public
+
+[ 2016-12-25T17:31:29+08:00 ] 127.0.0.1 /smile/Public/bs/fonts/glyphicons-halflings-regular.woff
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000051s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001368s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001314s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001489s ]
+ERR: 无法加载控制器:Public
+
+[ 2016-12-25T17:31:30+08:00 ] 127.0.0.1 /smile/Public/bs/fonts/glyphicons-halflings-regular.ttf
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001024s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002435s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002664s ]
+ERR: 无法加载控制器:Public
+
+[ 2016-12-25T17:31:34+08:00 ] 127.0.0.1 /smile/Public/bs/fonts/glyphicons-halflings-regular.woff
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000997s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001228s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001401s ]
+ERR: 无法加载控制器:Public
+
+[ 2016-12-25T17:31:34+08:00 ] 127.0.0.1 /smile/Public/bs/fonts/glyphicons-halflings-regular.ttf
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001057s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001403s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001613s ]
+ERR: 无法加载控制器:Public
+
+[ 2016-12-25T17:32:49+08:00 ] 127.0.0.1 /smile/Public/bs/fonts/glyphicons-halflings-regular.woff
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001150s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003689s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004689s ]
+ERR: 无法加载控制器:Public
+
+[ 2016-12-25T17:32:49+08:00 ] 127.0.0.1 /smile/Public/bs/fonts/glyphicons-halflings-regular.ttf
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001117s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001301s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001476s ]
+ERR: 无法加载控制器:Public
+
+[ 2016-12-25T17:33:08+08:00 ] 127.0.0.1 /smile/Public/bs/fonts/glyphicons-halflings-regular.woff
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001180s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004088s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004519s ]
+ERR: 无法加载控制器:Public
+
+[ 2016-12-25T17:33:08+08:00 ] 127.0.0.1 /smile/Public/bs/fonts/glyphicons-halflings-regular.ttf
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001283s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001365s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001598s ]
+ERR: 无法加载控制器:Public
+
+[ 2016-12-25T17:33:37+08:00 ] 127.0.0.1 /smile/Public/bs/fonts/glyphicons-halflings-regular.woff
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000045s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001641s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002212s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002457s ]
+ERR: 无法加载控制器:Public
+
+[ 2016-12-25T17:33:37+08:00 ] 127.0.0.1 /smile/Public/bs/fonts/glyphicons-halflings-regular.ttf
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001060s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001272s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001449s ]
+ERR: 无法加载控制器:Public
+
+[ 2016-12-25T17:35:56+08:00 ] 127.0.0.1 /smile/Public/bs/fonts/glyphicons-halflings-regular.woff
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001351s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.021397s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.021617s ]
+ERR: 无法加载控制器:Public
+
+[ 2016-12-25T17:35:56+08:00 ] 127.0.0.1 /smile/Public/bs/fonts/glyphicons-halflings-regular.ttf
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001265s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001404s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001584s ]
+ERR: 无法加载控制器:Public
+
+[ 2016-12-25T17:35:59+08:00 ] 127.0.0.1 /smile/Public/bs/fonts/glyphicons-halflings-regular.woff
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003440s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002942s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003160s ]
+ERR: 无法加载控制器:Public
+
+[ 2016-12-25T17:36:00+08:00 ] 127.0.0.1 /smile/Public/bs/fonts/glyphicons-halflings-regular.ttf
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001065s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001354s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001543s ]
+ERR: 无法加载控制器:Public
+
+[ 2016-12-25T21:42:35+08:00 ] 127.0.0.1 /smile/Public/bs/fonts/glyphicons-halflings-regular.woff
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000068s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002552s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004201s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004554s ]
+ERR: 无法加载控制器:Public
+
+[ 2016-12-25T21:42:35+08:00 ] 127.0.0.1 /smile/Public/bs/fonts/glyphicons-halflings-regular.ttf
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001278s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003484s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004096s ]
+ERR: 无法加载控制器:Public
+
+[ 2016-12-25T21:43:00+08:00 ] 127.0.0.1 /smile/Public/bs/fonts/glyphicons-halflings-regular.woff
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.007474s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001463s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001651s ]
+ERR: 无法加载控制器:Public
+
+[ 2016-12-25T21:43:00+08:00 ] 127.0.0.1 /smile/Public/bs/fonts/glyphicons-halflings-regular.ttf
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001030s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001490s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001664s ]
+ERR: 无法加载控制器:Public
+
+[ 2016-12-25T21:44:54+08:00 ] 127.0.0.1 /smile/Public/bs/fonts/glyphicons-halflings-regular.woff
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001243s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001428s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001614s ]
+ERR: 无法加载控制器:Public
+
+[ 2016-12-25T21:44:55+08:00 ] 127.0.0.1 /smile/Public/bs/fonts/glyphicons-halflings-regular.ttf
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001145s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001912s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002093s ]
+ERR: 无法加载控制器:Public
+
+[ 2016-12-25T21:45:52+08:00 ] 127.0.0.1 /smile/Public/bs/fonts/glyphicons-halflings-regular.woff
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001858s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001791s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001964s ]
+ERR: 无法加载控制器:Public
+
+[ 2016-12-25T21:45:52+08:00 ] 127.0.0.1 /smile/Public/bs/fonts/glyphicons-halflings-regular.ttf
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000048s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001195s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001223s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001394s ]
+ERR: 无法加载控制器:Public
+
+[ 2016-12-25T21:46:10+08:00 ] 127.0.0.1 /smile/Public/bs/fonts/glyphicons-halflings-regular.woff
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000971s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001504s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001705s ]
+ERR: 无法加载控制器:Public
+
+[ 2016-12-25T21:46:10+08:00 ] 127.0.0.1 /smile/Public/bs/fonts/glyphicons-halflings-regular.ttf
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001048s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001984s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002263s ]
+ERR: 无法加载控制器:Public
+
+[ 2016-12-25T21:46:25+08:00 ] 127.0.0.1 /smile/Public/bs/fonts/glyphicons-halflings-regular.woff
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001233s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003113s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004319s ]
+ERR: 无法加载控制器:Public
+
+[ 2016-12-25T21:46:25+08:00 ] 127.0.0.1 /smile/Public/bs/fonts/glyphicons-halflings-regular.ttf
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000046s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001338s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002647s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002825s ]
+ERR: 无法加载控制器:Public
+
+[ 2016-12-25T21:46:41+08:00 ] 127.0.0.1 /smile/Public/bs/fonts/glyphicons-halflings-regular.woff
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001115s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001372s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001545s ]
+ERR: 无法加载控制器:Public
+
+[ 2016-12-25T21:46:42+08:00 ] 127.0.0.1 /smile/Public/bs/fonts/glyphicons-halflings-regular.ttf
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001189s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001435s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001622s ]
+ERR: 无法加载控制器:Public
+
+[ 2016-12-25T21:47:25+08:00 ] 127.0.0.1 /smile/Public/bs/fonts/glyphicons-halflings-regular.woff
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001318s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003201s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003788s ]
+ERR: 无法加载控制器:Public
+
+[ 2016-12-25T21:47:25+08:00 ] 127.0.0.1 /smile/Public/bs/fonts/glyphicons-halflings-regular.ttf
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001170s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001860s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002205s ]
+ERR: 无法加载控制器:Public
+
+[ 2016-12-25T21:47:36+08:00 ] 127.0.0.1 /smile/Public/bs/fonts/glyphicons-halflings-regular.woff
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002316s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001411s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001586s ]
+ERR: 无法加载控制器:Public
+
+[ 2016-12-25T21:47:36+08:00 ] 127.0.0.1 /smile/Public/bs/fonts/glyphicons-halflings-regular.ttf
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001159s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001243s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001424s ]
+ERR: 无法加载控制器:Public
+
+[ 2016-12-25T21:49:31+08:00 ] 127.0.0.1 /smile/Public/bs/fonts/glyphicons-halflings-regular.woff
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001360s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001946s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002153s ]
+ERR: 无法加载控制器:Public
+
+[ 2016-12-25T21:49:31+08:00 ] 127.0.0.1 /smile/Public/bs/fonts/glyphicons-halflings-regular.ttf
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000990s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001725s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001919s ]
+ERR: 无法加载控制器:Public
+
+[ 2016-12-25T21:49:43+08:00 ] 127.0.0.1 /smile/Public/bs/fonts/glyphicons-halflings-regular.woff
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001360s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.006498s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006677s ]
+ERR: 无法加载控制器:Public
+
+[ 2016-12-25T21:49:43+08:00 ] 127.0.0.1 /smile/Public/bs/fonts/glyphicons-halflings-regular.ttf
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001927s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001512s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001717s ]
+ERR: 无法加载控制器:Public
+
+[ 2016-12-25T21:50:29+08:00 ] 127.0.0.1 /smile/Public/bs/fonts/glyphicons-halflings-regular.woff
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000146s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001421s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001788s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001963s ]
+ERR: 无法加载控制器:Public
+
+[ 2016-12-25T21:50:29+08:00 ] 127.0.0.1 /smile/Public/bs/fonts/glyphicons-halflings-regular.ttf
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000983s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002157s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002514s ]
+ERR: 无法加载控制器:Public
+
+[ 2016-12-25T21:50:45+08:00 ] 127.0.0.1 /smile/Public/bs/fonts/glyphicons-halflings-regular.woff
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001134s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003314s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003514s ]
+ERR: 无法加载控制器:Public
+
+[ 2016-12-25T21:50:45+08:00 ] 127.0.0.1 /smile/Public/bs/fonts/glyphicons-halflings-regular.ttf
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001153s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001468s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001638s ]
+ERR: 无法加载控制器:Public
+
+[ 2016-12-25T21:51:33+08:00 ] 127.0.0.1 /smile/Public/bs/fonts/glyphicons-halflings-regular.woff
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001851s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001863s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002061s ]
+ERR: 无法加载控制器:Public
+
+[ 2016-12-25T21:51:33+08:00 ] 127.0.0.1 /smile/Public/bs/fonts/glyphicons-halflings-regular.ttf
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001006s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001487s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001675s ]
+ERR: 无法加载控制器:Public
+
+[ 2016-12-25T21:54:17+08:00 ] 127.0.0.1 /smile/Public/bs/fonts/glyphicons-halflings-regular.woff
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001262s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003654s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004041s ]
+ERR: 无法加载控制器:Public
+
+[ 2016-12-25T21:54:17+08:00 ] 127.0.0.1 /smile/Public/bs/fonts/glyphicons-halflings-regular.ttf
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001645s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001227s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001401s ]
+ERR: 无法加载控制器:Public
+
+[ 2016-12-25T21:57:46+08:00 ] 127.0.0.1 /smile/Public/bs/fonts/glyphicons-halflings-regular.woff
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000254s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001741s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.008837s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.009031s ]
+ERR: 无法加载控制器:Public
+
+[ 2016-12-25T21:57:46+08:00 ] 127.0.0.1 /smile/Public/bs/fonts/glyphicons-halflings-regular.ttf
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001320s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001434s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001604s ]
+ERR: 无法加载控制器:Public
+
+[ 2016-12-25T21:59:29+08:00 ] 127.0.0.1 /smile/Public/bs/fonts/glyphicons-halflings-regular.woff
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000047s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001871s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001503s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001695s ]
+ERR: 无法加载控制器:Public
+
+[ 2016-12-25T21:59:29+08:00 ] 127.0.0.1 /smile/Public/bs/fonts/glyphicons-halflings-regular.ttf
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001237s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001609s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001791s ]
+ERR: 无法加载控制器:Public
+
+[ 2016-12-25T21:59:55+08:00 ] 127.0.0.1 /smile/Public/bs/fonts/glyphicons-halflings-regular.woff
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000044s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001499s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002140s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002355s ]
+ERR: 无法加载控制器:Public
+
+[ 2016-12-25T21:59:55+08:00 ] 127.0.0.1 /smile/Public/bs/fonts/glyphicons-halflings-regular.ttf
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001263s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001386s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001564s ]
+ERR: 无法加载控制器:Public
+
+[ 2016-12-25T22:00:30+08:00 ] 127.0.0.1 /smile/Public/bs/fonts/glyphicons-halflings-regular.woff
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001006s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001580s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003725s ]
+ERR: 无法加载控制器:Public
+
+[ 2016-12-25T22:00:30+08:00 ] 127.0.0.1 /smile/Public/bs/fonts/glyphicons-halflings-regular.ttf
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000048s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001790s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002004s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002330s ]
+ERR: 无法加载控制器:Public
+
+[ 2016-12-25T22:00:53+08:00 ] 127.0.0.1 /smile/Public/bs/fonts/glyphicons-halflings-regular.woff
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001035s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001327s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001508s ]
+ERR: 无法加载控制器:Public
+
+[ 2016-12-25T22:00:53+08:00 ] 127.0.0.1 /smile/Public/bs/fonts/glyphicons-halflings-regular.ttf
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000092s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001930s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001384s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001566s ]
+ERR: 无法加载控制器:Public
+
+[ 2016-12-25T22:02:06+08:00 ] 127.0.0.1 /smile/Public/bs/fonts/glyphicons-halflings-regular.woff
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001189s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004638s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004854s ]
+ERR: 无法加载控制器:Public
+
+[ 2016-12-25T22:02:06+08:00 ] 127.0.0.1 /smile/Public/bs/fonts/glyphicons-halflings-regular.ttf
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001215s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001384s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001561s ]
+ERR: 无法加载控制器:Public
+
+[ 2016-12-25T22:02:46+08:00 ] 127.0.0.1 /smile/Public/bs/fonts/glyphicons-halflings-regular.woff
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001019s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001518s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001753s ]
+ERR: 无法加载控制器:Public
+
+[ 2016-12-25T22:02:46+08:00 ] 127.0.0.1 /smile/Public/bs/fonts/glyphicons-halflings-regular.ttf
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001064s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001474s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001652s ]
+ERR: 无法加载控制器:Public
+
+[ 2016-12-25T22:02:56+08:00 ] 127.0.0.1 /smile/Public/bs/fonts/glyphicons-halflings-regular.woff
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000046s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001466s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005279s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005471s ]
+ERR: 无法加载控制器:Public
+
+[ 2016-12-25T22:02:56+08:00 ] 127.0.0.1 /smile/Public/bs/fonts/glyphicons-halflings-regular.ttf
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001676s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001331s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001515s ]
+ERR: 无法加载控制器:Public
+
+[ 2016-12-25T22:03:32+08:00 ] 127.0.0.1 /smile/Public/bs/fonts/glyphicons-halflings-regular.woff
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001204s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001368s ]
+ERR: 无法加载控制器:Public
+
+[ 2016-12-25T22:03:32+08:00 ] 127.0.0.1 /smile/Public/bs/fonts/glyphicons-halflings-regular.ttf
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001089s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002006s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002500s ]
+ERR: 无法加载控制器:Public
+
+[ 2016-12-25T22:03:41+08:00 ] 127.0.0.1 /smile/Public/bs/fonts/glyphicons-halflings-regular.woff
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001011s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002362s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002811s ]
+ERR: 无法加载控制器:Public
+
+[ 2016-12-25T22:03:41+08:00 ] 127.0.0.1 /smile/Public/bs/fonts/glyphicons-halflings-regular.ttf
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000473s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003444s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001430s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001629s ]
+ERR: 无法加载控制器:Public
+
+[ 2016-12-25T22:03:51+08:00 ] 127.0.0.1 /smile/Public/bs/fonts/glyphicons-halflings-regular.woff
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001183s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001419s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001596s ]
+ERR: 无法加载控制器:Public
+
+[ 2016-12-25T22:03:51+08:00 ] 127.0.0.1 /smile/Public/bs/fonts/glyphicons-halflings-regular.ttf
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001242s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001469s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001637s ]
+ERR: 无法加载控制器:Public
+
+[ 2016-12-25T22:06:22+08:00 ] 127.0.0.1 /smile/Public/bs/fonts/glyphicons-halflings-regular.woff
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001242s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002226s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002429s ]
+ERR: 无法加载控制器:Public
+
+[ 2016-12-25T22:06:22+08:00 ] 127.0.0.1 /smile/Public/bs/fonts/glyphicons-halflings-regular.ttf
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000047s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001666s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001403s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001693s ]
+ERR: 无法加载控制器:Public
+
+[ 2016-12-25T22:06:33+08:00 ] 127.0.0.1 /smile/Public/bs/fonts/glyphicons-halflings-regular.woff
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001080s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002011s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002196s ]
+ERR: 无法加载控制器:Public
+
+[ 2016-12-25T22:06:34+08:00 ] 127.0.0.1 /smile/Public/bs/fonts/glyphicons-halflings-regular.ttf
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001321s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001528s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001740s ]
+ERR: 无法加载控制器:Public
+
+[ 2016-12-25T22:08:54+08:00 ] 127.0.0.1 /smile/Public/bs/fonts/glyphicons-halflings-regular.woff
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001675s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002744s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002952s ]
+ERR: 无法加载控制器:Public
+
+[ 2016-12-25T22:08:55+08:00 ] 127.0.0.1 /smile/Public/bs/fonts/glyphicons-halflings-regular.ttf
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001141s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001466s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001652s ]
+ERR: 无法加载控制器:Public
+
+[ 2016-12-25T22:09:46+08:00 ] 127.0.0.1 /smile/Public/bs/fonts/glyphicons-halflings-regular.woff
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000989s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.007966s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008171s ]
+ERR: 无法加载控制器:Public
+
+[ 2016-12-25T22:09:46+08:00 ] 127.0.0.1 /smile/Public/bs/fonts/glyphicons-halflings-regular.ttf
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001236s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001360s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001546s ]
+ERR: 无法加载控制器:Public
+
+[ 2016-12-25T22:10:12+08:00 ] 127.0.0.1 /smile/Public/bs/fonts/glyphicons-halflings-regular.woff
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001166s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002187s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002374s ]
+ERR: 无法加载控制器:Public
+
+[ 2016-12-25T22:10:12+08:00 ] 127.0.0.1 /smile/Public/bs/fonts/glyphicons-halflings-regular.ttf
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001148s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001413s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001601s ]
+ERR: 无法加载控制器:Public
+
+[ 2016-12-25T22:10:18+08:00 ] 127.0.0.1 /smile/Public/bs/fonts/glyphicons-halflings-regular.woff
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000117s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001291s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001286s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001475s ]
+ERR: 无法加载控制器:Public
+
+[ 2016-12-25T22:10:18+08:00 ] 127.0.0.1 /smile/Public/bs/fonts/glyphicons-halflings-regular.ttf
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001143s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001669s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002030s ]
+ERR: 无法加载控制器:Public
+
+[ 2016-12-25T22:12:36+08:00 ] 127.0.0.1 /smile/Public/bs/fonts/glyphicons-halflings-regular.woff
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000052s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003034s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002945s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003198s ]
+ERR: 无法加载控制器:Public
+
+[ 2016-12-25T22:12:36+08:00 ] 127.0.0.1 /smile/Public/bs/fonts/glyphicons-halflings-regular.ttf
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000172s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002019s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001363s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001555s ]
+ERR: 无法加载控制器:Public
+
+[ 2016-12-25T22:13:12+08:00 ] 127.0.0.1 /smile/Public/bs/fonts/glyphicons-halflings-regular.woff
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001145s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001271s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001442s ]
+ERR: 无法加载控制器:Public
+
+[ 2016-12-25T22:13:12+08:00 ] 127.0.0.1 /smile/Public/bs/fonts/glyphicons-halflings-regular.ttf
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001140s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003064s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003507s ]
+ERR: 无法加载控制器:Public
+
+[ 2016-12-25T22:17:30+08:00 ] 127.0.0.1 /smile/Public/bs/fonts/glyphicons-halflings-regular.woff
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002347s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002112s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002295s ]
+ERR: 无法加载控制器:Public
+
+[ 2016-12-25T22:17:31+08:00 ] 127.0.0.1 /smile/Public/bs/fonts/glyphicons-halflings-regular.ttf
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001580s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001259s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001436s ]
+ERR: 无法加载控制器:Public
+
+[ 2016-12-25T22:17:58+08:00 ] 127.0.0.1 /smile/Public/bs/fonts/glyphicons-halflings-regular.woff
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000997s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001313s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001521s ]
+ERR: 无法加载控制器:Public
+
+[ 2016-12-25T22:17:58+08:00 ] 127.0.0.1 /smile/Public/bs/fonts/glyphicons-halflings-regular.ttf
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001078s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002921s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003330s ]
+ERR: 无法加载控制器:Public
+
+[ 2016-12-25T22:18:16+08:00 ] 127.0.0.1 /smile/Public/bs/fonts/glyphicons-halflings-regular.woff
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000046s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001639s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001552s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001753s ]
+ERR: 无法加载控制器:Public
+
+[ 2016-12-25T22:18:16+08:00 ] 127.0.0.1 /smile/Public/bs/fonts/glyphicons-halflings-regular.ttf
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001346s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001459s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001653s ]
+ERR: 无法加载控制器:Public
+
+[ 2016-12-25T22:18:38+08:00 ] 127.0.0.1 /smile/Public/bs/fonts/glyphicons-halflings-regular.woff
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001191s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002565s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+ERR: 无法加载控制器:Public
+
+[ 2016-12-25T22:18:38+08:00 ] 127.0.0.1 /smile/Public/bs/fonts/glyphicons-halflings-regular.ttf
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001212s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001841s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002320s ]
+ERR: 无法加载控制器:Public
+
+[ 2016-12-25T22:22:32+08:00 ] 127.0.0.1 /smile/Public/bs/fonts/glyphicons-halflings-regular.woff
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000051s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001885s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002244s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002422s ]
+ERR: 无法加载控制器:Public
+
+[ 2016-12-25T22:22:32+08:00 ] 127.0.0.1 /smile/Public/bs/fonts/glyphicons-halflings-regular.ttf
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000999s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001616s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001895s ]
+ERR: 无法加载控制器:Public
+
+[ 2016-12-25T22:22:38+08:00 ] 127.0.0.1 /smile/Public/bs/fonts/glyphicons-halflings-regular.woff
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000995s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001234s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001414s ]
+ERR: 无法加载控制器:Public
+
+[ 2016-12-25T22:22:38+08:00 ] 127.0.0.1 /smile/Public/bs/fonts/glyphicons-halflings-regular.ttf
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001166s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001363s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001538s ]
+ERR: 无法加载控制器:Public
+
+[ 2016-12-25T22:23:16+08:00 ] 127.0.0.1 /smile/Public/bs/fonts/glyphicons-halflings-regular.woff
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001054s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.006663s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006848s ]
+ERR: 无法加载控制器:Public
+
+[ 2016-12-25T22:23:17+08:00 ] 127.0.0.1 /smile/Public/bs/fonts/glyphicons-halflings-regular.ttf
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001328s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001375s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001552s ]
+ERR: 无法加载控制器:Public
+
+[ 2016-12-25T22:23:28+08:00 ] 127.0.0.1 /smile/Public/bs/fonts/glyphicons-halflings-regular.woff
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003002s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001509s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001777s ]
+ERR: 无法加载控制器:Public
+
+[ 2016-12-25T22:23:28+08:00 ] 127.0.0.1 /smile/Public/bs/fonts/glyphicons-halflings-regular.ttf
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000047s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001610s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002379s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002998s ]
+ERR: 无法加载控制器:Public
+
+[ 2016-12-25T22:25:03+08:00 ] 127.0.0.1 /smile/Public/bs/fonts/glyphicons-halflings-regular.woff
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001666s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002833s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003058s ]
+ERR: 无法加载控制器:Public
+
+[ 2016-12-25T22:25:03+08:00 ] 127.0.0.1 /smile/Public/bs/fonts/glyphicons-halflings-regular.ttf
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001114s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001386s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001562s ]
+ERR: 无法加载控制器:Public
+
+[ 2016-12-25T22:25:16+08:00 ] 127.0.0.1 /smile/Public/bs/fonts/glyphicons-halflings-regular.woff
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001311s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001460s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001663s ]
+ERR: 无法加载控制器:Public
+
+[ 2016-12-25T22:25:16+08:00 ] 127.0.0.1 /smile/Public/bs/fonts/glyphicons-halflings-regular.ttf
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001092s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001948s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002175s ]
+ERR: 无法加载控制器:Public
+
+[ 2016-12-25T22:25:54+08:00 ] 127.0.0.1 /smile/Public/bs/fonts/glyphicons-halflings-regular.woff
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002020s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001463s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004510s ]
+ERR: 无法加载控制器:Public
+
+[ 2016-12-25T22:25:55+08:00 ] 127.0.0.1 /smile/Public/bs/fonts/glyphicons-halflings-regular.ttf
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001017s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002256s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002606s ]
+ERR: 无法加载控制器:Public
+
+[ 2016-12-25T22:26:05+08:00 ] 127.0.0.1 /smile/Public/bs/fonts/glyphicons-halflings-regular.woff
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000049s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001772s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001445s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001616s ]
+ERR: 无法加载控制器:Public
+
+[ 2016-12-25T22:26:05+08:00 ] 127.0.0.1 /smile/Public/bs/fonts/glyphicons-halflings-regular.ttf
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000258s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003494s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001437s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001627s ]
+ERR: 无法加载控制器:Public
+
+[ 2016-12-25T22:26:14+08:00 ] 127.0.0.1 /smile/Public/bs/fonts/glyphicons-halflings-regular.woff
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001031s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001416s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001664s ]
+ERR: 无法加载控制器:Public
+
+[ 2016-12-25T22:26:15+08:00 ] 127.0.0.1 /smile/Public/bs/fonts/glyphicons-halflings-regular.ttf
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001131s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001361s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001548s ]
+ERR: 无法加载控制器:Public
+
+[ 2016-12-25T22:27:14+08:00 ] 127.0.0.1 /smile/Public/bs/fonts/glyphicons-halflings-regular.woff
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.009275s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002449s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002814s ]
+ERR: 无法加载控制器:Public
+
+[ 2016-12-25T22:27:14+08:00 ] 127.0.0.1 /smile/Public/bs/fonts/glyphicons-halflings-regular.ttf
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000060s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001044s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002290s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003155s ]
+ERR: 无法加载控制器:Public
+
+[ 2016-12-25T22:28:05+08:00 ] 127.0.0.1 /smile/Public/bs/fonts/glyphicons-halflings-regular.woff
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001180s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001414s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001587s ]
+ERR: 无法加载控制器:Public
+
+[ 2016-12-25T22:28:05+08:00 ] 127.0.0.1 /smile/Public/bs/fonts/glyphicons-halflings-regular.ttf
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001161s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001384s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001569s ]
+ERR: 无法加载控制器:Public
+
+[ 2016-12-25T22:28:08+08:00 ] 127.0.0.1 /smile/Public/bs/fonts/glyphicons-halflings-regular.woff
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002341s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002236s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002422s ]
+ERR: 无法加载控制器:Public
+
+[ 2016-12-25T22:28:08+08:00 ] 127.0.0.1 /smile/Public/bs/fonts/glyphicons-halflings-regular.ttf
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001174s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002225s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002403s ]
+ERR: 无法加载控制器:Public
+
+[ 2016-12-25T22:28:38+08:00 ] 127.0.0.1 /smile/Public/bs/fonts/glyphicons-halflings-regular.woff
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001109s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.006260s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006654s ]
+ERR: 无法加载控制器:Public
+
+[ 2016-12-25T22:28:38+08:00 ] 127.0.0.1 /smile/Public/bs/fonts/glyphicons-halflings-regular.ttf
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001028s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002061s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002240s ]
+ERR: 无法加载控制器:Public
+
+[ 2016-12-25T22:29:10+08:00 ] 127.0.0.1 /smile/Public/bs/fonts/glyphicons-halflings-regular.woff
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001106s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002851s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003072s ]
+ERR: 无法加载控制器:Public
+
+[ 2016-12-25T22:29:10+08:00 ] 127.0.0.1 /smile/Public/bs/fonts/glyphicons-halflings-regular.ttf
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000045s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001046s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002020s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002198s ]
+ERR: 无法加载控制器:Public
+
+[ 2016-12-25T22:29:22+08:00 ] 127.0.0.1 /smile/Public/bs/fonts/glyphicons-halflings-regular.woff
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000051s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001592s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002315s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002503s ]
+ERR: 无法加载控制器:Public
+
+[ 2016-12-25T22:29:22+08:00 ] 127.0.0.1 /smile/Public/bs/fonts/glyphicons-halflings-regular.ttf
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001139s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001762s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001933s ]
+ERR: 无法加载控制器:Public
+
+[ 2016-12-25T22:29:46+08:00 ] 127.0.0.1 /smile/Public/bs/fonts/glyphicons-halflings-regular.woff
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000958s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002640s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002837s ]
+ERR: 无法加载控制器:Public
+
+[ 2016-12-25T22:29:46+08:00 ] 127.0.0.1 /smile/Public/bs/fonts/glyphicons-halflings-regular.ttf
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001179s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002365s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002562s ]
+ERR: 无法加载控制器:Public
+
+[ 2016-12-25T22:30:15+08:00 ] 127.0.0.1 /smile/Public/bs/fonts/glyphicons-halflings-regular.woff
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003761s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002167s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002348s ]
+ERR: 无法加载控制器:Public
+
+[ 2016-12-25T22:30:15+08:00 ] 127.0.0.1 /smile/Public/bs/fonts/glyphicons-halflings-regular.ttf
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001037s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001995s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002171s ]
+ERR: 无法加载控制器:Public
+
+[ 2016-12-25T22:30:30+08:00 ] 127.0.0.1 /smile/Public/bs/fonts/glyphicons-halflings-regular.woff
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002046s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003715s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003885s ]
+ERR: 无法加载控制器:Public
+
+[ 2016-12-25T22:30:30+08:00 ] 127.0.0.1 /smile/Public/bs/fonts/glyphicons-halflings-regular.ttf
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001396s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003409s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003592s ]
+ERR: 无法加载控制器:Public
+
+[ 2016-12-25T22:46:47+08:00 ] 127.0.0.1 /smile/Public/bs/fonts/glyphicons-halflings-regular.woff
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000051s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001090s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001524s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001697s ]
+ERR: 无法加载控制器:Public
+
+[ 2016-12-25T22:46:48+08:00 ] 127.0.0.1 /smile/Public/bs/fonts/glyphicons-halflings-regular.ttf
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000983s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001715s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001954s ]
+ERR: 无法加载控制器:Public
+
+[ 2016-12-25T22:47:02+08:00 ] 127.0.0.1 /smile/Public/bs/fonts/glyphicons-halflings-regular.woff
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001025s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001255s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001437s ]
+ERR: 无法加载控制器:Public
+
+[ 2016-12-25T22:47:02+08:00 ] 127.0.0.1 /smile/Public/bs/fonts/glyphicons-halflings-regular.ttf
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002026s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001353s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001533s ]
+ERR: 无法加载控制器:Public
+
+[ 2016-12-25T22:47:36+08:00 ] 127.0.0.1 /smile/Public/bs/fonts/glyphicons-halflings-regular.woff
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000077s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002236s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.009084s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.009284s ]
+ERR: 无法加载控制器:Public
+
+[ 2016-12-25T22:47:37+08:00 ] 127.0.0.1 /smile/Public/bs/fonts/glyphicons-halflings-regular.ttf
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001227s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001432s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001608s ]
+ERR: 无法加载控制器:Public
+
+[ 2016-12-25T22:47:56+08:00 ] 127.0.0.1 /smile/Public/bs/fonts/glyphicons-halflings-regular.woff
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001179s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001483s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001662s ]
+ERR: 无法加载控制器:Public
+
+[ 2016-12-25T22:47:56+08:00 ] 127.0.0.1 /smile/Public/bs/fonts/glyphicons-halflings-regular.ttf
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000999s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001773s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002049s ]
+ERR: 无法加载控制器:Public
+
+[ 2016-12-25T22:49:26+08:00 ] 127.0.0.1 /smile/Public/bs/fonts/glyphicons-halflings-regular.woff
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.006120s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.009325s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.009544s ]
+ERR: 无法加载控制器:Public
+
+[ 2016-12-25T22:49:27+08:00 ] 127.0.0.1 /smile/Public/bs/fonts/glyphicons-halflings-regular.ttf
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000045s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001436s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001315s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001486s ]
+ERR: 无法加载控制器:Public
+
+[ 2016-12-25T22:49:55+08:00 ] 127.0.0.1 /smile/Public/bs/fonts/glyphicons-halflings-regular.woff
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000986s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001237s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001405s ]
+ERR: 无法加载控制器:Public
+
+[ 2016-12-25T22:49:55+08:00 ] 127.0.0.1 /smile/Public/bs/fonts/glyphicons-halflings-regular.ttf
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001245s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002388s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002707s ]
+ERR: 无法加载控制器:Public
+
+[ 2016-12-25T22:50:51+08:00 ] 127.0.0.1 /smile/Public/bs/fonts/glyphicons-halflings-regular.woff
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000992s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001455s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001670s ]
+ERR: 无法加载控制器:Public
+
+[ 2016-12-25T22:50:52+08:00 ] 127.0.0.1 /smile/Public/bs/fonts/glyphicons-halflings-regular.ttf
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001132s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001267s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001470s ]
+ERR: 无法加载控制器:Public
+
+[ 2016-12-25T22:52:12+08:00 ] 127.0.0.1 /smile/Public/bs/fonts/glyphicons-halflings-regular.woff
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.007526s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.008680s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008991s ]
+ERR: 无法加载控制器:Public
+
+[ 2016-12-25T22:52:12+08:00 ] 127.0.0.1 /smile/Public/bs/fonts/glyphicons-halflings-regular.ttf
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001527s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001365s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001579s ]
+ERR: 无法加载控制器:Public
+
+[ 2016-12-25T22:52:16+08:00 ] 127.0.0.1 /smile/Public/bs/fonts/glyphicons-halflings-regular.woff
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001141s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002014s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002179s ]
+ERR: 无法加载控制器:Public
+
+[ 2016-12-25T22:52:17+08:00 ] 127.0.0.1 /smile/Public/bs/fonts/glyphicons-halflings-regular.ttf
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001216s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001859s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002021s ]
+ERR: 无法加载控制器:Public
+
+[ 2016-12-25T22:52:19+08:00 ] 127.0.0.1 /smile/Public/bs/fonts/glyphicons-halflings-regular.woff
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001116s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002994s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003177s ]
+ERR: 无法加载控制器:Public
+
+[ 2016-12-25T22:52:20+08:00 ] 127.0.0.1 /smile/Public/bs/fonts/glyphicons-halflings-regular.ttf
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001145s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002005s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002178s ]
+ERR: 无法加载控制器:Public
+
+[ 2016-12-25T22:52:57+08:00 ] 127.0.0.1 /smile/Public/bs/fonts/glyphicons-halflings-regular.woff
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001042s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001338s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001518s ]
+ERR: 无法加载控制器:Public
+
+[ 2016-12-25T22:52:57+08:00 ] 127.0.0.1 /smile/Public/bs/fonts/glyphicons-halflings-regular.ttf
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001169s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003177s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003473s ]
+ERR: 无法加载控制器:Public
+
+[ 2016-12-25T22:54:26+08:00 ] 127.0.0.1 /smile/Public/bs/fonts/glyphicons-halflings-regular.woff
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001117s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002088s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002260s ]
+ERR: 无法加载控制器:Public
+
+[ 2016-12-25T22:54:27+08:00 ] 127.0.0.1 /smile/Public/bs/fonts/glyphicons-halflings-regular.ttf
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001310s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003501s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004250s ]
+ERR: 无法加载控制器:Public
+

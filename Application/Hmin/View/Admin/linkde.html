@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <include file="Public:style"/>
+    <include file="Public:_de" />
+</head>
+<body>
+    <div class="main-content">
+        <div class="row">
+            <div class="col-sm-4"></div>
+            <div class="col-sm-4">
+                <form id="formlink" class="well" action="" method="post">
+                    <input type="hidden" id="id" name="id" value="{$Fri['id']}">
+                    <table class="table">
+                        <tr>
+                            <th width="100px">链接名称：</th>
+                            <td align="left">
+                                <input style="width:265px;" type="text" id="title" name="title"
+                                value="{$Fri['title']}" required placeholder="链接名称">
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>链接地址：</th>
+                            <td align="left">
+                                <input style="width:265px;" type="text" id="url" name="url"
+                                value="{$Fri['url']}" required placeholder="链接地址：http://www.abc.com">
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>链接介绍：</th>
+                            <td align="left">
+                                <textarea name="content" id="content" cols="35" rows="3">{$Fri['content']}</textarea>
+                            </td>
+                        </tr>
+                        <if condition="$Fri['id'] neq ''">
+                        <tr>
+                            <th>添加时间：</th>
+                            <td align="left">
+                                <input type="text" id="ctime" name="ctime" value="{$Fri['ctime']}" readonly>
+                            </td>
+                        </tr>
+                        </if>
+                        <tr align="center">
+                            <td colspan="2">
+                                <input id="btn" type="submit" class="btn btn-success" value="确认">&nbsp;&nbsp;
+                                <button type="reset" class="btn btn-default">重置</button>
+                            </td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+            <div class="col-sm-4"></div>
+        </div>
+    </div>
+</body>
+</html>
+<script src="Public:script" type="text/javascript"></script>
+<script type="text/javascript">
+    $('#btn').click(function () {
+        var id   = $('#id').val(),
+            title= $('#title').val(),
+            url  = $('#url').val(),
+            content = $('#content').val();
+        $.post("{:U('Admin/linkde')}",{id:id,title:title,url:url,content:content}, function (rs) {
+            if(rs==1){
+                layer.msg('添加成功');
+                setTimeout(function() {
+                    parent.window.location.reload();
+                }, 2000);
+            }else if(rs==11){
+                layer.msg('修改成功');
+                setTimeout(function() {
+//                    parent.layer.msg(rs.msg);
+                    parent.window.location.reload();
+                    parent.layer.close(index);
+                }, 2000);
+            }else {
+                layer.msg('操作失败');
+            }
+        },'json');
+    });
+</script>

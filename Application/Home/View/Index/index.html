@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>首页 - {$SETUP.title}</title>
+	<include file="Public/link"/>
+	<style type="text/css">
+		.row .page-header h3{color: #ffffff}
+		.container-fluid .row-fluid .col-lg-8{color: #000000;}
+		.container-fluid{margin-top: 50px;}
+		.bg-color{background-color: #ffffff;}
+		.icon-img>img{width: 40px;height: 40px;margin: 2px 2px;}
+	</style>
+</head>
+<body>
+<!--//特效-->
+<!--<div id="loader-wrapper">-->
+	<!--<div id="loader"></div>-->
+	<!--<div class="loader-section section-left"></div>-->
+	<!--<div class="loader-section section-right"></div>-->
+<!--</div>-->
+
+<!--nav start-->
+    <nav class="navbar navbar-fixed-top navbar-inverse " role="navigation">
+	<!--container start-->
+	<div class="container">
+	    <include file="Index:navbar"/>
+	</div>
+	<!--container end-->
+    </nav>
+<!--nav end-->
+<!--container-fluid start-->
+    <div class="container-fluid">
+	<div class="row-fluid">
+	    <div class="container">
+	    <!--col-lg-9 start-->
+		<div class="col-lg-8">
+		    <include file="Index:right"/>
+		</div>
+	    <!--col-lg-9 end-->
+		<div class="col-lg-1"></div>
+	    <!--col-lg-3 start-->
+		<div class="col-lg-3">
+		    <div class="row" style="height:160px;margin-bottom: 13px;">
+			<include file="Public:clock"/>
+		    </div>
+		    <include file="Index:left"/>
+		</div>
+	    <!--col-lg-3 end-->
+	    </div>
+	</div>
+    </div>
+<!--container-fluid end-->
+
+<!--footer start-->
+<include file="Public/doter"/>
+<!--footer end-->
+<include file="Public/script"/>

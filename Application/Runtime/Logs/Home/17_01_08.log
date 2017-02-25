@@ -1,0 +1,88 @@
+[ 2017-01-08T18:01:50+08:00 ] 127.0.0.1 /smile/test.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001827s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003065s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003239s ]
+ERR: 无法加载控制器:Http:
+
+[ 2017-01-08T18:02:11+08:00 ] 127.0.0.1 /smile/test.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001697s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003798s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004118s ]
+ERR: 无法加载控制器:Http:
+
+[ 2017-01-08T22:44:58+08:00 ] 127.0.0.1 /smile/images/logo_icon.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001779s ]
+
+[ 2017-01-08T22:44:58+08:00 ] 127.0.0.1 /smile/images/photos/user1.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004643s ]
+
+[ 2017-01-08T22:44:58+08:00 ] 127.0.0.1 /smile/images/photos/user-avatar.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001646s ]
+
+[ 2017-01-08T22:44:58+08:00 ] 127.0.0.1 /smile/images/logo.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000099s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005973s ]
+
+[ 2017-01-08T22:44:58+08:00 ] 127.0.0.1 /smile/images/photos/user2.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001930s ]
+
+[ 2017-01-08T22:44:58+08:00 ] 127.0.0.1 /smile/images/photos/user3.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001484s ]
+
+[ 2017-01-08T22:44:58+08:00 ] 127.0.0.1 /smile/images/photos/user4.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001471s ]
+
+[ 2017-01-08T22:44:58+08:00 ] 127.0.0.1 /smile/images/photos/user5.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000045s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002749s ]
+
+[ 2017-01-08T22:45:22+08:00 ] 127.0.0.1 /smile/images/photos/user1.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001428s ]
+
+[ 2017-01-08T22:45:22+08:00 ] 127.0.0.1 /smile/images/photos/user2.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001277s ]
+
+[ 2017-01-08T22:45:22+08:00 ] 127.0.0.1 /smile/images/photos/user4.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001084s ]
+
+[ 2017-01-08T22:45:22+08:00 ] 127.0.0.1 /smile/images/photos/user3.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001644s ]
+
+[ 2017-01-08T22:45:22+08:00 ] 127.0.0.1 /smile/images/photos/user5.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001035s ]
+
+[ 2017-01-08T22:45:22+08:00 ] 127.0.0.1 /smile/images/photos/user-avatar.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000063s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002095s ]
+

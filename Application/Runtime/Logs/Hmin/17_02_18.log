@@ -1,0 +1,2180 @@
+[ 2017-02-18T12:03:00+08:00 ] 127.0.0.1 /smile/indin.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002164s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004610s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004807s ]
+SQL: SHOW COLUMNS FROM `sml_action` [ RunTime:0.0188s ]
+SQL: SELECT `name` FROM `sml_action` WHERE ( public='log' ) LIMIT 1   [ RunTime:0.0250s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000157s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000311s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.041699s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.041887s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002163s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002325s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004881s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005066s ]
+
+[ 2017-02-18T12:03:01+08:00 ] 127.0.0.1 /smile/indin.php?m=Hmin&c=Index&a=getVerify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.049217s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002351s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002586s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002940s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003339s ]
+
+[ 2017-02-18T12:03:01+08:00 ] 127.0.0.1 /smile/indin.php?m=Hmin&c=Index&a=getVerify&random=0.0896031037120486
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002600s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005413s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006277s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.005044s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005263s ]
+
+[ 2017-02-18T12:03:21+08:00 ] 127.0.0.1 /smile/indin.php?m=Hmin&c=Index&a=logindo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000068s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001279s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001644s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001826s ]
+SQL: SHOW COLUMNS FROM `sml_users` [ RunTime:0.0511s ]
+SQL: SELECT * FROM `sml_users` WHERE ( (tel='admin' OR qq='admin') AND password='4b8af08e011c961d9e86a11ab12b673f' ) LIMIT 1   [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `sml_group` [ RunTime:0.1386s ]
+SQL: SELECT `title` FROM `sml_group` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `sml_users_sign` [ RunTime:0.1033s ]
+SQL: SELECT `sign_score` FROM `sml_users_sign` WHERE ( id=1001 AND sign_mon=201702 ) LIMIT 1   [ RunTime:0.0115s ]
+SQL: UPDATE `sml_users` SET `ip`='127.0.0.1' WHERE ( id=1001 ) [ RunTime:0.0849s ]
+SQL: UPDATE `sml_users` SET `lastdate`='2017-02-18 12:03:18' WHERE ( id=1001 ) [ RunTime:0.0917s ]
+SQL: SHOW COLUMNS FROM `sml_log_logins` [ RunTime:0.1601s ]
+SQL: INSERT INTO `sml_log_logins` (`loginip`,`logintime`,`userid`) VALUES ('127.0.0.1','2017-02-18 12:03:18','1001') [ RunTime:0.2837s ]
+SQL: select version() as ver [ RunTime:0.0072s ]
+SQL: SHOW TABLE STATUS FROM smile LIKE 'sml_%' [ RunTime:2.7504s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001515s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001691s ]
+
+[ 2017-02-18T12:03:24+08:00 ] 127.0.0.1 /smile/indin.php?m=Hmin&c=Admin&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000050s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001332s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002051s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002238s ]
+SQL: SHOW COLUMNS FROM `sml_users_sign` [ RunTime:0.0239s ]
+SQL: SELECT `sign_day` FROM `sml_users_sign` WHERE ( sign_uid=1001 AND sign_mon=201702 ) LIMIT 1   [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `sml_action` [ RunTime:0.0166s ]
+SQL: SELECT `id` FROM `sml_action` WHERE ( url='Admin/index' ) LIMIT 1   [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `sml_group` [ RunTime:0.0224s ]
+SQL: SELECT `rules` FROM `sml_group` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `sml_areas` [ RunTime:0.0222s ]
+SQL: SELECT * FROM `sml_areas` WHERE ( pid=0 )  [ RunTime:0.0526s ]
+SQL: SHOW COLUMNS FROM `sml_setup` [ RunTime:0.0165s ]
+SQL: SELECT * FROM `sml_setup` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0249s ]
+SQL: SHOW COLUMNS FROM `sml_cate` [ RunTime:0.0327s ]
+SQL: SELECT * FROM `sml_cate` WHERE ( isdel=0 )  [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `sml_news` [ RunTime:0.0293s ]
+SQL: SELECT * FROM `sml_news` WHERE ( isread = 0 )  [ RunTime:0.0161s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sml_news` WHERE ( isread = 0 ) LIMIT 1   [ RunTime:0.0011s ]
+SQL: SELECT * FROM `sml_action` WHERE ( isdel=0 AND public='0' ) ORDER BY sort asc  [ RunTime:0.0039s ]
+SQL: SELECT `name` FROM `sml_action` WHERE ( public='main' ) LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000359s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000699s ]
+NOTIC: [8] Undefined variable: Sis E:\xampp\htdocs\smile\Application\Runtime\Cache\Hmin\98b26f1438958b5703a522529ece4894.php 第 102 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.099533s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.100018s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002639s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.007570s ]
+INFO: [ app_end ] --END-- [ RunTime:0.008994s ]
+
+[ 2017-02-18T12:03:26+08:00 ] 127.0.0.1 /smile/indin.php?m=Hmin&c=Admin&a=home
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000045s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004401s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002358s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002594s ]
+SQL: SHOW COLUMNS FROM `sml_users_sign` [ RunTime:0.1137s ]
+SQL: SELECT `sign_day` FROM `sml_users_sign` WHERE ( sign_uid=1001 AND sign_mon=201702 ) LIMIT 1   [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `sml_action` [ RunTime:0.0772s ]
+SQL: SELECT `id` FROM `sml_action` WHERE ( url='Admin/home' ) LIMIT 1   [ RunTime:0.0099s ]
+SQL: SHOW COLUMNS FROM `sml_group` [ RunTime:0.0462s ]
+SQL: SELECT `rules` FROM `sml_group` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `sml_areas` [ RunTime:0.0277s ]
+SQL: SELECT * FROM `sml_areas` WHERE ( pid=0 )  [ RunTime:0.0159s ]
+SQL: SHOW COLUMNS FROM `sml_setup` [ RunTime:0.0231s ]
+SQL: SELECT * FROM `sml_setup` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0021s ]
+SQL: SHOW COLUMNS FROM `sml_cate` [ RunTime:0.0324s ]
+SQL: SELECT * FROM `sml_cate` WHERE ( isdel=0 )  [ RunTime:0.0022s ]
+SQL: SHOW COLUMNS FROM `sml_news` [ RunTime:0.0157s ]
+SQL: SELECT * FROM `sml_news` WHERE ( isread = 0 )  [ RunTime:0.0029s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sml_news` WHERE ( isread = 0 ) LIMIT 1   [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `sml_assets` [ RunTime:0.0218s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sml_assets` WHERE ( isdel=0 ) LIMIT 1   [ RunTime:0.0262s ]
+SQL: SELECT * FROM `sml_assets` ORDER BY id desc LIMIT 0,12   [ RunTime:0.0019s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000391s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000627s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.144621s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.144807s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.003878s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004028s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003394s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003576s ]
+
+[ 2017-02-18T12:03:35+08:00 ] 127.0.0.1 /smile/indin.php?m=Hmin&c=Admin&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000049s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002629s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.008613s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.009479s ]
+SQL: SHOW COLUMNS FROM `sml_users_sign` [ RunTime:0.0174s ]
+SQL: SELECT `sign_day` FROM `sml_users_sign` WHERE ( sign_uid=1001 AND sign_mon=201702 ) LIMIT 1   [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `sml_action` [ RunTime:0.0163s ]
+SQL: SELECT `id` FROM `sml_action` WHERE ( url='Admin/index' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sml_group` [ RunTime:0.0129s ]
+SQL: SELECT `rules` FROM `sml_group` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `sml_areas` [ RunTime:0.0207s ]
+SQL: SELECT * FROM `sml_areas` WHERE ( pid=0 )  [ RunTime:0.0239s ]
+SQL: SHOW COLUMNS FROM `sml_setup` [ RunTime:0.0374s ]
+SQL: SELECT * FROM `sml_setup` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0119s ]
+SQL: SHOW COLUMNS FROM `sml_cate` [ RunTime:0.0294s ]
+SQL: SELECT * FROM `sml_cate` WHERE ( isdel=0 )  [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `sml_news` [ RunTime:0.0190s ]
+SQL: SELECT * FROM `sml_news` WHERE ( isread = 0 )  [ RunTime:0.0016s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sml_news` WHERE ( isread = 0 ) LIMIT 1   [ RunTime:0.0014s ]
+SQL: SELECT * FROM `sml_action` WHERE ( isdel=0 AND public='0' ) ORDER BY sort asc  [ RunTime:0.0245s ]
+SQL: SELECT `name` FROM `sml_action` WHERE ( public='main' ) LIMIT 1   [ RunTime:0.0106s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000329s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000497s ]
+NOTIC: [8] Undefined variable: Sis E:\xampp\htdocs\smile\Application\Runtime\Cache\Hmin\98b26f1438958b5703a522529ece4894.php 第 102 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.059853s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.060057s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001401s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001543s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003540s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003728s ]
+
+[ 2017-02-18T12:11:01+08:00 ] 127.0.0.1 /smile/indin.php?m=Hmin&c=Admin&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003417s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.016808s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.017064s ]
+SQL: SHOW COLUMNS FROM `sml_users_sign` [ RunTime:0.0145s ]
+SQL: SELECT `sign_day` FROM `sml_users_sign` WHERE ( sign_uid=1001 AND sign_mon=201702 ) LIMIT 1   [ RunTime:0.0018s ]
+SQL: SHOW COLUMNS FROM `sml_action` [ RunTime:0.0127s ]
+SQL: SELECT `id` FROM `sml_action` WHERE ( url='Admin/index' ) LIMIT 1   [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `sml_group` [ RunTime:0.0370s ]
+SQL: SELECT `rules` FROM `sml_group` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0034s ]
+SQL: SHOW COLUMNS FROM `sml_areas` [ RunTime:0.0201s ]
+SQL: SELECT * FROM `sml_areas` WHERE ( pid=0 )  [ RunTime:0.0316s ]
+SQL: SHOW COLUMNS FROM `sml_setup` [ RunTime:0.0725s ]
+SQL: SELECT * FROM `sml_setup` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0021s ]
+SQL: SHOW COLUMNS FROM `sml_cate` [ RunTime:0.0324s ]
+SQL: SELECT * FROM `sml_cate` WHERE ( isdel=0 )  [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `sml_news` [ RunTime:0.0656s ]
+SQL: SELECT * FROM `sml_news` WHERE ( isread = 0 )  [ RunTime:0.0025s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sml_news` WHERE ( isread = 0 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `sml_action` WHERE ( isdel=0 AND public='0' ) ORDER BY sort asc  [ RunTime:0.0033s ]
+SQL: SELECT `name` FROM `sml_action` WHERE ( public='main' ) LIMIT 1   [ RunTime:0.0013s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000304s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000473s ]
+NOTIC: [8] Undefined variable: Sis E:\xampp\htdocs\smile\Application\Runtime\Cache\Hmin\98b26f1438958b5703a522529ece4894.php 第 102 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.069039s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.069250s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001382s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001622s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002464s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002913s ]
+
+[ 2017-02-18T12:11:04+08:00 ] 127.0.0.1 /smile/indin.php?m=Hmin&c=Admin&a=home
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001489s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001914s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002139s ]
+SQL: SHOW COLUMNS FROM `sml_users_sign` [ RunTime:0.0384s ]
+SQL: SELECT `sign_day` FROM `sml_users_sign` WHERE ( sign_uid=1001 AND sign_mon=201702 ) LIMIT 1   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `sml_action` [ RunTime:0.0217s ]
+SQL: SELECT `id` FROM `sml_action` WHERE ( url='Admin/home' ) LIMIT 1   [ RunTime:0.0021s ]
+SQL: SHOW COLUMNS FROM `sml_group` [ RunTime:0.0272s ]
+SQL: SELECT `rules` FROM `sml_group` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `sml_areas` [ RunTime:0.0269s ]
+SQL: SELECT * FROM `sml_areas` WHERE ( pid=0 )  [ RunTime:0.0144s ]
+SQL: SHOW COLUMNS FROM `sml_setup` [ RunTime:0.0218s ]
+SQL: SELECT * FROM `sml_setup` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `sml_cate` [ RunTime:0.0468s ]
+SQL: SELECT * FROM `sml_cate` WHERE ( isdel=0 )  [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `sml_news` [ RunTime:0.0215s ]
+SQL: SELECT * FROM `sml_news` WHERE ( isread = 0 )  [ RunTime:0.0013s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sml_news` WHERE ( isread = 0 ) LIMIT 1   [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `sml_assets` [ RunTime:0.0246s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sml_assets` WHERE ( isdel=0 ) LIMIT 1   [ RunTime:0.0012s ]
+SQL: SELECT * FROM `sml_assets` ORDER BY id desc LIMIT 0,12   [ RunTime:0.0018s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000349s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000521s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.070721s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.070900s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001200s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001611s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002162s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002676s ]
+
+[ 2017-02-18T12:11:15+08:00 ] 127.0.0.1 /smile/indin.php?m=Hmin&c=Admin&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000046s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002372s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005070s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005489s ]
+SQL: SHOW COLUMNS FROM `sml_users_sign` [ RunTime:0.0418s ]
+SQL: SELECT `sign_day` FROM `sml_users_sign` WHERE ( sign_uid=1001 AND sign_mon=201702 ) LIMIT 1   [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `sml_action` [ RunTime:0.0175s ]
+SQL: SELECT `id` FROM `sml_action` WHERE ( url='Admin/index' ) LIMIT 1   [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `sml_group` [ RunTime:0.0492s ]
+SQL: SELECT `rules` FROM `sml_group` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0101s ]
+SQL: SHOW COLUMNS FROM `sml_areas` [ RunTime:0.0267s ]
+SQL: SELECT * FROM `sml_areas` WHERE ( pid=0 )  [ RunTime:0.0127s ]
+SQL: SHOW COLUMNS FROM `sml_setup` [ RunTime:0.0462s ]
+SQL: SELECT * FROM `sml_setup` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0016s ]
+SQL: SHOW COLUMNS FROM `sml_cate` [ RunTime:0.0300s ]
+SQL: SELECT * FROM `sml_cate` WHERE ( isdel=0 )  [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `sml_news` [ RunTime:0.0293s ]
+SQL: SELECT * FROM `sml_news` WHERE ( isread = 0 )  [ RunTime:0.0017s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sml_news` WHERE ( isread = 0 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `sml_action` WHERE ( isdel=0 AND public='0' ) ORDER BY sort asc  [ RunTime:0.0034s ]
+SQL: SELECT `name` FROM `sml_action` WHERE ( public='main' ) LIMIT 1   [ RunTime:0.0026s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000492s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000754s ]
+NOTIC: [8] Undefined variable: Sis E:\xampp\htdocs\smile\Application\Runtime\Cache\Hmin\98b26f1438958b5703a522529ece4894.php 第 102 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.088413s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.088799s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.049315s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.083336s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.009774s ]
+INFO: [ app_end ] --END-- [ RunTime:0.009956s ]
+
+[ 2017-02-18T12:11:32+08:00 ] 192.168.1.107 /smile/indin.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003193s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005637s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005954s ]
+SQL: SHOW COLUMNS FROM `sml_action` [ RunTime:0.0237s ]
+SQL: SELECT `name` FROM `sml_action` WHERE ( public='log' ) LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000170s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000352s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026407s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026596s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002174s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002803s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003364s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003573s ]
+
+[ 2017-02-18T12:11:33+08:00 ] 192.168.1.107 /smile/indin.php?m=Hmin&c=Index&a=getVerify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000960s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004346s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.029652s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.030924s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.006807s ]
+INFO: [ app_end ] --END-- [ RunTime:0.007015s ]
+
+[ 2017-02-18T12:11:34+08:00 ] 192.168.1.107 /smile/indin.php?m=Hmin&c=Index&a=getVerify&random=0.4512822918208901
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000097s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001671s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004856s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005052s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.006200s ]
+INFO: [ app_end ] --END-- [ RunTime:0.006411s ]
+
+[ 2017-02-18T12:13:08+08:00 ] 192.168.1.100 /smile/indin.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000044s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001675s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001437s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001640s ]
+SQL: SHOW COLUMNS FROM `sml_action` [ RunTime:0.0259s ]
+SQL: SELECT `name` FROM `sml_action` WHERE ( public='log' ) LIMIT 1   [ RunTime:0.0009s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000175s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000335s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021239s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021426s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000911s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001054s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002468s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002612s ]
+
+[ 2017-02-18T12:13:09+08:00 ] 192.168.1.100 /smile/indin.php?m=Hmin&c=Index&a=getVerify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000044s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001828s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003717s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003996s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002955s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003291s ]
+
+[ 2017-02-18T12:13:09+08:00 ] 192.168.1.100 /smile/indin.php?m=Hmin&c=Index&a=getVerify&random=0.5133564271495548
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000047s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001379s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001674s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001918s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001572s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001771s ]
+
+[ 2017-02-18T12:13:21+08:00 ] 192.168.1.100 /smile/indin.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001524s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001517s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001699s ]
+SQL: SHOW COLUMNS FROM `sml_action` [ RunTime:0.0148s ]
+SQL: SELECT `name` FROM `sml_action` WHERE ( public='log' ) LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000196s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000609s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.029361s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.029557s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001756s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001893s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001363s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001500s ]
+
+[ 2017-02-18T12:13:22+08:00 ] 192.168.1.100 /smile/indin.php?m=Hmin&c=Index&a=getVerify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001253s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001628s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001811s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003090s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003356s ]
+
+[ 2017-02-18T12:13:22+08:00 ] 192.168.1.100 /smile/indin.php?m=Hmin&c=Index&a=getVerify&random=0.9229066161478829
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001461s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002558s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002753s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003064s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003239s ]
+
+[ 2017-02-18T12:15:01+08:00 ] 192.168.1.100 /smile/indin.php?m=Hmin&c=Index&a=logindo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001167s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001701s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001894s ]
+SQL: SHOW COLUMNS FROM `sml_users` [ RunTime:0.0167s ]
+SQL: SELECT * FROM `sml_users` WHERE ( (tel='admin' OR qq='admin') AND password='4b8af08e011c961d9e86a11ab12b673f' ) LIMIT 1   [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `sml_group` [ RunTime:0.0124s ]
+SQL: SELECT `title` FROM `sml_group` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0016s ]
+SQL: SHOW COLUMNS FROM `sml_users_sign` [ RunTime:0.0192s ]
+SQL: SELECT `sign_score` FROM `sml_users_sign` WHERE ( id=1001 AND sign_mon=201702 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: UPDATE `sml_users` SET `ip`='192.168.1.100' WHERE ( id=1001 ) [ RunTime:0.0987s ]
+SQL: UPDATE `sml_users` SET `lastdate`='2017-02-18 12:15:01' WHERE ( id=1001 ) [ RunTime:0.1654s ]
+SQL: SHOW COLUMNS FROM `sml_log_logins` [ RunTime:0.0166s ]
+SQL: INSERT INTO `sml_log_logins` (`loginip`,`logintime`,`userid`) VALUES ('192.168.1.100','2017-02-18 12:15:01','1001') [ RunTime:0.0822s ]
+SQL: select version() as ver [ RunTime:0.0008s ]
+SQL: SHOW TABLE STATUS FROM smile LIKE 'sml_%' [ RunTime:0.0441s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001563s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001738s ]
+
+[ 2017-02-18T12:15:04+08:00 ] 192.168.1.100 /smile/indin.php?m=Hmin&c=Admin&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000204s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001444s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002713s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003021s ]
+SQL: SHOW COLUMNS FROM `sml_users_sign` [ RunTime:0.0455s ]
+SQL: SELECT `sign_day` FROM `sml_users_sign` WHERE ( sign_uid=1001 AND sign_mon=201702 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sml_action` [ RunTime:0.0169s ]
+SQL: SELECT `id` FROM `sml_action` WHERE ( url='Admin/index' ) LIMIT 1   [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `sml_group` [ RunTime:0.0302s ]
+SQL: SELECT `rules` FROM `sml_group` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sml_areas` [ RunTime:0.0208s ]
+SQL: SELECT * FROM `sml_areas` WHERE ( pid=0 )  [ RunTime:0.0133s ]
+SQL: SHOW COLUMNS FROM `sml_setup` [ RunTime:0.0187s ]
+SQL: SELECT * FROM `sml_setup` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sml_cate` [ RunTime:0.0187s ]
+SQL: SELECT * FROM `sml_cate` WHERE ( isdel=0 )  [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `sml_news` [ RunTime:0.0207s ]
+SQL: SELECT * FROM `sml_news` WHERE ( isread = 0 )  [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sml_news` WHERE ( isread = 0 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `sml_action` WHERE ( isdel=0 AND public='0' ) ORDER BY sort asc  [ RunTime:0.0032s ]
+SQL: SELECT `name` FROM `sml_action` WHERE ( public='main' ) LIMIT 1   [ RunTime:0.0011s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001711s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002025s ]
+NOTIC: [8] Undefined variable: Sis E:\xampp\htdocs\smile\Application\Runtime\Cache\Hmin\98b26f1438958b5703a522529ece4894.php 第 102 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.071214s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.071395s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.006106s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006260s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001666s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001853s ]
+
+[ 2017-02-18T12:15:05+08:00 ] 192.168.1.100 /smile/indin.php?m=Hmin&c=Admin&a=home
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001831s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003899s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004088s ]
+SQL: SHOW COLUMNS FROM `sml_users_sign` [ RunTime:0.0272s ]
+SQL: SELECT `sign_day` FROM `sml_users_sign` WHERE ( sign_uid=1001 AND sign_mon=201702 ) LIMIT 1   [ RunTime:0.0022s ]
+SQL: SHOW COLUMNS FROM `sml_action` [ RunTime:0.0211s ]
+SQL: SELECT `id` FROM `sml_action` WHERE ( url='Admin/home' ) LIMIT 1   [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `sml_group` [ RunTime:0.0150s ]
+SQL: SELECT `rules` FROM `sml_group` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `sml_areas` [ RunTime:0.0295s ]
+SQL: SELECT * FROM `sml_areas` WHERE ( pid=0 )  [ RunTime:0.0132s ]
+SQL: SHOW COLUMNS FROM `sml_setup` [ RunTime:0.0199s ]
+SQL: SELECT * FROM `sml_setup` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `sml_cate` [ RunTime:0.0204s ]
+SQL: SELECT * FROM `sml_cate` WHERE ( isdel=0 )  [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `sml_news` [ RunTime:0.0187s ]
+SQL: SELECT * FROM `sml_news` WHERE ( isread = 0 )  [ RunTime:0.0011s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sml_news` WHERE ( isread = 0 ) LIMIT 1   [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `sml_assets` [ RunTime:0.0229s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sml_assets` WHERE ( isdel=0 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `sml_assets` ORDER BY id desc LIMIT 0,12   [ RunTime:0.0012s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000334s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000493s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.054308s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.054558s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002387s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002539s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004019s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004262s ]
+
+[ 2017-02-18T12:15:10+08:00 ] 192.168.1.100 /smile/indin.php?m=Hmin&c=Admin&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001420s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003018s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003201s ]
+SQL: SHOW COLUMNS FROM `sml_users_sign` [ RunTime:0.0134s ]
+SQL: SELECT `sign_day` FROM `sml_users_sign` WHERE ( sign_uid=1001 AND sign_mon=201702 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sml_action` [ RunTime:0.0137s ]
+SQL: SELECT `id` FROM `sml_action` WHERE ( url='Admin/index' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sml_group` [ RunTime:0.0162s ]
+SQL: SELECT `rules` FROM `sml_group` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `sml_areas` [ RunTime:0.0193s ]
+SQL: SELECT * FROM `sml_areas` WHERE ( pid=0 )  [ RunTime:0.0101s ]
+SQL: SHOW COLUMNS FROM `sml_setup` [ RunTime:0.0164s ]
+SQL: SELECT * FROM `sml_setup` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `sml_cate` [ RunTime:0.0174s ]
+SQL: SELECT * FROM `sml_cate` WHERE ( isdel=0 )  [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `sml_news` [ RunTime:0.0181s ]
+SQL: SELECT * FROM `sml_news` WHERE ( isread = 0 )  [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sml_news` WHERE ( isread = 0 ) LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT * FROM `sml_action` WHERE ( isdel=0 AND public='0' ) ORDER BY sort asc  [ RunTime:0.0028s ]
+SQL: SELECT `name` FROM `sml_action` WHERE ( public='main' ) LIMIT 1   [ RunTime:0.0012s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000534s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000984s ]
+NOTIC: [8] Undefined variable: Sis E:\xampp\htdocs\smile\Application\Runtime\Cache\Hmin\98b26f1438958b5703a522529ece4894.php 第 102 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.056116s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.056311s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002940s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003092s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002153s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002338s ]
+
+[ 2017-02-18T12:15:10+08:00 ] 192.168.1.100 /smile/indin.php?m=Hmin&c=Admin&a=home
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001808s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002928s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003120s ]
+SQL: SHOW COLUMNS FROM `sml_users_sign` [ RunTime:0.0119s ]
+SQL: SELECT `sign_day` FROM `sml_users_sign` WHERE ( sign_uid=1001 AND sign_mon=201702 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sml_action` [ RunTime:0.0123s ]
+SQL: SELECT `id` FROM `sml_action` WHERE ( url='Admin/home' ) LIMIT 1   [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `sml_group` [ RunTime:0.0145s ]
+SQL: SELECT `rules` FROM `sml_group` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sml_areas` [ RunTime:0.0178s ]
+SQL: SELECT * FROM `sml_areas` WHERE ( pid=0 )  [ RunTime:0.0100s ]
+SQL: SHOW COLUMNS FROM `sml_setup` [ RunTime:0.0212s ]
+SQL: SELECT * FROM `sml_setup` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0025s ]
+SQL: SHOW COLUMNS FROM `sml_cate` [ RunTime:0.0163s ]
+SQL: SELECT * FROM `sml_cate` WHERE ( isdel=0 )  [ RunTime:0.0027s ]
+SQL: SHOW COLUMNS FROM `sml_news` [ RunTime:0.0166s ]
+SQL: SELECT * FROM `sml_news` WHERE ( isread = 0 )  [ RunTime:0.0024s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sml_news` WHERE ( isread = 0 ) LIMIT 1   [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `sml_assets` [ RunTime:0.0167s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sml_assets` WHERE ( isdel=0 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `sml_assets` ORDER BY id desc LIMIT 0,12   [ RunTime:0.0011s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000344s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000508s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.068877s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.069050s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002537s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002781s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001659s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001844s ]
+
+[ 2017-02-18T12:15:23+08:00 ] 192.168.1.100 /smile/indin.php?m=Hmin&c=Infor&a=sign
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001056s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001694s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001871s ]
+SQL: SHOW COLUMNS FROM `sml_users_sign` [ RunTime:0.0132s ]
+SQL: SELECT `sign_day` FROM `sml_users_sign` WHERE ( sign_uid=1001 AND sign_mon=201702 ) LIMIT 1   [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `sml_action` [ RunTime:0.0172s ]
+SQL: SELECT `id` FROM `sml_action` WHERE ( url='Infor/sign' ) LIMIT 1   [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `sml_group` [ RunTime:0.0190s ]
+SQL: SELECT `rules` FROM `sml_group` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sml_areas` [ RunTime:0.0152s ]
+SQL: SELECT * FROM `sml_areas` WHERE ( pid=0 )  [ RunTime:0.0098s ]
+SQL: SHOW COLUMNS FROM `sml_setup` [ RunTime:0.0218s ]
+SQL: SELECT * FROM `sml_setup` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `sml_cate` [ RunTime:0.0166s ]
+SQL: SELECT * FROM `sml_cate` WHERE ( isdel=0 )  [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `sml_news` [ RunTime:0.0138s ]
+SQL: SELECT * FROM `sml_news` WHERE ( isread = 0 )  [ RunTime:0.0012s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sml_news` WHERE ( isread = 0 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `sml_users_sign` WHERE ( sign_uid=1001 AND sign_mon =201702 ) LIMIT 1   [ RunTime:0.0011s ]
+SQL: UPDATE `sml_users_sign` SET `sign_uid`='1001',`sign_mon`='201702',`sign_day`='18',`sign_score`='4',`sign_num`='1',`sign_days`=',1,18' WHERE ( sign_uid=1001 AND sign_mon =201702 ) [ RunTime:0.1127s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001532s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001717s ]
+
+[ 2017-02-18T12:15:28+08:00 ] 192.168.1.100 /smile/indin.php?m=Hmin&c=Admin&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000046s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003811s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001449s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001621s ]
+SQL: SHOW COLUMNS FROM `sml_users_sign` [ RunTime:0.0151s ]
+SQL: SELECT `sign_day` FROM `sml_users_sign` WHERE ( sign_uid=1001 AND sign_mon=201702 ) LIMIT 1   [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `sml_action` [ RunTime:0.0125s ]
+SQL: SELECT `id` FROM `sml_action` WHERE ( url='Admin/index' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sml_group` [ RunTime:0.0128s ]
+SQL: SELECT `rules` FROM `sml_group` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `sml_areas` [ RunTime:0.0206s ]
+SQL: SELECT * FROM `sml_areas` WHERE ( pid=0 )  [ RunTime:0.0109s ]
+SQL: SHOW COLUMNS FROM `sml_setup` [ RunTime:0.0290s ]
+SQL: SELECT * FROM `sml_setup` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `sml_cate` [ RunTime:0.0226s ]
+SQL: SELECT * FROM `sml_cate` WHERE ( isdel=0 )  [ RunTime:0.0061s ]
+SQL: SHOW COLUMNS FROM `sml_news` [ RunTime:0.0293s ]
+SQL: SELECT * FROM `sml_news` WHERE ( isread = 0 )  [ RunTime:0.0011s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sml_news` WHERE ( isread = 0 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `sml_action` WHERE ( isdel=0 AND public='0' ) ORDER BY sort asc  [ RunTime:0.0033s ]
+SQL: SELECT `name` FROM `sml_action` WHERE ( public='main' ) LIMIT 1   [ RunTime:0.0009s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000294s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000472s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.050402s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.050588s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002643s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002831s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002340s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002528s ]
+
+[ 2017-02-18T12:15:28+08:00 ] 192.168.1.100 /smile/indin.php?m=Hmin&c=Admin&a=home
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000176s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003296s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005994s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006316s ]
+SQL: SHOW COLUMNS FROM `sml_users_sign` [ RunTime:0.0227s ]
+SQL: SELECT `sign_day` FROM `sml_users_sign` WHERE ( sign_uid=1001 AND sign_mon=201702 ) LIMIT 1   [ RunTime:0.0037s ]
+SQL: SHOW COLUMNS FROM `sml_action` [ RunTime:0.0183s ]
+SQL: SELECT `id` FROM `sml_action` WHERE ( url='Admin/home' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sml_group` [ RunTime:0.0160s ]
+SQL: SELECT `rules` FROM `sml_group` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `sml_areas` [ RunTime:0.0159s ]
+SQL: SELECT * FROM `sml_areas` WHERE ( pid=0 )  [ RunTime:0.0119s ]
+SQL: SHOW COLUMNS FROM `sml_setup` [ RunTime:0.0165s ]
+SQL: SELECT * FROM `sml_setup` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0031s ]
+SQL: SHOW COLUMNS FROM `sml_cate` [ RunTime:0.0350s ]
+SQL: SELECT * FROM `sml_cate` WHERE ( isdel=0 )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sml_news` [ RunTime:0.0316s ]
+SQL: SELECT * FROM `sml_news` WHERE ( isread = 0 )  [ RunTime:0.0068s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sml_news` WHERE ( isread = 0 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sml_assets` [ RunTime:0.0221s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sml_assets` WHERE ( isdel=0 ) LIMIT 1   [ RunTime:0.0011s ]
+SQL: SELECT * FROM `sml_assets` ORDER BY id desc LIMIT 0,12   [ RunTime:0.0012s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000364s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000549s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.050637s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.050813s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001849s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002022s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002837s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003058s ]
+
+[ 2017-02-18T12:15:39+08:00 ] 192.168.1.100 /smile/indin.php?m=Hmin&c=Infor&a=inforMsg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000046s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002369s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004943s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005364s ]
+SQL: SHOW COLUMNS FROM `sml_users_sign` [ RunTime:0.0162s ]
+SQL: SELECT `sign_day` FROM `sml_users_sign` WHERE ( sign_uid=1001 AND sign_mon=201702 ) LIMIT 1   [ RunTime:0.0023s ]
+SQL: SHOW COLUMNS FROM `sml_action` [ RunTime:0.0167s ]
+SQL: SELECT `id` FROM `sml_action` WHERE ( url='Infor/inforMsg' ) LIMIT 1   [ RunTime:0.0021s ]
+SQL: SHOW COLUMNS FROM `sml_group` [ RunTime:0.0391s ]
+SQL: SELECT `rules` FROM `sml_group` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `sml_areas` [ RunTime:0.0292s ]
+SQL: SELECT * FROM `sml_areas` WHERE ( pid=0 )  [ RunTime:0.0133s ]
+SQL: SHOW COLUMNS FROM `sml_setup` [ RunTime:0.0250s ]
+SQL: SELECT * FROM `sml_setup` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `sml_cate` [ RunTime:0.0284s ]
+SQL: SELECT * FROM `sml_cate` WHERE ( isdel=0 )  [ RunTime:0.0016s ]
+SQL: SHOW COLUMNS FROM `sml_news` [ RunTime:0.0191s ]
+SQL: SELECT * FROM `sml_news` WHERE ( isread = 0 )  [ RunTime:0.0012s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sml_news` WHERE ( isread = 0 ) LIMIT 1   [ RunTime:0.0012s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000118s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000289s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.036057s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.036256s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000989s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001144s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001605s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001786s ]
+
+[ 2017-02-18T12:16:08+08:00 ] 192.168.1.107 /smile/indin.php?m=Hmin&c=Index&a=logindo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001530s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001610s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001794s ]
+
+[ 2017-02-18T12:16:08+08:00 ] 192.168.1.107 /smile/indin.php?m=Hmin&c=Index&a=getVerify&random=0.4512822918208901&random=0.35193936073579857
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003089s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002051s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002373s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001964s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002833s ]
+
+[ 2017-02-18T12:16:10+08:00 ] 192.168.1.107 /smile/indin.php?m=Hmin&c=Index&a=getVerify&random=0.4512822918208901&random=0.35193936073579857&random=0.9808546353580168
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002543s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004436s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004689s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002929s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003653s ]
+
+[ 2017-02-18T12:16:16+08:00 ] 192.168.1.107 /smile/indin.php?m=Hmin&c=Index&a=logindo
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001380s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002540s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002773s ]
+SQL: SHOW COLUMNS FROM `sml_users` [ RunTime:0.0421s ]
+SQL: SELECT * FROM `sml_users` WHERE ( (tel='admin' OR qq='admin') AND password='4b8af08e011c961d9e86a11ab12b673f' ) LIMIT 1   [ RunTime:0.0023s ]
+SQL: SHOW COLUMNS FROM `sml_group` [ RunTime:0.0239s ]
+SQL: SELECT `title` FROM `sml_group` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `sml_users_sign` [ RunTime:0.0268s ]
+SQL: SELECT `sign_score` FROM `sml_users_sign` WHERE ( id=1001 AND sign_mon=201702 ) LIMIT 1   [ RunTime:0.0011s ]
+SQL: UPDATE `sml_users` SET `ip`='192.168.1.107' WHERE ( id=1001 ) [ RunTime:0.0945s ]
+SQL: UPDATE `sml_users` SET `lastdate`='2017-02-18 12:16:16' WHERE ( id=1001 ) [ RunTime:0.0655s ]
+SQL: SHOW COLUMNS FROM `sml_log_logins` [ RunTime:0.0203s ]
+SQL: INSERT INTO `sml_log_logins` (`loginip`,`logintime`,`userid`) VALUES ('192.168.1.107','2017-02-18 12:16:16','1001') [ RunTime:0.0792s ]
+SQL: select version() as ver [ RunTime:0.0009s ]
+SQL: SHOW TABLE STATUS FROM smile LIKE 'sml_%' [ RunTime:0.0150s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001503s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001655s ]
+
+[ 2017-02-18T12:16:18+08:00 ] 192.168.1.107 /smile/indin.php?m=Hmin&c=Admin&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002939s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001367s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001539s ]
+SQL: SHOW COLUMNS FROM `sml_users_sign` [ RunTime:0.0980s ]
+SQL: SELECT `sign_day` FROM `sml_users_sign` WHERE ( sign_uid=1001 AND sign_mon=201702 ) LIMIT 1   [ RunTime:0.0123s ]
+SQL: SHOW COLUMNS FROM `sml_action` [ RunTime:0.0448s ]
+SQL: SELECT `id` FROM `sml_action` WHERE ( url='Admin/index' ) LIMIT 1   [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `sml_group` [ RunTime:0.0339s ]
+SQL: SELECT `rules` FROM `sml_group` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0043s ]
+SQL: SHOW COLUMNS FROM `sml_areas` [ RunTime:0.0301s ]
+SQL: SELECT * FROM `sml_areas` WHERE ( pid=0 )  [ RunTime:0.0171s ]
+SQL: SHOW COLUMNS FROM `sml_setup` [ RunTime:0.0300s ]
+SQL: SELECT * FROM `sml_setup` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `sml_cate` [ RunTime:0.0226s ]
+SQL: SELECT * FROM `sml_cate` WHERE ( isdel=0 )  [ RunTime:0.0056s ]
+SQL: SHOW COLUMNS FROM `sml_news` [ RunTime:0.0185s ]
+SQL: SELECT * FROM `sml_news` WHERE ( isread = 0 )  [ RunTime:0.0016s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sml_news` WHERE ( isread = 0 ) LIMIT 1   [ RunTime:0.0011s ]
+SQL: SELECT * FROM `sml_action` WHERE ( isdel=0 AND public='0' ) ORDER BY sort asc  [ RunTime:0.0041s ]
+SQL: SELECT `name` FROM `sml_action` WHERE ( public='main' ) LIMIT 1   [ RunTime:0.0011s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000538s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000770s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.046023s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.046215s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001074s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001226s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002342s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002571s ]
+
+[ 2017-02-18T12:16:20+08:00 ] 192.168.1.107 /smile/indin.php?m=Hmin&c=Admin&a=home
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000044s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005141s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002799s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003011s ]
+SQL: SHOW COLUMNS FROM `sml_users_sign` [ RunTime:0.0136s ]
+SQL: SELECT `sign_day` FROM `sml_users_sign` WHERE ( sign_uid=1001 AND sign_mon=201702 ) LIMIT 1   [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `sml_action` [ RunTime:0.0142s ]
+SQL: SELECT `id` FROM `sml_action` WHERE ( url='Admin/home' ) LIMIT 1   [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `sml_group` [ RunTime:0.0144s ]
+SQL: SELECT `rules` FROM `sml_group` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0143s ]
+SQL: SHOW COLUMNS FROM `sml_areas` [ RunTime:0.0714s ]
+SQL: SELECT * FROM `sml_areas` WHERE ( pid=0 )  [ RunTime:0.0111s ]
+SQL: SHOW COLUMNS FROM `sml_setup` [ RunTime:0.0979s ]
+SQL: SELECT * FROM `sml_setup` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `sml_cate` [ RunTime:0.0559s ]
+SQL: SELECT * FROM `sml_cate` WHERE ( isdel=0 )  [ RunTime:0.0019s ]
+SQL: SHOW COLUMNS FROM `sml_news` [ RunTime:0.0313s ]
+SQL: SELECT * FROM `sml_news` WHERE ( isread = 0 )  [ RunTime:0.0030s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sml_news` WHERE ( isread = 0 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sml_assets` [ RunTime:0.0312s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sml_assets` WHERE ( isdel=0 ) LIMIT 1   [ RunTime:0.0027s ]
+SQL: SELECT * FROM `sml_assets` ORDER BY id desc LIMIT 0,12   [ RunTime:0.0023s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000804s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001087s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.044400s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.044631s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002183s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002375s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004608s ]
+INFO: [ app_end ] --END-- [ RunTime:0.006608s ]
+
+[ 2017-02-18T12:16:31+08:00 ] 192.168.1.107 /smile/indin.php?m=Hmin&c=Admin&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000612s ]
+INFO: [ app_init ] --END-- [ RunTime:0.019028s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005055s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005429s ]
+SQL: SHOW COLUMNS FROM `sml_users_sign` [ RunTime:0.0278s ]
+SQL: SELECT `sign_day` FROM `sml_users_sign` WHERE ( sign_uid=1001 AND sign_mon=201702 ) LIMIT 1   [ RunTime:0.0016s ]
+SQL: SHOW COLUMNS FROM `sml_action` [ RunTime:0.0562s ]
+SQL: SELECT `id` FROM `sml_action` WHERE ( url='Admin/index' ) LIMIT 1   [ RunTime:0.0114s ]
+SQL: SHOW COLUMNS FROM `sml_group` [ RunTime:0.0991s ]
+SQL: SELECT `rules` FROM `sml_group` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `sml_areas` [ RunTime:0.0394s ]
+SQL: SELECT * FROM `sml_areas` WHERE ( pid=0 )  [ RunTime:0.0141s ]
+SQL: SHOW COLUMNS FROM `sml_setup` [ RunTime:0.0406s ]
+SQL: SELECT * FROM `sml_setup` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `sml_cate` [ RunTime:0.1245s ]
+SQL: SELECT * FROM `sml_cate` WHERE ( isdel=0 )  [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `sml_news` [ RunTime:0.0252s ]
+SQL: SELECT * FROM `sml_news` WHERE ( isread = 0 )  [ RunTime:0.0022s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sml_news` WHERE ( isread = 0 ) LIMIT 1   [ RunTime:0.0041s ]
+SQL: SELECT * FROM `sml_action` WHERE ( isdel=0 AND public='0' ) ORDER BY sort asc  [ RunTime:0.0030s ]
+SQL: SELECT `name` FROM `sml_action` WHERE ( public='main' ) LIMIT 1   [ RunTime:0.0027s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000301s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000478s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.048498s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.048707s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001498s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001808s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.007997s ]
+INFO: [ app_end ] --END-- [ RunTime:0.008275s ]
+
+[ 2017-02-18T12:22:20+08:00 ] 192.168.1.107 /smile/indin.php/Article/lst
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000045s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004301s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003304s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003550s ]
+SQL: SHOW COLUMNS FROM `sml_users_sign` [ RunTime:0.0399s ]
+SQL: SELECT `sign_day` FROM `sml_users_sign` WHERE ( sign_uid=1001 AND sign_mon=201702 ) LIMIT 1   [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `sml_action` [ RunTime:0.0627s ]
+SQL: SELECT `id` FROM `sml_action` WHERE ( url='Article/lst' ) LIMIT 1   [ RunTime:0.0130s ]
+SQL: SHOW COLUMNS FROM `sml_group` [ RunTime:0.0509s ]
+SQL: SELECT `rules` FROM `sml_group` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0028s ]
+SQL: SHOW COLUMNS FROM `sml_areas` [ RunTime:0.0311s ]
+SQL: SELECT * FROM `sml_areas` WHERE ( pid=0 )  [ RunTime:0.0864s ]
+SQL: SHOW COLUMNS FROM `sml_setup` [ RunTime:0.0423s ]
+SQL: SELECT * FROM `sml_setup` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0067s ]
+SQL: SHOW COLUMNS FROM `sml_cate` [ RunTime:0.0477s ]
+SQL: SELECT * FROM `sml_cate` WHERE ( isdel=0 )  [ RunTime:0.0017s ]
+SQL: SHOW COLUMNS FROM `sml_news` [ RunTime:0.0577s ]
+SQL: SELECT * FROM `sml_news` WHERE ( isread = 0 )  [ RunTime:0.0019s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sml_news` WHERE ( isread = 0 ) LIMIT 1   [ RunTime:0.0024s ]
+SQL: SHOW COLUMNS FROM `sml_article` [ RunTime:0.0696s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sml_article` WHERE ( isdel = 0 ) LIMIT 1   [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `sml_article` [ RunTime:0.0475s ]
+SQL: SELECT * FROM `sml_article` WHERE ( isdel = 0 ) ORDER BY viewnum desc LIMIT 0,15   [ RunTime:0.0160s ]
+SQL: SHOW COLUMNS FROM `sml_assets` [ RunTime:0.0957s ]
+SQL: SHOW COLUMNS FROM `sml_assets` [ RunTime:0.0516s ]
+SQL: SELECT `id`,`domain`,`savepath`,`savename` FROM `sml_assets` WHERE (  id in (7) and isdel = 0  )  [ RunTime:0.0046s ]
+SQL: SELECT `name` FROM `sml_cate` WHERE ( id = '11'  ) LIMIT 1   [ RunTime:0.0064s ]
+SQL: SELECT `id`,`domain`,`savepath`,`savename` FROM `sml_assets` WHERE (  id in (3) and isdel = 0  )  [ RunTime:0.0104s ]
+SQL: SELECT `name` FROM `sml_cate` WHERE ( id = '5'  ) LIMIT 1   [ RunTime:0.0044s ]
+SQL: SELECT `id`,`domain`,`savepath`,`savename` FROM `sml_assets` WHERE (  id in (4) and isdel = 0  )  [ RunTime:0.0024s ]
+SQL: SELECT `name` FROM `sml_cate` WHERE ( id = '2'  ) LIMIT 1   [ RunTime:0.0015s ]
+SQL: SELECT `id`,`domain`,`savepath`,`savename` FROM `sml_assets` WHERE (  id in (25) and isdel = 0  )  [ RunTime:0.0052s ]
+SQL: SELECT `name` FROM `sml_cate` WHERE ( id = '6'  ) LIMIT 1   [ RunTime:0.0067s ]
+SQL: SELECT `id`,`domain`,`savepath`,`savename` FROM `sml_assets` WHERE (  id in (10) and isdel = 0  )  [ RunTime:0.0033s ]
+SQL: SELECT `name` FROM `sml_cate` WHERE ( id = '2'  ) LIMIT 1   [ RunTime:0.0063s ]
+SQL: SELECT `id`,`domain`,`savepath`,`savename` FROM `sml_assets` WHERE (  id in (9) and isdel = 0  )  [ RunTime:0.0033s ]
+SQL: SELECT `name` FROM `sml_cate` WHERE ( id = '10'  ) LIMIT 1   [ RunTime:0.0122s ]
+SQL: SELECT `id`,`domain`,`savepath`,`savename` FROM `sml_assets` WHERE (  id in (8) and isdel = 0  )  [ RunTime:0.0025s ]
+SQL: SELECT `name` FROM `sml_cate` WHERE ( id = '1'  ) LIMIT 1   [ RunTime:0.0044s ]
+SQL: SELECT `id`,`domain`,`savepath`,`savename` FROM `sml_assets` WHERE (  id in (5) and isdel = 0  )  [ RunTime:0.0044s ]
+SQL: SELECT `name` FROM `sml_cate` WHERE ( id = '8'  ) LIMIT 1   [ RunTime:0.0038s ]
+SQL: SELECT `id`,`domain`,`savepath`,`savename` FROM `sml_assets` WHERE (  id in (23) and isdel = 0  )  [ RunTime:0.0018s ]
+SQL: SELECT `name` FROM `sml_cate` WHERE ( id = '8'  ) LIMIT 1   [ RunTime:0.0026s ]
+SQL: SELECT `id`,`domain`,`savepath`,`savename` FROM `sml_assets` WHERE (  id in (12) and isdel = 0  )  [ RunTime:0.0019s ]
+SQL: SELECT `name` FROM `sml_cate` WHERE ( id = '10'  ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `id`,`domain`,`savepath`,`savename` FROM `sml_assets` WHERE (  id in (11) and isdel = 0  )  [ RunTime:0.0021s ]
+SQL: SELECT `name` FROM `sml_cate` WHERE ( id = '1'  ) LIMIT 1   [ RunTime:0.0014s ]
+SQL: SELECT `id`,`domain`,`savepath`,`savename` FROM `sml_assets` WHERE (  id in (13) and isdel = 0  )  [ RunTime:0.0010s ]
+SQL: SELECT `name` FROM `sml_cate` WHERE ( id = '1'  ) LIMIT 1   [ RunTime:0.0017s ]
+SQL: SELECT `id`,`domain`,`savepath`,`savename` FROM `sml_assets` WHERE (  id in (15) and isdel = 0  )  [ RunTime:0.0010s ]
+SQL: SELECT `name` FROM `sml_cate` WHERE ( id = '10'  ) LIMIT 1   [ RunTime:0.0016s ]
+SQL: SELECT `id`,`domain`,`savepath`,`savename` FROM `sml_assets` WHERE (  id in (6) and isdel = 0  )  [ RunTime:0.0036s ]
+SQL: SELECT `name` FROM `sml_cate` WHERE ( id = '1'  ) LIMIT 1   [ RunTime:0.0018s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000449s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000965s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.164793s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.165026s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.009559s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.009987s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.024044s ]
+INFO: [ app_end ] --END-- [ RunTime:0.026469s ]
+
+[ 2017-02-18T12:22:34+08:00 ] 192.168.1.107 /smile/indin.php?m=Hmin&c=Article&a=delimg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000044s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003884s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002643s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002834s ]
+SQL: SHOW COLUMNS FROM `sml_users_sign` [ RunTime:0.0545s ]
+SQL: SELECT `sign_day` FROM `sml_users_sign` WHERE ( sign_uid=1001 AND sign_mon=201702 ) LIMIT 1   [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `sml_action` [ RunTime:0.0209s ]
+SQL: SELECT `id` FROM `sml_action` WHERE ( url='Article/delimg' ) LIMIT 1   [ RunTime:0.0065s ]
+SQL: SHOW COLUMNS FROM `sml_group` [ RunTime:0.0281s ]
+SQL: SELECT `rules` FROM `sml_group` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0045s ]
+SQL: SHOW COLUMNS FROM `sml_areas` [ RunTime:0.0245s ]
+SQL: SELECT * FROM `sml_areas` WHERE ( pid=0 )  [ RunTime:0.0133s ]
+SQL: SHOW COLUMNS FROM `sml_setup` [ RunTime:0.0314s ]
+SQL: SELECT * FROM `sml_setup` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `sml_cate` [ RunTime:0.0222s ]
+SQL: SELECT * FROM `sml_cate` WHERE ( isdel=0 )  [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `sml_news` [ RunTime:0.0218s ]
+SQL: SELECT * FROM `sml_news` WHERE ( isread = 0 )  [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sml_news` WHERE ( isread = 0 ) LIMIT 1   [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `sml_article` [ RunTime:0.0190s ]
+SQL: UPDATE `sml_article` SET `indeximg`='0' WHERE ( id=8 ) [ RunTime:0.1487s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002363s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002533s ]
+
+[ 2017-02-18T12:22:36+08:00 ] 192.168.1.107 /smile/indin.php/Article/lst
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000053s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001649s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001969s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002183s ]
+SQL: SHOW COLUMNS FROM `sml_users_sign` [ RunTime:0.0298s ]
+SQL: SELECT `sign_day` FROM `sml_users_sign` WHERE ( sign_uid=1001 AND sign_mon=201702 ) LIMIT 1   [ RunTime:0.0023s ]
+SQL: SHOW COLUMNS FROM `sml_action` [ RunTime:0.0267s ]
+SQL: SELECT `id` FROM `sml_action` WHERE ( url='Article/lst' ) LIMIT 1   [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `sml_group` [ RunTime:0.0178s ]
+SQL: SELECT `rules` FROM `sml_group` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `sml_areas` [ RunTime:0.0207s ]
+SQL: SELECT * FROM `sml_areas` WHERE ( pid=0 )  [ RunTime:0.0247s ]
+SQL: SHOW COLUMNS FROM `sml_setup` [ RunTime:0.0227s ]
+SQL: SELECT * FROM `sml_setup` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0056s ]
+SQL: SHOW COLUMNS FROM `sml_cate` [ RunTime:0.0335s ]
+SQL: SELECT * FROM `sml_cate` WHERE ( isdel=0 )  [ RunTime:0.0031s ]
+SQL: SHOW COLUMNS FROM `sml_news` [ RunTime:0.0298s ]
+SQL: SELECT * FROM `sml_news` WHERE ( isread = 0 )  [ RunTime:0.0011s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sml_news` WHERE ( isread = 0 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sml_article` [ RunTime:0.0180s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sml_article` WHERE ( isdel = 0 ) LIMIT 1   [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `sml_article` [ RunTime:0.0241s ]
+SQL: SELECT * FROM `sml_article` WHERE ( isdel = 0 ) ORDER BY viewnum desc LIMIT 0,15   [ RunTime:0.0078s ]
+SQL: SHOW COLUMNS FROM `sml_assets` [ RunTime:0.0594s ]
+SQL: SHOW COLUMNS FROM `sml_assets` [ RunTime:0.0226s ]
+SQL: SELECT `id`,`domain`,`savepath`,`savename` FROM `sml_assets` WHERE (  id in (7) and isdel = 0  )  [ RunTime:0.0010s ]
+SQL: SELECT `name` FROM `sml_cate` WHERE ( id = '11'  ) LIMIT 1   [ RunTime:0.0012s ]
+SQL: SELECT `id`,`domain`,`savepath`,`savename` FROM `sml_assets` WHERE (  id in (3) and isdel = 0  )  [ RunTime:0.0011s ]
+SQL: SELECT `name` FROM `sml_cate` WHERE ( id = '5'  ) LIMIT 1   [ RunTime:0.0029s ]
+SQL: SELECT `id`,`domain`,`savepath`,`savename` FROM `sml_assets` WHERE (  id in (4) and isdel = 0  )  [ RunTime:0.0014s ]
+SQL: SELECT `name` FROM `sml_cate` WHERE ( id = '2'  ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `id`,`domain`,`savepath`,`savename` FROM `sml_assets` WHERE (  id in (25) and isdel = 0  )  [ RunTime:0.0012s ]
+SQL: SELECT `name` FROM `sml_cate` WHERE ( id = '6'  ) LIMIT 1   [ RunTime:0.0011s ]
+SQL: SELECT `id`,`domain`,`savepath`,`savename` FROM `sml_assets` WHERE (  id in (10) and isdel = 0  )  [ RunTime:0.0010s ]
+SQL: SELECT `name` FROM `sml_cate` WHERE ( id = '2'  ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `id`,`domain`,`savepath`,`savename` FROM `sml_assets` WHERE (  id in (9) and isdel = 0  )  [ RunTime:0.0020s ]
+SQL: SELECT `name` FROM `sml_cate` WHERE ( id = '10'  ) LIMIT 1   [ RunTime:0.0018s ]
+SQL: SELECT `id`,`domain`,`savepath`,`savename` FROM `sml_assets` WHERE (  id in (8) and isdel = 0  )  [ RunTime:0.0013s ]
+SQL: SELECT `name` FROM `sml_cate` WHERE ( id = '1'  ) LIMIT 1   [ RunTime:0.0011s ]
+SQL: SELECT `id`,`domain`,`savepath`,`savename` FROM `sml_assets` WHERE (  id in (5) and isdel = 0  )  [ RunTime:0.0021s ]
+SQL: SELECT `name` FROM `sml_cate` WHERE ( id = '8'  ) LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT `id`,`domain`,`savepath`,`savename` FROM `sml_assets` WHERE (  id in (23) and isdel = 0  )  [ RunTime:0.0010s ]
+SQL: SELECT `name` FROM `sml_cate` WHERE ( id = '8'  ) LIMIT 1   [ RunTime:0.0011s ]
+SQL: SELECT `id`,`domain`,`savepath`,`savename` FROM `sml_assets` WHERE (  id in (12) and isdel = 0  )  [ RunTime:0.0012s ]
+SQL: SELECT `name` FROM `sml_cate` WHERE ( id = '10'  ) LIMIT 1   [ RunTime:0.0026s ]
+SQL: SELECT `id`,`domain`,`savepath`,`savename` FROM `sml_assets` WHERE (  id in (11) and isdel = 0  )  [ RunTime:0.0021s ]
+SQL: SELECT `name` FROM `sml_cate` WHERE ( id = '1'  ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `id`,`domain`,`savepath`,`savename` FROM `sml_assets` WHERE (  id in (13) and isdel = 0  )  [ RunTime:0.0015s ]
+SQL: SELECT `name` FROM `sml_cate` WHERE ( id = '1'  ) LIMIT 1   [ RunTime:0.0012s ]
+SQL: SELECT `id`,`domain`,`savepath`,`savename` FROM `sml_assets` WHERE (  id in (15) and isdel = 0  )  [ RunTime:0.0027s ]
+SQL: SELECT `name` FROM `sml_cate` WHERE ( id = '10'  ) LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT `id`,`domain`,`savepath`,`savename` FROM `sml_assets` WHERE (  id in (6) and isdel = 0  )  [ RunTime:0.0012s ]
+SQL: SELECT `name` FROM `sml_cate` WHERE ( id = '1'  ) LIMIT 1   [ RunTime:0.0033s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000244s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000409s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.097464s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.097649s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.003935s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004092s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.006360s ]
+INFO: [ app_end ] --END-- [ RunTime:0.007112s ]
+
+[ 2017-02-18T12:22:46+08:00 ] 192.168.1.107 /smile/indin.php?m=Hmin&c=Article&a=delimg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000702s ]
+INFO: [ app_init ] --END-- [ RunTime:0.009037s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005770s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008305s ]
+SQL: SHOW COLUMNS FROM `sml_users_sign` [ RunTime:0.0139s ]
+SQL: SELECT `sign_day` FROM `sml_users_sign` WHERE ( sign_uid=1001 AND sign_mon=201702 ) LIMIT 1   [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `sml_action` [ RunTime:0.0127s ]
+SQL: SELECT `id` FROM `sml_action` WHERE ( url='Article/delimg' ) LIMIT 1   [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `sml_group` [ RunTime:0.0247s ]
+SQL: SELECT `rules` FROM `sml_group` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `sml_areas` [ RunTime:0.0264s ]
+SQL: SELECT * FROM `sml_areas` WHERE ( pid=0 )  [ RunTime:0.0120s ]
+SQL: SHOW COLUMNS FROM `sml_setup` [ RunTime:0.0363s ]
+SQL: SELECT * FROM `sml_setup` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0033s ]
+SQL: SHOW COLUMNS FROM `sml_cate` [ RunTime:0.0472s ]
+SQL: SELECT * FROM `sml_cate` WHERE ( isdel=0 )  [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `sml_news` [ RunTime:0.0455s ]
+SQL: SELECT * FROM `sml_news` WHERE ( isread = 0 )  [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sml_news` WHERE ( isread = 0 ) LIMIT 1   [ RunTime:0.0300s ]
+SQL: SHOW COLUMNS FROM `sml_article` [ RunTime:0.0459s ]
+SQL: UPDATE `sml_article` SET `indeximg`='0' WHERE ( id=6 ) [ RunTime:0.2207s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003295s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003523s ]
+
+[ 2017-02-18T12:22:49+08:00 ] 192.168.1.107 /smile/indin.php/Article/lst
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000137s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002841s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002543s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003010s ]
+SQL: SHOW COLUMNS FROM `sml_users_sign` [ RunTime:0.0115s ]
+SQL: SELECT `sign_day` FROM `sml_users_sign` WHERE ( sign_uid=1001 AND sign_mon=201702 ) LIMIT 1   [ RunTime:0.0022s ]
+SQL: SHOW COLUMNS FROM `sml_action` [ RunTime:0.0207s ]
+SQL: SELECT `id` FROM `sml_action` WHERE ( url='Article/lst' ) LIMIT 1   [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `sml_group` [ RunTime:0.0268s ]
+SQL: SELECT `rules` FROM `sml_group` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0019s ]
+SQL: SHOW COLUMNS FROM `sml_areas` [ RunTime:0.0470s ]
+SQL: SELECT * FROM `sml_areas` WHERE ( pid=0 )  [ RunTime:0.0187s ]
+SQL: SHOW COLUMNS FROM `sml_setup` [ RunTime:0.0232s ]
+SQL: SELECT * FROM `sml_setup` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0033s ]
+SQL: SHOW COLUMNS FROM `sml_cate` [ RunTime:0.0970s ]
+SQL: SELECT * FROM `sml_cate` WHERE ( isdel=0 )  [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `sml_news` [ RunTime:0.0378s ]
+SQL: SELECT * FROM `sml_news` WHERE ( isread = 0 )  [ RunTime:0.0044s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sml_news` WHERE ( isread = 0 ) LIMIT 1   [ RunTime:0.0024s ]
+SQL: SHOW COLUMNS FROM `sml_article` [ RunTime:0.1454s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sml_article` WHERE ( isdel = 0 ) LIMIT 1   [ RunTime:0.0143s ]
+SQL: SHOW COLUMNS FROM `sml_article` [ RunTime:0.0376s ]
+SQL: SELECT * FROM `sml_article` WHERE ( isdel = 0 ) ORDER BY viewnum desc LIMIT 0,15   [ RunTime:0.0276s ]
+SQL: SHOW COLUMNS FROM `sml_assets` [ RunTime:0.1973s ]
+SQL: SHOW COLUMNS FROM `sml_assets` [ RunTime:0.0751s ]
+SQL: SELECT `id`,`domain`,`savepath`,`savename` FROM `sml_assets` WHERE (  id in (7) and isdel = 0  )  [ RunTime:0.0143s ]
+SQL: SELECT `name` FROM `sml_cate` WHERE ( id = '11'  ) LIMIT 1   [ RunTime:0.0093s ]
+SQL: SELECT `id`,`domain`,`savepath`,`savename` FROM `sml_assets` WHERE (  id in (3) and isdel = 0  )  [ RunTime:0.0188s ]
+SQL: SELECT `name` FROM `sml_cate` WHERE ( id = '5'  ) LIMIT 1   [ RunTime:0.0259s ]
+SQL: SELECT `id`,`domain`,`savepath`,`savename` FROM `sml_assets` WHERE (  id in (4) and isdel = 0  )  [ RunTime:0.0051s ]
+SQL: SELECT `name` FROM `sml_cate` WHERE ( id = '2'  ) LIMIT 1   [ RunTime:0.0578s ]
+SQL: SELECT `id`,`domain`,`savepath`,`savename` FROM `sml_assets` WHERE (  id in (25) and isdel = 0  )  [ RunTime:0.0257s ]
+SQL: SELECT `name` FROM `sml_cate` WHERE ( id = '6'  ) LIMIT 1   [ RunTime:0.0110s ]
+SQL: SELECT `id`,`domain`,`savepath`,`savename` FROM `sml_assets` WHERE (  id in (10) and isdel = 0  )  [ RunTime:0.0104s ]
+SQL: SELECT `name` FROM `sml_cate` WHERE ( id = '2'  ) LIMIT 1   [ RunTime:0.0104s ]
+SQL: SELECT `id`,`domain`,`savepath`,`savename` FROM `sml_assets` WHERE (  id in (9) and isdel = 0  )  [ RunTime:0.0512s ]
+SQL: SELECT `name` FROM `sml_cate` WHERE ( id = '10'  ) LIMIT 1   [ RunTime:0.0158s ]
+SQL: SELECT `id`,`domain`,`savepath`,`savename` FROM `sml_assets` WHERE (  id in (8) and isdel = 0  )  [ RunTime:0.0031s ]
+SQL: SELECT `name` FROM `sml_cate` WHERE ( id = '1'  ) LIMIT 1   [ RunTime:0.0011s ]
+SQL: SELECT `id`,`domain`,`savepath`,`savename` FROM `sml_assets` WHERE (  id in (5) and isdel = 0  )  [ RunTime:0.0013s ]
+SQL: SELECT `name` FROM `sml_cate` WHERE ( id = '8'  ) LIMIT 1   [ RunTime:0.0013s ]
+SQL: SELECT `id`,`domain`,`savepath`,`savename` FROM `sml_assets` WHERE (  id in (23) and isdel = 0  )  [ RunTime:0.0174s ]
+SQL: SELECT `name` FROM `sml_cate` WHERE ( id = '8'  ) LIMIT 1   [ RunTime:0.0026s ]
+SQL: SELECT `id`,`domain`,`savepath`,`savename` FROM `sml_assets` WHERE (  id in (12) and isdel = 0  )  [ RunTime:0.0104s ]
+SQL: SELECT `name` FROM `sml_cate` WHERE ( id = '10'  ) LIMIT 1   [ RunTime:0.0142s ]
+SQL: SELECT `id`,`domain`,`savepath`,`savename` FROM `sml_assets` WHERE (  id in (11) and isdel = 0  )  [ RunTime:0.0223s ]
+SQL: SELECT `name` FROM `sml_cate` WHERE ( id = '1'  ) LIMIT 1   [ RunTime:0.0076s ]
+SQL: SELECT `id`,`domain`,`savepath`,`savename` FROM `sml_assets` WHERE (  id in (13) and isdel = 0  )  [ RunTime:0.0011s ]
+SQL: SELECT `name` FROM `sml_cate` WHERE ( id = '1'  ) LIMIT 1   [ RunTime:0.0011s ]
+SQL: SELECT `id`,`domain`,`savepath`,`savename` FROM `sml_assets` WHERE (  id in (15) and isdel = 0  )  [ RunTime:0.0030s ]
+SQL: SELECT `name` FROM `sml_cate` WHERE ( id = '10'  ) LIMIT 1   [ RunTime:0.0059s ]
+SQL: SELECT `id`,`domain`,`savepath`,`savename` FROM `sml_assets` WHERE (  id in (6) and isdel = 0  )  [ RunTime:0.0014s ]
+SQL: SELECT `name` FROM `sml_cate` WHERE ( id = '1'  ) LIMIT 1   [ RunTime:0.0014s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000522s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001135s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.126994s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.127186s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.008496s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.009231s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.036449s ]
+INFO: [ app_end ] --END-- [ RunTime:0.036661s ]
+
+[ 2017-02-18T12:22:50+08:00 ] 192.168.1.107 /smile/indin.php?m=Hmin&c=Article&a=delimg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000045s ]
+INFO: [ app_init ] --END-- [ RunTime:0.009038s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.042240s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.044941s ]
+SQL: SHOW COLUMNS FROM `sml_users_sign` [ RunTime:0.0579s ]
+SQL: SELECT `sign_day` FROM `sml_users_sign` WHERE ( sign_uid=1001 AND sign_mon=201702 ) LIMIT 1   [ RunTime:0.0016s ]
+SQL: SHOW COLUMNS FROM `sml_action` [ RunTime:0.0642s ]
+SQL: SELECT `id` FROM `sml_action` WHERE ( url='Article/delimg' ) LIMIT 1   [ RunTime:0.0016s ]
+SQL: SHOW COLUMNS FROM `sml_group` [ RunTime:0.0370s ]
+SQL: SELECT `rules` FROM `sml_group` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0018s ]
+SQL: SHOW COLUMNS FROM `sml_areas` [ RunTime:0.0322s ]
+SQL: SELECT * FROM `sml_areas` WHERE ( pid=0 )  [ RunTime:0.0791s ]
+SQL: SHOW COLUMNS FROM `sml_setup` [ RunTime:0.1715s ]
+SQL: SELECT * FROM `sml_setup` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `sml_cate` [ RunTime:0.2609s ]
+SQL: SELECT * FROM `sml_cate` WHERE ( isdel=0 )  [ RunTime:0.0225s ]
+SQL: SHOW COLUMNS FROM `sml_news` [ RunTime:0.0614s ]
+SQL: SELECT * FROM `sml_news` WHERE ( isread = 0 )  [ RunTime:0.0013s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sml_news` WHERE ( isread = 0 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sml_article` [ RunTime:0.1072s ]
+SQL: UPDATE `sml_article` SET `indeximg`='0' WHERE ( id=2 ) [ RunTime:0.2087s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002713s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002879s ]
+
+[ 2017-02-18T12:22:57+08:00 ] 192.168.1.107 /smile/indin.php?m=Hmin&c=Article&a=delimg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003059s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.008101s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008328s ]
+SQL: SHOW COLUMNS FROM `sml_users_sign` [ RunTime:0.0265s ]
+SQL: SELECT `sign_day` FROM `sml_users_sign` WHERE ( sign_uid=1001 AND sign_mon=201702 ) LIMIT 1   [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `sml_action` [ RunTime:0.0242s ]
+SQL: SELECT `id` FROM `sml_action` WHERE ( url='Article/delimg' ) LIMIT 1   [ RunTime:0.0023s ]
+SQL: SHOW COLUMNS FROM `sml_group` [ RunTime:0.0314s ]
+SQL: SELECT `rules` FROM `sml_group` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sml_areas` [ RunTime:0.0240s ]
+SQL: SELECT * FROM `sml_areas` WHERE ( pid=0 )  [ RunTime:0.0179s ]
+SQL: SHOW COLUMNS FROM `sml_setup` [ RunTime:0.0223s ]
+SQL: SELECT * FROM `sml_setup` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `sml_cate` [ RunTime:0.0586s ]
+SQL: SELECT * FROM `sml_cate` WHERE ( isdel=0 )  [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `sml_news` [ RunTime:0.0364s ]
+SQL: SELECT * FROM `sml_news` WHERE ( isread = 0 )  [ RunTime:0.0012s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sml_news` WHERE ( isread = 0 ) LIMIT 1   [ RunTime:0.0028s ]
+SQL: SHOW COLUMNS FROM `sml_article` [ RunTime:0.0354s ]
+SQL: UPDATE `sml_article` SET `indeximg`='0' WHERE ( id=7 ) [ RunTime:0.0818s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002999s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003187s ]
+
+[ 2017-02-18T12:22:59+08:00 ] 192.168.1.107 /smile/indin.php/Article/lst
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000058s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001890s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002156s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002414s ]
+SQL: SHOW COLUMNS FROM `sml_users_sign` [ RunTime:0.0451s ]
+SQL: SELECT `sign_day` FROM `sml_users_sign` WHERE ( sign_uid=1001 AND sign_mon=201702 ) LIMIT 1   [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `sml_action` [ RunTime:0.0706s ]
+SQL: SELECT `id` FROM `sml_action` WHERE ( url='Article/lst' ) LIMIT 1   [ RunTime:0.0017s ]
+SQL: SHOW COLUMNS FROM `sml_group` [ RunTime:0.0215s ]
+SQL: SELECT `rules` FROM `sml_group` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `sml_areas` [ RunTime:0.0228s ]
+SQL: SELECT * FROM `sml_areas` WHERE ( pid=0 )  [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `sml_setup` [ RunTime:0.0212s ]
+SQL: SELECT * FROM `sml_setup` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0048s ]
+SQL: SHOW COLUMNS FROM `sml_cate` [ RunTime:0.0209s ]
+SQL: SELECT * FROM `sml_cate` WHERE ( isdel=0 )  [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `sml_news` [ RunTime:0.0195s ]
+SQL: SELECT * FROM `sml_news` WHERE ( isread = 0 )  [ RunTime:0.0012s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sml_news` WHERE ( isread = 0 ) LIMIT 1   [ RunTime:0.0019s ]
+SQL: SHOW COLUMNS FROM `sml_article` [ RunTime:0.0167s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sml_article` WHERE ( isdel = 0 ) LIMIT 1   [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `sml_article` [ RunTime:0.0189s ]
+SQL: SELECT * FROM `sml_article` WHERE ( isdel = 0 ) ORDER BY viewnum desc LIMIT 0,15   [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `sml_assets` [ RunTime:0.0244s ]
+SQL: SHOW COLUMNS FROM `sml_assets` [ RunTime:0.0349s ]
+SQL: SELECT `id`,`domain`,`savepath`,`savename` FROM `sml_assets` WHERE (  id in (7) and isdel = 0  )  [ RunTime:0.0010s ]
+SQL: SELECT `name` FROM `sml_cate` WHERE ( id = '11'  ) LIMIT 1   [ RunTime:0.0012s ]
+SQL: SELECT `id`,`domain`,`savepath`,`savename` FROM `sml_assets` WHERE (  id in (3) and isdel = 0  )  [ RunTime:0.0014s ]
+SQL: SELECT `name` FROM `sml_cate` WHERE ( id = '5'  ) LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT `id`,`domain`,`savepath`,`savename` FROM `sml_assets` WHERE (  id in (4) and isdel = 0  )  [ RunTime:0.0044s ]
+SQL: SELECT `name` FROM `sml_cate` WHERE ( id = '2'  ) LIMIT 1   [ RunTime:0.0026s ]
+SQL: SELECT `id`,`domain`,`savepath`,`savename` FROM `sml_assets` WHERE (  id in (25) and isdel = 0  )  [ RunTime:0.0018s ]
+SQL: SELECT `name` FROM `sml_cate` WHERE ( id = '6'  ) LIMIT 1   [ RunTime:0.0029s ]
+SQL: SELECT `id`,`domain`,`savepath`,`savename` FROM `sml_assets` WHERE (  id in (10) and isdel = 0  )  [ RunTime:0.0019s ]
+SQL: SELECT `name` FROM `sml_cate` WHERE ( id = '2'  ) LIMIT 1   [ RunTime:0.0012s ]
+SQL: SELECT `id`,`domain`,`savepath`,`savename` FROM `sml_assets` WHERE (  id in (9) and isdel = 0  )  [ RunTime:0.0012s ]
+SQL: SELECT `name` FROM `sml_cate` WHERE ( id = '10'  ) LIMIT 1   [ RunTime:0.0036s ]
+SQL: SELECT `id`,`domain`,`savepath`,`savename` FROM `sml_assets` WHERE (  id in (8) and isdel = 0  )  [ RunTime:0.0019s ]
+SQL: SELECT `name` FROM `sml_cate` WHERE ( id = '1'  ) LIMIT 1   [ RunTime:0.0045s ]
+SQL: SELECT `id`,`domain`,`savepath`,`savename` FROM `sml_assets` WHERE (  id in (5) and isdel = 0  )  [ RunTime:0.0060s ]
+SQL: SELECT `name` FROM `sml_cate` WHERE ( id = '8'  ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `id`,`domain`,`savepath`,`savename` FROM `sml_assets` WHERE (  id in (23) and isdel = 0  )  [ RunTime:0.0012s ]
+SQL: SELECT `name` FROM `sml_cate` WHERE ( id = '8'  ) LIMIT 1   [ RunTime:0.0026s ]
+SQL: SELECT `id`,`domain`,`savepath`,`savename` FROM `sml_assets` WHERE (  id in (12) and isdel = 0  )  [ RunTime:0.0010s ]
+SQL: SELECT `name` FROM `sml_cate` WHERE ( id = '10'  ) LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT `id`,`domain`,`savepath`,`savename` FROM `sml_assets` WHERE (  id in (11) and isdel = 0  )  [ RunTime:0.0032s ]
+SQL: SELECT `name` FROM `sml_cate` WHERE ( id = '1'  ) LIMIT 1   [ RunTime:0.0044s ]
+SQL: SELECT `id`,`domain`,`savepath`,`savename` FROM `sml_assets` WHERE (  id in (13) and isdel = 0  )  [ RunTime:0.0017s ]
+SQL: SELECT `name` FROM `sml_cate` WHERE ( id = '1'  ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `id`,`domain`,`savepath`,`savename` FROM `sml_assets` WHERE (  id in (15) and isdel = 0  )  [ RunTime:0.0042s ]
+SQL: SELECT `name` FROM `sml_cate` WHERE ( id = '10'  ) LIMIT 1   [ RunTime:0.0012s ]
+SQL: SELECT `id`,`domain`,`savepath`,`savename` FROM `sml_assets` WHERE (  id in (6) and isdel = 0  )  [ RunTime:0.0009s ]
+SQL: SELECT `name` FROM `sml_cate` WHERE ( id = '1'  ) LIMIT 1   [ RunTime:0.0008s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.002298s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002973s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.092407s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.092773s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002388s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002678s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.005953s ]
+INFO: [ app_end ] --END-- [ RunTime:0.006149s ]
+
+[ 2017-02-18T12:23:11+08:00 ] 192.168.1.107 /smile/indin.php?m=Hmin&c=Article&a=delimg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002236s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002262s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002539s ]
+SQL: SHOW COLUMNS FROM `sml_users_sign` [ RunTime:0.0217s ]
+SQL: SELECT `sign_day` FROM `sml_users_sign` WHERE ( sign_uid=1001 AND sign_mon=201702 ) LIMIT 1   [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `sml_action` [ RunTime:0.0298s ]
+SQL: SELECT `id` FROM `sml_action` WHERE ( url='Article/delimg' ) LIMIT 1   [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `sml_group` [ RunTime:0.0261s ]
+SQL: SELECT `rules` FROM `sml_group` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0046s ]
+SQL: SHOW COLUMNS FROM `sml_areas` [ RunTime:0.0339s ]
+SQL: SELECT * FROM `sml_areas` WHERE ( pid=0 )  [ RunTime:0.0154s ]
+SQL: SHOW COLUMNS FROM `sml_setup` [ RunTime:0.0201s ]
+SQL: SELECT * FROM `sml_setup` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sml_cate` [ RunTime:0.0251s ]
+SQL: SELECT * FROM `sml_cate` WHERE ( isdel=0 )  [ RunTime:0.0145s ]
+SQL: SHOW COLUMNS FROM `sml_news` [ RunTime:0.0386s ]
+SQL: SELECT * FROM `sml_news` WHERE ( isread = 0 )  [ RunTime:0.0108s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sml_news` WHERE ( isread = 0 ) LIMIT 1   [ RunTime:0.0026s ]
+SQL: SHOW COLUMNS FROM `sml_article` [ RunTime:0.0518s ]
+SQL: UPDATE `sml_article` SET `indeximg`='0' WHERE ( id=4 ) [ RunTime:0.0812s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001591s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001769s ]
+
+[ 2017-02-18T12:23:13+08:00 ] 192.168.1.107 /smile/indin.php/Article/lst
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002118s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001691s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001879s ]
+SQL: SHOW COLUMNS FROM `sml_users_sign` [ RunTime:0.0236s ]
+SQL: SELECT `sign_day` FROM `sml_users_sign` WHERE ( sign_uid=1001 AND sign_mon=201702 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sml_action` [ RunTime:0.0132s ]
+SQL: SELECT `id` FROM `sml_action` WHERE ( url='Article/lst' ) LIMIT 1   [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `sml_group` [ RunTime:0.0144s ]
+SQL: SELECT `rules` FROM `sml_group` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `sml_areas` [ RunTime:0.0189s ]
+SQL: SELECT * FROM `sml_areas` WHERE ( pid=0 )  [ RunTime:0.0125s ]
+SQL: SHOW COLUMNS FROM `sml_setup` [ RunTime:0.0217s ]
+SQL: SELECT * FROM `sml_setup` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `sml_cate` [ RunTime:0.0184s ]
+SQL: SELECT * FROM `sml_cate` WHERE ( isdel=0 )  [ RunTime:0.0024s ]
+SQL: SHOW COLUMNS FROM `sml_news` [ RunTime:0.0199s ]
+SQL: SELECT * FROM `sml_news` WHERE ( isread = 0 )  [ RunTime:0.0011s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sml_news` WHERE ( isread = 0 ) LIMIT 1   [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `sml_article` [ RunTime:0.0157s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sml_article` WHERE ( isdel = 0 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sml_article` [ RunTime:0.0207s ]
+SQL: SELECT * FROM `sml_article` WHERE ( isdel = 0 ) ORDER BY viewnum desc LIMIT 0,15   [ RunTime:0.0111s ]
+SQL: SHOW COLUMNS FROM `sml_assets` [ RunTime:0.0344s ]
+SQL: SHOW COLUMNS FROM `sml_assets` [ RunTime:0.0190s ]
+SQL: SELECT `id`,`domain`,`savepath`,`savename` FROM `sml_assets` WHERE (  id in (7) and isdel = 0  )  [ RunTime:0.0015s ]
+SQL: SELECT `name` FROM `sml_cate` WHERE ( id = '11'  ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `id`,`domain`,`savepath`,`savename` FROM `sml_assets` WHERE (  id in (3) and isdel = 0  )  [ RunTime:0.0011s ]
+SQL: SELECT `name` FROM `sml_cate` WHERE ( id = '5'  ) LIMIT 1   [ RunTime:0.0033s ]
+SQL: SELECT `id`,`domain`,`savepath`,`savename` FROM `sml_assets` WHERE (  id in (4) and isdel = 0  )  [ RunTime:0.0012s ]
+SQL: SELECT `name` FROM `sml_cate` WHERE ( id = '2'  ) LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT `id`,`domain`,`savepath`,`savename` FROM `sml_assets` WHERE (  id in (25) and isdel = 0  )  [ RunTime:0.0009s ]
+SQL: SELECT `name` FROM `sml_cate` WHERE ( id = '6'  ) LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT `id`,`domain`,`savepath`,`savename` FROM `sml_assets` WHERE (  id in (10) and isdel = 0  )  [ RunTime:0.0014s ]
+SQL: SELECT `name` FROM `sml_cate` WHERE ( id = '2'  ) LIMIT 1   [ RunTime:0.0013s ]
+SQL: SELECT `id`,`domain`,`savepath`,`savename` FROM `sml_assets` WHERE (  id in (9) and isdel = 0  )  [ RunTime:0.0013s ]
+SQL: SELECT `name` FROM `sml_cate` WHERE ( id = '10'  ) LIMIT 1   [ RunTime:0.0012s ]
+SQL: SELECT `id`,`domain`,`savepath`,`savename` FROM `sml_assets` WHERE (  id in (8) and isdel = 0  )  [ RunTime:0.0016s ]
+SQL: SELECT `name` FROM `sml_cate` WHERE ( id = '1'  ) LIMIT 1   [ RunTime:0.0017s ]
+SQL: SELECT `id`,`domain`,`savepath`,`savename` FROM `sml_assets` WHERE (  id in (5) and isdel = 0  )  [ RunTime:0.0015s ]
+SQL: SELECT `name` FROM `sml_cate` WHERE ( id = '8'  ) LIMIT 1   [ RunTime:0.0011s ]
+SQL: SELECT `id`,`domain`,`savepath`,`savename` FROM `sml_assets` WHERE (  id in (23) and isdel = 0  )  [ RunTime:0.0011s ]
+SQL: SELECT `name` FROM `sml_cate` WHERE ( id = '8'  ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `id`,`domain`,`savepath`,`savename` FROM `sml_assets` WHERE (  id in (12) and isdel = 0  )  [ RunTime:0.0010s ]
+SQL: SELECT `name` FROM `sml_cate` WHERE ( id = '10'  ) LIMIT 1   [ RunTime:0.0019s ]
+SQL: SELECT `id`,`domain`,`savepath`,`savename` FROM `sml_assets` WHERE (  id in (11) and isdel = 0  )  [ RunTime:0.0012s ]
+SQL: SELECT `name` FROM `sml_cate` WHERE ( id = '1'  ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `id`,`domain`,`savepath`,`savename` FROM `sml_assets` WHERE (  id in (13) and isdel = 0  )  [ RunTime:0.0010s ]
+SQL: SELECT `name` FROM `sml_cate` WHERE ( id = '1'  ) LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT `id`,`domain`,`savepath`,`savename` FROM `sml_assets` WHERE (  id in (15) and isdel = 0  )  [ RunTime:0.0009s ]
+SQL: SELECT `name` FROM `sml_cate` WHERE ( id = '10'  ) LIMIT 1   [ RunTime:0.0015s ]
+SQL: SELECT `id`,`domain`,`savepath`,`savename` FROM `sml_assets` WHERE (  id in (6) and isdel = 0  )  [ RunTime:0.0011s ]
+SQL: SELECT `name` FROM `sml_cate` WHERE ( id = '1'  ) LIMIT 1   [ RunTime:0.0011s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000265s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000426s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.089773s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.089974s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002128s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002287s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.046727s ]
+INFO: [ app_end ] --END-- [ RunTime:0.068976s ]
+
+[ 2017-02-18T12:23:38+08:00 ] 192.168.1.107 /smile/indin.php?m=Hmin&c=Article&a=doimg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000046s ]
+INFO: [ app_init ] --END-- [ RunTime:0.019123s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.006237s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006708s ]
+SQL: SHOW COLUMNS FROM `sml_users_sign` [ RunTime:0.0134s ]
+SQL: SELECT `sign_day` FROM `sml_users_sign` WHERE ( sign_uid=1001 AND sign_mon=201702 ) LIMIT 1   [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `sml_action` [ RunTime:0.0130s ]
+SQL: SELECT `id` FROM `sml_action` WHERE ( url='Article/doimg' ) LIMIT 1   [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `sml_group` [ RunTime:0.0182s ]
+SQL: SELECT `rules` FROM `sml_group` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sml_areas` [ RunTime:0.0342s ]
+SQL: SELECT * FROM `sml_areas` WHERE ( pid=0 )  [ RunTime:0.0374s ]
+SQL: SHOW COLUMNS FROM `sml_setup` [ RunTime:0.0377s ]
+SQL: SELECT * FROM `sml_setup` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `sml_cate` [ RunTime:0.0707s ]
+SQL: SELECT * FROM `sml_cate` WHERE ( isdel=0 )  [ RunTime:0.0053s ]
+SQL: SHOW COLUMNS FROM `sml_news` [ RunTime:0.0318s ]
+SQL: SELECT * FROM `sml_news` WHERE ( isread = 0 )  [ RunTime:0.0009s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sml_news` WHERE ( isread = 0 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sml_article` [ RunTime:0.0368s ]
+SQL: UPDATE `sml_article` SET `indeximg`='1' WHERE ( id = '4'  ) [ RunTime:0.0976s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002247s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002408s ]
+
+[ 2017-02-18T12:23:41+08:00 ] 192.168.1.107 /smile/indin.php/Article/lst
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000138s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002798s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001593s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001872s ]
+SQL: SHOW COLUMNS FROM `sml_users_sign` [ RunTime:0.0211s ]
+SQL: SELECT `sign_day` FROM `sml_users_sign` WHERE ( sign_uid=1001 AND sign_mon=201702 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sml_action` [ RunTime:0.0201s ]
+SQL: SELECT `id` FROM `sml_action` WHERE ( url='Article/lst' ) LIMIT 1   [ RunTime:0.0018s ]
+SQL: SHOW COLUMNS FROM `sml_group` [ RunTime:0.0238s ]
+SQL: SELECT `rules` FROM `sml_group` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `sml_areas` [ RunTime:0.0164s ]
+SQL: SELECT * FROM `sml_areas` WHERE ( pid=0 )  [ RunTime:0.0111s ]
+SQL: SHOW COLUMNS FROM `sml_setup` [ RunTime:0.0201s ]
+SQL: SELECT * FROM `sml_setup` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `sml_cate` [ RunTime:0.0602s ]
+SQL: SELECT * FROM `sml_cate` WHERE ( isdel=0 )  [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `sml_news` [ RunTime:0.0329s ]
+SQL: SELECT * FROM `sml_news` WHERE ( isread = 0 )  [ RunTime:0.0012s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sml_news` WHERE ( isread = 0 ) LIMIT 1   [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `sml_article` [ RunTime:0.0249s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sml_article` WHERE ( isdel = 0 ) LIMIT 1   [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `sml_article` [ RunTime:0.0167s ]
+SQL: SELECT * FROM `sml_article` WHERE ( isdel = 0 ) ORDER BY viewnum desc LIMIT 0,15   [ RunTime:0.0038s ]
+SQL: SHOW COLUMNS FROM `sml_assets` [ RunTime:0.0195s ]
+SQL: SHOW COLUMNS FROM `sml_assets` [ RunTime:0.0207s ]
+SQL: SELECT `id`,`domain`,`savepath`,`savename` FROM `sml_assets` WHERE (  id in (7) and isdel = 0  )  [ RunTime:0.0055s ]
+SQL: SELECT `name` FROM `sml_cate` WHERE ( id = '11'  ) LIMIT 1   [ RunTime:0.0019s ]
+SQL: SELECT `id`,`domain`,`savepath`,`savename` FROM `sml_assets` WHERE (  id in (3) and isdel = 0  )  [ RunTime:0.0011s ]
+SQL: SELECT `name` FROM `sml_cate` WHERE ( id = '5'  ) LIMIT 1   [ RunTime:0.0013s ]
+SQL: SELECT `id`,`domain`,`savepath`,`savename` FROM `sml_assets` WHERE (  id in (4) and isdel = 0  )  [ RunTime:0.0015s ]
+SQL: SELECT `name` FROM `sml_cate` WHERE ( id = '2'  ) LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT `id`,`domain`,`savepath`,`savename` FROM `sml_assets` WHERE (  id in (25) and isdel = 0  )  [ RunTime:0.0011s ]
+SQL: SELECT `name` FROM `sml_cate` WHERE ( id = '6'  ) LIMIT 1   [ RunTime:0.0017s ]
+SQL: SELECT `id`,`domain`,`savepath`,`savename` FROM `sml_assets` WHERE (  id in (10) and isdel = 0  )  [ RunTime:0.0010s ]
+SQL: SELECT `name` FROM `sml_cate` WHERE ( id = '2'  ) LIMIT 1   [ RunTime:0.0025s ]
+SQL: SELECT `id`,`domain`,`savepath`,`savename` FROM `sml_assets` WHERE (  id in (9) and isdel = 0  )  [ RunTime:0.0019s ]
+SQL: SELECT `name` FROM `sml_cate` WHERE ( id = '10'  ) LIMIT 1   [ RunTime:0.0029s ]
+SQL: SELECT `id`,`domain`,`savepath`,`savename` FROM `sml_assets` WHERE (  id in (8) and isdel = 0  )  [ RunTime:0.0022s ]
+SQL: SELECT `name` FROM `sml_cate` WHERE ( id = '1'  ) LIMIT 1   [ RunTime:0.0013s ]
+SQL: SELECT `id`,`domain`,`savepath`,`savename` FROM `sml_assets` WHERE (  id in (5) and isdel = 0  )  [ RunTime:0.0052s ]
+SQL: SELECT `name` FROM `sml_cate` WHERE ( id = '8'  ) LIMIT 1   [ RunTime:0.0040s ]
+SQL: SELECT `id`,`domain`,`savepath`,`savename` FROM `sml_assets` WHERE (  id in (23) and isdel = 0  )  [ RunTime:0.0036s ]
+SQL: SELECT `name` FROM `sml_cate` WHERE ( id = '8'  ) LIMIT 1   [ RunTime:0.0011s ]
+SQL: SELECT `id`,`domain`,`savepath`,`savename` FROM `sml_assets` WHERE (  id in (12) and isdel = 0  )  [ RunTime:0.0012s ]
+SQL: SELECT `name` FROM `sml_cate` WHERE ( id = '10'  ) LIMIT 1   [ RunTime:0.0025s ]
+SQL: SELECT `id`,`domain`,`savepath`,`savename` FROM `sml_assets` WHERE (  id in (11) and isdel = 0  )  [ RunTime:0.0022s ]
+SQL: SELECT `name` FROM `sml_cate` WHERE ( id = '1'  ) LIMIT 1   [ RunTime:0.0013s ]
+SQL: SELECT `id`,`domain`,`savepath`,`savename` FROM `sml_assets` WHERE (  id in (13) and isdel = 0  )  [ RunTime:0.0047s ]
+SQL: SELECT `name` FROM `sml_cate` WHERE ( id = '1'  ) LIMIT 1   [ RunTime:0.0030s ]
+SQL: SELECT `id`,`domain`,`savepath`,`savename` FROM `sml_assets` WHERE (  id in (15) and isdel = 0  )  [ RunTime:0.0015s ]
+SQL: SELECT `name` FROM `sml_cate` WHERE ( id = '10'  ) LIMIT 1   [ RunTime:0.0012s ]
+SQL: SELECT `id`,`domain`,`savepath`,`savename` FROM `sml_assets` WHERE (  id in (6) and isdel = 0  )  [ RunTime:0.0018s ]
+SQL: SELECT `name` FROM `sml_cate` WHERE ( id = '1'  ) LIMIT 1   [ RunTime:0.0014s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000248s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000400s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.061435s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.061632s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001601s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001768s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.017701s ]
+INFO: [ app_end ] --END-- [ RunTime:0.019568s ]
+
+[ 2017-02-18T12:26:33+08:00 ] 192.168.1.100 /smile/indin.php?m=Hmin&c=Index&a=getVerify
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000061s ]
+INFO: [ app_init ] --END-- [ RunTime:0.010489s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004120s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004323s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.010529s ]
+INFO: [ app_end ] --END-- [ RunTime:0.010908s ]
+
+[ 2017-02-18T12:26:33+08:00 ] 192.168.1.100 /smile/indin.php?m=Hmin&c=Index&a=getVerify&random=0.5993686822434978
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000218s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002178s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001747s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002154s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.007262s ]
+INFO: [ app_end ] --END-- [ RunTime:0.007484s ]
+
+[ 2017-02-18T12:42:59+08:00 ] 127.0.0.1 /smile/indin.php?m=Hmin&c=Admin&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000141s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004791s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004334s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004547s ]
+SQL: SHOW COLUMNS FROM `sml_users_sign` [ RunTime:0.0403s ]
+SQL: SELECT `sign_day` FROM `sml_users_sign` WHERE ( sign_uid=1001 AND sign_mon=201702 ) LIMIT 1   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `sml_action` [ RunTime:0.0329s ]
+SQL: SELECT `id` FROM `sml_action` WHERE ( url='Admin/index' ) LIMIT 1   [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `sml_group` [ RunTime:0.0217s ]
+SQL: SELECT `rules` FROM `sml_group` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0019s ]
+SQL: SHOW COLUMNS FROM `sml_areas` [ RunTime:0.0236s ]
+SQL: SELECT * FROM `sml_areas` WHERE ( pid=0 )  [ RunTime:0.0144s ]
+SQL: SHOW COLUMNS FROM `sml_setup` [ RunTime:0.0261s ]
+SQL: SELECT * FROM `sml_setup` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0021s ]
+SQL: SHOW COLUMNS FROM `sml_cate` [ RunTime:0.0281s ]
+SQL: SELECT * FROM `sml_cate` WHERE ( isdel=0 )  [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `sml_news` [ RunTime:0.0298s ]
+SQL: SELECT * FROM `sml_news` WHERE ( isread = 0 )  [ RunTime:0.0062s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sml_news` WHERE ( isread = 0 ) LIMIT 1   [ RunTime:0.0034s ]
+SQL: SELECT * FROM `sml_action` WHERE ( isdel=0 AND public='0' ) ORDER BY sort asc  [ RunTime:0.0098s ]
+SQL: SELECT `name` FROM `sml_action` WHERE ( public='main' ) LIMIT 1   [ RunTime:0.0034s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000294s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000460s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.084393s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.084940s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.012893s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.013091s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.008969s ]
+INFO: [ app_end ] --END-- [ RunTime:0.009263s ]
+
+[ 2017-02-18T12:43:02+08:00 ] 127.0.0.1 /smile/indin.php?m=Hmin&c=Admin&a=home
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000062s ]
+INFO: [ app_init ] --END-- [ RunTime:0.008800s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.016815s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.017005s ]
+SQL: SHOW COLUMNS FROM `sml_users_sign` [ RunTime:0.0230s ]
+SQL: SELECT `sign_day` FROM `sml_users_sign` WHERE ( sign_uid=1001 AND sign_mon=201702 ) LIMIT 1   [ RunTime:0.0016s ]
+SQL: SHOW COLUMNS FROM `sml_action` [ RunTime:0.0188s ]
+SQL: SELECT `id` FROM `sml_action` WHERE ( url='Admin/home' ) LIMIT 1   [ RunTime:0.0021s ]
+SQL: SHOW COLUMNS FROM `sml_group` [ RunTime:0.0210s ]
+SQL: SELECT `rules` FROM `sml_group` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `sml_areas` [ RunTime:0.0246s ]
+SQL: SELECT * FROM `sml_areas` WHERE ( pid=0 )  [ RunTime:0.0243s ]
+SQL: SHOW COLUMNS FROM `sml_setup` [ RunTime:0.0232s ]
+SQL: SELECT * FROM `sml_setup` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0019s ]
+SQL: SHOW COLUMNS FROM `sml_cate` [ RunTime:0.0260s ]
+SQL: SELECT * FROM `sml_cate` WHERE ( isdel=0 )  [ RunTime:0.0028s ]
+SQL: SHOW COLUMNS FROM `sml_news` [ RunTime:0.0235s ]
+SQL: SELECT * FROM `sml_news` WHERE ( isread = 0 )  [ RunTime:0.0012s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sml_news` WHERE ( isread = 0 ) LIMIT 1   [ RunTime:0.0019s ]
+SQL: SHOW COLUMNS FROM `sml_assets` [ RunTime:0.0236s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sml_assets` WHERE ( isdel=0 ) LIMIT 1   [ RunTime:0.0026s ]
+SQL: SELECT * FROM `sml_assets` ORDER BY id desc LIMIT 0,12   [ RunTime:0.0021s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000339s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000507s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.058719s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.058900s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.006701s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006856s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.011776s ]
+INFO: [ app_end ] --END-- [ RunTime:0.012533s ]
+
+[ 2017-02-18T12:43:12+08:00 ] 127.0.0.1 /smile/indin.php?m=Hmin&c=Admin&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001409s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002507s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002698s ]
+SQL: SHOW COLUMNS FROM `sml_users_sign` [ RunTime:0.0138s ]
+SQL: SELECT `sign_day` FROM `sml_users_sign` WHERE ( sign_uid=1001 AND sign_mon=201702 ) LIMIT 1   [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `sml_action` [ RunTime:0.0482s ]
+SQL: SELECT `id` FROM `sml_action` WHERE ( url='Admin/index' ) LIMIT 1   [ RunTime:0.0063s ]
+SQL: SHOW COLUMNS FROM `sml_group` [ RunTime:0.0564s ]
+SQL: SELECT `rules` FROM `sml_group` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0017s ]
+SQL: SHOW COLUMNS FROM `sml_areas` [ RunTime:0.1047s ]
+SQL: SELECT * FROM `sml_areas` WHERE ( pid=0 )  [ RunTime:0.0134s ]
+SQL: SHOW COLUMNS FROM `sml_setup` [ RunTime:0.0327s ]
+SQL: SELECT * FROM `sml_setup` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0023s ]
+SQL: SHOW COLUMNS FROM `sml_cate` [ RunTime:0.0312s ]
+SQL: SELECT * FROM `sml_cate` WHERE ( isdel=0 )  [ RunTime:0.0066s ]
+SQL: SHOW COLUMNS FROM `sml_news` [ RunTime:0.0425s ]
+SQL: SELECT * FROM `sml_news` WHERE ( isread = 0 )  [ RunTime:0.0131s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sml_news` WHERE ( isread = 0 ) LIMIT 1   [ RunTime:0.0044s ]
+SQL: SELECT * FROM `sml_action` WHERE ( isdel=0 AND public='0' ) ORDER BY sort asc  [ RunTime:0.0138s ]
+SQL: SELECT `name` FROM `sml_action` WHERE ( public='main' ) LIMIT 1   [ RunTime:0.0022s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000338s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000730s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.052241s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.052490s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.003388s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003541s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.008501s ]
+INFO: [ app_end ] --END-- [ RunTime:0.009081s ]
+
+[ 2017-02-18T12:50:41+08:00 ] 192.168.1.107 /smile/indin.php?m=Hmin&c=Admin&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000047s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002025s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001647s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002205s ]
+SQL: SHOW COLUMNS FROM `sml_users_sign` [ RunTime:0.0151s ]
+SQL: SELECT `sign_day` FROM `sml_users_sign` WHERE ( sign_uid=1001 AND sign_mon=201702 ) LIMIT 1   [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `sml_action` [ RunTime:0.0138s ]
+SQL: SELECT `id` FROM `sml_action` WHERE ( url='Admin/index' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sml_group` [ RunTime:0.0221s ]
+SQL: SELECT `rules` FROM `sml_group` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `sml_areas` [ RunTime:0.0250s ]
+SQL: SELECT * FROM `sml_areas` WHERE ( pid=0 )  [ RunTime:0.0238s ]
+SQL: SHOW COLUMNS FROM `sml_setup` [ RunTime:0.0271s ]
+SQL: SELECT * FROM `sml_setup` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0017s ]
+SQL: SHOW COLUMNS FROM `sml_cate` [ RunTime:0.0277s ]
+SQL: SELECT * FROM `sml_cate` WHERE ( isdel=0 )  [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `sml_news` [ RunTime:0.0198s ]
+SQL: SELECT * FROM `sml_news` WHERE ( isread = 0 )  [ RunTime:0.0017s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sml_news` WHERE ( isread = 0 ) LIMIT 1   [ RunTime:0.0035s ]
+SQL: SELECT * FROM `sml_action` WHERE ( isdel=0 AND public='0' ) ORDER BY sort asc  [ RunTime:0.0062s ]
+SQL: SELECT `name` FROM `sml_action` WHERE ( public='main' ) LIMIT 1   [ RunTime:0.0021s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000315s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000488s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.050691s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.051030s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001296s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.009047s ]
+INFO: [ app_end ] --END-- [ RunTime:0.009338s ]
+
+[ 2017-02-18T12:50:43+08:00 ] 192.168.1.107 /smile/indin.php?m=Hmin&c=Admin&a=home
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000050s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002792s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002965s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003163s ]
+SQL: SHOW COLUMNS FROM `sml_users_sign` [ RunTime:0.0205s ]
+SQL: SELECT `sign_day` FROM `sml_users_sign` WHERE ( sign_uid=1001 AND sign_mon=201702 ) LIMIT 1   [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `sml_action` [ RunTime:0.0193s ]
+SQL: SELECT `id` FROM `sml_action` WHERE ( url='Admin/home' ) LIMIT 1   [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `sml_group` [ RunTime:0.0318s ]
+SQL: SELECT `rules` FROM `sml_group` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `sml_areas` [ RunTime:0.0751s ]
+SQL: SELECT * FROM `sml_areas` WHERE ( pid=0 )  [ RunTime:0.0335s ]
+SQL: SHOW COLUMNS FROM `sml_setup` [ RunTime:0.0540s ]
+SQL: SELECT * FROM `sml_setup` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0022s ]
+SQL: SHOW COLUMNS FROM `sml_cate` [ RunTime:0.2428s ]
+SQL: SELECT * FROM `sml_cate` WHERE ( isdel=0 )  [ RunTime:0.0045s ]
+SQL: SHOW COLUMNS FROM `sml_news` [ RunTime:0.0325s ]
+SQL: SELECT * FROM `sml_news` WHERE ( isread = 0 )  [ RunTime:0.0053s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sml_news` WHERE ( isread = 0 ) LIMIT 1   [ RunTime:0.0022s ]
+SQL: SHOW COLUMNS FROM `sml_assets` [ RunTime:0.0300s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sml_assets` WHERE ( isdel=0 ) LIMIT 1   [ RunTime:0.0032s ]
+SQL: SELECT * FROM `sml_assets` ORDER BY id desc LIMIT 0,12   [ RunTime:0.0014s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000805s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001630s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.065986s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.066221s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001147s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.005557s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005744s ]
+
+[ 2017-02-18T12:50:53+08:00 ] 192.168.1.107 /smile/indin.php?m=Hmin&c=Admin&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000355s ]
+INFO: [ app_init ] --END-- [ RunTime:0.008277s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.006516s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006849s ]
+SQL: SHOW COLUMNS FROM `sml_users_sign` [ RunTime:0.0161s ]
+SQL: SELECT `sign_day` FROM `sml_users_sign` WHERE ( sign_uid=1001 AND sign_mon=201702 ) LIMIT 1   [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `sml_action` [ RunTime:0.0128s ]
+SQL: SELECT `id` FROM `sml_action` WHERE ( url='Admin/index' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sml_group` [ RunTime:0.0154s ]
+SQL: SELECT `rules` FROM `sml_group` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `sml_areas` [ RunTime:0.0178s ]
+SQL: SELECT * FROM `sml_areas` WHERE ( pid=0 )  [ RunTime:0.0108s ]
+SQL: SHOW COLUMNS FROM `sml_setup` [ RunTime:0.0199s ]
+SQL: SELECT * FROM `sml_setup` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `sml_cate` [ RunTime:0.0201s ]
+SQL: SELECT * FROM `sml_cate` WHERE ( isdel=0 )  [ RunTime:0.0058s ]
+SQL: SHOW COLUMNS FROM `sml_news` [ RunTime:0.0334s ]
+SQL: SELECT * FROM `sml_news` WHERE ( isread = 0 )  [ RunTime:0.0039s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sml_news` WHERE ( isread = 0 ) LIMIT 1   [ RunTime:0.0011s ]
+SQL: SELECT * FROM `sml_action` WHERE ( isdel=0 AND public='0' ) ORDER BY sort asc  [ RunTime:0.0042s ]
+SQL: SELECT `name` FROM `sml_action` WHERE ( public='main' ) LIMIT 1   [ RunTime:0.0013s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000291s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001646s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.068032s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.068762s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000989s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001629s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.007134s ]
+INFO: [ app_end ] --END-- [ RunTime:0.007456s ]
+
+[ 2017-02-18T12:51:19+08:00 ] 192.168.1.107 /smile/indin.php?m=Hmin&c=Admin&a=clearCache
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000237s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002348s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002533s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002731s ]
+SQL: SHOW COLUMNS FROM `sml_users_sign` [ RunTime:0.0333s ]
+SQL: SELECT `sign_day` FROM `sml_users_sign` WHERE ( sign_uid=1001 AND sign_mon=201702 ) LIMIT 1   [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `sml_action` [ RunTime:0.0239s ]
+SQL: SELECT `id` FROM `sml_action` WHERE ( url='Admin/clearCache' ) LIMIT 1   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `sml_group` [ RunTime:0.0420s ]
+SQL: SELECT `rules` FROM `sml_group` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0016s ]
+SQL: SHOW COLUMNS FROM `sml_areas` [ RunTime:0.0434s ]
+SQL: SELECT * FROM `sml_areas` WHERE ( pid=0 )  [ RunTime:0.0199s ]
+SQL: SHOW COLUMNS FROM `sml_setup` [ RunTime:0.0271s ]
+SQL: SELECT * FROM `sml_setup` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0016s ]
+SQL: SHOW COLUMNS FROM `sml_cate` [ RunTime:0.0434s ]
+SQL: SELECT * FROM `sml_cate` WHERE ( isdel=0 )  [ RunTime:0.0055s ]
+SQL: SHOW COLUMNS FROM `sml_news` [ RunTime:0.0940s ]
+SQL: SELECT * FROM `sml_news` WHERE ( isread = 0 )  [ RunTime:0.0068s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sml_news` WHERE ( isread = 0 ) LIMIT 1   [ RunTime:0.0065s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000288s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000531s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.086659s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.086844s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.003085s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003233s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.006633s ]
+INFO: [ app_end ] --END-- [ RunTime:0.006819s ]
+
+[ 2017-02-18T12:51:23+08:00 ] 192.168.1.107 /smile/indin.php?m=Hmin&c=Admin&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000045s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004864s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.022873s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.025152s ]
+SQL: SHOW COLUMNS FROM `sml_users_sign` [ RunTime:0.0184s ]
+SQL: SELECT `sign_day` FROM `sml_users_sign` WHERE ( sign_uid=1001 AND sign_mon=201702 ) LIMIT 1   [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `sml_action` [ RunTime:0.0140s ]
+SQL: SELECT `id` FROM `sml_action` WHERE ( url='Admin/index' ) LIMIT 1   [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `sml_group` [ RunTime:0.0192s ]
+SQL: SELECT `rules` FROM `sml_group` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `sml_areas` [ RunTime:0.0188s ]
+SQL: SELECT * FROM `sml_areas` WHERE ( pid=0 )  [ RunTime:0.0128s ]
+SQL: SHOW COLUMNS FROM `sml_setup` [ RunTime:0.0209s ]
+SQL: SELECT * FROM `sml_setup` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `sml_cate` [ RunTime:0.0236s ]
+SQL: SELECT * FROM `sml_cate` WHERE ( isdel=0 )  [ RunTime:0.0019s ]
+SQL: SHOW COLUMNS FROM `sml_news` [ RunTime:0.0415s ]
+SQL: SELECT * FROM `sml_news` WHERE ( isread = 0 )  [ RunTime:0.0014s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sml_news` WHERE ( isread = 0 ) LIMIT 1   [ RunTime:0.0048s ]
+SQL: SELECT * FROM `sml_action` WHERE ( isdel=0 AND public='0' ) ORDER BY sort asc  [ RunTime:0.0072s ]
+SQL: SELECT `name` FROM `sml_action` WHERE ( public='main' ) LIMIT 1   [ RunTime:0.0037s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000615s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000802s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.059636s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.059864s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001252s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001756s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001699s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002037s ]
+
+[ 2017-02-18T12:51:25+08:00 ] 192.168.1.107 /smile/indin.php?m=Hmin&c=Admin&a=home
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000065s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004282s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001836s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002030s ]
+SQL: SHOW COLUMNS FROM `sml_users_sign` [ RunTime:0.0275s ]
+SQL: SELECT `sign_day` FROM `sml_users_sign` WHERE ( sign_uid=1001 AND sign_mon=201702 ) LIMIT 1   [ RunTime:0.0019s ]
+SQL: SHOW COLUMNS FROM `sml_action` [ RunTime:0.0299s ]
+SQL: SELECT `id` FROM `sml_action` WHERE ( url='Admin/home' ) LIMIT 1   [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `sml_group` [ RunTime:0.0274s ]
+SQL: SELECT `rules` FROM `sml_group` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0063s ]
+SQL: SHOW COLUMNS FROM `sml_areas` [ RunTime:0.0601s ]
+SQL: SELECT * FROM `sml_areas` WHERE ( pid=0 )  [ RunTime:0.0211s ]
+SQL: SHOW COLUMNS FROM `sml_setup` [ RunTime:0.0354s ]
+SQL: SELECT * FROM `sml_setup` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0041s ]
+SQL: SHOW COLUMNS FROM `sml_cate` [ RunTime:0.0349s ]
+SQL: SELECT * FROM `sml_cate` WHERE ( isdel=0 )  [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `sml_news` [ RunTime:0.0280s ]
+SQL: SELECT * FROM `sml_news` WHERE ( isread = 0 )  [ RunTime:0.0040s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sml_news` WHERE ( isread = 0 ) LIMIT 1   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `sml_assets` [ RunTime:0.0246s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sml_assets` WHERE ( isdel=0 ) LIMIT 1   [ RunTime:0.0017s ]
+SQL: SELECT * FROM `sml_assets` ORDER BY id desc LIMIT 0,12   [ RunTime:0.0012s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000419s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000762s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.054545s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.054740s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001195s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003217s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004147s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004330s ]
+
+[ 2017-02-18T12:51:34+08:00 ] 192.168.1.107 /smile/indin.php?m=Hmin&c=Admin&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000046s ]
+INFO: [ app_init ] --END-- [ RunTime:0.006355s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001694s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001986s ]
+SQL: SHOW COLUMNS FROM `sml_users_sign` [ RunTime:0.0270s ]
+SQL: SELECT `sign_day` FROM `sml_users_sign` WHERE ( sign_uid=1001 AND sign_mon=201702 ) LIMIT 1   [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `sml_action` [ RunTime:0.0287s ]
+SQL: SELECT `id` FROM `sml_action` WHERE ( url='Admin/index' ) LIMIT 1   [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `sml_group` [ RunTime:0.0253s ]
+SQL: SELECT `rules` FROM `sml_group` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0021s ]
+SQL: SHOW COLUMNS FROM `sml_areas` [ RunTime:0.1080s ]
+SQL: SELECT * FROM `sml_areas` WHERE ( pid=0 )  [ RunTime:0.0352s ]
+SQL: SHOW COLUMNS FROM `sml_setup` [ RunTime:0.0515s ]
+SQL: SELECT * FROM `sml_setup` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0057s ]
+SQL: SHOW COLUMNS FROM `sml_cate` [ RunTime:0.0387s ]
+SQL: SELECT * FROM `sml_cate` WHERE ( isdel=0 )  [ RunTime:0.0027s ]
+SQL: SHOW COLUMNS FROM `sml_news` [ RunTime:0.0661s ]
+SQL: SELECT * FROM `sml_news` WHERE ( isread = 0 )  [ RunTime:0.0060s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sml_news` WHERE ( isread = 0 ) LIMIT 1   [ RunTime:0.0035s ]
+SQL: SELECT * FROM `sml_action` WHERE ( isdel=0 AND public='0' ) ORDER BY sort asc  [ RunTime:0.0076s ]
+SQL: SELECT `name` FROM `sml_action` WHERE ( public='main' ) LIMIT 1   [ RunTime:0.0053s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000325s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000499s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.055903s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.056715s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001121s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001376s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.006933s ]
+INFO: [ app_end ] --END-- [ RunTime:0.007531s ]
+
+[ 2017-02-18T12:51:44+08:00 ] 192.168.1.107 /smile/indin.php/Areas/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000045s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001800s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002427s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003020s ]
+SQL: SHOW COLUMNS FROM `sml_users_sign` [ RunTime:0.0242s ]
+SQL: SELECT `sign_day` FROM `sml_users_sign` WHERE ( sign_uid=1001 AND sign_mon=201702 ) LIMIT 1   [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `sml_action` [ RunTime:0.0279s ]
+SQL: SELECT `id` FROM `sml_action` WHERE ( url='Areas/index' ) LIMIT 1   [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `sml_group` [ RunTime:0.0259s ]
+SQL: SELECT `rules` FROM `sml_group` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `sml_areas` [ RunTime:0.0269s ]
+SQL: SELECT * FROM `sml_areas` WHERE ( pid=0 )  [ RunTime:0.0127s ]
+SQL: SHOW COLUMNS FROM `sml_setup` [ RunTime:0.0267s ]
+SQL: SELECT * FROM `sml_setup` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `sml_cate` [ RunTime:0.0276s ]
+SQL: SELECT * FROM `sml_cate` WHERE ( isdel=0 )  [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `sml_news` [ RunTime:0.0202s ]
+SQL: SELECT * FROM `sml_news` WHERE ( isread = 0 )  [ RunTime:0.0011s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sml_news` WHERE ( isread = 0 ) LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000253s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000572s ]
+NOTIC: [8] Undefined variable: areaName E:\xampp\htdocs\smile\Application\Runtime\Cache\Hmin\a655bad3a42a797873db64feed955e75.php 第 52 行.
+NOTIC: [8] Undefined variable: areaName E:\xampp\htdocs\smile\Application\Runtime\Cache\Hmin\a655bad3a42a797873db64feed955e75.php 第 55 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.049977s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.050624s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001512s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001949s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004364s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004625s ]
+
+[ 2017-02-18T12:53:06+08:00 ] 192.168.1.107 /smile/indin.php/Article/lst
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002567s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.006014s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006209s ]
+SQL: SHOW COLUMNS FROM `sml_users_sign` [ RunTime:0.0782s ]
+SQL: SELECT `sign_day` FROM `sml_users_sign` WHERE ( sign_uid=1001 AND sign_mon=201702 ) LIMIT 1   [ RunTime:0.0018s ]
+SQL: SHOW COLUMNS FROM `sml_action` [ RunTime:0.0282s ]
+SQL: SELECT `id` FROM `sml_action` WHERE ( url='Article/lst' ) LIMIT 1   [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `sml_group` [ RunTime:0.0262s ]
+SQL: SELECT `rules` FROM `sml_group` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0019s ]
+SQL: SHOW COLUMNS FROM `sml_areas` [ RunTime:0.0253s ]
+SQL: SELECT * FROM `sml_areas` WHERE ( pid=0 )  [ RunTime:0.0258s ]
+SQL: SHOW COLUMNS FROM `sml_setup` [ RunTime:0.0231s ]
+SQL: SELECT * FROM `sml_setup` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0018s ]
+SQL: SHOW COLUMNS FROM `sml_cate` [ RunTime:0.0270s ]
+SQL: SELECT * FROM `sml_cate` WHERE ( isdel=0 )  [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `sml_news` [ RunTime:0.0446s ]
+SQL: SELECT * FROM `sml_news` WHERE ( isread = 0 )  [ RunTime:0.0030s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sml_news` WHERE ( isread = 0 ) LIMIT 1   [ RunTime:0.0056s ]
+SQL: SHOW COLUMNS FROM `sml_article` [ RunTime:0.0842s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sml_article` WHERE ( isdel = 0 ) LIMIT 1   [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `sml_article` [ RunTime:0.0273s ]
+SQL: SELECT * FROM `sml_article` WHERE ( isdel = 0 ) ORDER BY viewnum desc LIMIT 0,15   [ RunTime:0.0064s ]
+SQL: SHOW COLUMNS FROM `sml_assets` [ RunTime:0.0245s ]
+SQL: SHOW COLUMNS FROM `sml_assets` [ RunTime:0.0186s ]
+SQL: SELECT `id`,`domain`,`savepath`,`savename` FROM `sml_assets` WHERE (  id in (7) and isdel = 0  )  [ RunTime:0.0019s ]
+SQL: SELECT `name` FROM `sml_cate` WHERE ( id = '11'  ) LIMIT 1   [ RunTime:0.0016s ]
+SQL: SELECT `id`,`domain`,`savepath`,`savename` FROM `sml_assets` WHERE (  id in (3) and isdel = 0  )  [ RunTime:0.0026s ]
+SQL: SELECT `name` FROM `sml_cate` WHERE ( id = '5'  ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `id`,`domain`,`savepath`,`savename` FROM `sml_assets` WHERE (  id in (4) and isdel = 0  )  [ RunTime:0.0010s ]
+SQL: SELECT `name` FROM `sml_cate` WHERE ( id = '2'  ) LIMIT 1   [ RunTime:0.0011s ]
+SQL: SELECT `id`,`domain`,`savepath`,`savename` FROM `sml_assets` WHERE (  id in (25) and isdel = 0  )  [ RunTime:0.0009s ]
+SQL: SELECT `name` FROM `sml_cate` WHERE ( id = '6'  ) LIMIT 1   [ RunTime:0.0011s ]
+SQL: SELECT `id`,`domain`,`savepath`,`savename` FROM `sml_assets` WHERE (  id in (10) and isdel = 0  )  [ RunTime:0.0026s ]
+SQL: SELECT `name` FROM `sml_cate` WHERE ( id = '2'  ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `id`,`domain`,`savepath`,`savename` FROM `sml_assets` WHERE (  id in (9) and isdel = 0  )  [ RunTime:0.0012s ]
+SQL: SELECT `name` FROM `sml_cate` WHERE ( id = '10'  ) LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT `id`,`domain`,`savepath`,`savename` FROM `sml_assets` WHERE (  id in (8) and isdel = 0  )  [ RunTime:0.0013s ]
+SQL: SELECT `name` FROM `sml_cate` WHERE ( id = '1'  ) LIMIT 1   [ RunTime:0.0017s ]
+SQL: SELECT `id`,`domain`,`savepath`,`savename` FROM `sml_assets` WHERE (  id in (5) and isdel = 0  )  [ RunTime:0.0011s ]
+SQL: SELECT `name` FROM `sml_cate` WHERE ( id = '8'  ) LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT `id`,`domain`,`savepath`,`savename` FROM `sml_assets` WHERE (  id in (23) and isdel = 0  )  [ RunTime:0.0075s ]
+SQL: SELECT `name` FROM `sml_cate` WHERE ( id = '8'  ) LIMIT 1   [ RunTime:0.0029s ]
+SQL: SELECT `id`,`domain`,`savepath`,`savename` FROM `sml_assets` WHERE (  id in (12) and isdel = 0  )  [ RunTime:0.0012s ]
+SQL: SELECT `name` FROM `sml_cate` WHERE ( id = '10'  ) LIMIT 1   [ RunTime:0.0036s ]
+SQL: SELECT `id`,`domain`,`savepath`,`savename` FROM `sml_assets` WHERE (  id in (11) and isdel = 0  )  [ RunTime:0.0014s ]
+SQL: SELECT `name` FROM `sml_cate` WHERE ( id = '1'  ) LIMIT 1   [ RunTime:0.0011s ]
+SQL: SELECT `id`,`domain`,`savepath`,`savename` FROM `sml_assets` WHERE (  id in (13) and isdel = 0  )  [ RunTime:0.0010s ]
+SQL: SELECT `name` FROM `sml_cate` WHERE ( id = '1'  ) LIMIT 1   [ RunTime:0.0025s ]
+SQL: SELECT `id`,`domain`,`savepath`,`savename` FROM `sml_assets` WHERE (  id in (15) and isdel = 0  )  [ RunTime:0.0012s ]
+SQL: SELECT `name` FROM `sml_cate` WHERE ( id = '10'  ) LIMIT 1   [ RunTime:0.0011s ]
+SQL: SELECT `id`,`domain`,`savepath`,`savename` FROM `sml_assets` WHERE (  id in (6) and isdel = 0  )  [ RunTime:0.0012s ]
+SQL: SELECT `name` FROM `sml_cate` WHERE ( id = '1'  ) LIMIT 1   [ RunTime:0.0019s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000248s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000415s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.066764s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.067004s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002120s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002572s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.007735s ]
+INFO: [ app_end ] --END-- [ RunTime:0.008087s ]
+
+[ 2017-02-18T12:53:20+08:00 ] 192.168.1.107 /smile/indin.php?m=Hmin&c=Article&a=doimg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001998s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001900s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002127s ]
+SQL: SHOW COLUMNS FROM `sml_users_sign` [ RunTime:0.0259s ]
+SQL: SELECT `sign_day` FROM `sml_users_sign` WHERE ( sign_uid=1001 AND sign_mon=201702 ) LIMIT 1   [ RunTime:0.0016s ]
+SQL: SHOW COLUMNS FROM `sml_action` [ RunTime:0.0290s ]
+SQL: SELECT `id` FROM `sml_action` WHERE ( url='Article/doimg' ) LIMIT 1   [ RunTime:0.0025s ]
+SQL: SHOW COLUMNS FROM `sml_group` [ RunTime:0.0735s ]
+SQL: SELECT `rules` FROM `sml_group` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0026s ]
+SQL: SHOW COLUMNS FROM `sml_areas` [ RunTime:0.0223s ]
+SQL: SELECT * FROM `sml_areas` WHERE ( pid=0 )  [ RunTime:0.0143s ]
+SQL: SHOW COLUMNS FROM `sml_setup` [ RunTime:0.0425s ]
+SQL: SELECT * FROM `sml_setup` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0024s ]
+SQL: SHOW COLUMNS FROM `sml_cate` [ RunTime:0.0389s ]
+SQL: SELECT * FROM `sml_cate` WHERE ( isdel=0 )  [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `sml_news` [ RunTime:0.0314s ]
+SQL: SELECT * FROM `sml_news` WHERE ( isread = 0 )  [ RunTime:0.0042s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sml_news` WHERE ( isread = 0 ) LIMIT 1   [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `sml_article` [ RunTime:0.0261s ]
+SQL: UPDATE `sml_article` SET `indeximg`='1' WHERE ( id = '3'  ) [ RunTime:0.1018s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004601s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004863s ]
+
+[ 2017-02-18T12:53:23+08:00 ] 192.168.1.107 /smile/indin.php/Article/lst
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001526s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001605s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002096s ]
+SQL: SHOW COLUMNS FROM `sml_users_sign` [ RunTime:0.0230s ]
+SQL: SELECT `sign_day` FROM `sml_users_sign` WHERE ( sign_uid=1001 AND sign_mon=201702 ) LIMIT 1   [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `sml_action` [ RunTime:0.0218s ]
+SQL: SELECT `id` FROM `sml_action` WHERE ( url='Article/lst' ) LIMIT 1   [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `sml_group` [ RunTime:0.0227s ]
+SQL: SELECT `rules` FROM `sml_group` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `sml_areas` [ RunTime:0.0229s ]
+SQL: SELECT * FROM `sml_areas` WHERE ( pid=0 )  [ RunTime:0.0122s ]
+SQL: SHOW COLUMNS FROM `sml_setup` [ RunTime:0.0249s ]
+SQL: SELECT * FROM `sml_setup` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0023s ]
+SQL: SHOW COLUMNS FROM `sml_cate` [ RunTime:0.0210s ]
+SQL: SELECT * FROM `sml_cate` WHERE ( isdel=0 )  [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `sml_news` [ RunTime:0.0196s ]
+SQL: SELECT * FROM `sml_news` WHERE ( isread = 0 )  [ RunTime:0.0047s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sml_news` WHERE ( isread = 0 ) LIMIT 1   [ RunTime:0.0016s ]
+SQL: SHOW COLUMNS FROM `sml_article` [ RunTime:0.0202s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sml_article` WHERE ( isdel = 0 ) LIMIT 1   [ RunTime:0.0031s ]
+SQL: SHOW COLUMNS FROM `sml_article` [ RunTime:0.0326s ]
+SQL: SELECT * FROM `sml_article` WHERE ( isdel = 0 ) ORDER BY viewnum desc LIMIT 0,15   [ RunTime:0.0054s ]
+SQL: SHOW COLUMNS FROM `sml_assets` [ RunTime:0.0301s ]
+SQL: SHOW COLUMNS FROM `sml_assets` [ RunTime:0.0487s ]
+SQL: SELECT `id`,`domain`,`savepath`,`savename` FROM `sml_assets` WHERE (  id in (7) and isdel = 0  )  [ RunTime:0.0012s ]
+SQL: SELECT `name` FROM `sml_cate` WHERE ( id = '11'  ) LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT `id`,`domain`,`savepath`,`savename` FROM `sml_assets` WHERE (  id in (3) and isdel = 0  )  [ RunTime:0.0012s ]
+SQL: SELECT `name` FROM `sml_cate` WHERE ( id = '5'  ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `id`,`domain`,`savepath`,`savename` FROM `sml_assets` WHERE (  id in (4) and isdel = 0  )  [ RunTime:0.0015s ]
+SQL: SELECT `name` FROM `sml_cate` WHERE ( id = '2'  ) LIMIT 1   [ RunTime:0.0012s ]
+SQL: SELECT `id`,`domain`,`savepath`,`savename` FROM `sml_assets` WHERE (  id in (25) and isdel = 0  )  [ RunTime:0.0010s ]
+SQL: SELECT `name` FROM `sml_cate` WHERE ( id = '6'  ) LIMIT 1   [ RunTime:0.0012s ]
+SQL: SELECT `id`,`domain`,`savepath`,`savename` FROM `sml_assets` WHERE (  id in (10) and isdel = 0  )  [ RunTime:0.0011s ]
+SQL: SELECT `name` FROM `sml_cate` WHERE ( id = '2'  ) LIMIT 1   [ RunTime:0.0023s ]
+SQL: SELECT `id`,`domain`,`savepath`,`savename` FROM `sml_assets` WHERE (  id in (9) and isdel = 0  )  [ RunTime:0.0012s ]
+SQL: SELECT `name` FROM `sml_cate` WHERE ( id = '10'  ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `id`,`domain`,`savepath`,`savename` FROM `sml_assets` WHERE (  id in (8) and isdel = 0  )  [ RunTime:0.0012s ]
+SQL: SELECT `name` FROM `sml_cate` WHERE ( id = '1'  ) LIMIT 1   [ RunTime:0.0018s ]
+SQL: SELECT `id`,`domain`,`savepath`,`savename` FROM `sml_assets` WHERE (  id in (5) and isdel = 0  )  [ RunTime:0.0012s ]
+SQL: SELECT `name` FROM `sml_cate` WHERE ( id = '8'  ) LIMIT 1   [ RunTime:0.0019s ]
+SQL: SELECT `id`,`domain`,`savepath`,`savename` FROM `sml_assets` WHERE (  id in (23) and isdel = 0  )  [ RunTime:0.0013s ]
+SQL: SELECT `name` FROM `sml_cate` WHERE ( id = '8'  ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `id`,`domain`,`savepath`,`savename` FROM `sml_assets` WHERE (  id in (12) and isdel = 0  )  [ RunTime:0.0014s ]
+SQL: SELECT `name` FROM `sml_cate` WHERE ( id = '10'  ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `id`,`domain`,`savepath`,`savename` FROM `sml_assets` WHERE (  id in (11) and isdel = 0  )  [ RunTime:0.0031s ]
+SQL: SELECT `name` FROM `sml_cate` WHERE ( id = '1'  ) LIMIT 1   [ RunTime:0.0016s ]
+SQL: SELECT `id`,`domain`,`savepath`,`savename` FROM `sml_assets` WHERE (  id in (13) and isdel = 0  )  [ RunTime:0.0011s ]
+SQL: SELECT `name` FROM `sml_cate` WHERE ( id = '1'  ) LIMIT 1   [ RunTime:0.0019s ]
+SQL: SELECT `id`,`domain`,`savepath`,`savename` FROM `sml_assets` WHERE (  id in (15) and isdel = 0  )  [ RunTime:0.0034s ]
+SQL: SELECT `name` FROM `sml_cate` WHERE ( id = '10'  ) LIMIT 1   [ RunTime:0.0037s ]
+SQL: SELECT `id`,`domain`,`savepath`,`savename` FROM `sml_assets` WHERE (  id in (6) and isdel = 0  )  [ RunTime:0.0021s ]
+SQL: SELECT `name` FROM `sml_cate` WHERE ( id = '1'  ) LIMIT 1   [ RunTime:0.0018s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000994s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001245s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.163645s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.163879s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.004395s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004608s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.015037s ]
+INFO: [ app_end ] --END-- [ RunTime:0.015244s ]
+
+[ 2017-02-18T12:53:43+08:00 ] 192.168.1.107 /smile/indin.php?m=Hmin&c=Article&a=doimg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000045s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005417s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005820s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006016s ]
+SQL: SHOW COLUMNS FROM `sml_users_sign` [ RunTime:0.0338s ]
+SQL: SELECT `sign_day` FROM `sml_users_sign` WHERE ( sign_uid=1001 AND sign_mon=201702 ) LIMIT 1   [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `sml_action` [ RunTime:0.0906s ]
+SQL: SELECT `id` FROM `sml_action` WHERE ( url='Article/doimg' ) LIMIT 1   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `sml_group` [ RunTime:0.0340s ]
+SQL: SELECT `rules` FROM `sml_group` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0021s ]
+SQL: SHOW COLUMNS FROM `sml_areas` [ RunTime:0.0288s ]
+SQL: SELECT * FROM `sml_areas` WHERE ( pid=0 )  [ RunTime:0.0134s ]
+SQL: SHOW COLUMNS FROM `sml_setup` [ RunTime:0.0449s ]
+SQL: SELECT * FROM `sml_setup` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0026s ]
+SQL: SHOW COLUMNS FROM `sml_cate` [ RunTime:0.0213s ]
+SQL: SELECT * FROM `sml_cate` WHERE ( isdel=0 )  [ RunTime:0.0016s ]
+SQL: SHOW COLUMNS FROM `sml_news` [ RunTime:0.1035s ]
+SQL: SELECT * FROM `sml_news` WHERE ( isread = 0 )  [ RunTime:0.0136s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sml_news` WHERE ( isread = 0 ) LIMIT 1   [ RunTime:0.0039s ]
+SQL: SHOW COLUMNS FROM `sml_article` [ RunTime:0.0489s ]
+SQL: UPDATE `sml_article` SET `indeximg`='1' WHERE ( id = '8'  ) [ RunTime:0.1039s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002185s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002352s ]
+
+[ 2017-02-18T12:53:46+08:00 ] 192.168.1.107 /smile/indin.php/Article/lst
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001630s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002551s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003085s ]
+SQL: SHOW COLUMNS FROM `sml_users_sign` [ RunTime:0.0279s ]
+SQL: SELECT `sign_day` FROM `sml_users_sign` WHERE ( sign_uid=1001 AND sign_mon=201702 ) LIMIT 1   [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `sml_action` [ RunTime:0.0196s ]
+SQL: SELECT `id` FROM `sml_action` WHERE ( url='Article/lst' ) LIMIT 1   [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `sml_group` [ RunTime:0.0200s ]
+SQL: SELECT `rules` FROM `sml_group` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `sml_areas` [ RunTime:0.0352s ]
+SQL: SELECT * FROM `sml_areas` WHERE ( pid=0 )  [ RunTime:0.0131s ]
+SQL: SHOW COLUMNS FROM `sml_setup` [ RunTime:0.0503s ]
+SQL: SELECT * FROM `sml_setup` WHERE ( id=1 ) LIMIT 1   [ RunTime:0.0041s ]
+SQL: SHOW COLUMNS FROM `sml_cate` [ RunTime:0.0721s ]
+SQL: SELECT * FROM `sml_cate` WHERE ( isdel=0 )  [ RunTime:0.0143s ]
+SQL: SHOW COLUMNS FROM `sml_news` [ RunTime:0.0892s ]
+SQL: SELECT * FROM `sml_news` WHERE ( isread = 0 )  [ RunTime:0.0316s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sml_news` WHERE ( isread = 0 ) LIMIT 1   [ RunTime:0.0267s ]
+SQL: SHOW COLUMNS FROM `sml_article` [ RunTime:0.0750s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `sml_article` WHERE ( isdel = 0 ) LIMIT 1   [ RunTime:0.0022s ]
+SQL: SHOW COLUMNS FROM `sml_article` [ RunTime:0.0231s ]
+SQL: SELECT * FROM `sml_article` WHERE ( isdel = 0 ) ORDER BY viewnum desc LIMIT 0,15   [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `sml_assets` [ RunTime:0.0200s ]
+SQL: SHOW COLUMNS FROM `sml_assets` [ RunTime:0.0198s ]
+SQL: SELECT `id`,`domain`,`savepath`,`savename` FROM `sml_assets` WHERE (  id in (7) and isdel = 0  )  [ RunTime:0.0020s ]
+SQL: SELECT `name` FROM `sml_cate` WHERE ( id = '11'  ) LIMIT 1   [ RunTime:0.0021s ]
+SQL: SELECT `id`,`domain`,`savepath`,`savename` FROM `sml_assets` WHERE (  id in (3) and isdel = 0  )  [ RunTime:0.0013s ]
+SQL: SELECT `name` FROM `sml_cate` WHERE ( id = '5'  ) LIMIT 1   [ RunTime:0.0022s ]
+SQL: SELECT `id`,`domain`,`savepath`,`savename` FROM `sml_assets` WHERE (  id in (4) and isdel = 0  )  [ RunTime:0.0023s ]
+SQL: SELECT `name` FROM `sml_cate` WHERE ( id = '2'  ) LIMIT 1   [ RunTime:0.0011s ]
+SQL: SELECT `id`,`domain`,`savepath`,`savename` FROM `sml_assets` WHERE (  id in (25) and isdel = 0  )  [ RunTime:0.0011s ]
+SQL: SELECT `name` FROM `sml_cate` WHERE ( id = '6'  ) LIMIT 1   [ RunTime:0.0012s ]
+SQL: SELECT `id`,`domain`,`savepath`,`savename` FROM `sml_assets` WHERE (  id in (10) and isdel = 0  )  [ RunTime:0.0011s ]
+SQL: SELECT `name` FROM `sml_cate` WHERE ( id = '2'  ) LIMIT 1   [ RunTime:0.0023s ]
+SQL: SELECT `id`,`domain`,`savepath`,`savename` FROM `sml_assets` WHERE (  id in (9) and isdel = 0  )  [ RunTime:0.0011s ]
+SQL: SELECT `name` FROM `sml_cate` WHERE ( id = '10'  ) LIMIT 1   [ RunTime:0.0011s ]
+SQL: SELECT `id`,`domain`,`savepath`,`savename` FROM `sml_assets` WHERE (  id in (8) and isdel = 0  )  [ RunTime:0.0012s ]
+SQL: SELECT `name` FROM `sml_cate` WHERE ( id = '1'  ) LIMIT 1   [ RunTime:0.0040s ]
+SQL: SELECT `id`,`domain`,`savepath`,`savename` FROM `sml_assets` WHERE (  id in (5) and isdel = 0  )  [ RunTime:0.0020s ]
+SQL: SELECT `name` FROM `sml_cate` WHERE ( id = '8'  ) LIMIT 1   [ RunTime:0.0011s ]
+SQL: SELECT `id`,`domain`,`savepath`,`savename` FROM `sml_assets` WHERE (  id in (23) and isdel = 0  )  [ RunTime:0.0014s ]
+SQL: SELECT `name` FROM `sml_cate` WHERE ( id = '8'  ) LIMIT 1   [ RunTime:0.0017s ]
+SQL: SELECT `id`,`domain`,`savepath`,`savename` FROM `sml_assets` WHERE (  id in (12) and isdel = 0  )  [ RunTime:0.0012s ]
+SQL: SELECT `name` FROM `sml_cate` WHERE ( id = '10'  ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `id`,`domain`,`savepath`,`savename` FROM `sml_assets` WHERE (  id in (11) and isdel = 0  )  [ RunTime:0.0010s ]
+SQL: SELECT `name` FROM `sml_cate` WHERE ( id = '1'  ) LIMIT 1   [ RunTime:0.0011s ]
+SQL: SELECT `id`,`domain`,`savepath`,`savename` FROM `sml_assets` WHERE (  id in (13) and isdel = 0  )  [ RunTime:0.0018s ]
+SQL: SELECT `name` FROM `sml_cate` WHERE ( id = '1'  ) LIMIT 1   [ RunTime:0.0016s ]
+SQL: SELECT `id`,`domain`,`savepath`,`savename` FROM `sml_assets` WHERE (  id in (15) and isdel = 0  )  [ RunTime:0.0010s ]
+SQL: SELECT `name` FROM `sml_cate` WHERE ( id = '10'  ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `id`,`domain`,`savepath`,`savename` FROM `sml_assets` WHERE (  id in (6) and isdel = 0  )  [ RunTime:0.0027s ]
+SQL: SELECT `name` FROM `sml_cate` WHERE ( id = '1'  ) LIMIT 1   [ RunTime:0.0023s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000256s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000416s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.074369s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.075341s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.003178s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003445s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.006790s ]
+INFO: [ app_end ] --END-- [ RunTime:0.007030s ]
+

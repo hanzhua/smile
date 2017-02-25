@@ -1,0 +1,79 @@
+<include file="Public/style"/>
+
+<form method="post" onsubmit="return Add();" >
+    <table class="table text-center table-responsive bg-white" style="background-color:#fff;color: #0000cc;">
+
+            <tr><input type="hidden" id="pid" name="id" value="{$id}">
+                <td>本级功能：</td>
+                <td align="left"><input  type="text" style="width: 260px" value="{$name}" id='pname' name="name" readonly/></td>
+            </tr>
+            <tr>
+                <td>添加功能：</td>
+                <td align="left"><input  type="text" style="width: 260px" id='name' name="name" placeholder="请输入功能名称"/></td>
+            </tr>
+
+            <tr>
+                <td>功能方法：</td>
+                <td align="left"><input type="text" style="width: 260px" name="url" id="url" placeholder="控制器/方法名 例如:Index/index" <if condition="$id eq 0">readonly</if>></td>
+            </tr>
+
+            <tr>
+                <td>菜单图标：</td>
+                <td align="left"><input  type="text" style="width: 260px" id='icon' name="icon" placeholder="例如：fa-user 输入user即可" ></td>
+            </tr>
+        <tr>
+            <td colspan="2">
+                <input id="submit" type="submit" class="btn btn-info" value="提交" />&nbsp;
+                <input  type="reset" class="btn btn-warning" value="重置" />
+            </td>
+        </tr>
+    </table>
+</form>
+<include file="Public/script"/>
+<script type="text/javascript">
+    $(function(){
+        $('#submit').click(function(){Add();});
+    });
+    //菜单栏管理
+    function Add(){
+        var params = {};
+        params.pid   = $('#pid').val();
+        params.name=$('#name').val();
+        params.url  = $('#url').val();
+        params.icon = $('#icon').val();
+        if(params.name==''){
+            layer.msg("请输入功能名称！",{icon:2});
+            $('#name').focus();
+            return false;
+        }
+        if(params.pid==0){
+            if(params.icon==''){
+                layer.msg("请输入菜单图标！",{icon:2});
+                $('#icon').focus();
+                return false;
+            }
+            params = {
+                pid : $('#id').val(),
+                name:$('#name').val(),
+                icon : $('#icon').val()
+            };
+        }else{
+            if(params.url==''){
+                layer.msg("请输入功能方法！",{icon:2});
+                $('#url').focus();
+                return false;
+            }
+        }
+        SML.submit('submit',"正在提交...");
+        $.post("{:U('Rule/actionAdd')}",{data:params},function(rs){
+            if(rs==1){
+                layer.msg('操作成功!',{icon:1,time:2000}, function () {
+                    parent.window.location.reload();
+                });
+            }else{
+                layer.msg("操作失败!");
+            }
+        });
+        return false;
+    }
+</script>

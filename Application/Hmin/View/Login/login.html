@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+   <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <!--<link rel="shortcut icon" href="favicon.ico"/>-->
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>后台管理中心登录</title>
+      <link href="__ROOT__/Application/Hmin/View/Login/bootstrap.min.css" rel="stylesheet">
+      <link rel="stylesheet" href="__ROOT__/Application/Hmin/View/Login/login.css">
+      <!--[if lt IE 9]>
+      <script src="__PUBLIC__/bs/js/html5shiv.min.js"></script>
+      <script src="__PUBLIC__/bs/js/respond.min.js"></script>
+      <![endif]-->
+       <script src="__PUBLIC__/Default/js/jquery.js"></script>
+       <script src="__PUBLIC__/layer/layer.js"></script>
+      <script src="__ROOT__/Application/Hmin/View/Login/jquery.min.js"></script>
+      <script src="__ROOT__/Application/Hmin/View/Login/bootstrap.min.js"></script>
+      <script>
+      var ThinkPHP = window.Think = {
+	        "ROOT"   : "__ROOT__",
+	        "APP"    : "__APP__",
+	        "PUBLIC" : "__PUBLIC__",
+	        "DEEP"   : "{:C('URL_PATHINFO_DEPR')}",
+	        "MODEL"  : ["{:C('URL_MODEL')}", "{:C('URL_CASE_INSENSITIVE')}", "{:C('URL_HTML_SUFFIX')}"],
+	        "VAR"    : ["{:C('VAR_MODULE')}", "{:C('VAR_CONTROLLER')}", "{:C('VAR_ACTION')}"]
+	  }
+      </script>
+      <script src="__ROOT__/Application/Hmin/View/Login/think.js"></script>
+   </head>
+   <script>
+   $(function(){
+	   getVerify();
+	   $('.form-actions').click(function(){login();});
+	   $(document).keypress(function(e) { 
+		   if(e.which == 13) {  
+			   login();  
+		   } 
+	   }); 
+   });
+   var login = function(){
+	   var params = {};
+	   params.username = $.trim($('#loginName').val());
+	   params.password = $.trim($('#loginPwd').val());
+	   params.code = $.trim($('#verifyCode').val());
+	   params.id = $('#id').val();
+	   if(params.username==''){
+           layer.msg("请输入账号！",{icon:2,title:''});
+		   $('#loginName').focus();
+		   return;
+	   }
+	   if(params.password==''){
+           layer.msg("请输入密码！",{icon:2,title:''});
+		   $('#loginPwd').focus();
+		   return;
+	   }
+	   if(params.code==''){
+           layer.msg("请输入验证码！",{icon:2,title:''});
+		   $('#verfyCode').focus();
+		   return;
+	   }
+       layer.msg("正在登录，请稍后...",{icon:16,time:3000});
+		$.post("{:U('Hmin/Index/logindo')}",params,function(data,textStatus) {
+            var json = data;//SML.toJson(data);
+            if(json == 1){
+                layer.msg("登录成功!",{icon:1,time:2000});
+                setTimeout(function () {
+                    window.location.href = "{:U('Admin/index')}";
+                },2000);
+            }else if(json == 2){
+                layer.msg("账号已停用，请联系管理员!",{icon:2,title:'系统提示'});
+                getVerify(); $('#verifyCode').val('');
+            }else if(json == -1){
+                layer.msg("账号或密码错误!",{icon:2,title:'系统提示'});
+                clearInput();
+                getVerify();
+            }else if (json == -2) {
+                layer.msg("验证码错误!",{icon:2,title:'系统提示'});
+                getVerify(); $('#verifyCode').val('');
+            }else if (json == -3){
+                layer.msg("管理员账户错误!",{icon:2,title:'系统提示'});
+                clearInput();
+                getVerify();
+            }
+        });
+   }
+   var clearInput = function () {
+       $('#loginName').val('');
+       $('#loginPwd').val('');
+       $('#verifyCode').val('');
+   }
+   var getVerify = function() {
+	   $('.verifyImg').attr('src',$('.verifyImg').attr("src")+'&random='+Math.random());
+   }
+   </script>
+   <body>
+        <div id="loginbox">
+            <div class='logo'></div>            
+            <form id="loginform" class="form-vertical" />
+                <div class="control-group">
+                    <div class="controls"> 
+                        <div class="input-prepend">
+                            <span class="add-on">账号：</span><input type="text" name='username' id='loginName' placeholder="用户名" />
+                        </div>
+                    </div>
+                </div>
+                <div class="control-group">
+                    <div class="controls">
+                        <div class="input-prepend">
+                            <span class="add-on">密码：</span><input type="password" name='password' id='loginPwd' placeholder="密码" />
+                        </div>
+                    </div>
+                </div>
+                <div class="control-group">
+                    <div class="controls">
+                        <div class="input-prepend">
+                            <span class="add-on">验证码：</span><input type="text" style='width:115px;' name='code' id='verifyCode' placeholder="验证码" />
+                            <label class="img">
+			                	<img style='vertical-align:middle;cursor:pointer;width:100px;;height:25px;' class='verifyImg' src="{:U('Hmin/Index/getVerify')}" title='刷新验证码' onclick='javascript:getVerify()'/>
+							</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-actions"></div>
+            </form>
+        </div> 
+    </body>
+</html>

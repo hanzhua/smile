@@ -1,0 +1,114 @@
+<script type="text/javascript" src="__PUBLIC__/bs/swfupload/js/jquery.js"></script>
+<script type="text/javascript" src="__PUBLIC__/bs/swfupload/js/swfupload.js"></script>
+<script type="text/javascript" src="__PUBLIC__/bs/swfupload/js/handlers.js"></script>
+<link href="__PUBLIC__/bs/swfupload/css/default.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript">
+            var swfu;
+            var file_queue_limit = 100;//队列1，每次只能上传1个,若是1个以上，上传后的样式是叠加图片
+            window.onload = function() {
+                swfu = new SWFUpload({
+                    upload_url: "{:U('Index/uploadImage')}",
+                    post_params: {"PHPSESSID": "<?php echo session_id(); ?>"},
+                    file_size_limit: "20 MB", //最大2M
+                    file_types: "*.jpg;*.jpeg;*.png;*.gif;*.bmp", //设置选择文件的类型
+                    file_types_description: "JPG Images", //描述文件类型
+                    file_upload_limit: "0", //0代表不受上传个数的限制
+                    file_queue_limit:file_queue_limit,
+                    file_queue_error_handler: fileQueueError,
+                    file_dialog_complete_handler: fileDialogComplete, //当关闭选择框后,做触发的事件
+                    upload_progress_handler: uploadProgress, //处理上传进度
+                    upload_error_handler: uploadError, //错误处理事件
+                    upload_success_handler: uploadSuccess, //上传成功够,所处理的时间
+                    upload_complete_handler: uploadComplete, //上传结束后,处理的事件
+                    button_image_url: "__PUBLIC__/bs/swfupload/images/upload.png",
+                    button_placeholder_id: "spanButtonPlaceholder",
+                    button_width: 113,
+                    button_height: 33,
+                    button_text: '',
+                    button_text_style: '.spanButtonPlaceholder { font-family: Helvetica, Arial, sans-serif; font-size: 14pt;} ',
+                    button_text_top_padding: 0,
+                    button_text_left_padding: 0,
+                    button_window_mode: SWFUpload.WINDOW_MODE.TRANSPARENT,
+                    button_cursor: SWFUpload.CURSOR.HAND,
+                    flash_url: "__PUBLIC__/bs/swfupload/js/swfupload.swf",
+                    custom_settings: {
+                        upload_target: "divFileProgressContainer"
+                    },
+                    debug: false //是否开启日志
+                });
+            };
+            function delthis(_this) {
+                var src = $(_this).siblings('img').attr('src');
+                var tag = $(_this).attr('tag');
+                //移除hidden
+                $('#tmpImg_'+tag).remove();
+                $.ajax({
+                    type: "POST", //访问WebService使用Post方式请求
+                    url: "{:U('/Index/delImage')}", //调用WebService的地址和方法名称组合---WsURL/方法名
+                    data: "id=" + tag,
+                    success: function (data) {
+
+                    }
+                });
+                $(_this).parent().remove();
+            }
+        </script>
+            <div class="demo">
+                <div style="width: 100%; height: 220px; border: 1px solid #e1e1e1; font-size: 12px; padding: 10px;">
+                    <span id="spanButtonPlaceholder"></span>
+                    <div id="divFileProgressContainer"></div>
+                    <div id="thumbnails">
+                        <ul id="pic_list" style="margin: 5px;">
+                            <foreach name="assetsdata"  item="vo">
+                                <li>
+                                    <img class="content" src="{$vo.src}" style="width:100px;height:100px;">
+                                    <img tag="{$vo.id}" class="button" src="__PUBLIC__/bs/swfupload/images/fancy_close.png" onclick="delthis(this)">
+                                    <input type="hidden" name="AssetsId[]" value="{$vo.id}" id="tmpImg_{$vo.id}">
+                                </li>
+
+                            </foreach>
+                        </ul>
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+                
+            </div>
+<script type="text/javascript">
+function addImage(src) {
+    res = eval("("+src+")");
+
+    var newElement = "<li><img class='content'  src='" + res.src + "' style=\"width:100px;height:100px;\"><img tag='"+res.assetid+"' class='button' src=" + "__PUBLIC__/bs/swfupload/images/fancy_close.png title='删除'> <input type='hidden' name='AssetsId[]' value='"+res.assetid+"' id='tmpImg_"+res.assetid+"' /></li>";
+   
+    if(file_queue_limit == 1){
+        $("#pic_list").html(newElement);
+    }else{
+        $("#pic_list").append(newElement);
+    }
+    
+    $("img.button").last().bind("click", del);
+    //id
+    var assetsNode = $('#AssetsId');
+    if (assetsNode.val())
+    {
+        assetsNode.val( assetsNode.val() + ',' + res.assetid );
+    } else {
+        assetsNode.val(res.assetid);
+    }
+}
+
+var del = function () {
+    var src = $(this).siblings('img').attr('src');
+    var tag = $(this).attr('tag');
+    //移除hidden
+    $('#tmpImg_'+tag).remove();
+    $.ajax({
+        type: "POST", //访问WebService使用Post方式请求
+        url: "{:U('Index/delImage')}", //调用WebService的地址和方法名称组合---WsURL/方法名
+        data: "id=" + tag,
+        success: function (data) {
+
+        }
+    });
+    $(this).parent().remove();
+}
+</script>

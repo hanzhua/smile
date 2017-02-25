@@ -1,0 +1,46 @@
+<div class="row">
+    <div class="col-sm-12">
+        <section class="panel">
+            <header class="panel-heading">
+                Media Manager
+                    <!--<span class="tools pull-right">-->
+                        <!--<a href="javascript:;" class="fa fa-chevron-down"></a>-->
+                        <!--<a href="javascript:;" class="fa fa-times"></a>-->
+                     <!--</span>-->
+            </header>
+            <div class="panel-body">
+
+                <!--<ul id="filters" class="media-filter">-->
+                    <!--<li><a href="#" data-filter="*"> All</a></li>-->
+                    <!--<li><a href="#" data-filter=".images">Images</a></li>-->
+                    <!--<li><a href="#" data-filter=".audio">Audio</a></li>-->
+                    <!--<li><a href="#" data-filter=".video">Video</a></li>-->
+                    <!--<li><a href="#" data-filter=".documents">Documents</a></li>-->
+                <!--</ul>-->
+
+                <!--<div class="btn-group pull-right">-->
+                    <!--<button type="button" class="btn btn-primary btn-sm"><i class="fa fa-check-square-o"></i> Select all</button>-->
+                    <!--<button type="button" class="btn btn-primary btn-sm"><i class="fa fa-folder-open"></i> Add New</button>-->
+                    <!--<button type="button" class="btn btn-primary btn-sm"><i class="fa fa-trash-o"></i> Delete</button>-->
+                    <!--<button type="button" class="btn btn-primary btn-sm"><i class="fa fa-upload"></i> Upload New File</button>-->
+                <!--</div>-->
+
+                <div id="gallery" class="media-gal">
+                    <foreach name="IMAGE" item="v">
+                    <div class="images item " >
+                        <!--<a href="#myModal" data-toggle="modal">-->
+                        <a href="javascript:See({$v['id']});">
+                            <img title="{$v.id}" src="{$v.savepath}{$v.savename}" width="420px" height="290px"/>
+                        </a>
+                        <p>{$v.name}</p>
+                    </div>
+                    </foreach>
+                </div>
+
+                <div class="col-md-12 text-center clearfix">
+                    {$page}
+                </div>
+            </div>
+        </section>
+    </div>
+</div>

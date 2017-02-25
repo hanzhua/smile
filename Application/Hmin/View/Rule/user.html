@@ -1,0 +1,268 @@
+<include file="Public/style" />
+<body style="background-color: #fff;">
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <b>管理员列表</b>
+            <div class="pull-right">
+                <a class="btn btn-success btn-sm" href="javascript:UserAdd();" onclick="">
+                    <span class="fa fa-plus-circle"></span> 添加
+                </a>
+            </div>
+        </div>
+        <table class="table table-hover table-condensed text-center">
+            <tr align="left">
+                <form method="post" action="{:U('Rule/user')}" id="formuser" onsubmit="return check();">
+                <td colspan="8">
+                    名称：<input style="width: 100px" type="text" name="user">
+                    电话：<input style="width: 100px" type="text"name="tel">
+                    Q Q：<input style="width: 100px" type="text"name="qq">
+                    时间：<input type="text" class="date" name="stime" id="stime"> - <input class="date" type="text" name="etime" id="etime">
+                    <button id="submit" type="submit" class="btn-sm btn btn-info">
+                        <i class="fa fa-search"></i> 搜索</button>
+                </td>
+                <td align="right">
+                    <a href="javascript:UserDel();" class="btn btn-danger btn-sm" onclick=""><span class="fa fa-trash-o"></span> 删除</a>
+                    <a href="javascript:UserSorts();" class="btn btn-info btn-sm" onclick=""><span class="fa fa-refresh"></span> 排序</a>
+                </td>
+                </form>
+            </tr>
+            <tr style="background-color: #f5f5f5">
+                <td><input type="checkbox" name="id" id="checkall"/></td>
+                <td>I    D</td>
+                <td><input type="checkbox" name="contact" id="contact"/> 管理员名称</td>
+		        <td>电话</td>
+		        <td>QQ</td>
+                <td>用户组</td>
+                <td>状态</td>
+                <td><input type="checkbox" name="createdate" id="createdate"/> 添加时间</td>
+                <td>操作</td>
+            </tr>
+            <foreach name="userlist" item="v">
+                <tr>
+                    <td><input type="checkbox" name="id[]" value="{$v['id']}" /></td>
+                    <td>{$v['id']}</td>
+                    <td>{$v['contact']}</td>
+		            <td>{$v['tel']}</td>
+		            <td>{$v['qq']}</td>
+                    <td>{$v['groupname']}</td>
+                    <td>
+                        <if condition="$v.flag eq 0">
+                            <font color="#0000cd">正常</font>
+                            <else/>
+                            <font color="red">停用</font>
+                        </if>
+                    </td>
+                    <td>{$v['createdate']}</td>
+                    <td>
+                        <div class="button-group">
+                            <a class="btn btn-success btn-xs" href="javascript:UserEdit({$v['id']});">
+                                <i class="fa fa-edit"></i> 修改用户组 | 密码</a>
+                        </div>
+                    </td>
+                </tr>
+            </foreach>
+            <tr>
+                <td colspan="9">{$page}</td>
+            </tr>
+        </table>
+    </div>
+<include file="Public/script"/>
+<include file="Public:datetime"/>
+<script type="text/javascript">
+    function UserAdd() {
+        layer.open({
+            type: 2,
+            title: "添加管理员",
+            area: ['480px', '300px'],
+            shade: 0.8,
+            shadeClose: true,
+            content: '{:U("Rule/userde")}'
+        });
+    }
+
+    function UserEdit(id) {
+        layer.open({
+            type: 2,
+            title: "修改管理员",
+            area: ['500px', '320px'],
+            shade: 0.8,
+            shadeClose: true,
+            content: '{:U("Rule/userde")}&id='+id
+        });
+    }
+
+    //全选
+    $("#checkall").click(function() {
+        $("input[name='id[]']").each(function() {
+            if (this.checked) {
+                this.checked = false;
+            }else {
+                this.checked = true;
+            }
+        });
+    })
+
+    //批量删除
+    function UserDel() {
+        var Checkbox = false;
+        var idstr = "";
+        $("input[name='id[]']").each(function() {
+            if (this.checked == true) {
+                Checkbox = true;
+            }
+        });
+        if (Checkbox) {
+            layer.confirm("您确认要<span style='color:red;'>删除</span>该记录么？",{}, function () {
+                var ids = $("input[name='id[]']:checked");
+                var length = ids.length;
+                for(var i=0; i<length; i++){
+                    idstr += ids[i].value+",";
+                }
+                layer.msg("正在删除...",{icon:16,time:2000});
+                $.post('{:U("Rule/userdel")}',{id:idstr},function(rs){
+                    if(rs==1){
+                        layer.msg('删除成功！',{icon:1,time:2000});
+                        window.location.reload();
+                    }else{
+                        layer.msg("删除失败！",{icon:2,time:2000});
+                    }
+                },'json');
+            });
+        }else {
+            layer.msg("请选择您要<span style='color:red;'>删除</span>的内容!");
+            return false;
+        }
+    }
+
+//批量排序
+    function UserSorts() {
+        var Checkbox = false;
+        $("input[name='id']:checked").each(function () {
+            if(this.checked == true){Checkbox = 1;}
+        })
+        $("input[name='contact']:checked").each(function() {
+            if (this.checked == true) {Checkbox = 2;}
+        });
+        $("input[name='createdate']:checked").each(function(){
+            if (this.checked == true) {Checkbox = 3;}
+        });
+        if(Checkbox==1){
+            window.location.href="{:U('Rule/usersorts')}&sort="+Checkbox;
+        }else if(Checkbox==2){
+            window.location.href="{:U('Rule/usersorts')}&sort="+Checkbox;
+        }else if(Checkbox==3){
+            window.location.href="{:U('Rule/usersorts')}&sort="+Checkbox;
+        }else{
+            layer.msg("请选择要<span style='color:red;'>排序</span>的内容!");
+            return false;
+        }
+    }
+
+
+//批量首页显示
+    function changeishome(o) {
+        var Checkbox = false;
+        $("input[name='id[]']").each(function() {
+            if (this.checked == true) {
+                Checkbox = true;
+            }
+        });
+        if (Checkbox) {
+
+            $("#formuser").submit();
+        }
+        else {
+            alert("请选择要操作的内容!");
+
+            return false;
+        }
+    }
+
+//批量推荐
+    function changeisvouch(o) {
+        var Checkbox = false;
+        $("input[name='id[]']").each(function() {
+            if (this.checked == true) {
+                Checkbox = true;
+            }
+        });
+        if (Checkbox) {
+
+
+            $("#formuser").submit();
+        }
+        else {
+            alert("请选择要操作的内容!");
+
+            return false;
+        }
+    }
+
+//批量置顶
+    function changeistop(o) {
+        var Checkbox = false;
+        $("input[name='id[]']").each(function() {
+            if (this.checked == true) {
+                Checkbox = true;
+            }
+        });
+        if (Checkbox) {
+
+            $("#formuser").submit();
+        }
+        else {
+            alert("请选择要操作的内容!");
+
+            return false;
+        }
+    }
+
+
+//批量移动
+    function changecate(o) {
+        var Checkbox = false;
+        $("input[name='id[]']").each(function() {
+            if (this.checked == true) {
+                Checkbox = true;
+            }
+        });
+        if (Checkbox) {
+            $("#formuser").submit();
+        }
+        else {
+            alert("请选择要操作的内容!");
+
+            return false;
+        }
+    }
+
+//批量复制
+    function changecopy(o) {
+        var Checkbox = false;
+        $("input[name='id[]']").each(function() {
+            if (this.checked == true) {
+                Checkbox = true;
+            }
+        });
+        if (Checkbox) {
+            var i = 0;
+            $("input[name='id[]']").each(function() {
+                if (this.checked == true) {
+                    i++;
+                }
+            });
+            if (i > 1) {
+                alert("只能选择一条信息!");
+                $(o).find("option:first").prop("selected", "selected");
+            } else {
+
+                $("#formuser").submit();
+            }
+        }
+        else {
+            alert("请选择要复制的内容!");
+            $(o).find("option:first").prop("selected", "selected");
+            return false;
+        }
+    }
+</script>

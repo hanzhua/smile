@@ -1,0 +1,72 @@
+<include file="Public:_de"/>
+<form action="" method="post" onsubmit="submitCate();">
+    <table class="table" align="center">
+        <!-- Edit -->
+        <if condition="$type eq 2">
+            <tr>
+                <th>上级名称：</th>
+                <td><input type="text" name="pname" value="{$pname}" readonly></td>
+            </tr>
+            <tr>
+                <th>上级序号：</th>
+                <td><input type="text" name="pid" value="{$pid}"></td>
+            </tr>
+            <tr><input type="hidden" name="id" value="{$id}">
+                <th>本级名称：</th>
+                <td><input type="text" name="name" value="{$data.name}" required></td>
+            </tr>
+            <tr>
+                <th>类型简称：</th>
+                <td><input type="text" name="url" value="{$data.url}" <if condition="$pid neq 0">readonly</if> placeholder="请输入英文简称"></td>
+            </tr>
+        </if>
+        <!-- Add 类型 -->
+        <if condition="$type eq 1">
+        <if condition="$id eq 0">
+            <else/>
+            <tr><input type="hidden" name="pid" value="{$id}">
+                <th>本级名称：</th>
+                <td><input type="text" name="name" value="{$data.name}" readonly></td>
+            </tr>
+        </if>
+        <tr>
+            <th>添加类型：</th>
+            <td><input type="text" name="name" placeholder="请输入类型名称" required></td>
+        </tr>
+        <tr>
+            <th>类型简称：</th>
+            <td><input type="text" name="url" value="{$data.url}" <if condition="$id neq 0">readonly</if>  placeholder="请输入英文简称"></td>
+        </tr>
+        </if>
+        <tr>
+            <td colspan="2" align="center">
+                <input  type="submit" class="btn btn-info " value="确定" />&nbsp;
+                <input  type="reset" class="btn btn-warning " value="重置" />
+            </td>
+        </tr>
+    </table>
+</form>
+<include file="Public:script"/>
+<script type="text/javascript">
+    submitCate = function (index) {
+        var loading = layer.msg('正在提交...',{icon:16,time:60000});
+        $.post("{:U('Cate/catede')}",{}, function (data){
+            setTimeout(function(){
+                if(data==1){
+                    parent.layer.close(index);
+                    layer.close(loading);
+                    layer.msg("修改成功！");
+                    window.parent.location.reload(true);
+                }else if(data==11){
+                    parent.layer.close(index);
+                    layer.close(loading);
+                    layer.msg("添加成功！");
+                    window.parent.location.reload(true);
+                }else {
+                    layer.close(loading);
+                    layer.msg("操作失败！！！");
+                }
+            },2000);
+        });
+    }
+</script>

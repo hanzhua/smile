@@ -1,0 +1,149 @@
+<include file="Public/style" />
+<body style='background-color: #fff;'>
+    <form class="navbar-form" action="{:U('Article/lst')}" method="POST">
+    <div class="panel-heading"><b>文章列表管理</b>
+        <div class="pull-right" >
+            分类：
+            <select name="cid" class="" style="width:120px;height: 26px">
+                <option value="0">请选择</option>
+                <foreach name='Cate' item='v'>
+                    <option value="{$v.id}">{$v.name}</option>
+                </foreach>
+            </select>
+            <input type="text" name="keyName" placeholder="Search...">
+            <button type="submit" style="padding:2px 4px; " ><i class="fa fa-search"></i></button>
+            <a href="javascript:ArtiAdd();"><button type="button"><span class="fa fa-plus-circle"></span> 添加文章</button></a>
+            <script type="text/javascript">
+                function ArtiAdd(){
+                    window.location.href="{:U('Article/add')}";
+                }
+            </script>
+        </div>
+    </div>
+    </form>
+    <table class="table table-hover text-center">
+        <tr align="center">
+            <td width="50" title="置顶顺序,Enter确认修改"><b>置顶</b></td>
+            <td><b>序 号</b></td>
+            <td><b>标 题</b></td>
+            <td><b>图 片</b></td>
+            <td><b>类 型</b></td>
+            <td><b>热 度</b></td>
+            <td><b>评论</b></td>
+            <td><b>轮播图</b></td>
+            <td><b>添加时间</b></td>
+            <td><b>操 作</b></td>
+        </tr>
+        <foreach name="Arti" item="v">
+         <if condition="$v.id eq ''">
+             <else/>
+             <tr>
+                 <td title="置顶顺序,Enter确认修改">
+                     <form action="{:U('Article/EditTOP')}" method="post">
+                         <input name="{$v.id}" value="{$v.istop}" type="text" style="width: 40px" title="置顶顺序,Enter确认修改" >
+                     </form>
+                 </td>
+                 <td>{$v.id}</td>
+                 <td width="200px">{$v.title}</td><!-- |msubstr=0,12 -->
+                 <td><img src="{$v['picurl'][0]['src']}" width='120px;'height='44px;'/></td>
+                 <td><font color="#00CC99">{$v.cname}</font></td>
+                 <td>
+                     <if condition="$v['viewnum'] gt 99">
+                         <span style="color:red;">{$v.viewnum}</span>
+                         <else/>{$v.viewnum}</if>℃
+                 </td>
+                 <td>评论</td>
+                 <td>
+                     <if condition="$v['indeximg'] eq 1" >
+                         <a href="javascript:void(0);" onclick="delimg({$v['id']});"><font color="red">已设置</font></a>
+                         <else/>
+                         <a href="javascript:void(0);" onclick="doimg({$v['id']});"><font color="#00CC99">设置</font></a>
+                     </if>
+                 </td>
+                 <td width="100px">{$v.createtime}</td>
+                 <td width="180px">
+                     <if condition="$v.istop neq 1"><!-- gt >,egt >=,lt < ,eq =,neq <> -->
+                         <a class="btn btn-xs btn-success" href="{:U('Article/is_top',array('id'=>$v['id'],'istop'=>1))}">
+                             <span class="fa fa-edit"></span> 置顶</a>
+                         <else/>
+                         <a class="btn btn-xs btn-success" href="{:U('Article/is_top',array('id'=>$v['id'],'istop'=>0))}">
+                             <span class="fa fa-edit"></span> 取消</a>
+                     </if>
+                     <a class="btn btn-xs btn-info" href="{:U('Article/remark',array('id'=>$v['id']))}">
+                         <span class="fa fa-edit"></span> 评论列表</a>
+                     <a class="btn btn-xs btn-warning" href="{:U('Article/add',array('id'=>$v['id']))}">
+                         <span class="fa fa-edit"></span> 修改</a>
+                     <a class="btn btn-xs btn-danger" href="{:U('Article/is_del',array('id'=>$v['id'],'isdel'=>1))}">
+                         <span class="fa fa-edit"></span> 文章回收</a>
+                 </td>
+             </tr>
+         </if>
+        </foreach>
+    </table>
+    <div class="btn-group">{$page}</div>
+<include file="Public/script"/>
+<script>
+//    var IS_Del = function (id,isdel) {
+//        var params = {
+//            id      : id,
+//            isdel   : isdel
+//        };
+//        layer.confirm("确定要回收该篇文章么?",{icon:3,title:'系统提示'}, function (index) {
+//            $.post("{:U('Article/is_del')}",{data:params}, function (rs) {
+//                if(rs==1){
+//                    layer.close(index);
+//                    layer.msg("回收成功!",{icon:1,time:2000}, function () {
+//                        window.location.reload();
+//                    });
+//                }else{
+//                    layer.close(index);
+//                    layer.msg('回收失败!',{icon:2,time:2000});
+//                }
+//            });
+//        });
+//    }
+    //分类 Cate
+    function ArtiCate(id){
+        var loading = layer.msg("请等候...",{icon:16,time:600000});
+        $.post("{:U('Article/selcate')}",{}, function (data) {
+            alert(data);
+            if(data==1){
+                layer.close(loading);
+                window.location.reload();
+            }
+        });
+//        window.location.href="{:U('Article/selcate')}&id="+id;
+    }
+
+    //设置轮播图
+    function doimg(id){
+        layer.confirm('确定要<span style="color:red;">设置</span>该轮播图么？',{icon:3,title:'设置轮播图'},function(index){
+            var loading = layer.msg("请稍后...",{icon:16,time:600000});
+            $.post('{:U("Article/doimg")}',{id:id},function(rs){
+                if (rs ==1){
+                    layer.close(loading);
+                    layer.msg("设置成功！")
+                    setTimeout(function(){window.location.reload();},1500);
+                }else{
+                    layer.close(loading);
+                    setTimeout(function(){layer.msg("设置失败！");},1500);
+                }
+            },'json');
+        });
+    }
+    //取消轮播图
+    function delimg(id){
+        layer.confirm('确定要<span style="color:red">取消</span>该轮播图么？',{icon:5,title:'取消轮播图'},function(index){
+            var loading = layer.msg("请稍后...",{icon:16,time:600000});
+            $.post('{:U("Article/delimg")}',{id:id},function(rs){
+                if (rs ==1){
+                    layer.close(loading);
+                    layer.msg("取消成功");
+                    setTimeout(function(){window.location.reload();},1500);
+                }else{
+                    layer.msg("取消失败");
+                }
+            },'json');
+        });
+    }
+</script>

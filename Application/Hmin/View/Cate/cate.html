@@ -1,0 +1,273 @@
+<include file="Public/style" />
+<script type="text/javascript">
+	var EditName = function (obj) {
+		var loading = layer.msg("正在操作，请稍后...",{icon:16,title:'信息提示',time:60000});
+		$.post(
+			"{:U('Hmin/Cate/EditName')}",
+			{id:$(obj).attr('dataId'),name:obj.value},
+			function(json,textStatus){
+				if(json==1){
+					layer.close(loading);
+					layer.msg('操作成功',{icon:1,time:2000});
+				}else{
+					layer.closeAll();
+					layer.msg('操作失败!',{title:'信息提示',icon:2,time:1000});
+				}
+			}
+		);
+	}
+</script>
+<div class="panel panel-title">
+	<div class="panel-heading">
+		<strong> 类型列表</strong>
+		<a class="btn btn-success btn-sm pull-right" href="javascript:CateAdd(0,1);">
+			<i class="fa fa-plus-circle"></i> 添加类型</a>
+	</div>
+    <table class="table table-hover text-center">
+	    <tr>
+		<td align="left"><b style="padding-left: 50px">类型名称</b></td>
+		<td><b>名称简称</b></td>
+		<td><b>操作</b></td>
+	    </tr>
+
+		<!-- 第一级 -->
+	    <volist name="cate" id="vo" key="i">
+		<tr id="tr_0_{$i}" class="tr_0">
+		    <td align="left">
+				<span class="fa fa-minus-circle" onclick="javascript:loadChildTree(this,{$vo['id']},'tr_0_{$i}');" style="margin-right:3px;cursor: pointer"></span>
+				<input type="text" value="{$vo['name']}" onchange="javascript:EditName(this);" dataId="{$vo['id']}">
+			</td>
+			<td>{$vo.url}</td>
+		    <td>
+				<div class="button-group">
+					<a class="btn btn-success btn-xs" href="javascript:CateAdd({$vo['id']},1);"><span class="fa fa-plus-circle"></span> 添加子类型</a>
+					<a class="btn btn-warning btn-xs" href="javascript:CateEdit({$vo['id']}, 2);"><span class="fa fa-edit"></span> 修改</a>
+					<a class="btn btn-danger btn-xs" href="javascript:CateDel({$vo['id']});"><span class="fa fa-trash-o"></span> 删除</a>
+				</div>
+		    </td>
+		</tr>
+
+		<!-- 第二级 -->
+		<volist name="vo['child']" id="c" key="i2">
+		    <tr id="tr_0_{$i}_{i2}" class="tr_0_{$i}">
+				<td align="left">&nbsp;
+					<i class="fa fa-minus-circle"></i>
+					<input type="text" value="{$c['name']}" onchange="javascript:EditName(this);" dataId="{$c['id']}">
+				</td>
+				<td>{$c.url}</td>
+				<td><div class="button-group">
+					<a class="btn btn-default btn-xs" disabled href="javascript:CateAdd({$c['id']},1);"><span class="fa fa-plus-circle"></span> 添加子类型</a>
+					<a class="btn btn-warning btn-xs" href="javascript:CateEdit({$c['id']}, 2);"><span class="fa fa-edit"></span> 修改</a>
+					<a class="btn btn-danger btn-xs" href="javascript:CateDel({$c['id']});"><span class="fa fa-trash-o"></span> 删除</a>
+					</div>
+				</td>
+		    </tr>
+		</volist>
+	    </volist>
+    </table>
+</div>
+<include file="Public/script"/>
+<script type="text/javascript">
+    //固定标题栏目
+    $(function(){
+		$('#menu').affix({
+			offset:{top: - 3}
+		});
+    });
+    //添加
+    function CateAdd(id,type){
+	layer.open({
+	    type: 2,
+	    title: "添加类型",
+	    area: ['50%', '57%'],
+	    shade: 0.8,
+	    shadeClose: true,
+	    content: '{:U("Cate/catede")}&id='+id+'&type='+type,
+	});
+    }
+    //修改
+    function CateEdit(id, type){
+	layer.open({
+	    type: 2,
+	    title: "修改类型",
+	    area: ['50%', '55%'],
+	    shade: 0.8, //透明度
+	    shadeClose: true,
+	    content: '{:U("Cate/catede")}&id=' + id + '&type=' + type,
+	});
+    }
+
+    //单个删除
+    function CateDel(id){
+	layer.confirm("您确定要删除吗?", {icon:3, title:'删除'}, function(index){
+		var loading = layer.msg('正在删除...',{icon:16,time:60000});
+	    $.post("{:U('Cate/catedel')}", {id:id}, function(rs){
+			setTimeout(function() {
+				if (rs == 0) {
+					layer.close(loading);
+					layer.msg("该菜单下有子菜单，无法删除！");
+				} else if (rs == 1) {
+					layer.msg("删除成功！");
+					window.location.reload();
+				} else {
+					layer.msg("删除失败！");
+				}
+			},1500);
+	    }, 'json');
+	});
+    }
+
+    //全选
+    $("#checkall").click(function(){
+	$("input[name='id[]']").each(function(){
+	    if (this.checked) {
+	    this.checked = false;
+	    }else {
+	    this.checked = true;
+	    }
+	});
+    })
+
+//批量删除
+		    function DelSelect(){
+		    var Checkbox = false;
+			    $("input[name='id[]']").each(function(){
+		    if (this.checked == true) {
+		    Checkbox = true;
+		    }
+		    });
+			    if (Checkbox){
+		    var t = confirm("您确认要删除选中的内容吗？");
+			    if (t == false) return false;
+			    $("#listform").submit();
+		    }
+		    else{
+		    alert("请选择您要删除的内容!");
+			    return false;
+		    }
+		    }
+
+//批量排序
+	    function sorts(){
+	    var Checkbox = false;
+		    $("input[name='id[]']").each(function(){
+	    if (this.checked == true) {
+	    Checkbox = true;
+	    }
+	    });
+		    if (Checkbox){
+
+	    $("#listform").submit();
+	    }
+	    else{
+	    alert("请选择要操作的内容!");
+		    return false;
+	    }
+	    }
+
+
+//批量首页显示
+	    function changeishome(o){
+	    var Checkbox = false;
+		    $("input[name='id[]']").each(function(){
+	    if (this.checked == true) {
+	    Checkbox = true;
+	    }
+	    });
+		    if (Checkbox){
+
+	    $("#listform").submit();
+	    }
+	    else{
+	    alert("请选择要操作的内容!");
+		    return false;
+	    }
+	    }
+
+//批量推荐
+	    function changeisvouch(o){
+	    var Checkbox = false;
+		    $("input[name='id[]']").each(function(){
+	    if (this.checked == true) {
+	    Checkbox = true;
+	    }
+	    });
+		    if (Checkbox){
+
+
+	    $("#listform").submit();
+	    }
+	    else{
+	    alert("请选择要操作的内容!");
+		    return false;
+	    }
+	    }
+
+//批量置顶
+	    function changeistop(o){
+	    var Checkbox = false;
+		    $("input[name='id[]']").each(function(){
+	    if (this.checked == true) {
+	    Checkbox = true;
+	    }
+	    });
+		    if (Checkbox){
+
+	    $("#listform").submit();
+	    }
+	    else{
+	    alert("请选择要操作的内容!");
+		    return false;
+	    }
+	    }
+
+
+//批量移动
+	    function changecate(o){
+	    var Checkbox = false;
+		    $("input[name='id[]']").each(function(){
+	    if (this.checked == true) {
+	    Checkbox = true;
+	    }
+	    });
+		    if (Checkbox){
+
+	    $("#listform").submit();
+	    }
+	    else{
+	    alert("请选择要操作的内容!");
+		    return false;
+	    }
+	    }
+
+//批量复制
+	    function changecopy(o){
+	    var Checkbox = false;
+		    $("input[name='id[]']").each(function(){
+	    if (this.checked == true) {
+	    Checkbox = true;
+	    }
+	    });
+		    if (Checkbox){
+	    var i = 0;
+		    $("input[name='id[]']").each(function(){
+	    if (this.checked == true) {
+	    i++;
+	    }
+	    });
+		    if (i > 1){
+	    alert("只能选择一条信息!");
+		    $(o).find("option:first").prop("selected", "selected");
+	    } else{
+
+	    $("#listform").submit();
+	    }
+	    }
+	    else{
+	    alert("请选择要复制的内容!");
+		    $(o).find("option:first").prop("selected", "selected");
+		    return false;
+	    }
+	    }
+
+</script>

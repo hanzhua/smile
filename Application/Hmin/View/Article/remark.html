@@ -1,0 +1,106 @@
+<include file="Public/link" />
+<body style='background-color: #fff;'>
+<form class="navbar-form" method="POST">
+    <div class="panel panel-default">
+        <div class="panel-heading"><b>评论列表管理</b></div>
+        <div class="panel-body body-small">
+            <div class="pull-left">
+		<div class="input-group input-group-sm">
+		    <input class="form-control" type="text" name="key" placeholder="请输入关键字查找">
+		    <a class="input-group-addon" href="javascript:void(0);" onclick="dosel();">搜索</a>
+		</div>
+            </div>
+        </div>
+        <table class="table table-hover text-center">
+            <tr align="center">
+                <td><b>序号</b></td>
+                <td><b>文章标题</b></td>
+                <td><b>文章作者</b></td>
+                <td><b>评论人名</b></td>
+                <td><b>评论时间</b></td>
+		        <td><b>评论内容</b></td>
+                <td><b>操 作</b></td>
+            </tr>
+            <foreach name="remark" item="v">
+            <tr>
+                <td>{$v.artid}</td>
+                <td align="left" width="200px"><b>{$v.title}</b></td>
+		            <!-- |msubstr=0,12 -->
+                <td style="color: mediumblue">{$v.user}</td>
+                <td style="color: darkblue">{$v.name}</td>
+		        <td width="110px">{$v.ctime}</td><!-- {$v.content} -->
+                <td align="left" width="300px">{$v.content|msubstr=0,30}</td>
+		        <td>						<!-- {:U('Article/',array('id'=>$v['id']))} -->
+		            <a class="btn btn-sm btn-success" href="javascript:HF({$v.id});"><span class="fa fa-edit"></span> 回复</a>
+                </td>
+            </tr>
+            </foreach>
+            <tr style="height: 20px;">
+                <!--<td colspan="9">{$page}</td>-->
+            </tr>
+        </table>
+    </div>
+</form>
+<include file="Public/script"/>
+<script>
+    var HF = function (id) {
+        layer.open({
+            type: 2,
+            title: "文章回复",
+            area: ['50%', '40%'],
+            shade: 0.8,
+            shadeClose: true,
+            content: '{:U("Article/relay")}&id='+id,
+        });
+    }
+    //分类 Cate
+    function changeCate(id){
+        layer.open({
+          type: 2,
+          title: false,
+          area: ['60%', '70%'],
+          shade: 0.7,
+          shadeClose: true,
+          content: '{:U("Article/changeCate")}?pid='+id,
+        });
+    }
+    //关键字搜索
+    function dosel(){
+        alert('OK');
+        window.loaction.href="{:U('Article/sel')}";
+//        layer.open({
+//            type: 2,
+//            title:false,
+//            area:['60%','70%'],
+//            shade: 0.7,
+//            shadeClose: true,
+//            content: '{:U("Article/sel")}',
+//        });
+    }
+    //设置轮播图
+    function doimg(id){
+        layer.confirm('确定要<span style="color:red;">设置</span>该轮播图么？',{icon:3,title:'设置'},function(index){
+            $.post('{:U("Article/doimg")}',{id:id},function(rs){
+		if (rs ==1){
+		    layer.msg("设置成功");
+		    setTimeout(function(){window.location.reload();},500);
+		}else{
+		    layer.msg("设置失败");
+		}
+	    },'json');
+        });
+    }
+    //取消轮播图
+    function delimg(id){
+        layer.confirm('确定要<span style="color:red">取消</span>该轮播图么？',{icon:5,title:'设置'},function(index){
+            $.post('{:U("Article/delimg")}',{id:id},function(rs){
+		if (rs ==1){
+		    layer.msg("取消成功");
+		    setTimeout(function(){window.location.reload();},500);
+		}else{
+		    layer.msg("取消失败");
+		}
+	    },'json');
+        });
+    }
+</script>

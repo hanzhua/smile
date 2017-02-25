@@ -1,0 +1,458 @@
+[ 2017-01-10T12:32:45+08:00 ] 127.0.0.1 /smile/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000053s ]
+INFO: [ app_init ] --END-- [ RunTime:0.067383s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.026837s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.027016s ]
+NOTIC: [8] Undefined index: user E:\xampp\htdocs\smile\Application\Home\Controller\SmileController.class.php 第 19 行.
+SQL: SHOW COLUMNS FROM `blog_setup` [ RunTime:0.4856s ]
+SQL: SHOW COLUMNS FROM `blog_article` [ RunTime:0.0148s ]
+SQL: SHOW COLUMNS FROM `blog_article` [ RunTime:0.0103s ]
+SQL: SELECT `id`,`title`,`pic`,`indeximg` FROM `blog_article` WHERE ( isdel = 0 and indeximg = 1 ) ORDER BY sort asc  [ RunTime:0.0981s ]
+SQL: SHOW COLUMNS FROM `blog_assets` [ RunTime:0.0103s ]
+SQL: SHOW COLUMNS FROM `blog_assets` [ RunTime:0.0154s ]
+SQL: SELECT `id`,`domain`,`savepath`,`savename` FROM `blog_assets` WHERE (  id in (23) and IsDel = 0  )  [ RunTime:0.0171s ]
+SQL: SHOW COLUMNS FROM `blog_cate` [ RunTime:0.0106s ]
+NOTIC: [8] Undefined index: cid E:\xampp\htdocs\smile\Application\Home\Model\ArticleModel.class.php 第 19 行.
+SQL: SELECT `name` FROM `blog_cate` WHERE ( id = ''  ) LIMIT 1   [ RunTime:0.0434s ]
+SQL: SHOW COLUMNS FROM `blog_users` [ RunTime:0.0441s ]
+NOTIC: [8] Undefined index: uid E:\xampp\htdocs\smile\Application\Home\Model\ArticleModel.class.php 第 20 行.
+SQL: SELECT `contact` FROM `blog_users` WHERE ( id='' ) LIMIT 1   [ RunTime:0.0224s ]
+SQL: SELECT `id`,`domain`,`savepath`,`savename` FROM `blog_assets` WHERE (  id in (4) and IsDel = 0  )  [ RunTime:0.0061s ]
+NOTIC: [8] Undefined index: cid E:\xampp\htdocs\smile\Application\Home\Model\ArticleModel.class.php 第 19 行.
+SQL: SELECT `name` FROM `blog_cate` WHERE ( id = ''  ) LIMIT 1   [ RunTime:0.0006s ]
+NOTIC: [8] Undefined index: uid E:\xampp\htdocs\smile\Application\Home\Model\ArticleModel.class.php 第 20 行.
+SQL: SELECT `contact` FROM `blog_users` WHERE ( id='' ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `id`,`domain`,`savepath`,`savename` FROM `blog_assets` WHERE (  id in (9) and IsDel = 0  )  [ RunTime:0.0009s ]
+NOTIC: [8] Undefined index: cid E:\xampp\htdocs\smile\Application\Home\Model\ArticleModel.class.php 第 19 行.
+SQL: SELECT `name` FROM `blog_cate` WHERE ( id = ''  ) LIMIT 1   [ RunTime:0.0007s ]
+NOTIC: [8] Undefined index: uid E:\xampp\htdocs\smile\Application\Home\Model\ArticleModel.class.php 第 20 行.
+SQL: SELECT `contact` FROM `blog_users` WHERE ( id='' ) LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT `id`,`domain`,`savepath`,`savename` FROM `blog_assets` WHERE (  id in (7) and IsDel = 0  )  [ RunTime:0.0009s ]
+NOTIC: [8] Undefined index: cid E:\xampp\htdocs\smile\Application\Home\Model\ArticleModel.class.php 第 19 行.
+SQL: SELECT `name` FROM `blog_cate` WHERE ( id = ''  ) LIMIT 1   [ RunTime:0.0006s ]
+NOTIC: [8] Undefined index: uid E:\xampp\htdocs\smile\Application\Home\Model\ArticleModel.class.php 第 20 行.
+SQL: SELECT `contact` FROM `blog_users` WHERE ( id='' ) LIMIT 1   [ RunTime:0.0031s ]
+SQL: SELECT `id`,`domain`,`savepath`,`savename` FROM `blog_assets` WHERE (  id in (1) and IsDel = 0  )  [ RunTime:0.0008s ]
+NOTIC: [8] Undefined index: cid E:\xampp\htdocs\smile\Application\Home\Model\ArticleModel.class.php 第 19 行.
+SQL: SELECT `name` FROM `blog_cate` WHERE ( id = ''  ) LIMIT 1   [ RunTime:0.0011s ]
+NOTIC: [8] Undefined index: uid E:\xampp\htdocs\smile\Application\Home\Model\ArticleModel.class.php 第 20 行.
+SQL: SELECT `contact` FROM `blog_users` WHERE ( id='' ) LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT * FROM `blog_cate` WHERE ( isdel = 0 )  [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `blog_article` WHERE ( cid = '1'  ) LIMIT 1   [ RunTime:0.0718s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `blog_article` WHERE ( cid = '2'  ) LIMIT 1   [ RunTime:0.0036s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `blog_article` WHERE ( cid = '3'  ) LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `blog_article` WHERE ( cid = '4'  ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `blog_article` WHERE ( cid = '5'  ) LIMIT 1   [ RunTime:0.0026s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `blog_article` WHERE ( cid = '6'  ) LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `blog_article` WHERE ( cid = '7'  ) LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `blog_article` WHERE ( cid = '8'  ) LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `blog_article` WHERE ( cid = '9'  ) LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `blog_article` WHERE ( cid = '10'  ) LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `blog_article` WHERE ( cid = '11'  ) LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `id`,`title`,`pic`,`viewnum`,`createtime` FROM `blog_article` WHERE ( isdel=0 ) ORDER BY createtime desc LIMIT 3   [ RunTime:0.0381s ]
+SQL: SELECT `id`,`domain`,`savepath`,`savename` FROM `blog_assets` WHERE (  id in (13) and IsDel = 0  )  [ RunTime:0.0008s ]
+NOTIC: [8] Undefined index: cid E:\xampp\htdocs\smile\Application\Home\Model\ArticleModel.class.php 第 19 行.
+SQL: SELECT `name` FROM `blog_cate` WHERE ( id = ''  ) LIMIT 1   [ RunTime:0.0096s ]
+NOTIC: [8] Undefined index: uid E:\xampp\htdocs\smile\Application\Home\Model\ArticleModel.class.php 第 20 行.
+SQL: SELECT `contact` FROM `blog_users` WHERE ( id='' ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `id`,`domain`,`savepath`,`savename` FROM `blog_assets` WHERE (  id in (15) and IsDel = 0  )  [ RunTime:0.0008s ]
+NOTIC: [8] Undefined index: cid E:\xampp\htdocs\smile\Application\Home\Model\ArticleModel.class.php 第 19 行.
+SQL: SELECT `name` FROM `blog_cate` WHERE ( id = ''  ) LIMIT 1   [ RunTime:0.0006s ]
+NOTIC: [8] Undefined index: uid E:\xampp\htdocs\smile\Application\Home\Model\ArticleModel.class.php 第 20 行.
+SQL: SELECT `contact` FROM `blog_users` WHERE ( id='' ) LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `id`,`domain`,`savepath`,`savename` FROM `blog_assets` WHERE (  id in (12) and IsDel = 0  )  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: cid E:\xampp\htdocs\smile\Application\Home\Model\ArticleModel.class.php 第 19 行.
+SQL: SELECT `name` FROM `blog_cate` WHERE ( id = ''  ) LIMIT 1   [ RunTime:0.0009s ]
+NOTIC: [8] Undefined index: uid E:\xampp\htdocs\smile\Application\Home\Model\ArticleModel.class.php 第 20 行.
+SQL: SELECT `contact` FROM `blog_users` WHERE ( id='' ) LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT * FROM `blog_article` WHERE ( isdel = 0 AND viewnum > 100  ) ORDER BY rand() LIMIT 4   [ RunTime:0.1250s ]
+SQL: SELECT `id`,`domain`,`savepath`,`savename` FROM `blog_assets` WHERE (  id in (1) and IsDel = 0  )  [ RunTime:0.0024s ]
+SQL: SELECT `name` FROM `blog_cate` WHERE ( id = '6'  ) LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT `contact` FROM `blog_users` WHERE ( id='1002' ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `id`,`domain`,`savepath`,`savename` FROM `blog_assets` WHERE (  id in (7) and IsDel = 0  )  [ RunTime:0.0033s ]
+SQL: SELECT `name` FROM `blog_cate` WHERE ( id = '11'  ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `contact` FROM `blog_users` WHERE ( id='1002' ) LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `id`,`domain`,`savepath`,`savename` FROM `blog_assets` WHERE (  id in (4) and IsDel = 0  )  [ RunTime:0.0008s ]
+SQL: SELECT `name` FROM `blog_cate` WHERE ( id = '2'  ) LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT `contact` FROM `blog_users` WHERE ( id='1002' ) LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT `id`,`domain`,`savepath`,`savename` FROM `blog_assets` WHERE (  id in (3) and IsDel = 0  )  [ RunTime:0.0008s ]
+SQL: SELECT `name` FROM `blog_cate` WHERE ( id = '5'  ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `contact` FROM `blog_users` WHERE ( id='1002' ) LIMIT 1   [ RunTime:0.0047s ]
+SQL: SHOW COLUMNS FROM `blog_frilink` [ RunTime:0.0365s ]
+SQL: SHOW COLUMNS FROM `blog_cate` [ RunTime:0.0137s ]
+SQL: SELECT `name` FROM `blog_cate` WHERE ( url like '%Index%'  ) LIMIT 1   [ RunTime:0.0201s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `blog_article` WHERE ( isdel=0 ) LIMIT 1   [ RunTime:0.0014s ]
+SQL: SELECT * FROM `blog_article` WHERE ( isdel=0 ) ORDER BY istop desc LIMIT 0,8   [ RunTime:0.0023s ]
+SQL: SELECT `id`,`domain`,`savepath`,`savename` FROM `blog_assets` WHERE (  id in (3) and IsDel = 0  )  [ RunTime:0.0011s ]
+SQL: SELECT `name` FROM `blog_cate` WHERE ( id = '5'  ) LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `contact` FROM `blog_users` WHERE ( id='1002' ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `id`,`domain`,`savepath`,`savename` FROM `blog_assets` WHERE (  id in (1) and IsDel = 0  )  [ RunTime:0.0007s ]
+SQL: SELECT `name` FROM `blog_cate` WHERE ( id = '6'  ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `contact` FROM `blog_users` WHERE ( id='1002' ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `id`,`domain`,`savepath`,`savename` FROM `blog_assets` WHERE (  id in (10) and IsDel = 0  )  [ RunTime:0.0008s ]
+SQL: SELECT `name` FROM `blog_cate` WHERE ( id = '2'  ) LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT `contact` FROM `blog_users` WHERE ( id='1002' ) LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `id`,`domain`,`savepath`,`savename` FROM `blog_assets` WHERE (  id in (23) and IsDel = 0  )  [ RunTime:0.0007s ]
+SQL: SELECT `name` FROM `blog_cate` WHERE ( id = '8'  ) LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `contact` FROM `blog_users` WHERE ( id='1001' ) LIMIT 1   [ RunTime:0.0048s ]
+SQL: SELECT `id`,`domain`,`savepath`,`savename` FROM `blog_assets` WHERE (  id in (6) and IsDel = 0  )  [ RunTime:0.0008s ]
+SQL: SELECT `name` FROM `blog_cate` WHERE ( id = '1'  ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `contact` FROM `blog_users` WHERE ( id='1002' ) LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `id`,`domain`,`savepath`,`savename` FROM `blog_assets` WHERE (  id in (4) and IsDel = 0  )  [ RunTime:0.0008s ]
+SQL: SELECT `name` FROM `blog_cate` WHERE ( id = '2'  ) LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `contact` FROM `blog_users` WHERE ( id='1002' ) LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT `id`,`domain`,`savepath`,`savename` FROM `blog_assets` WHERE (  id in (9) and IsDel = 0  )  [ RunTime:0.0007s ]
+SQL: SELECT `name` FROM `blog_cate` WHERE ( id = '10'  ) LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `contact` FROM `blog_users` WHERE ( id='1002' ) LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `id`,`domain`,`savepath`,`savename` FROM `blog_assets` WHERE (  id in (7) and IsDel = 0  )  [ RunTime:0.0008s ]
+SQL: SELECT `name` FROM `blog_cate` WHERE ( id = '11'  ) LIMIT 1   [ RunTime:0.0046s ]
+SQL: SELECT `contact` FROM `blog_users` WHERE ( id='1002' ) LIMIT 1   [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000419s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000582s ]
+NOTIC: [8] Undefined index: child E:\xampp\htdocs\smile\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 69 行.
+NOTIC: [8] Undefined index: child E:\xampp\htdocs\smile\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 70 行.
+NOTIC: [8] Undefined index: child E:\xampp\htdocs\smile\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 72 行.
+NOTIC: [8] Undefined index: child E:\xampp\htdocs\smile\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 69 行.
+NOTIC: [8] Undefined index: child E:\xampp\htdocs\smile\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 70 行.
+NOTIC: [8] Undefined index: child E:\xampp\htdocs\smile\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 72 行.
+NOTIC: [8] Undefined index: child E:\xampp\htdocs\smile\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 69 行.
+NOTIC: [8] Undefined index: child E:\xampp\htdocs\smile\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 70 行.
+NOTIC: [8] Undefined index: child E:\xampp\htdocs\smile\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 72 行.
+NOTIC: [8] Undefined index: user E:\xampp\htdocs\smile\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 86 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.996441s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.996602s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.054233s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.054362s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.021071s ]
+INFO: [ app_end ] --END-- [ RunTime:0.021244s ]
+
+[ 2017-01-10T12:32:46+08:00 ] 127.0.0.1 /smile/Public/Home/jb.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000045s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004529s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002184s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002346s ]
+ERR: 无法加载控制器:Http:
+
+[ 2017-01-10T12:32:46+08:00 ] 127.0.0.1 /smile/Public/bs/images/icon-href/wexin.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002030s ]
+
+[ 2017-01-10T12:34:37+08:00 ] 127.0.0.1 /smile/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001766s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002201s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002378s ]
+NOTIC: [8] Undefined index: user E:\xampp\htdocs\smile\Application\Home\Controller\SmileController.class.php 第 19 行.
+SQL: SHOW COLUMNS FROM `blog_setup` [ RunTime:0.0204s ]
+SQL: SHOW COLUMNS FROM `blog_article` [ RunTime:0.0139s ]
+SQL: SHOW COLUMNS FROM `blog_article` [ RunTime:0.0154s ]
+SQL: SELECT `id`,`title`,`pic`,`indeximg` FROM `blog_article` WHERE ( isdel = 0 and indeximg = 1 ) ORDER BY sort asc  [ RunTime:0.0022s ]
+SQL: SHOW COLUMNS FROM `blog_assets` [ RunTime:0.0140s ]
+SQL: SHOW COLUMNS FROM `blog_assets` [ RunTime:0.0154s ]
+SQL: SELECT `id`,`domain`,`savepath`,`savename` FROM `blog_assets` WHERE (  id in (23) and IsDel = 0  )  [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `blog_cate` [ RunTime:0.0211s ]
+NOTIC: [8] Undefined index: cid E:\xampp\htdocs\smile\Application\Home\Model\ArticleModel.class.php 第 19 行.
+SQL: SELECT `name` FROM `blog_cate` WHERE ( id = ''  ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `blog_users` [ RunTime:0.0143s ]
+NOTIC: [8] Undefined index: uid E:\xampp\htdocs\smile\Application\Home\Model\ArticleModel.class.php 第 20 行.
+SQL: SELECT `contact` FROM `blog_users` WHERE ( id='' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `id`,`domain`,`savepath`,`savename` FROM `blog_assets` WHERE (  id in (4) and IsDel = 0  )  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: cid E:\xampp\htdocs\smile\Application\Home\Model\ArticleModel.class.php 第 19 行.
+SQL: SELECT `name` FROM `blog_cate` WHERE ( id = ''  ) LIMIT 1   [ RunTime:0.0008s ]
+NOTIC: [8] Undefined index: uid E:\xampp\htdocs\smile\Application\Home\Model\ArticleModel.class.php 第 20 行.
+SQL: SELECT `contact` FROM `blog_users` WHERE ( id='' ) LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT `id`,`domain`,`savepath`,`savename` FROM `blog_assets` WHERE (  id in (9) and IsDel = 0  )  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: cid E:\xampp\htdocs\smile\Application\Home\Model\ArticleModel.class.php 第 19 行.
+SQL: SELECT `name` FROM `blog_cate` WHERE ( id = ''  ) LIMIT 1   [ RunTime:0.0008s ]
+NOTIC: [8] Undefined index: uid E:\xampp\htdocs\smile\Application\Home\Model\ArticleModel.class.php 第 20 行.
+SQL: SELECT `contact` FROM `blog_users` WHERE ( id='' ) LIMIT 1   [ RunTime:0.0012s ]
+SQL: SELECT `id`,`domain`,`savepath`,`savename` FROM `blog_assets` WHERE (  id in (7) and IsDel = 0  )  [ RunTime:0.0012s ]
+NOTIC: [8] Undefined index: cid E:\xampp\htdocs\smile\Application\Home\Model\ArticleModel.class.php 第 19 行.
+SQL: SELECT `name` FROM `blog_cate` WHERE ( id = ''  ) LIMIT 1   [ RunTime:0.0009s ]
+NOTIC: [8] Undefined index: uid E:\xampp\htdocs\smile\Application\Home\Model\ArticleModel.class.php 第 20 行.
+SQL: SELECT `contact` FROM `blog_users` WHERE ( id='' ) LIMIT 1   [ RunTime:0.0016s ]
+SQL: SELECT `id`,`domain`,`savepath`,`savename` FROM `blog_assets` WHERE (  id in (1) and IsDel = 0  )  [ RunTime:0.0021s ]
+NOTIC: [8] Undefined index: cid E:\xampp\htdocs\smile\Application\Home\Model\ArticleModel.class.php 第 19 行.
+SQL: SELECT `name` FROM `blog_cate` WHERE ( id = ''  ) LIMIT 1   [ RunTime:0.0008s ]
+NOTIC: [8] Undefined index: uid E:\xampp\htdocs\smile\Application\Home\Model\ArticleModel.class.php 第 20 行.
+SQL: SELECT `contact` FROM `blog_users` WHERE ( id='' ) LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT * FROM `blog_cate` WHERE ( isdel = 0 )  [ RunTime:0.0011s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `blog_article` WHERE ( cid = '1'  ) LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `blog_article` WHERE ( cid = '2'  ) LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `blog_article` WHERE ( cid = '3'  ) LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `blog_article` WHERE ( cid = '4'  ) LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `blog_article` WHERE ( cid = '5'  ) LIMIT 1   [ RunTime:0.0011s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `blog_article` WHERE ( cid = '6'  ) LIMIT 1   [ RunTime:0.0023s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `blog_article` WHERE ( cid = '7'  ) LIMIT 1   [ RunTime:0.0018s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `blog_article` WHERE ( cid = '8'  ) LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `blog_article` WHERE ( cid = '9'  ) LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `blog_article` WHERE ( cid = '10'  ) LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `blog_article` WHERE ( cid = '11'  ) LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT `id`,`title`,`pic`,`viewnum`,`createtime` FROM `blog_article` WHERE ( isdel=0 ) ORDER BY createtime desc LIMIT 3   [ RunTime:0.0011s ]
+SQL: SELECT `id`,`domain`,`savepath`,`savename` FROM `blog_assets` WHERE (  id in (13) and IsDel = 0  )  [ RunTime:0.0011s ]
+NOTIC: [8] Undefined index: cid E:\xampp\htdocs\smile\Application\Home\Model\ArticleModel.class.php 第 19 行.
+SQL: SELECT `name` FROM `blog_cate` WHERE ( id = ''  ) LIMIT 1   [ RunTime:0.0009s ]
+NOTIC: [8] Undefined index: uid E:\xampp\htdocs\smile\Application\Home\Model\ArticleModel.class.php 第 20 行.
+SQL: SELECT `contact` FROM `blog_users` WHERE ( id='' ) LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT `id`,`domain`,`savepath`,`savename` FROM `blog_assets` WHERE (  id in (15) and IsDel = 0  )  [ RunTime:0.0011s ]
+NOTIC: [8] Undefined index: cid E:\xampp\htdocs\smile\Application\Home\Model\ArticleModel.class.php 第 19 行.
+SQL: SELECT `name` FROM `blog_cate` WHERE ( id = ''  ) LIMIT 1   [ RunTime:0.0015s ]
+NOTIC: [8] Undefined index: uid E:\xampp\htdocs\smile\Application\Home\Model\ArticleModel.class.php 第 20 行.
+SQL: SELECT `contact` FROM `blog_users` WHERE ( id='' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `id`,`domain`,`savepath`,`savename` FROM `blog_assets` WHERE (  id in (12) and IsDel = 0  )  [ RunTime:0.0012s ]
+NOTIC: [8] Undefined index: cid E:\xampp\htdocs\smile\Application\Home\Model\ArticleModel.class.php 第 19 行.
+SQL: SELECT `name` FROM `blog_cate` WHERE ( id = ''  ) LIMIT 1   [ RunTime:0.0008s ]
+NOTIC: [8] Undefined index: uid E:\xampp\htdocs\smile\Application\Home\Model\ArticleModel.class.php 第 20 行.
+SQL: SELECT `contact` FROM `blog_users` WHERE ( id='' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `blog_article` WHERE ( isdel = 0 AND viewnum > 100  ) ORDER BY rand() LIMIT 4   [ RunTime:0.0487s ]
+SQL: SELECT `id`,`domain`,`savepath`,`savename` FROM `blog_assets` WHERE (  id in (4) and IsDel = 0  )  [ RunTime:0.0010s ]
+SQL: SELECT `name` FROM `blog_cate` WHERE ( id = '2'  ) LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT `contact` FROM `blog_users` WHERE ( id='1002' ) LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT `id`,`domain`,`savepath`,`savename` FROM `blog_assets` WHERE (  id in (3) and IsDel = 0  )  [ RunTime:0.0008s ]
+SQL: SELECT `name` FROM `blog_cate` WHERE ( id = '5'  ) LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT `contact` FROM `blog_users` WHERE ( id='1002' ) LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT `id`,`domain`,`savepath`,`savename` FROM `blog_assets` WHERE (  id in (1) and IsDel = 0  )  [ RunTime:0.0008s ]
+SQL: SELECT `name` FROM `blog_cate` WHERE ( id = '6'  ) LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `contact` FROM `blog_users` WHERE ( id='1002' ) LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT `id`,`domain`,`savepath`,`savename` FROM `blog_assets` WHERE (  id in (7) and IsDel = 0  )  [ RunTime:0.0008s ]
+SQL: SELECT `name` FROM `blog_cate` WHERE ( id = '11'  ) LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT `contact` FROM `blog_users` WHERE ( id='1002' ) LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `blog_frilink` [ RunTime:0.0144s ]
+SQL: SHOW COLUMNS FROM `blog_cate` [ RunTime:0.0106s ]
+SQL: SELECT `name` FROM `blog_cate` WHERE ( url like '%Index%'  ) LIMIT 1   [ RunTime:0.0012s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `blog_article` WHERE ( isdel=0 ) LIMIT 1   [ RunTime:0.0011s ]
+SQL: SELECT * FROM `blog_article` WHERE ( isdel=0 ) ORDER BY istop desc LIMIT 0,8   [ RunTime:0.0027s ]
+SQL: SELECT `id`,`domain`,`savepath`,`savename` FROM `blog_assets` WHERE (  id in (3) and IsDel = 0  )  [ RunTime:0.0008s ]
+SQL: SELECT `name` FROM `blog_cate` WHERE ( id = '5'  ) LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `contact` FROM `blog_users` WHERE ( id='1002' ) LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `id`,`domain`,`savepath`,`savename` FROM `blog_assets` WHERE (  id in (1) and IsDel = 0  )  [ RunTime:0.0020s ]
+SQL: SELECT `name` FROM `blog_cate` WHERE ( id = '6'  ) LIMIT 1   [ RunTime:0.0011s ]
+SQL: SELECT `contact` FROM `blog_users` WHERE ( id='1002' ) LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT `id`,`domain`,`savepath`,`savename` FROM `blog_assets` WHERE (  id in (10) and IsDel = 0  )  [ RunTime:0.0010s ]
+SQL: SELECT `name` FROM `blog_cate` WHERE ( id = '2'  ) LIMIT 1   [ RunTime:0.0016s ]
+SQL: SELECT `contact` FROM `blog_users` WHERE ( id='1002' ) LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `id`,`domain`,`savepath`,`savename` FROM `blog_assets` WHERE (  id in (23) and IsDel = 0  )  [ RunTime:0.0008s ]
+SQL: SELECT `name` FROM `blog_cate` WHERE ( id = '8'  ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `contact` FROM `blog_users` WHERE ( id='1001' ) LIMIT 1   [ RunTime:0.0018s ]
+SQL: SELECT `id`,`domain`,`savepath`,`savename` FROM `blog_assets` WHERE (  id in (6) and IsDel = 0  )  [ RunTime:0.0019s ]
+SQL: SELECT `name` FROM `blog_cate` WHERE ( id = '1'  ) LIMIT 1   [ RunTime:0.0016s ]
+SQL: SELECT `contact` FROM `blog_users` WHERE ( id='1002' ) LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT `id`,`domain`,`savepath`,`savename` FROM `blog_assets` WHERE (  id in (4) and IsDel = 0  )  [ RunTime:0.0007s ]
+SQL: SELECT `name` FROM `blog_cate` WHERE ( id = '2'  ) LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `contact` FROM `blog_users` WHERE ( id='1002' ) LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `id`,`domain`,`savepath`,`savename` FROM `blog_assets` WHERE (  id in (9) and IsDel = 0  )  [ RunTime:0.0007s ]
+SQL: SELECT `name` FROM `blog_cate` WHERE ( id = '10'  ) LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `contact` FROM `blog_users` WHERE ( id='1002' ) LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `id`,`domain`,`savepath`,`savename` FROM `blog_assets` WHERE (  id in (7) and IsDel = 0  )  [ RunTime:0.0007s ]
+SQL: SELECT `name` FROM `blog_cate` WHERE ( id = '11'  ) LIMIT 1   [ RunTime:0.0057s ]
+SQL: SELECT `contact` FROM `blog_users` WHERE ( id='1002' ) LIMIT 1   [ RunTime:0.0011s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001372s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] Undefined index: child E:\xampp\htdocs\smile\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 69 行.
+NOTIC: [8] Undefined index: child E:\xampp\htdocs\smile\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 70 行.
+NOTIC: [8] Undefined index: child E:\xampp\htdocs\smile\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 72 行.
+NOTIC: [8] Undefined index: child E:\xampp\htdocs\smile\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 69 行.
+NOTIC: [8] Undefined index: child E:\xampp\htdocs\smile\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 70 行.
+NOTIC: [8] Undefined index: child E:\xampp\htdocs\smile\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 72 行.
+NOTIC: [8] Undefined index: child E:\xampp\htdocs\smile\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 69 行.
+NOTIC: [8] Undefined index: child E:\xampp\htdocs\smile\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 70 行.
+NOTIC: [8] Undefined index: child E:\xampp\htdocs\smile\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 72 行.
+NOTIC: [8] Undefined index: user E:\xampp\htdocs\smile\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 86 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.093429s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.093588s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001488s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001616s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.009579s ]
+INFO: [ app_end ] --END-- [ RunTime:0.009732s ]
+
+[ 2017-01-10T12:34:37+08:00 ] 127.0.0.1 /smile/Public/Home/jb.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001133s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001537s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001726s ]
+ERR: 无法加载控制器:Http:
+
+[ 2017-01-10T12:34:38+08:00 ] 127.0.0.1 /smile/Public/Home/jb.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004025s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.022166s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.022342s ]
+ERR: 无法加载控制器:Http:
+
+[ 2017-01-10T12:34:38+08:00 ] 127.0.0.1 /smile/Public/bs/images/icon-href/wexin.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000118s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002374s ]
+
+[ 2017-01-10T12:34:38+08:00 ] 127.0.0.1 /smile/Public/bs/images/icon-href/wexin.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001409s ]
+
+[ 2017-01-10T14:14:48+08:00 ] 127.0.0.1 /smile/index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001361s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001331s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001506s ]
+NOTIC: [8] Undefined index: user E:\xampp\htdocs\smile\Application\Home\Controller\SmileController.class.php 第 19 行.
+SQL: SHOW COLUMNS FROM `blog_setup` [ RunTime:0.0520s ]
+SQL: SHOW COLUMNS FROM `blog_article` [ RunTime:0.0151s ]
+SQL: SHOW COLUMNS FROM `blog_article` [ RunTime:0.0130s ]
+SQL: SELECT `id`,`title`,`pic`,`indeximg` FROM `blog_article` WHERE ( isdel = 0 and indeximg = 1 ) ORDER BY sort asc  [ RunTime:0.1728s ]
+SQL: SHOW COLUMNS FROM `blog_assets` [ RunTime:0.0171s ]
+SQL: SHOW COLUMNS FROM `blog_assets` [ RunTime:0.0102s ]
+SQL: SELECT `id`,`domain`,`savepath`,`savename` FROM `blog_assets` WHERE (  id in (23) and IsDel = 0  )  [ RunTime:0.0411s ]
+SQL: SHOW COLUMNS FROM `blog_cate` [ RunTime:0.0155s ]
+NOTIC: [8] Undefined index: cid E:\xampp\htdocs\smile\Application\Home\Model\ArticleModel.class.php 第 19 行.
+SQL: SELECT `name` FROM `blog_cate` WHERE ( id = ''  ) LIMIT 1   [ RunTime:0.0641s ]
+SQL: SHOW COLUMNS FROM `blog_users` [ RunTime:0.0137s ]
+NOTIC: [8] Undefined index: uid E:\xampp\htdocs\smile\Application\Home\Model\ArticleModel.class.php 第 20 行.
+SQL: SELECT `contact` FROM `blog_users` WHERE ( id='' ) LIMIT 1   [ RunTime:0.0686s ]
+SQL: SELECT `id`,`domain`,`savepath`,`savename` FROM `blog_assets` WHERE (  id in (4) and IsDel = 0  )  [ RunTime:0.0174s ]
+NOTIC: [8] Undefined index: cid E:\xampp\htdocs\smile\Application\Home\Model\ArticleModel.class.php 第 19 行.
+SQL: SELECT `name` FROM `blog_cate` WHERE ( id = ''  ) LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: uid E:\xampp\htdocs\smile\Application\Home\Model\ArticleModel.class.php 第 20 行.
+SQL: SELECT `contact` FROM `blog_users` WHERE ( id='' ) LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT `id`,`domain`,`savepath`,`savename` FROM `blog_assets` WHERE (  id in (9) and IsDel = 0  )  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: cid E:\xampp\htdocs\smile\Application\Home\Model\ArticleModel.class.php 第 19 行.
+SQL: SELECT `name` FROM `blog_cate` WHERE ( id = ''  ) LIMIT 1   [ RunTime:0.0008s ]
+NOTIC: [8] Undefined index: uid E:\xampp\htdocs\smile\Application\Home\Model\ArticleModel.class.php 第 20 行.
+SQL: SELECT `contact` FROM `blog_users` WHERE ( id='' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `id`,`domain`,`savepath`,`savename` FROM `blog_assets` WHERE (  id in (7) and IsDel = 0  )  [ RunTime:0.0009s ]
+NOTIC: [8] Undefined index: cid E:\xampp\htdocs\smile\Application\Home\Model\ArticleModel.class.php 第 19 行.
+SQL: SELECT `name` FROM `blog_cate` WHERE ( id = ''  ) LIMIT 1   [ RunTime:0.0007s ]
+NOTIC: [8] Undefined index: uid E:\xampp\htdocs\smile\Application\Home\Model\ArticleModel.class.php 第 20 行.
+SQL: SELECT `contact` FROM `blog_users` WHERE ( id='' ) LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT `id`,`domain`,`savepath`,`savename` FROM `blog_assets` WHERE (  id in (1) and IsDel = 0  )  [ RunTime:0.0007s ]
+NOTIC: [8] Undefined index: cid E:\xampp\htdocs\smile\Application\Home\Model\ArticleModel.class.php 第 19 行.
+SQL: SELECT `name` FROM `blog_cate` WHERE ( id = ''  ) LIMIT 1   [ RunTime:0.0008s ]
+NOTIC: [8] Undefined index: uid E:\xampp\htdocs\smile\Application\Home\Model\ArticleModel.class.php 第 20 行.
+SQL: SELECT `contact` FROM `blog_users` WHERE ( id='' ) LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT * FROM `blog_cate` WHERE ( isdel = 0 )  [ RunTime:0.0213s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `blog_article` WHERE ( cid = '1'  ) LIMIT 1   [ RunTime:0.0192s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `blog_article` WHERE ( cid = '2'  ) LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `blog_article` WHERE ( cid = '3'  ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `blog_article` WHERE ( cid = '4'  ) LIMIT 1   [ RunTime:0.0012s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `blog_article` WHERE ( cid = '5'  ) LIMIT 1   [ RunTime:0.0011s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `blog_article` WHERE ( cid = '6'  ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `blog_article` WHERE ( cid = '7'  ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `blog_article` WHERE ( cid = '8'  ) LIMIT 1   [ RunTime:0.0011s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `blog_article` WHERE ( cid = '9'  ) LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `blog_article` WHERE ( cid = '10'  ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `blog_article` WHERE ( cid = '11'  ) LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT `id`,`title`,`pic`,`viewnum`,`createtime` FROM `blog_article` WHERE ( isdel=0 ) ORDER BY createtime desc LIMIT 3   [ RunTime:0.0055s ]
+SQL: SELECT `id`,`domain`,`savepath`,`savename` FROM `blog_assets` WHERE (  id in (13) and IsDel = 0  )  [ RunTime:0.0023s ]
+NOTIC: [8] Undefined index: cid E:\xampp\htdocs\smile\Application\Home\Model\ArticleModel.class.php 第 19 行.
+SQL: SELECT `name` FROM `blog_cate` WHERE ( id = ''  ) LIMIT 1   [ RunTime:0.0014s ]
+NOTIC: [8] Undefined index: uid E:\xampp\htdocs\smile\Application\Home\Model\ArticleModel.class.php 第 20 行.
+SQL: SELECT `contact` FROM `blog_users` WHERE ( id='' ) LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT `id`,`domain`,`savepath`,`savename` FROM `blog_assets` WHERE (  id in (15) and IsDel = 0  )  [ RunTime:0.0009s ]
+NOTIC: [8] Undefined index: cid E:\xampp\htdocs\smile\Application\Home\Model\ArticleModel.class.php 第 19 行.
+SQL: SELECT `name` FROM `blog_cate` WHERE ( id = ''  ) LIMIT 1   [ RunTime:0.0009s ]
+NOTIC: [8] Undefined index: uid E:\xampp\htdocs\smile\Application\Home\Model\ArticleModel.class.php 第 20 行.
+SQL: SELECT `contact` FROM `blog_users` WHERE ( id='' ) LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT `id`,`domain`,`savepath`,`savename` FROM `blog_assets` WHERE (  id in (12) and IsDel = 0  )  [ RunTime:0.0008s ]
+NOTIC: [8] Undefined index: cid E:\xampp\htdocs\smile\Application\Home\Model\ArticleModel.class.php 第 19 行.
+SQL: SELECT `name` FROM `blog_cate` WHERE ( id = ''  ) LIMIT 1   [ RunTime:0.0008s ]
+NOTIC: [8] Undefined index: uid E:\xampp\htdocs\smile\Application\Home\Model\ArticleModel.class.php 第 20 行.
+SQL: SELECT `contact` FROM `blog_users` WHERE ( id='' ) LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT * FROM `blog_article` WHERE ( isdel = 0 AND viewnum > 100  ) ORDER BY rand() LIMIT 4   [ RunTime:0.0826s ]
+SQL: SELECT `id`,`domain`,`savepath`,`savename` FROM `blog_assets` WHERE (  id in (7) and IsDel = 0  )  [ RunTime:0.0010s ]
+SQL: SELECT `name` FROM `blog_cate` WHERE ( id = '11'  ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `contact` FROM `blog_users` WHERE ( id='1002' ) LIMIT 1   [ RunTime:0.0015s ]
+SQL: SELECT `id`,`domain`,`savepath`,`savename` FROM `blog_assets` WHERE (  id in (10) and IsDel = 0  )  [ RunTime:0.0011s ]
+SQL: SELECT `name` FROM `blog_cate` WHERE ( id = '2'  ) LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `contact` FROM `blog_users` WHERE ( id='1002' ) LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `id`,`domain`,`savepath`,`savename` FROM `blog_assets` WHERE (  id in (4) and IsDel = 0  )  [ RunTime:0.0021s ]
+SQL: SELECT `name` FROM `blog_cate` WHERE ( id = '2'  ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `contact` FROM `blog_users` WHERE ( id='1002' ) LIMIT 1   [ RunTime:0.0011s ]
+SQL: SELECT `id`,`domain`,`savepath`,`savename` FROM `blog_assets` WHERE (  id in (1) and IsDel = 0  )  [ RunTime:0.0008s ]
+SQL: SELECT `name` FROM `blog_cate` WHERE ( id = '6'  ) LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `contact` FROM `blog_users` WHERE ( id='1002' ) LIMIT 1   [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `blog_frilink` [ RunTime:0.0127s ]
+SQL: SHOW COLUMNS FROM `blog_cate` [ RunTime:0.0106s ]
+SQL: SELECT `name` FROM `blog_cate` WHERE ( url like '%Index%'  ) LIMIT 1   [ RunTime:0.0026s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `blog_article` WHERE ( isdel=0 ) LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT * FROM `blog_article` WHERE ( isdel=0 ) ORDER BY istop desc LIMIT 0,8   [ RunTime:0.0030s ]
+SQL: SELECT `id`,`domain`,`savepath`,`savename` FROM `blog_assets` WHERE (  id in (3) and IsDel = 0  )  [ RunTime:0.0015s ]
+SQL: SELECT `name` FROM `blog_cate` WHERE ( id = '5'  ) LIMIT 1   [ RunTime:0.0012s ]
+SQL: SELECT `contact` FROM `blog_users` WHERE ( id='1002' ) LIMIT 1   [ RunTime:0.0015s ]
+SQL: SELECT `id`,`domain`,`savepath`,`savename` FROM `blog_assets` WHERE (  id in (1) and IsDel = 0  )  [ RunTime:0.0008s ]
+SQL: SELECT `name` FROM `blog_cate` WHERE ( id = '6'  ) LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `contact` FROM `blog_users` WHERE ( id='1002' ) LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT `id`,`domain`,`savepath`,`savename` FROM `blog_assets` WHERE (  id in (10) and IsDel = 0  )  [ RunTime:0.0008s ]
+SQL: SELECT `name` FROM `blog_cate` WHERE ( id = '2'  ) LIMIT 1   [ RunTime:0.0023s ]
+SQL: SELECT `contact` FROM `blog_users` WHERE ( id='1002' ) LIMIT 1   [ RunTime:0.0011s ]
+SQL: SELECT `id`,`domain`,`savepath`,`savename` FROM `blog_assets` WHERE (  id in (23) and IsDel = 0  )  [ RunTime:0.0014s ]
+SQL: SELECT `name` FROM `blog_cate` WHERE ( id = '8'  ) LIMIT 1   [ RunTime:0.0014s ]
+SQL: SELECT `contact` FROM `blog_users` WHERE ( id='1001' ) LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT `id`,`domain`,`savepath`,`savename` FROM `blog_assets` WHERE (  id in (6) and IsDel = 0  )  [ RunTime:0.0009s ]
+SQL: SELECT `name` FROM `blog_cate` WHERE ( id = '1'  ) LIMIT 1   [ RunTime:0.0011s ]
+SQL: SELECT `contact` FROM `blog_users` WHERE ( id='1002' ) LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT `id`,`domain`,`savepath`,`savename` FROM `blog_assets` WHERE (  id in (4) and IsDel = 0  )  [ RunTime:0.0009s ]
+SQL: SELECT `name` FROM `blog_cate` WHERE ( id = '2'  ) LIMIT 1   [ RunTime:0.0011s ]
+SQL: SELECT `contact` FROM `blog_users` WHERE ( id='1002' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `id`,`domain`,`savepath`,`savename` FROM `blog_assets` WHERE (  id in (9) and IsDel = 0  )  [ RunTime:0.0009s ]
+SQL: SELECT `name` FROM `blog_cate` WHERE ( id = '10'  ) LIMIT 1   [ RunTime:0.0009s ]
+SQL: SELECT `contact` FROM `blog_users` WHERE ( id='1002' ) LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT `id`,`domain`,`savepath`,`savename` FROM `blog_assets` WHERE (  id in (7) and IsDel = 0  )  [ RunTime:0.0008s ]
+SQL: SELECT `name` FROM `blog_cate` WHERE ( id = '11'  ) LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT `contact` FROM `blog_users` WHERE ( id='1002' ) LIMIT 1   [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000736s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001103s ]
+NOTIC: [8] Undefined index: child E:\xampp\htdocs\smile\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 69 行.
+NOTIC: [8] Undefined index: child E:\xampp\htdocs\smile\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 70 行.
+NOTIC: [8] Undefined index: child E:\xampp\htdocs\smile\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 72 行.
+NOTIC: [8] Undefined index: child E:\xampp\htdocs\smile\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 69 行.
+NOTIC: [8] Undefined index: child E:\xampp\htdocs\smile\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 70 行.
+NOTIC: [8] Undefined index: child E:\xampp\htdocs\smile\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 72 行.
+NOTIC: [8] Undefined index: child E:\xampp\htdocs\smile\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 69 行.
+NOTIC: [8] Undefined index: child E:\xampp\htdocs\smile\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 70 行.
+NOTIC: [8] Undefined index: child E:\xampp\htdocs\smile\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 72 行.
+NOTIC: [8] Undefined index: user E:\xampp\htdocs\smile\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 86 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.371537s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.371705s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001746s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001884s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001380s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001558s ]
+
+[ 2017-01-10T14:14:49+08:00 ] 127.0.0.1 /smile/Public/Home/jb.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001398s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001879s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002053s ]
+ERR: 无法加载控制器:Http:
+
+[ 2017-01-10T14:14:50+08:00 ] 127.0.0.1 /smile/Public/bs/images/icon-href/wexin.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001950s ]
+

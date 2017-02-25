@@ -1,0 +1,121 @@
+<include file="Public/link" />
+<body style='background-color: #fff;'>
+    <form class="navbar-form" action="{:U('Article/lst')}" method="POST">
+        <div class="panel-heading"><b>文章列表管理</b>
+            <div class="pull-right" >
+                分类：
+                <select name="cid" class="" style="width:120px;height: 26px">
+                    <option value="0">请选择</option>
+                    <foreach name='Cate' item='v'>
+                        <option value="{$v.id}">{$v.name}</option>
+                    </foreach>
+                </select>
+                <input type="text" name="keyName" placeholder="Search...">
+                <button type="submit" style="padding:2px 4px; " ><i class="fa fa-search"></i></button>
+                <a href="javascript:ArtiAdd();"><button type="button"><span class="fa fa-plus-circle"></span> 添加文章</button></a>
+                <script type="text/javascript">
+                    function ArtiAdd(){
+                        window.location.href="{:U('Article/add')}";
+                    }
+                </script>
+            </div>
+        </div>
+    </form>
+    <table class="table table-hover text-center">
+        <tr align="center">
+            <td><b>序 号</b></td>
+            <td><b>标 题</b></td>
+            <td><b>图 片</b></td>
+            <td><b>类 型</b></td>
+            <td><b>热 度</b></td>
+            <td><b>评 论</b></td>
+            <td><b>轮播图</b></td>
+            <td><b>添加时间</b></td>
+            <td><b>操 作</b></td>
+        </tr>
+        <foreach name="article" item="v">
+            <if condition="$v.id eq ''">
+                <else/>
+                <tr>
+                    <input type="hidden" class="input-isdel" value="{$v.isdel}">
+                    <td>{$v.id}</td>
+                    <td width="200px">{$v.title}</td><!-- |msubstr=0,12 -->
+                    <td><img src="{$v['picurl'][0]['src']}" width='120px;'height='50px;'/></td>
+                    <td><font color="#00CC99">{$v.cname}</font></td>
+                    <td>
+                        <if condition="$v['viewnum'] gt 99">
+                            <span style="color:red;">{$v.viewnum}</span>
+                            <else/>{$v.viewnum}</if>℃
+                    </td>
+                    <td>评论</td>
+                    <td class="img">
+                        <if condition="$v['indeximg'] eq 1" >
+                            <a class="img" href="javascript:void(0);" onclick="delimg({$v['id']});" disabled><font color="red">已设置</font></a>
+                            <else/>
+                            <a class="img" href="javascript:void(0);" onclick="doimg({$v['id']});" disabled><font color="#00CC99">设置</font></a>
+                        </if>
+                    </td>
+                    <td width="110px">{$v.createtime}</td>
+                    <td>
+                        <a id="edit" class="btn btn-sm btn-success" href="{:U('Article/is_del',array('id'=>$v['id'],'isdel'=>0))}"><span class="fa fa-edit"></span> 还原</a>
+                        <a id="edit" class="btn btn-sm btn-danger" href="{:U('Article/is_del',array('id'=>$v['id'],'isdel'=>'del'))}"><span class="fa fa-edit"></span> 删除</a></td>
+                </tr>
+            </if>
+        </foreach>
+        <tr style="height: 20px;">
+            <td colspan="9">{$page}</td>
+        </tr>
+    </table>
+<include file="Public/script"/>
+<script>
+    //分类 Cate
+    function changeCate(id){
+        layer.open({
+          type: 2,
+          title: false,
+          area: ['60%', '70%'],
+          shade: 0.7,
+          shadeClose: true,
+          content: '{:U("Article/changeCate")}?pid='+id,
+        });
+    }
+    //关键字搜索
+    function dosel(){
+        alert('OK');
+        window.loaction.href="{:U('Article/sel')}";
+//        layer.open({
+//            type: 2,
+//            title:false,
+//            area:['60%','70%'],
+//            shade: 0.7,
+//            shadeClose: true,
+//            content: '{:U("Article/sel")}',
+//        });
+    }
+    //设置轮播图
+    function doimg(id){
+        layer.confirm('确定要<span style="color:red;">设置</span>该轮播图么？',{icon:3,title:'设置'},function(index){
+            $.post('{:U("Article/doimg")}',{id:id},function(rs){
+		if (rs ==1){
+		    layer.msg("设置成功");
+		    setTimeout(function(){window.location.reload();},500);
+		}else{
+		    layer.msg("设置失败");
+		}
+	    },'json');
+        });
+    }
+    //取消轮播图
+    function delimg(id){
+        layer.confirm('确定要<span style="color:red">取消</span>该轮播图么？',{icon:5,title:'设置'},function(index){
+            $.post('{:U("Article/delimg")}',{id:id},function(rs){
+		if (rs ==1){
+		    layer.msg("取消成功");
+		    setTimeout(function(){window.location.reload();},500);
+		}else{
+		    layer.msg("取消失败");
+		}
+	    },'json');
+        });
+    }
+</script>

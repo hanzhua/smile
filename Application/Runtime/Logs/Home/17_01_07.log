@@ -1,0 +1,810 @@
+[ 2017-01-07T17:04:35+08:00 ] 127.0.0.1 /smile/22
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001236s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003183s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003375s ]
+ERR: 无法加载控制器:Http:
+
+[ 2017-01-07T17:04:35+08:00 ] 127.0.0.1 /smile/55
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001681s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004780s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004960s ]
+ERR: 无法加载控制器:Http:
+
+[ 2017-01-07T17:04:35+08:00 ] 127.0.0.1 /smile/hh
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001398s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002460s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002632s ]
+ERR: 无法加载控制器:Http:
+
+[ 2017-01-07T17:04:35+08:00 ] 127.0.0.1 /smile/11
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000045s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003774s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005915s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006123s ]
+ERR: 无法加载控制器:Http:
+
+[ 2017-01-07T17:04:35+08:00 ] 127.0.0.1 /smile/00
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001524s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004356s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004567s ]
+ERR: 无法加载控制器:Http:
+
+[ 2017-01-07T17:04:36+08:00 ] 127.0.0.1 /smile/ll
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000046s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001737s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.007162s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007373s ]
+ERR: 无法加载控制器:Http:
+
+[ 2017-01-07T17:06:07+08:00 ] 127.0.0.1 /smile/222
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000476s ]
+INFO: [ app_init ] --END-- [ RunTime:0.007510s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002702s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002919s ]
+ERR: 无法加载控制器:Http:
+
+[ 2017-01-07T17:06:08+08:00 ] 127.0.0.1 /smile/111
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.032132s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.006342s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.031298s ]
+ERR: 无法加载控制器:Http:
+
+[ 2017-01-07T17:06:08+08:00 ] 127.0.0.1 /smile/hhh
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.020242s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003182s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003403s ]
+ERR: 无法加载控制器:Http:
+
+[ 2017-01-07T17:06:08+08:00 ] 127.0.0.1 /smile/555
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000061s ]
+INFO: [ app_init ] --END-- [ RunTime:0.008013s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003551s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004021s ]
+ERR: 无法加载控制器:Http:
+
+[ 2017-01-07T17:06:08+08:00 ] 127.0.0.1 /smile/000
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.021470s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003425s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005853s ]
+ERR: 无法加载控制器:Http:
+
+[ 2017-01-07T17:06:20+08:00 ] 127.0.0.1 /smile/222
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001689s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004526s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004873s ]
+ERR: 无法加载控制器:Http:
+
+[ 2017-01-07T17:10:08+08:00 ] 127.0.0.1 /smile/111
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000468s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004810s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003497s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003771s ]
+ERR: 无法加载控制器:Http:
+
+[ 2017-01-07T17:10:08+08:00 ] 127.0.0.1 /smile/hhh
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001908s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003675s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003898s ]
+ERR: 无法加载控制器:Http:
+
+[ 2017-01-07T17:10:09+08:00 ] 127.0.0.1 /smile/555
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000116s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003399s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001715s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001917s ]
+ERR: 无法加载控制器:Http:
+
+[ 2017-01-07T17:10:09+08:00 ] 127.0.0.1 /smile/222
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000068s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003024s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003610s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004014s ]
+ERR: 无法加载控制器:Http:
+
+[ 2017-01-07T17:10:09+08:00 ] 127.0.0.1 /smile/000
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001220s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002079s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002260s ]
+ERR: 无法加载控制器:Http:
+
+[ 2017-01-07T17:10:09+08:00 ] 127.0.0.1 /smile/bbb
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001649s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004238s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004476s ]
+ERR: 无法加载控制器:Http:
+
+[ 2017-01-07T17:10:16+08:00 ] 127.0.0.1 /smile/111
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001491s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005144s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005368s ]
+ERR: 无法加载控制器:Http:
+
+[ 2017-01-07T17:10:36+08:00 ] 127.0.0.1 /smile/111
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002656s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004220s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004977s ]
+ERR: 无法加载控制器:Http:
+
+[ 2017-01-07T17:11:45+08:00 ] 127.0.0.1 /smile/00
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001411s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001504s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001689s ]
+ERR: 无法加载控制器:Http:
+
+[ 2017-01-07T17:11:45+08:00 ] 127.0.0.1 /smile/hh
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001456s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003509s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003705s ]
+ERR: 无法加载控制器:Http:
+
+[ 2017-01-07T17:11:45+08:00 ] 127.0.0.1 /smile/11
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001530s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003269s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003462s ]
+ERR: 无法加载控制器:Http:
+
+[ 2017-01-07T17:11:45+08:00 ] 127.0.0.1 /smile/22
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004050s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004751s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005100s ]
+ERR: 无法加载控制器:Http:
+
+[ 2017-01-07T17:11:45+08:00 ] 127.0.0.1 /smile/55
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000084s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005621s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.008571s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008819s ]
+ERR: 无法加载控制器:Http:
+
+[ 2017-01-07T17:11:58+08:00 ] 127.0.0.1 /smile/22
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.024777s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002634s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002819s ]
+ERR: 无法加载控制器:Http:
+
+[ 2017-01-07T17:11:58+08:00 ] 127.0.0.1 /smile/hh
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000046s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003601s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.014822s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015854s ]
+ERR: 无法加载控制器:Http:
+
+[ 2017-01-07T17:11:58+08:00 ] 127.0.0.1 /smile/11
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001640s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.017693s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.017906s ]
+ERR: 无法加载控制器:Http:
+
+[ 2017-01-07T17:11:58+08:00 ] 127.0.0.1 /smile/55
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000051s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004173s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004098s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004273s ]
+ERR: 无法加载控制器:Http:
+
+[ 2017-01-07T17:11:58+08:00 ] 127.0.0.1 /smile/00
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005759s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001992s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003334s ]
+ERR: 无法加载控制器:Http:
+
+[ 2017-01-07T17:11:58+08:00 ] 127.0.0.1 /smile/22
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001408s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004399s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004708s ]
+ERR: 无法加载控制器:Http:
+
+[ 2017-01-07T17:12:05+08:00 ] 127.0.0.1 /smile/22
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001605s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002860s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003032s ]
+ERR: 无法加载控制器:Http:
+
+[ 2017-01-07T17:12:05+08:00 ] 127.0.0.1 /smile/00
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002255s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001276s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001432s ]
+ERR: 无法加载控制器:Http:
+
+[ 2017-01-07T17:12:05+08:00 ] 127.0.0.1 /smile/hh
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000119s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001761s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002560s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002729s ]
+ERR: 无法加载控制器:Http:
+
+[ 2017-01-07T17:12:05+08:00 ] 127.0.0.1 /smile/55
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001541s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004336s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005693s ]
+ERR: 无法加载控制器:Http:
+
+[ 2017-01-07T17:12:05+08:00 ] 127.0.0.1 /smile/11
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001562s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.012720s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.012909s ]
+ERR: 无法加载控制器:Http:
+
+[ 2017-01-07T17:12:05+08:00 ] 127.0.0.1 /smile/bb
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000044s ]
+INFO: [ app_init ] --END-- [ RunTime:0.031841s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.009272s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.009584s ]
+ERR: 无法加载控制器:Http:
+
+[ 2017-01-07T17:13:08+08:00 ] 127.0.0.1 /smile/22
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001495s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003249s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003469s ]
+ERR: 无法加载控制器:Http:
+
+[ 2017-01-07T17:13:08+08:00 ] 127.0.0.1 /smile/55
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001517s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001501s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001708s ]
+ERR: 无法加载控制器:Http:
+
+[ 2017-01-07T17:13:08+08:00 ] 127.0.0.1 /smile/11
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000054s ]
+INFO: [ app_init ] --END-- [ RunTime:0.009376s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.028812s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.031099s ]
+ERR: 无法加载控制器:Http:
+
+[ 2017-01-07T17:13:08+08:00 ] 127.0.0.1 /smile/hh
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001846s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003268s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003712s ]
+ERR: 无法加载控制器:Http:
+
+[ 2017-01-07T17:13:08+08:00 ] 127.0.0.1 /smile/00
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001464s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004074s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004406s ]
+ERR: 无法加载控制器:Http:
+
+[ 2017-01-07T17:13:09+08:00 ] 127.0.0.1 /smile/ll
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004665s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003082s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003278s ]
+ERR: 无法加载控制器:Http:
+
+[ 2017-01-07T17:16:31+08:00 ] 127.0.0.1 /smile/22
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002302s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004530s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004786s ]
+ERR: 无法加载控制器:Http:
+
+[ 2017-01-07T17:16:31+08:00 ] 127.0.0.1 /smile/00
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000214s ]
+INFO: [ app_init ] --END-- [ RunTime:0.008817s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004524s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004712s ]
+ERR: 无法加载控制器:Http:
+
+[ 2017-01-07T17:16:31+08:00 ] 127.0.0.1 /smile/hh
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002195s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003133s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003906s ]
+ERR: 无法加载控制器:Http:
+
+[ 2017-01-07T17:16:31+08:00 ] 127.0.0.1 /smile/55
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001826s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002369s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002581s ]
+ERR: 无法加载控制器:Http:
+
+[ 2017-01-07T17:16:31+08:00 ] 127.0.0.1 /smile/11
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.032923s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.037304s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.037521s ]
+ERR: 无法加载控制器:Http:
+
+[ 2017-01-07T17:16:31+08:00 ] 127.0.0.1 /smile/ll
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.028917s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003555s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003784s ]
+ERR: 无法加载控制器:Http:
+
+[ 2017-01-07T17:21:59+08:00 ] 127.0.0.1 /smile/22
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001646s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.009000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.009389s ]
+ERR: 无法加载控制器:Http:
+
+[ 2017-01-07T17:21:59+08:00 ] 127.0.0.1 /smile/11
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001267s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002502s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002705s ]
+ERR: 无法加载控制器:Http:
+
+[ 2017-01-07T17:21:59+08:00 ] 127.0.0.1 /smile/hh
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000053s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004248s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.044768s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.044927s ]
+ERR: 无法加载控制器:Http:
+
+[ 2017-01-07T17:21:59+08:00 ] 127.0.0.1 /smile/55
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001393s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.009715s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.009914s ]
+ERR: 无法加载控制器:Http:
+
+[ 2017-01-07T17:21:59+08:00 ] 127.0.0.1 /smile/00
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001520s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002330s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002503s ]
+ERR: 无法加载控制器:Http:
+
+[ 2017-01-07T17:21:59+08:00 ] 127.0.0.1 /smile/bb
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001423s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002933s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003127s ]
+ERR: 无法加载控制器:Http:
+
+[ 2017-01-07T17:23:10+08:00 ] 127.0.0.1 /smile/22
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000044s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002013s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002851s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003096s ]
+ERR: 无法加载控制器:Http:
+
+[ 2017-01-07T17:23:10+08:00 ] 127.0.0.1 /smile/hh
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002109s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.006052s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.010814s ]
+ERR: 无法加载控制器:Http:
+
+[ 2017-01-07T17:23:10+08:00 ] 127.0.0.1 /smile/00
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002066s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002306s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002513s ]
+ERR: 无法加载控制器:Http:
+
+[ 2017-01-07T17:23:10+08:00 ] 127.0.0.1 /smile/11
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001958s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005105s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005443s ]
+ERR: 无法加载控制器:Http:
+
+[ 2017-01-07T17:23:10+08:00 ] 127.0.0.1 /smile/55
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.010411s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003136s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003360s ]
+ERR: 无法加载控制器:Http:
+
+[ 2017-01-07T17:24:38+08:00 ] 127.0.0.1 /smile/22
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000055s ]
+INFO: [ app_init ] --END-- [ RunTime:0.009115s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003702s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003925s ]
+ERR: 无法加载控制器:Http:
+
+[ 2017-01-07T17:24:38+08:00 ] 127.0.0.1 /smile/11
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000096s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002029s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001843s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002106s ]
+ERR: 无法加载控制器:Http:
+
+[ 2017-01-07T17:24:38+08:00 ] 127.0.0.1 /smile/hh
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.014358s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002734s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002948s ]
+ERR: 无法加载控制器:Http:
+
+[ 2017-01-07T17:24:38+08:00 ] 127.0.0.1 /smile/55
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000106s ]
+INFO: [ app_init ] --END-- [ RunTime:0.041244s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.013712s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.013971s ]
+ERR: 无法加载控制器:Http:
+
+[ 2017-01-07T17:24:38+08:00 ] 127.0.0.1 /smile/00
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000044s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001867s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.006396s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006608s ]
+ERR: 无法加载控制器:Http:
+
+[ 2017-01-07T17:24:38+08:00 ] 127.0.0.1 /smile/ll
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002490s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.006272s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008870s ]
+ERR: 无法加载控制器:Http:
+
+[ 2017-01-07T17:24:49+08:00 ] 127.0.0.1 /smile/hh
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.036668s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004291s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004604s ]
+ERR: 无法加载控制器:Http:
+
+[ 2017-01-07T17:24:49+08:00 ] 127.0.0.1 /smile/11
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000077s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002480s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003047s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003229s ]
+ERR: 无法加载控制器:Http:
+
+[ 2017-01-07T17:24:49+08:00 ] 127.0.0.1 /smile/22
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001319s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001261s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001464s ]
+ERR: 无法加载控制器:Http:
+
+[ 2017-01-07T17:24:49+08:00 ] 127.0.0.1 /smile/55
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001354s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002062s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002390s ]
+ERR: 无法加载控制器:Http:
+
+[ 2017-01-07T17:24:49+08:00 ] 127.0.0.1 /smile/bb
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001842s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.007470s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007654s ]
+ERR: 无法加载控制器:Http:
+
+[ 2017-01-07T17:24:49+08:00 ] 127.0.0.1 /smile/00
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001236s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005788s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006091s ]
+ERR: 无法加载控制器:Http:
+
+[ 2017-01-07T17:25:21+08:00 ] 127.0.0.1 /smile/22
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000099s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003536s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003859s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005091s ]
+ERR: 无法加载控制器:Http:
+
+[ 2017-01-07T17:25:21+08:00 ] 127.0.0.1 /smile/hh
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001650s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002504s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002731s ]
+ERR: 无法加载控制器:Http:
+
+[ 2017-01-07T17:25:21+08:00 ] 127.0.0.1 /smile/11
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000141s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005918s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.008218s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008391s ]
+ERR: 无法加载控制器:Http:
+
+[ 2017-01-07T17:25:21+08:00 ] 127.0.0.1 /smile/55
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000170s ]
+INFO: [ app_init ] --END-- [ RunTime:0.010541s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004462s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004817s ]
+ERR: 无法加载控制器:Http:
+
+[ 2017-01-07T17:25:21+08:00 ] 127.0.0.1 /smile/00
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000047s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002369s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.008130s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008454s ]
+ERR: 无法加载控制器:Http:
+
+[ 2017-01-07T17:26:10+08:00 ] 127.0.0.1 /smile/bb
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000062s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001891s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002422s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002618s ]
+ERR: 无法加载控制器:Http:
+
+[ 2017-01-07T17:31:12+08:00 ] 127.0.0.1 /smile/22
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001699s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002328s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002529s ]
+ERR: 无法加载控制器:Http:
+
+[ 2017-01-07T17:31:12+08:00 ] 127.0.0.1 /smile/ll
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001315s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.035942s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.036244s ]
+ERR: 无法加载控制器:Http:
+
+[ 2017-01-07T17:31:12+08:00 ] 127.0.0.1 /smile/11
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003645s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003765s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004138s ]
+ERR: 无法加载控制器:Http:
+
+[ 2017-01-07T17:31:12+08:00 ] 127.0.0.1 /smile/hh
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001461s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.006093s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.007399s ]
+ERR: 无法加载控制器:Http:
+
+[ 2017-01-07T17:31:12+08:00 ] 127.0.0.1 /smile/55
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000089s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003167s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003408s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003639s ]
+ERR: 无法加载控制器:Http:
+
+[ 2017-01-07T17:31:12+08:00 ] 127.0.0.1 /smile/00
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001308s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001843s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002066s ]
+ERR: 无法加载控制器:Http:
+
+[ 2017-01-07T17:43:59+08:00 ] 127.0.0.1 /smile/11
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000285s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002594s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001429s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001659s ]
+ERR: 无法加载控制器:Http:
+
+[ 2017-01-07T17:43:59+08:00 ] 127.0.0.1 /smile/ll
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001381s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001289s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001466s ]
+ERR: 无法加载控制器:Http:
+
+[ 2017-01-07T17:43:59+08:00 ] 127.0.0.1 /smile/22
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003882s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002018s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002201s ]
+ERR: 无法加载控制器:Http:
+
+[ 2017-01-07T17:43:59+08:00 ] 127.0.0.1 /smile/55
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000809s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002501s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003795s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003991s ]
+ERR: 无法加载控制器:Http:
+
+[ 2017-01-07T17:43:59+08:00 ] 127.0.0.1 /smile/hh
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001494s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005462s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005767s ]
+ERR: 无法加载控制器:Http:
+
+[ 2017-01-07T17:43:59+08:00 ] 127.0.0.1 /smile/00
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001434s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.009691s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.010026s ]
+ERR: 无法加载控制器:Http:
+

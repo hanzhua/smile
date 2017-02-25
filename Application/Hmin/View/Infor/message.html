@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <include file="Public:link"/>
+    <link href="__PUBLIC__/bs/css/pintuer.css"/>
+</head>
+<body style="background-color: #eff0f4;">
+<div class="wrapper">
+    <div class="row">
+        <!DOCTYPE html>
+        <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <!--如果使用bootstrap架构 这3个meta必须放在最前边-->
+            <title>Document</title>
+            <include file="Public/articleadd"/>
+        </head>
+        <body style="background-color: #fff;">
+        <div class="container">
+            <!--{:U('Infor/upuserimg')}-->
+            <form id="formupuser1" class="" action="{:U('Infor/messagedo')}" method="post" entype="multipart/form-data">
+                <input type="text" id="tel" class="" name="tel" required>
+                <span class="help"></span>
+                <hr>
+                <select name="type" class="select">
+                    <option value="0">0.全部</option>
+                    <option value="1" selected>1.Java</option>
+                    <option value="2">2.TPHP</option>
+                </select>
+                <hr>
+                <table>
+                    <tr>
+                        <td class="label"><label for="user_skills">专&nbsp;&nbsp;业：</label></td>
+                        <td><input list="user_skills" name="skill" id="skill">
+                            <datalist id="user_skills">
+                                <option value="1">Java后台开发</option>
+                                <option value="2">Android开发</option>
+                                <option value="3">IOS开发</option>
+                                <option value="4">Java前端开发</option>
+                            </datalist></td></tr>
+                    <tr>
+                </table>
+                <input type="submit" class="btn" value="提交">
+            </form>
+        </div>
+        <include file="Public/script"/>
+        <script type="text/javascript">
+            $(function () {
+
+            });
+            $('#formupuser').click(function(){
+                //电话正则表达式
+                var data = [];
+                data['tel']  = $('#tel').val();
+                data['type'] = $('.select').val();
+                data['skill']= $('#skill').val();
+                //var reg = "/^13[\d]{9}$|^14[5,7]{1}\d{8}$|^15[^4]{1}\d{8}$|^17[0,6,7,8]{1}\d{8}$|^18[\d]{9}$/";
+                if(data['tel'].length !== 11){
+                    //$('.help').addClass('red').html('电话输入有误！');
+                    layer.msg('电话输入有误！');
+                    return false;
+                }
+                if(data['type'][]!=''){
+                    layer.msg('请选择类型。。。');
+                    return false;
+                }
+                $.post("{:U('Infor/messagedo')}",{data:data}, function (data) {
+                    alert(data);
+                });
+                return false;
+            });
+        </script>
+    </div>
+    <div class="row">
+        <div class="col-sm-12">
+            <div class="timeline">
+                <!-- Today -->
+                <article class="timeline-item alt">
+                    <div class="text-right">
+                        <div class="time-show first">
+                            <a href="#" class="btn btn-primary">Today</a>
+                        </div>
+                    </div>
+                </article>
+                <foreach name="Tree" item="vo">
+                    <article class="timeline-item alt">
+                        <div class="timeline-desk">
+                            <div class="panel">
+                                <div class="panel-body">
+                                    <span class="arrow-alt"></span>
+                                    <span class="timeline-icon"></span>
+                                    <span class="timeline-date">{$vo.ctime|date = "Y-m-d H:i:s",###}</span>
+                                    <h1 class="red">1 hour ago</h1>
+                                    <p>{$vo['content']}</p>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                </foreach>
+                <article class="timeline-item ">
+                    <div class="timeline-desk">
+                        <div class="panel">
+                            <div class="panel-body">
+                                <span class="arrow"></span>
+                                <span class="timeline-icon"></span>
+                                <span class="timeline-date">10:00 am</span>
+                                <h1 class="green">2 hours ago</h1>
+                                <p>
+                                    <a href="#"><i class="ic"></i> icon-glass</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <article class="timeline-item alt">
+                    <div class="timeline-desk">
+                        <div class="panel">
+                            <div class="panel-body">
+                                <span class="arrow-alt"></span>
+                                <span class="timeline-icon"></span>
+                                <span class="timeline-date">11:35 am</span>
+                                <h1 class="blue">10 hours ago</h1>
+                                <p>3 new photo Uploaded on facebook fan page</p>
+                                <div class="album">
+                                    IMG.PNG
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <article class="timeline-item">
+                    <div class="timeline-desk">
+                        <div class="panel">
+                            <div class="panel-body">
+                                <span class="arrow"></span>
+                                <span class="timeline-icon"></span>
+                                <span class="timeline-date">3:20 pm</span>
+                                <h1 class="purple">4:30</h1>
+                                <p>Outdoor visit at California State Route 85 with John Boltana & Harry Piterson regarding to setup a new show room.</p>
+                                <p>
+                                    <i class=" fa fa-exclamation-sign"></i> New task added for <span><a href="#" class="purple">Denial Collins</a></span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <article class="timeline-item alt">
+                    <div class="timeline-desk">
+                        <div class="panel">
+                            <div class="panel-body">
+                                <span class="arrow-alt"></span>
+                                <span class="timeline-icon"></span>
+                                <span class="timeline-date">07:49 pm</span>
+                                <h1 class="light-green">10 June | Friday</h1>
+                                <p>Jonatha Smith added new milestone <span><a href="#" class="light-green">prank</a></span> Lorem ipsum dolor sit amet consiquest dio</p>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Yesterday -->
+                <article class="timeline-item alt">
+                    <div class="text-right">
+                        <div class="time-show">
+                            <a href="#" class="btn btn-primary">Yesterday</a>
+                        </div>
+                    </div>
+                </article>
+                <article class="timeline-item">
+                    <div class="timeline-desk">
+                        <div class="panel">
+                            <div class="panel-body">
+                                <span class="arrow"></span>
+                                <span class="timeline-icon"></span>
+                                <span class="timeline-date">3:20 pm</span>
+                                <h1 class="yellow">4:30</h1>
+                                <p>Montly Regular Medical check up at Greenland Hospital by the doctor <span><a href="#" class="yellow">  Berry Moor </a></span> </p>
+
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <article class="timeline-item alt">
+                    <div class="timeline-desk">
+                        <div class="panel">
+                            <div class="panel-body">
+                                <span class="arrow-alt"></span>
+                                <span class="timeline-icon"></span>
+                                <span class="timeline-date">07:49 pm</span>
+                                <h1 class="">4:55</h1>
+                                <p>Download the new updates of SAP ERP Solution</p>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <article class="timeline-item">
+                    <div class="timeline-desk">
+                        <div class="panel">
+                            <div class="panel-body">
+                                <span class="arrow"></span>
+                                <span class="timeline-icon"></span>
+                                <span class="timeline-date">07:49 pm</span>
+                                <h1 class="blue">10 June | Friday</h1>
+                                <p>Jonatha Smith added new milestone <span><a class="blue" href="#">prank</a></span> Lorem ipsum dolor sit amet consiquest dio</p>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 20 December 2013 -->
+                <article class="timeline-item alt">
+                    <div class="text-right">
+                        <div class="time-show">
+                            <a href="#" class="btn btn-primary">20 December 2013</a>
+                        </div>
+                    </div>
+                </article>
+                <article class="timeline-item alt">
+                    <div class="timeline-desk">
+                        <div class="panel">
+                            <div class="panel-body">
+                                <span class="arrow-alt"></span>
+                                <span class="timeline-icon"></span>
+                                <span class="timeline-date">07:49 pm</span>
+                                <h1 class="">13 March | Sunday</h1>
+                                <p>Download the new updates of SAP ERP Solution</p>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <article class="timeline-item">
+                    <div class="timeline-desk">
+                        <div class="panel">
+                            <div class="panel-body">
+                                <span class="arrow"></span>
+                                <span class="timeline-icon"></span>
+                                <span class="timeline-date">07:49 pm</span>
+                                <h1 class="red">5:33</h1>
+                                <p>Jonatha Smith added new milestone <span><a class="red" href="#">prank</a></span> Lorem ipsum dolor sit amet consiquest dio</p>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+        </div>
+    </div>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,3 @@
+<?php
+//000000000000a:10:{s:2:"id";s:1:"1";s:5:"title";s:18:"画中浅笑博客";s:3:"url";s:22:"http://127.0.0.1/smile";s:7:"keyword";s:143:"浅笑,Smile,画中浅笑博客,PHP技术博客,Linux技术博客,C语言技术博客,Java技术博客,MySQL技术博客,Javascript技术博客";s:8:"descript";s:117:"画中浅笑博客 - 关注于PHP,Linix,Python,MySQL,Javascript技术开发，分享学习之路上的点点滴滴。";s:4:"name";s:12:"画中浅笑";s:3:"tel";s:11:"18827084384";s:2:"qq";s:10:"2505855078";s:4:"logo";s:1:"0";s:4:"foot";s:155:"画中浅笑博客 托管于 阿里云 联系方式：QQ：2505855078 &lt;br/&gt;版权所有，保留一切权利 Copyright © 2014-2020 京ICP备16055311";}
+?>

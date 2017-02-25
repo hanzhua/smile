@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!--如果使用bootstrap架构 这3个meta必须放在最前边-->
+	<title>{$title} - {$ctitle} - 画中浅笑博客</title>
+	<!--<include file="Public/link"/>-->
+	<style type="text/css">
+	    .container-fluid{margin-top: 30px;color:#FFF;}
+	</style>
+    </head>
+    <body>
+    <include file="Public/dotop"/>
+    <div class="container-fluid">
+	<div class="container">
+	    <section class="col-md-8" style="background-color: #fff;color: #000;">
+			<foreach name="content" item="v">
+				<?php
+				$aid = 'article_'.$content['id'];
+				if($content['recode']!=''&&$_SESSION['$aid']!=$content['recode']){
+				?>
+				<form class="form-horizontal" action="{:U('Article/EnterRecode',array('id'=>$v['id']))}" method="post">
+				<div class="form-group">
+					<label class="col-sm-2 control-label">请输入文章密码：</label>
+					<div class="col-sm-10">
+					<input type="password" class="form-control" name="code" required></div>
+				</div>
+				<div class="mail-body text-center tooltip-demo">
+					<button class="btn btn-sm btn-primary" id="adds" type="submit">发送</button>
+				</div>
+				</form>
+				<?php }else{ ?>
+				<div class="meta  text-center">
+					<h3 class="meta-tit"><strong>{$v.title}</strong></h3>
+					<p style="color: #999;" class="meta-info">作者：{$user.contact}&nbsp; 发表日期：{$v.createtime} &nbsp;&nbsp; </p>
+				</div>
+				<div class="page-heading">
+					<div class="row">
+						<img src="{$v['picurl'][0]['src']}" width="726" height="360"/>
+						<p style="color:#999;font-size:14px;margin:7px 4px;">
+							&nbsp;&nbsp;{$v.desc}
+						</p>
+					</div>
+				</div>
+				<div style="font-size: 16px;">
+					<?php echo htmlspecialchars_decode($v['content']); ?>
+				</div>
+				<?php } ?>
+			</foreach>
+			<hr>
+			<div class="row"style="heigth:25px;margin: 0px 3px 5px;padding: 5px 3px;">
+				<div class="pull-left" style="color:#ccc;">
+				<b>注：</b>本文章来自 <a href="http://smile.com/smile" target="_blank"><b>画中浅笑博客</b></a> 希望对大家有所帮助。
+				</div>
+				<div class="pull-right" >
+					<a href="#" class="">
+						<span class="fa fa-thumbs-o-up"></span> 点赞</a>
+					<a <if condition="$Think.session.user.id eq ''">onclick="layer.msg('请先未登录，在发表评论！');"<else/>href="#remark" </if> data-toggle="modal" style="cursor: pointer">
+						<span class="fa fa-comment-o"></span> 评论</a>
+					<!--<a href="#relay" data-toggle="modal">-->
+					<a href="javascript:relay();">
+						<span class="fa fa-share-square"></span> 转发</a>
+				</div>
+			</div>
+			<section class="" style="background-color:#fff;">
+				<!-- 一级回复功能 -->
+				<foreach name="mark" item="v">
+				<form class="" action="{:U('Article/replay',array('author'=>$v['id'],'artid'=>$article['id']))}" method="post" onsubmit="">
+					<div class="row" style="width:500px;height:70px;padding: 5px">
+					<div class="col-sm-2 ">
+						<img src="__PUBLIC__/bs/images/blog/11.jpg" width="80" height="40"/>
+					</div>
+					<div class="col-sm-10"><!-- <?php echo ($v['id']); ?>楼 -->
+						<a id="name" class="" href="#">{$v.name}</a>
+						<span id="content"style="color:#8cf;font-size:18px; ">：{$v.content}</span>
+						<div class="pull-right" >
+						<a href="#" class="">
+							<span class="fa fa-thumbs-o-up"></span> 点赞</a>
+						<a href="#tucao" data-toggle="modal">
+							<span class="fa fa-comment-o"></span> 吐槽</a>
+						</div>
+					</div>
+					</div>
+					<!-- 二级回复功能 -->
+					<section class="" style="margin-left: 80px; ">
+					<foreach name="v['child']" item="v1">
+						<div class="row" style="width:500px;height:70px;padding: 5px">
+						<div class="col-sm-2 ">
+							<img src="__PUBLIC__/bs/images/blog/11.jpg" width="80" height="40"/>
+						</div>
+						<div class="col-sm-8"><!-- <?php echo ($v1['id']); ?>楼 -->
+							<a id="name" class="" href="#">{$v1['name']}</a>
+							<span id="content"style="color:#8cf;font-size:18px; ">：{$v1['content']}</span>
+							<div class="pull-right" >
+							<a href="#" class="">
+								<span class="fa fa-thumbs-o-up"></span> 点赞</a>
+							<a href="#tucao" data-toggle="modal">
+								<span class="fa fa-comment-o"></span> 吐槽</a>
+							</div>
+
+						</div>
+						</div>
+					</foreach>
+					</section>
+					<!-- 三级回复功能 -->
+					<section class=""style=" margin-left: 80px; ">
+					<foreach name="v1['child']" item="v2">
+						<div class="row" style="width:500px;height:70px;padding: 5px">
+						<div class="col-sm-2 ">
+							<img src="__PUBLIC__/bs/images/blog/11.jpg" width="80" height="40"/>
+						</div>
+						<div class="col-sm-8"><!-- <?php echo ($v2['id']); ?>楼 -->
+							<a id="name" class="" href="#">{$v2['name']}</a>
+							<span id="content"style="color:#8cf;font-size:18px; ">：{$v2['content']}</span>
+						</div>
+						</div>
+					</foreach>
+					</section>
+					<div id="tucao" style="display: none;" class="modal inmodal fade in" id="remark" tabindex="-1" role="dialog" aria-hidden="false">
+					<div class="modal-dialog" id="">
+						<div class="modal-content" id="">
+						<div class="modal-header" id="">
+							<i class="fa fa-info-circle"></i> 回复操作</div>
+						<div class="modal-body" id="">
+							<textarea cols="80" rows="5" name="content" required></textarea>
+							<input type="submit" class="btn" style="heigth:30px;" value="回复">
+						</div>
+						</div>
+					</div>
+					</div>
+				</form>
+				</foreach>
+			</section>
+	    </section>
+		<section class="col-md-1"></section>
+		<section class="col-md-3">
+			<ul>
+				<li><a href=""></a></li>
+				<li><a href=""></a></li>
+				<li><a href=""></a></li>
+			</ul>
+		</section>
+	</div>
+    </div>
+
+    <!--这里开始评论-->
+    <div style="display: none;" class="modal inmodal fade in" id="remark" tabindex="-1" role="dialog" aria-hidden="false">
+		<div class="modal-dialog">
+	    <div class="modal-content">
+		<div class="modal-header">
+		    <i class="fa fa-info-circle"></i> 评论操作
+		    <button type="button" class="close" data-dismiss="modal">
+			<span aria-hidden="true">×</span><span class="sr-only">Close</span>
+		    </button>
+		</div>
+		<div class="modal-body">
+		    <form action="{:U('Article/remark',array('id'=>$article['id']))}" method="post" class="form-horizontal">
+			<span class="sr-only ">评论文章的作者</span>
+			<input type="hidden" class="input-hidden" name="replay" value="{$user.id}">
+			<div class="form-group">
+			    <label class="col-sm-2 control-label">楼层</label>
+			    <div class="col-sm-8" >
+				<input type="text" value = "顶楼" disabled="" class="form-control" id = "replay">
+			    </div>
+			    <div class="col-sm-2"></div>
+			</div>
+			<div class="hr-line-dashed"></div>
+			<div class="form-group">
+			    <label class="col-sm-2 control-label">昵称</label>
+			    <div class="col-sm-8"><input class="form-control" type="text" placeholder = "请填写昵称" name = "name" required <if condition = "$Think.session.user.contact neq ''">value ="{$Think.session.user.contact}" readonly</if>></div>
+			    <div class="col-sm-2"></div>
+			</div>
+			<if condition="$Think.session.user.email neq ''"><!-- gt >,egt >=,lt < ,eq =,neq <> -->
+			    <else/>
+			    <div class="hr-line-dashed"></div>
+			    <div class="form-group"><label class="col-sm-2 control-label" >邮箱</label>
+				<div class="col-sm-8"><input class="form-control" type="email" placeholder = "请填写邮箱" name = "email" required ></div>
+				<div class="col-sm-2"></div>
+			    </div>
+			</if>
+			<div class="hr-line-dashed"></div>
+			<div class="form-group"><label class="col-sm-2 control-label" >内容</label>
+			    <div class="col-sm-8">
+				<textarea name="content" class="form-control" cols="30" rows="5" placeholder = "请填写内容" required style="width:100%;"></textarea>
+			    </div>
+			    <div class="col-sm-2"></div>
+			</div>
+			<center>
+			    <div id="embed-captcha"></div>
+			    <p id="wait" class="show">正在加载验证码......</p>
+			    <p id="notice" class="hide">请先拖动验证码到相应位置</p>
+			</center>
+			<center><button type="submit" class="btn btn-w-m btn-warning" style="margin-top:10px;" id="popup-submit">提交回复</button></center>
+		    </form>
+		</div>
+	    </div>
+	</div>
+    </div>
+    <!--评论结束-->
+	<!--这里转发开始-->
+	<div style="display: none;" class="modal inmodal fade in" id="relay" tabindex="-1" role="dialog" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<i class="fa fa-info-circle"></i> 转发操作
+					<button type="button" class="close" data-dismiss="modal">
+						<span aria-hidden="true">×</span><span class="sr-only">Close</span>
+					</button>
+				</div>
+
+			</div>
+		</div>
+	</div>
+	<!--转发结束-->
+
+	<include file="Public/doter"/>
+	<include file="Public/script"/>

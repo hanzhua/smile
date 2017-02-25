@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <include file="Public:link"/>
+</head>
+<body style="background-color: #fff;">
+<section>
+    <div class="panel panel-default">
+        <div class="panel-heading"><b>访客记录</b></div>
+        <table class="table table-hover text-center">
+            <tr align="left ">
+                <td colspan="6">
+                <form id="formvisit" action="{:U('Admin/visit')}" method="post" onsubmit="return check();">
+                    区域地址：<input style="width: 100px" class="" type="text" name="area" id="area">
+                    &nbsp;系统类型：<input style="width: 100px" type="text" name="os" id="os">
+                    &nbsp;访问时间：<input class="date" type="text" name="stime" id="stime"> - <input class="date" type="text" name="etime" id="etime">
+                    <button style="padding: 3px 10px;" class="btn btn-success" id="submit" type="submit">搜索</button>
+                </form>
+                </td>
+            </tr>
+            <tr>
+                <!--<th>用户I D</th>-->
+                <td>访客IP地址</td>
+                <td>访客地址</td>
+                <td>访客浏览器</td>
+                <td>浏览器语言</td>
+                <td>系统类型</td>
+                <td>访问时间</td>
+                <!--<th>操 作</th>-->
+            </tr>
+            <foreach name="Visit" item="v">
+            <tr>
+                <!--<td>{$v.id}</td>-->
+                <!--<td>{$v.user_id}</td>-->
+                <td>{$v.ip}</td>
+                <td>{$v.address}</td>
+                <td>{$v.browser}</td>
+                <td>{$v.language}</td>
+                <td>{$v.os_name}</td>
+                <td>{$v.create_time}</td>
+                <!--<td><a id="edit" class="btn btn-xs btn-success" href="" disabled>修改</a></td>-->
+            </tr>
+            </foreach>
+        </table>
+        <div class="">
+            <div class="pull-left">{$page}
+
+            </div>
+            <div class="pull-right" style="padding-right:20px;">
+                显示页：{$firstRow}到{$listRows},共有【{$count}】条记录，每页显示：15
+            </div>
+        </div>
+    </div>
+</section>
+<include file="Public/script"/>
+<include file="Public:datetime"/>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--如果使用bootstrap架构 这3个meta必须放在最前边-->
+    <title>{$title}</title>
+    <!--<include file="Public/link"/>-->
+    <style type="text/css">
+	.container-fluid{margin-top: 30px;color:#FFF;}
+    </style>
+</head>
+<body>
+    <include file="Public/dotop"/>
+    <div class="container-fluid">
+	<div class="container">
+	<foreach name="content" item="v">
+	    <div class="header page-header"><h2>{$v.title}</h2></div>
+	    <div class="page-heading">
+		<div class="row">
+		    <div class="col-md-2"><img src="__PUBLIC__/bs/images/blog/12.jpg" width="160" height="90"/></div>
+		    <div class="col-md-10">
+			{$v.desc}
+		    </div>
+		</div>
+	    </div>
+	    <div class="">
+		{$v.content}
+	    </div>
+	</foreach>
+	</div>
+    </div>
+<include file="Public/doter"/>
+<include file="Public/script"/>

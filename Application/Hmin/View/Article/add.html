@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--如果使用bootstrap架构 这3个meta必须放在最前边-->
+    <title>文章添加 -- 画中浅笑博客</title>
+<include file="Public/articleadd"/>
+<include file="Public/_de"/>
+<style type="text/css">
+    .cropit-preview {
+		background-color: #f8f8f8;
+		background-size: cover;
+		border: 1px solid #ccc;
+		border-radius: 3px;
+		margin-top: 7px;
+		width: 300px;height: 180px;
+    }
+	.cropit-image-zoom-input{width: 290px}
+    .lr{width: 160px;}
+    .image-size-label {margin-top: 10px;}
+</style>
+</head>
+<body style="background-color: #fff;">
+    <div class="container">
+	<div class=""><h3>添加文章</h3></div>
+	<section class="content">
+	    <form class="" action="{:U('Article/addde')}" method="post" onsubmit="return ArticleCheck();" enctype="multipart/form-data">
+		<input type="hidden" name="id" value="{$data['id']}">
+		<table class="table text-center">
+		    <tr>
+			<th width="100px">文章标题：</th>
+			<td width="280px" colspan="3"><input type="text" style="width:270px" class="in-title" name="title" value="{$data.title}" required></td>
+			<td rowspan="5" style="background-color: #fff;"><!--  style="background-color: #fff;width: 460px;" -->
+			    <div class="ibox-content">
+					<div class="form-group">
+						<div class="image-editor">
+							<input type="file" class="cropit-image-input" id="pic" name="pic">
+							<if condition="$data['pic'] neq ''">
+								<img class="cropit-preview" src="{$data.pic}">
+								<else />
+								<div class="cropit-preview"></div>
+								<div class="image-size-label">放大缩小</div>
+								<input type="range" class="cropit-image-zoom-input">
+								<a class="btn lr rotate-ccw">左侧旋转</a>
+								<a class="btn lr rotate-cw">右侧旋转</a>
+							</if>
+						</div>
+					</div>
+			    </div>
+			</td>
+		    </tr>
+		    <tr>
+				<th>文章分类：</th>
+				<td width="100px">
+					<select name="cid" class="" style="width:80px;height: 26px;" >
+					<foreach name="Cate" item="v">
+						<option value="{$v['id']}" <if condition="$data['cid'] eq $v['id']"> selected </if>>
+						{$v['name']}</option>
+					</foreach>
+					</select>
+				</td>
+				<th width="100px">文章排序：</th>
+				<td width="100px">
+					<input type="text" class="in-sort" style="width:80px;" name="sort" value="{$data.sort}">
+				</td>
+		    </tr>
+		    <tr>
+				<th>看文秘钥：</th>
+				<td><input type="text" class="in-recode"style="width:80px;" name="recode" placeholder="无密留白" value="{$data.recode}"></td>
+				<th>封面显示：</th>
+				<td><select class="" style="width:80px;height: 26px;" name="isview" id="isview" >
+						 <option value="0" <if condition="$data['isview'] eq 0"> selected</if> >是</option>
+						 <option value="1" <if condition="$data['isview'] neq 0">selected</if> >否</option>
+					</select>
+				</td>
+		    </tr>
+		    <tr>
+				<th>文章描述：</th>
+				<td colspan="3">
+					<textarea cols="42" rows="5" class="in-desc left" name="desc">{$data.desc}</textarea>
+				</td>
+		    </tr>
+		    <tr>
+				<th colspan="5">文章内容：</th>
+		    </tr>
+		    <tr>
+				<td colspan="8">
+					<div class="row" style="margin-left: -9px;background-color: #ccc;width:780px;">
+					<textarea id="editor"  style="width:100%;height:450px;" name="content">{$data.content}</textarea>
+					</div>
+				</td>
+		    </tr>
+		    <tr>
+			<td colspan="5" align="center">
+			    <input style="color: #0f0f0f" type="submit" class="btn" value="提交">&nbsp;&nbsp;
+				<a class="btn" style="background-color: #ddd;color: #0f0f0f" href="javascript:ArtiReturn();">返回</a>
+			</td>
+		    </tr>
+		</table>
+	    </form>
+	</section>
+    </div>
+</body>
+</html>
+<script src="__PUBLIC__/bs/js/pic_cut/jquery.cropit.js"></script>
+<script type="text/javascript">
+    //实例化编辑器
+    //建议使用工厂方法getEditor创建和引用编辑器实例
+    var ue = UE.getEditor('editor');
+
+	//Button --> Location
+	function ArtiReturn(){
+		window.location.href="{:U('Article/lst')}";
+	}
+	// Form --> return boolean;
+    function ArticleCheck(){
+		if($('#title').val()==""){layer.msg("请输入文章标题！");return false;}
+		if($('#desc').val()==""){layer.msg("请输入文章描述！");return false;}
+		return true;
+    }
+	$(function () {
+		$('#pic').click(function () {
+			if($('#pic').val()==''){
+				layer.msg("请选择图片!",{icon:16,time:3000});
+			}else{
+				location.href="{:U('Article/uploadPic')}";
+			}
+		});
+	});
+    
+    $(function() {
+		$('.image-editor').cropit();
+		$('.rotate-cw').click(function(){$('.image-editor').cropit('rotateCW');});
+		$('.rotate-ccw').click(function(){$('.image-editor').cropit('rotateCCW');});
+		$('.export').click(function() {
+			var imageData = $('.image-editor').cropit('export');
+			$.ajax({
+				type: "POST",
+				url: "{:U('Infor/upimg')}",
+				data:{data:imageData},
+				success: function(rs){
+					alert(rs);
+					if(rs==1){
+					   layer.msg('图片上传成功');
+					   setTimeout(function(){parent.window.location.reload();},1000);
+					}else if(rs==2){
+					   layer.msg('图片上传失败');
+					}else if(rs==3){
+					   layer.msg('上传图片的类型不符');
+					}else if(rs==4){
+					   layer.msg('上传图片的大小不符');
+					}else{
+					layer.msg("文件写入失败");
+					}
+				}
+			});
+		});
+    });
+</script>

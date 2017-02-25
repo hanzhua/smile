@@ -1,0 +1,289 @@
+<!--<!DOCTYPE html>-->
+<!--<html lang="en">-->
+<!--<head>-->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+	<meta name="description" content="">
+	<meta name="author" content="ThemeBucket">
+	<link rel="shortcut icon" href="#" type="image/png">
+	<title>{$title} - {$SETUP.title}</title>
+	<!--common-->
+	<link href="__PUBLIC__/bs/css/style.css" rel="stylesheet">
+	<link href="__PUBLIC__/bs/css/style-responsive.css" rel="stylesheet">
+	<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+	<!--[if lt IE 9]>
+	<script src="__PUBLIC__/bs/js/html5shiv.js"></script>
+	<script src="__PUBLIC__/bs/js/respond.min.js"></script>
+	<![endif]-->
+<!--</head>-->
+<style>
+	.left-side-inner{position: relative;
+		top:-50px;}
+</style>
+
+<!--<body class="sticky-header">-->
+<section>
+    <!-- left side start-->
+	<div class="left-side sticky-left-side">
+		<!--logo and iconic logo start-->
+		<div class="logo">
+			<a href="{:U('Admin/index')}"><img src="__PUBLIC__/bs/images/logo.png" alt=""></a>
+		</div>
+		<!--<div class="logo-icon text-center">-->
+			<!--<a href="{:U('Admin/index')}"><img src="__PUBLIC__/bs/images/logo_icon.png" alt=""></a>-->
+		<!--</div>-->
+		<!--logo and iconic logo end-->
+		<div class="left-side-inner">
+			<!--sidebar nav start-->
+			<ul class="nav nav-pills nav-stacked custom-nav">
+				<!--<li class="active"><a href="{:U('Admin/index')}"><i class="fa fa-home"></i> <span>后台主页</span></a></li>-->
+				<volist name="actionList" id="vo" key="i">
+					<if condition="$i eq 1">
+						<li class="active"><a href="{:U('Admin/index')}"><i class="fa fa-{$vo.icon}"></i> <span>{$vo.name}</span></a></li>
+						<else/>
+						<li class="menu-list"><a href="#"><i class="fa fa-{$vo.icon}"></i> <span>{$vo.name}</span></a>
+							<ul class="sub-menu-list">
+								<foreach name="vo['child']" item="v">
+									<li><a href="__APP__/{$v['url']}" target="right"><i class="fa fa-{$v.icon}"></i> {$v.name}</a></li>
+								</foreach>
+							</ul>
+						</li>
+					</if>
+
+				</volist>
+			</ul>
+			<!--sidebar nav end-->
+		</div>
+	</div>
+    <!-- left side end-->
+
+    <!-- main content start-->
+	<div class="main-content" >
+		<!-- header section start-->
+		<div class="header-section"style="background-color: #424f63;" >
+			<a class="toggle-btn"><i class="fa fa-bars"></i></a>
+			<form class="searchform" method="post">
+				<input type="text" readonly class="form-control border-top " style="border: none;width: 340px;background-color:#424f63 ;"
+					   placeholder="每一个你不满意的现在,都有一个你不努力的曾经..." />
+			</form>
+
+			<!--notification menu start -->
+			<div class="menu-right">
+				<ul class="notification-menu">
+					<li>
+						<a href="#" class="btn btn-default dropdown-toggle info-number" data-toggle="dropdown">
+							<i class="fa fa-tasks"></i>
+							<span class="badge">8</span>
+						</a>
+						<div class="dropdown-menu dropdown-menu-head pull-right">
+							<h5 class="title">You have 8 pending task</h5>
+							<ul class="dropdown-list user-list">
+								<li class="new">
+									<a href="#">
+										<div class="task-info">
+											<div>Database update</div>
+										</div>
+										<div class="progress progress-striped">
+											<div style="width: 40%" aria-valuemax="100" aria-valuemin="0" aria-valuenow="40" role="progressbar" class="progress-bar progress-bar-warning">
+												<span class="">40%</span>
+											</div>
+										</div>
+									</a>
+								</li>
+								<li class="new">
+									<a href="#">
+										<div class="task-info">
+											<div>Dashboard done</div>
+										</div>
+										<div class="progress progress-striped">
+											<div style="width: 90%" aria-valuemax="100" aria-valuemin="0" aria-valuenow="90" role="progressbar" class="progress-bar progress-bar-success">
+												<span class="">90%</span>
+											</div>
+										</div>
+									</a>
+								</li>
+								<li class="new"><a href="">See All Pending Task</a></li>
+							</ul>
+						</div>
+					</li>
+					<if condition="$Sis eq 1">
+						<else/>
+						<li>
+							<a href="javascript:sign()" class="btn btn-default dropdown-toggle info-number">
+								<!--<i class="fa fa-envelope-o"></i>-->
+								<i class="fa fa-thumbs-up"></i>
+								<span class="badge">签</span>
+							</a>
+						</li>
+					</if>
+					<li>
+						<a href="#" title="未读消息" target="right" class="btn btn-default dropdown-toggle info-number" data-toggle="dropdown">
+							<i class="fa fa-bell-o"></i>
+							<span class="badge">{$newsnum}</span>
+						</a>
+						<div class="dropdown-menu dropdown-menu-head pull-right">
+							<h5 class="title">未读消息通知</h5>
+							<ul class="dropdown-list normal-list">
+								<foreach name="news" item="v">
+									<li class="new">
+										<a href="javascript:;" onclick="readArticle({$v['id']},1)" target="right">
+											<span class="label label-danger"><i class="fa fa-bolt"></i></span>
+											<span class="name">{$v.title}</span>
+											<span class="small">{$v.ctime}</span>
+										</a>
+									</li>
+								</foreach>
+								<li class="new "><a class='btn btn-success' href="{:U('Admin/readAll')}">消息全部忽略</a></li>
+							</ul>
+						</div>
+					</li>
+					<!--清除缓存 start-->
+					<li>
+						<a href="#" title="清除缓存"class="btn btn-default dropdown-toggle info-number" data-toggle="dropdown">
+							<i class="fa fa-trash-o"></i>
+							<span class="badge">清</span>
+						</a>
+						<ul class="dropdown-menu dropdown-menu-usermenu pull-right">
+							<li class=""><a class="" href="{:U('Admin/clearCache')}">
+								<i class="fa fa-minus-square-o"></i> 清除<b style="color: blueviolet;">模板</b>缓存</a></li>
+							<li class=""><a class="" href="{:U('Admin/clearData')}">
+								<i class="fa fa-minus-square"></i> 清除<b style="color: blueviolet;">数据</b>缓存</a></li>
+							<li class=""><a class="" href="{:U('Admin/clearLogs')}">
+								<i class="fa fa-bars"></i> 清除<b style="color: blueviolet;">日志</b>缓存</a></li>
+							<li class=""><a class="" href="{:U('Admin/clearTemp')}">
+								<i class="fa fa-warning"></i> 清除<b style="color: blueviolet;">数据目录</b></a></li>
+						</ul>
+					</li>
+					<!--清除缓存 end-->
+					<!--toHome START -->
+					<li>
+						<a title="前端" target="_blank" href="http://localhost/smile/index.php"class="btn btn-default dropdown-toggle info-number">
+							<i class="fa fa-home"></i>
+							<span class="badge">前</span>
+						</a>
+					</li>
+					<!-- TO HOME END -->
+
+					<li>
+						<a href="#" class="btn btn-default dropdown-toggle info-number" data-toggle="dropdown" style="color:#ff0000;background-color: #424f63;">
+							<img src="{$Think.session.SML_USER.pic}" width="400" height="28" style="line-height: -2em;margin:0px;padding: 0px;"/>
+							{$Think.session.SML_USER.contact}
+							<span class="caret"></span>
+							<span class="ps badge">New</span>
+						</a>
+						<ul class="dropdown-menu dropdown-menu-usermenu pull-right">
+							<li><a href="{:U('Infor/toFontIcon')}" target="right">
+								<i class="fa fa-user"></i> ICON 图标
+								<span class="badge badge-success">new</span></a></li>
+							<li><a href="{:U('Infor/toFontFa')}" target="right">
+								<i class="fa fa-user"></i> FA-- 图标
+								<span class="badge badge-success">new</span></a></li>
+							<!--<li><a href="{:U('Infor/message')}" target="right">-->
+							<li><a href="javascript:;" onclick="inforMsg()" target="right">
+								<i class="fa fa-user"></i>  个人信息
+								<span class="badge badge-success">new</span></a></li>
+							<li><a href="{:U('Infor/perfect')}" target="right">
+								<i class="fa fa-cog"></i>  个人设置
+								<input type="hidden" class="input-email" value="{$Think.session.SML_USER.email}" required>
+								<span class="ps badge badge-warning">请完善资料</span></a></li>
+							<li><a href="javascript:;" onclick="logout()">
+								<i class="fa fa-power-off"></i> 系统注销</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+			<!--notification menu end -->
+		</div>
+		<!-- header section end-->
+
+		<!--iframe main start -->
+		<div class="iframemain" style="height: 570px">
+			<iframe name="right" src="{:U('Admin/home')}" width="100%" height="100%" align="center" scrolling="auto" marginheight="0" marginwidth="0" style="border: none; margin: 0; padding: 0;"></iframe>
+		</div>
+		<!--iframe main end-->
+
+		<footer>
+			2016 &copy; SmileEx By 画中浅笑
+		</footer>
+	</div>
+    <!-- main content end-->
+</section>
+
+<include file="Public:script"/>
+<script type="text/javascript">
+    $(function(){
+		$('.js-tooltip').tooltip();
+		var ps = $('.input-email').val();
+		if(ps!==""){
+			$('.ps').hide();
+		}
+    });
+	var loadChildTree= function (obj,pid,objId) {
+		var str = objId.split("_");
+		level = (str.length-2);
+		if($(obj).hasClass('fa-minus-circle')){
+			$(obj).removeClass('fa-minus-circle').addClass('fa-plus-circle');
+			$('tr[class^="'+objId+'"]').hide();
+		}else{
+			$(obj).removeClass('fa-plus-circle').addClass('fa-minus-circle');
+			$('tr[class^="'+objId+'"]').show();
+			$('tr[class^="'+objId+'"] > td >.fa-plus-circle').each(function(){
+				$(this).removeClass('fa-plus-circle').addClass('fa-minus-circle');
+			})
+		}
+	}
+	var readArticle = function (id,is) {
+		//window.location.href="{:U('Article/read')}&id="+id+"&isread="+is;
+		$.post("{:U('Article/read')}",{id:id,isread:is}, function (rs) {
+			var json = eval("("+rs+")");
+			if(json.flag==1){
+				window.location.reload();
+				window.location.href="{:U('Article/remark')}";
+			}else if(json.flag==-1){
+				layer.msg("对不起，您不是管理员，无法查看!!!",{icon:2,time:3000});
+			}
+		})
+	}
+    function ClearCache(){
+		var id = 1;
+		layer.confirm('确认要清除缓存么?',{icon:5,title:""},function(index){
+			$.post("{:U('Index/logcache')}",{id:id},function(rs){
+			if(rs==1){
+				SML.msg("清除缓存成功！",{icon:1}, function () {
+					location.reload();
+				});
+//				setTimeout(function(){window.location.reload();},1000);
+			}else{layer.msg('没有数据缓存可以清除');}
+			},'json');
+		});
+    }
+	var logout = function(){
+		layer.confirm("确定要退出系统么?",{icon:3,title:"系统提示"},function(){
+			location.href="{:U('Index/logout')}";
+		});
+	}
+	var inforMsg = function () {
+		layer.open({
+			type:2,
+			title:"个人信息",
+			area:['560','308'],
+			anim:6,
+			shade:0.8,
+			shadeClose:false,
+			content:"{:U('Infor/inforMsg')}"
+		});
+	}
+	var sign = function () {
+		$.post("{:U('Infor/sign')}",{}, function (rs) {
+			var json = eval("("+rs+")");
+			if(json.signRs==1){
+				layer.msg("签到成功,连续签到[<font color='red'>"+json.signNum+"</font>]次。您当前一共有:<font color='red'>"+json.signScore+"</font>积分!",{icon:1,time:4000}, function () {
+					window.location.reload();
+				})
+			}else{
+				layer.msg("今天已签到,您当前一共有:[<font color='red'>"+json.signScore+"</font>]积分!!!",{icon:2,time:3000});
+			}
+		});
+	}
+
+</script>
